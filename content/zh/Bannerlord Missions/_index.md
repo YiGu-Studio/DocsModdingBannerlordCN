@@ -1,7 +1,6 @@
 ---
 title: "BANNERLORD 任务"
 
-weight: 20
 hide: 
 - toc
 - breadcrumb

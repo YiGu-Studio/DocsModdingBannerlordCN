@@ -1,7 +1,6 @@
 ---
 title: "编辑器"
 
-weight: 30
 hide: 
 - toc
 - breadcrumb
