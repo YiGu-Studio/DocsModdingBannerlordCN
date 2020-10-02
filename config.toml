@@ -1,0 +1,42 @@
+baseURL = "http://example.org/"
+# languageCode = "en-us"
+title = "Taleworlds Documentation CN"
+theme = "docport"
+# disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
+DefaultContentLanguage = "zh"
+copyright = "Taleworlds"
+defaultContentLanguageInSubdir = false
+
+[languages]
+
+[languages.en]
+title = "Mount&Blade Bannerlord Modding Documentation"
+contentDir = "content/en"
+languageName = "English"
+weight = 1
+
+[languages.zh]
+title = "骑马与砍杀 霸主 Mod 开发文档"
+contentDir = "content/zh"
+languageName = "中文"
+weight = 2
+[languages.zh.params.navigation]
+        help = "帮助"
+
+[params]
+color_main = "#B0B0B0"
+color_second = "red"
+  [params.navigation]
+    help = "Help"
+
+[[menu.shortcuts]]
+name = "中文"
+identifier = "zh"
+url = "/zh"
+weight = 10
+
+[[menu.shortcuts]]
+name = "English"
+identifier = "en"
+url = "/en"
+weight = 20
