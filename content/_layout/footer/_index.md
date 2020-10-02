@@ -1,0 +1,1 @@
+© 2005-2020 TaleWorlds Entertainment. All rights reserved.
