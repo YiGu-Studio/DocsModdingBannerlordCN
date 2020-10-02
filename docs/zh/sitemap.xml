@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/asset-management/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/en/asset-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://example.org/asset-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://example.org/asset-management/asset-types/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/en/asset-management/asset-types/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://example.org/asset-management/asset-types/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://example.org/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://example.org/bannerlord-missions/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/en/bannerlord-missions/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://example.org/bannerlord-missions/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://example.org/editor/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/en/editor/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://example.org/editor/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://example.org/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://example.org/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://example.org/asset-management/quick_guide/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/en/asset-management/quick_guide/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://example.org/asset-management/quick_guide/"
+                />
+  </url>
+  
+</urlset>
