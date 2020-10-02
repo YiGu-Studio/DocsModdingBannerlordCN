@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://yigu-studio.github.io/DocsModdingBannerlordCN/"
 # languageCode = "en-us"
 title = "Taleworlds Documentation CN"
 theme = "docport"
