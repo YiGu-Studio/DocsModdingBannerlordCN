@@ -6,8 +6,6 @@ hide:
 - breadcrumb
 ---
 
-# ASSET MANAGEMENT
-
 ## Asset Types
 
 Adding & Overriding Assets In RGL you can easily override existing assets or create new ones within the editor for your custom mode. Override mechanism works by replacing existing assets with the one you supplied in your module’s assets directory. It tries to match your custom assets with the ones previously registered by other modules by their names. This happens with respect to loading order of the modules. If Module A and Module B are loaded in addition to the Native module respectively, list of final assets and their sources will be as follow :
