@@ -1,1 +1,117 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/</loc><xhtml:link rel="alternate" hreflang="en" href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/"/><xhtml:link rel="alternate" hreflang="zh" href="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/"/></url><url><loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/</loc><xhtml:link rel="alternate" hreflang="en" href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/"/><xhtml:link rel="alternate" hreflang="zh" href="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/"/></url><url><loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/bannerlord-missions/</loc><xhtml:link rel="alternate" hreflang="en" href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/bannerlord-missions/"/><xhtml:link rel="alternate" hreflang="zh" href="https://yigu-studio.github.io/DocsModdingBannerlordCN/bannerlord-missions/"/></url><url><loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/categories/</loc><xhtml:link rel="alternate" hreflang="en" href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/categories/"/><xhtml:link rel="alternate" hreflang="zh" href="https://yigu-studio.github.io/DocsModdingBannerlordCN/categories/"/></url><url><loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/tags/</loc><xhtml:link rel="alternate" hreflang="en" href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/tags/"/><xhtml:link rel="alternate" hreflang="zh" href="https://yigu-studio.github.io/DocsModdingBannerlordCN/tags/"/></url><url><loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/quick-guides/</loc><xhtml:link rel="alternate" hreflang="en" href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/quick-guides/"/><xhtml:link rel="alternate" hreflang="zh" href="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/quick-guides/"/></url><url><loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/</loc><xhtml:link rel="alternate" hreflang="en" href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/"/><xhtml:link rel="alternate" hreflang="zh" href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/"/></url><url><loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/</loc><xhtml:link rel="alternate" hreflang="en" href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/"/><xhtml:link rel="alternate" hreflang="zh" href="https://yigu-studio.github.io/DocsModdingBannerlordCN/"/></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/bannerlord-missions/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/bannerlord-missions/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/bannerlord-missions/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/quick-guides/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/quick-guides/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/quick-guides/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/"
+                />
+  </url>
+  
+</urlset>
