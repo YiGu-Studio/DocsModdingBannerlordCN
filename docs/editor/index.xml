@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>编辑器 on 骑马与砍杀 霸主 Mod 开发文档</title>
-    <link>http://example.org/editor/</link>
+    <link>https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/</link>
     <description>Recent content in 编辑器 on 骑马与砍杀 霸主 Mod 开发文档</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Taleworlds</copyright><atom:link href="http://example.org/editor/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Taleworlds</copyright><atom:link href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

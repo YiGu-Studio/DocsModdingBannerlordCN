@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>WELCOME TO THE MOUNT&amp;BLADE BANNERLORD MODDING DOCUMENTATION on Mount&amp;Blade Bannerlord Modding Documentation</title>
-    <link>http://example.org/en/</link>
+    <link>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/</link>
     <description>Recent content in WELCOME TO THE MOUNT&amp;BLADE BANNERLORD MODDING DOCUMENTATION on Mount&amp;Blade Bannerlord Modding Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Taleworlds</copyright><atom:link href="http://example.org/en/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Taleworlds</copyright><atom:link href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CREATING A MODULE - QUICK GUIDE</title>
-      <link>http://example.org/en/asset-management/quick_guide/</link>
+      <link>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/quick_guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/en/asset-management/quick_guide/</guid>
+      <guid>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/quick_guide/</guid>
       <description>Modules can contain assets ranging from meshes to physics bodies, scenes, gameplay entities like factions, lords, troops, items and scripts and behaviours that can run any gameplay logic. In this gide, the process of creating one will be explained.</description>
     </item>
     
