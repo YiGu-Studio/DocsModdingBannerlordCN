@@ -4,7 +4,7 @@
 <html>
   <head>
     <title>
-	编辑器 :: 骑马与砍杀 霸主 Mod 开发文档
+	Creating a Module - Quick Guide :: Mount&amp;Blade Bannerlord Modding Documentation
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -13,7 +13,7 @@
 
 
 
-<title>编辑器 :: 骑马与砍杀 霸主 Mod 开发文档</title>
+<title>Creating a Module - Quick Guide :: Mount&amp;Blade Bannerlord Modding Documentation</title>
 
 <link rel="shortcut icon" href='/DocsModdingBannerlordCN/images/favicon.png' type="image/x-icon" />
 
@@ -53,7 +53,7 @@
     
   </head>
 
-  <body data-url="/DocsModdingBannerlordCN/editor/"
+  <body data-url="/DocsModdingBannerlordCN/en/asset-management/quick-guides/"
 
   class="hidebreadcrumb hidetoc ">
 
@@ -98,7 +98,7 @@
 	
 			
 		
-	    	<a class='baselink' href='https://yigu-studio.github.io/DocsModdingBannerlordCN/'>骑马与砍杀 霸主 Mod 开发文档</a>
+	    	<a class='baselink' href='https://yigu-studio.github.io/DocsModdingBannerlordCN/'>Mount&Blade Bannerlord Modding Documentation</a>
 	  	
 	</div>
     <nav class="shortcuts">
@@ -124,14 +124,14 @@
         
 <div class="search">
 	<div class="searchbox">
-	  <input data-search-input id="search-by" type="text" placeholder="">
+	  <input data-search-input id="search-by" type="text" placeholder="Type to search...">
 	</div>
 	<script type="text/javascript" src="/DocsModdingBannerlordCN/vendor/lunr/lunr.min.js"></script>
 	<script type="text/javascript" src="/DocsModdingBannerlordCN/vendor/auto-complete/auto-complete.js"></script>
 	<link href="/DocsModdingBannerlordCN/vendor/auto-complete/auto-complete.css" rel="stylesheet">
 	<script type="text/javascript">
 	  
-	      var baseurl = "https:\/\/yigu-studio.github.io\/DocsModdingBannerlordCN\/";
+	      var baseurl = "https:\/\/yigu-studio.github.io\/DocsModdingBannerlordCN\/\/en";
 	  
 	</script>
 	<script type="text/javascript" src="/DocsModdingBannerlordCN/js/search.js"></script>
@@ -151,22 +151,23 @@
 
 <ul class="menu">
 
-    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/" class="dd-item haschildren
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/" class="dd-item parent haschildren
         item_level_$level
         ">
 
       
       
       
-      <i class="fas fa-chevron-right ddexp"></i>
+      
+          <i class="fas fa-chevron-down ddexp"></i>
         
       
-          <a href="/DocsModdingBannerlordCN/asset-management/">资源管理</a>
+          <a href="/DocsModdingBannerlordCN/en/asset-management/">ASSET MANAGEMENT</a>
       
         <ul>
               
 
-    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/" class="dd-item
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/" class="dd-item
         item_level_$level
         ">
 
@@ -174,14 +175,14 @@
       
       
       
-          <a href="/DocsModdingBannerlordCN/asset-management/asset-types/">资源类型</a>
+          <a href="/DocsModdingBannerlordCN/en/asset-management/asset-types/">ASSET TYPES</a>
       
         
       
     </li>
               
 
-    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/quick-guides/" class="dd-item
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/quick-guides/" class="dd-item parent active
         item_level_$level
         ">
 
@@ -189,7 +190,7 @@
       
       
       
-          <a href="/DocsModdingBannerlordCN/asset-management/quick-guides/">创建一个Mod - 快速入门</a>
+          <a href="/DocsModdingBannerlordCN/en/asset-management/quick-guides/">Creating a Module - Quick Guide</a>
       
         
       
@@ -198,7 +199,7 @@
     </li>
     
 
-    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/bannerlord-missions/" class="dd-item
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/bannerlord-missions/" class="dd-item
         item_level_$level
         ">
 
@@ -208,12 +209,12 @@
       
         
       
-          <a href="/DocsModdingBannerlordCN/bannerlord-missions/">BANNERLORD 任务</a>
+          <a href="/DocsModdingBannerlordCN/en/bannerlord-missions/">BANNERLORD MISSIONS</a>
       
     </li>
     
 
-    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/" class="dd-item parent active
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/" class="dd-item
         item_level_$level
         ">
 
@@ -223,7 +224,7 @@
       
         
       
-          <a href="/DocsModdingBannerlordCN/editor/">编辑器</a>
+          <a href="/DocsModdingBannerlordCN/en/editor/">EDITOR</a>
       
     </li>
     
@@ -262,7 +263,7 @@
 		
 
 		
-			<h1>编辑器</h1>
+			<h1>Creating a Module - Quick Guide</h1>
         
 
 		
@@ -282,10 +283,7 @@
 
 
 	<div class="content">
-	    <h2 ref="resource-editors" >Resource Editors</h2><a class="anchor" id="resource-editors"></a>
-<p>Material Editor Overview Our proprietary game engine uses standard metallic PBR pipeline for material authoring. New materials can easily be created after navigating to a folder, right click on empty space, and select Create &gt; Material. Material editor can be opened by double clicking an existing material in the resource browser. Inspector Shader You can select apporopriate shader from this Shader Selection widget. There are a few mainly used shaders; most important ones are pbr_metallic and pbr_shading.</p>
-<h2 ref="scene-editor" >Scene Editor</h2><a class="anchor" id="scene-editor"></a>
-<p>Creating Entity Game Entities are basic building blocks of Scenes. Every mesh, light, decal, script behaviour are components of entities. Creating an empty entity In the editor, you can begin by creating a new, empty entity by using the Add Empty Entity button from tool bar, then you can attach different components for different needs. All entities can be composed of multiple components. Adding Component Component can be added from the toolbar after selecting an entity.</p>
+	    <p>Modules can contain assets ranging from meshes to physics bodies, scenes, gameplay entities like factions, lords, troops, items and scripts and behaviours that can run any gameplay logic. In this gide, the process of creating one will be explained.</p>
 
 		
 </div>
@@ -297,10 +295,10 @@
 
 	 
 	<div class="chevrons">
-		<a class="next" href="/DocsModdingBannerlordCN/asset-management/" title="资源管理" style="margin-right: 0px;">
+		<a class="next" href="/DocsModdingBannerlordCN/en/bannerlord-missions/" title="BANNERLORD MISSIONS" style="margin-right: 0px;">
             <div>
-                <p></p>
-                <label>资源管理</label>
+                <p>Next page</p>
+                <label>BANNERLORD MISSIONS</label>
             </div>
             <i class="fas fa-arrow-right" style="font-size: 1.7em"></i></a>
 	</div>
@@ -321,7 +319,7 @@
 	
 			
 		
-	    	
+	    	Create a content/_layout/footer/_index.md file to customize the footer content !
 	  	
 	
     </footer>
