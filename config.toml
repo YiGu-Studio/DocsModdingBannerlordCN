@@ -6,6 +6,7 @@ theme = "docport"
 DefaultContentLanguage = "zh"
 copyright = "Taleworlds"
 defaultContentLanguageInSubdir = false
+publishDir = "docs"
 
 [languages]
 
