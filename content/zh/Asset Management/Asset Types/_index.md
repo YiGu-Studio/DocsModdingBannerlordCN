@@ -1,8 +1,6 @@
 ---
 title: "资源类型"
 
-weight: 10
-
 hide: 
 - toc
 - breadcrumb

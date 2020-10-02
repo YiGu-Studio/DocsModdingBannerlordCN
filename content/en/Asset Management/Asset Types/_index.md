@@ -1,5 +1,9 @@
 ---
 title: "ASSET TYPES"
+
+hide: 
+- toc
+- breadcrumb
 ---
 
 ## Adding & Overriding Assets
