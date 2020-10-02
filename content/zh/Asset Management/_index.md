@@ -1,8 +1,6 @@
 ---
 title: "资源管理"
 
-weight: 10
-
 hide: 
 - toc
 - breadcrumb
