@@ -18,7 +18,7 @@ General Editor Usage Shortcut Editor State Show/hide helpers H Any mode New scen
 
 Level designer can easily add, edit or delete paths and path points by the scene editor. Adding a new path User can use the Add New Path button at the upper toolbar. User should enter a unique name for every path. After the path is added, the editor’s editing state will become “Path Select”. By spacing either space or the “Add a new path point” button from the upper toolbar, user can transition to the “Path Node Add” mode and start adding new path nodes.
 
-## Terrain Creation
+## [Terrain Creation](terrain-creation)
 
 Create a new terrain Terrain creation, removal, and node modifications can be done in Terrain Inspector > Properties tab. Terrain node count in both dimensions, their resolution and size can be specified in New Terrain Properties panel. This parameters must be specified proir to the creation, although they can be canged per-node basis later. Adjusting node properties Node resolution can be adjusted by selection nodes (Hold CTRL for multiple selection)m and change the resolution parameter in Node Properties panel.
 
