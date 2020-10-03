@@ -1,7 +1,7 @@
 baseURL = "https://yigu-studio.github.io/DocsModdingBannerlordCN/"
 # languageCode = "en-us"
 title = "Taleworlds Documentation CN"
-theme = "docport"
+theme = ["hugo-notice", "docport"]
 # disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
 DefaultContentLanguage = "zh"
 copyright = "Taleworlds"
