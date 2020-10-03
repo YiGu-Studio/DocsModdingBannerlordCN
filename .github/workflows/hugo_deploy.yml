@@ -25,7 +25,7 @@ jobs:
           hugo-version: 'latest'
 
       - name: Build
-        run: hugo -t docport
+        run: hugo -t "docport","hugo-notice"
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

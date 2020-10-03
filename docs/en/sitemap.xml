@@ -87,6 +87,48 @@
   </url>
   
   <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/material-editor/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/material-editor/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/material-editor/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/"
+                />
+  </url>
+  
+  <url>
     <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/tags/</loc>
     <xhtml:link
                 rel="alternate"

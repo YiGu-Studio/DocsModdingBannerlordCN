@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-10-02T17:20:42 PDT">
+<meta name="revised" content="2020-10-03T01:15:14 PDT">
 <meta name="description" content="">
 
 
@@ -214,7 +214,22 @@
     </li>
     
 
-    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/" class="dd-item
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/" class="dd-item haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      <i class="fas fa-chevron-right ddexp"></i>
+        
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/">EDITOR</a>
+      
+        <ul>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/" class="dd-item haschildren
         item_level_$level
         ">
 
@@ -222,10 +237,44 @@
       
       
       
+          <a href="/DocsModdingBannerlordCN/en/editor/resource-editors/">RESOURCE EDITORS</a>
+      <i class="fas fa-chevron-right ddexp"></i>
         
       
-          <a href="/DocsModdingBannerlordCN/en/editor/">EDITOR</a>
+        <ul>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/material-editor/" class="dd-item
+        item_level_$level
+        ">
+
       
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/resource-editors/material-editor/">MATERIAL EDITOR</a>
+      
+        
+      
+    </li>
+        </ul>
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/scene-editor/">SCENE EDITOR</a>
+      
+        
+      
+    </li>
+        </ul>
     </li>
     
 
@@ -284,6 +333,31 @@
 
 	<div class="content">
 	    <p>Modules can contain assets ranging from meshes to physics bodies, scenes, gameplay entities like factions, lords, troops, items and scripts and behaviours that can run any gameplay logic. In this gide, the process of creating one will be explained.</p>
+<p>Creating A New Module
+Modules reside inside the “Modules” folder in the root directory. It must contain an XML file named SubModule.xml. This file contains basic information like “Name”, “ID” and “Version” nodes. Also, one can define dependent modules inside the “DepenendedModules” node. If you want to make a Single Player mod, it should also contain a “SingleplayerModule” node. After this, the module will be visible at the Launcher.</p>
+<p>SubModules can define DLL’s to be loaded at runtime. These DLL’s should contain a Class which inherits from “MBSubModuleBase” and the name should match with the “SubModuleClassType” node inside the xml. That class will be constructed and certain callbacks willl be called so that od can registers its behaviours to the game.</p>
+<p>Module Hierarchy
+Modules can have several folders which contains different types of content:</p>
+
+
+<div class="notices info">
+	
+
+* bin: The compiled DLL’s should be put inside the “bin\Win64_Shipping_Client” folder so that the game can find and load the DLL.
+Atmospheres: This folder contains the different atmosğhere templates that can be used through the game. New atmosğhere can be saved to any module from the Editor.
+* AssetSources: This folder contains the sources for the assets. Editor imports assets to this folder. This folder may be filtered out before publishing the mod. For more information about adding new content to the module, see [Adding & Overriding Assets]().
+* Assets: This folder contains the asset data derived from the content sources. It is only used at the mod development phase. This folder may be filtered out before publishing the mod.
+* AssetPackages: After the content work is done for the module, content creator should start the Publish operation to ready the content for release. Th,s fodler contains the “Published” assets.
+* GUI: This folder contains any new GUI element, prefab or brush that can be used through the game.
+* ModuleData: This folder contains many of the important xml files for gameplay logic. “project.mbproj” file governs the xml’s that will be loaded inside the folder. These xml’s range from animations and sets to factions, trops, items etc.
+* NavMeshPrefabs: Navigation mesh face groups can be saved in editor as templates to easily insert into multiple scenes. This folder contains those.
+* Prefabs: This folder contains the prefabs XML’s. For more information, see [Entities & Prefabs]().
+* SceneObj: This fodler holds the Scene Data which is stripped from any Edit Data. Scenes witout terrain only resides in this folder.
+* SceneEditData: Contains the terrain edit data for every scene. This folder may be filtered out before publishing the mod.
+
+
+</div>
+
 
 		
 </div>
