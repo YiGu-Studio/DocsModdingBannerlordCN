@@ -6,7 +6,7 @@ hide:
 - breadcrumb
 ---
 
-## Creating Entity
+## [Creating Entity](Creating-Entity)
 
 Game Entities are basic building blocks of Scenes. Every mesh, light, decal, script behaviour are components of entities. Creating an empty entity In the editor, you can begin by creating a new, empty entity by using the Add Empty Entity button from tool bar, then you can attach different components for different needs. All entities can be composed of multiple components. Adding Component Component can be added from the toolbar after selecting an entity.
 
