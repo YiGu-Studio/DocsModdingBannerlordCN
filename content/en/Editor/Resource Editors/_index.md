@@ -16,7 +16,7 @@ Overview Our proprietary game engine uses standard metallic PBR pipeline for mat
 
 Parameter types Random-bias parameters These parameters consists of two numerical values: base value and a random bias value respectively. Values of this parameter are evaluated as value=base+(random value in -bias,bias range) Random-bias parameters with curve(s) These parameters consists of two numerical values and one or two curves: base value ,a random bias value and one or two curves. Most of the curves take emitter life or particle life as input.
 
-## Skeleton Editor
+## [Skeleton Editor](skeleton-editor)
 
 Skeleton editor can be used to edit, bones, joints, and ragdoll parameters of skeletons after importing them using resource browser. Editing Bones and Joints To edit a bone or joint, you can select the item you want from the outliner panel. This will create an Inspector of bones/joints for you to edit. All parameters are visualized and all edits will immediately be visible in the preview. Joint Properties Axis lock Axis lock limits the movement the child bone in translation space.
 
