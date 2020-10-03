@@ -14,6 +14,16 @@
         "code",
         "translation"
       ]
+    },
+    {
+      "login": "Bisstocuz",
+      "name": "Notealot",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/42398278?v=4",
+      "profile": "https://github.com/Bisstocuz",
+      "contributions": [
+        "translation",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
