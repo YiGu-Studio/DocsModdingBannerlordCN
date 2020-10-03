@@ -11,6 +11,7 @@ hide:
 ![overview](overview.png)
 
 Our proprietary game engine uses standard metallic PBR pipeline for material authoring.
+
 New materials can easily be created after navigating to a folder, right click on empty space, and select **Create > Material**.
 
 Material editor can be opened by double clicking an existing material in the resource browser.
@@ -24,17 +25,21 @@ Material editor can be opened by double clicking an existing material in the res
 ![shader](shader.png)
 
 You can select apporopriate shader from this Shader Selection widget.
+
 There are a few mainly used shaders; most important ones are pbr_metallic and pbr_shading.
 
 #### pbr_shading
 
 This shader is heavily used and exists just because our engine did not use PBR shading pipeline in the early years of development, most content was not created for PBR pipeline, so this shader is created to support our already existing content and only used during the transition phase.
+
 New content should not use this shader, instead you should use pbr_metallic.
 
 #### pbr_metallic
 
 This is what you should use most of the time. This shader uses standard metallic PBR pipeline and inputs are compatible with most texture authoring softwares.
+
 **Inputs**:
+
 Albedo and Normal: These are pretty standard, outputs of texture authoring softwares can directly be used. Specular: This texture uses its 4 channel for different purposes. Red channel contains Metallic information, Green channel contains Glossiness (inverse of Roughness), Blue channel contains Ambient Occlusion, and Alpha channel contains Translucency (for vegetation shaders only)
 
 #### grass
@@ -54,6 +59,7 @@ This shader is a derivative of pbr_metallic, and should only be used on bark par
 ![textures](textures.png)
 
 This panel is used to set input textures of shaders.
+
 Texture names are self explanatory but there are a few special cases.
 
 #### Diffuse2Map
@@ -119,6 +125,7 @@ Sets the middle value to a desired height. (Value of 0.5 in heightmap).
 ![material_flags](material_flags.png)
 
 You can enable and disable some compile time conditionals in shaders to enable/disable some effects. These are compile time flags and the Material shader will be compiled with these flags.
+
 Some important onces are:
 
 #### use_detailnormalmap
@@ -167,7 +174,9 @@ This panel is usually for technical / internal usage and mostly used to create m
 ![vector_args](vector_args.png)
 
 This panel contains two Vector Arguments. Both containing 4 real values, with a total of 8.
+
 These vector arguments are used as parameters for some special shader effects, like setting the brightness of Self Illumination, speed and direction of Texture Sweep, etc.
+
 What changes with which vector argument is really depends on the effects it is used for.
 
 ## Factor Colors
