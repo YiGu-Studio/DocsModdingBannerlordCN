@@ -6,10 +6,10 @@ hide:
 - breadcrumb
 ---
 
-For a quick guide on creating and registering modules, see Modules-Quickguide. To enter the Editor Mode, user should press Left Ctrl + E at the initial menu of Bannerlord.
+若是需要通过快速指南来建立并注册模组，请参考模组快速指南。若要进入编辑器模式，请在游戏开始菜单中按 Ctrl + E 。
 
-For further information:
+更多信息请参考：
 
-* [Asset Management](asset-management) Creating & editing a module which can contain assets, scripts, scenes and gamelogic data which is either new or an override for an existing one in the base game.    
-* [Bannerlord Missions](bannerlord-missions) Detail about how script components work, when does the callbacks get triggered and some specific script templates that Bannerlord use to create the gameplay experience.    
-* [Editor](editor) Information about how to use the scene and content editors with maximum efficency.
+* [组件资源管理](asset-management) 建立/编辑一个包含资源、脚本、场景以及游戏逻辑数据的模组，这些可以是新建的数据，也可以用于覆盖游戏内已经存在的数据。
+* [《霸主》任务系统](bannerlord-missions) 详细介绍游戏脚本组件的工作原理，何时能触发回调，以及骑砍2：领主中用来建立游戏流程（体验）的特定脚本模板。
+* [编辑器](editor) 关于编辑器的信息，引导玩家如何能最有效地使用编辑器编辑场景和内容。

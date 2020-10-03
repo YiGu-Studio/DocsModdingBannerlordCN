@@ -8,10 +8,10 @@ hide:
 weight: 10
 ---
 
-## Asset Types
+## 资源类型
 
-Adding & Overriding Assets In RGL you can easily override existing assets or create new ones within the editor for your custom mode. Override mechanism works by replacing existing assets with the one you supplied in your module’s assets directory. It tries to match your custom assets with the ones previously registered by other modules by their names. This happens with respect to loading order of the modules. If Module A and Module B are loaded in addition to the Native module respectively, list of final assets and their sources will be as follow :
+在RGL中增加/覆写资源：在RGL中您可以非常轻松地覆写任何现有的游戏资源，或在编辑器中为您自己的模组创立新资源。覆写机制通过利用现有资源的目录中自定义资源来替换现有游戏资源。它会试图将您的自定义资源与其他模组之前注册的资源的名称进行匹配。这将与模组的加载顺序有关。如果在Native模组外分别加载了模组A和模组B，最终的资源列表和其来源将如下所示：
 
-## Creating a Module - Quick Guide
+## 建立模组-快速指南
 
-Modules can contain assets ranging from meshes to physics bodies, scenes, gameplay entities like factions, lords, troops, items and scripts and behaviours that can run any gameplay logic. In this gide, the process of creating one will be explained. Creating A New Module Modules reside inside the “Modules” folder in the root directory. It must contain an XML file named SubModule.xml. This file contains basic information like “Name”, “ID” and “Version” nodes.
+模组可以包含许多类型的资源，无论是模型网格，还是物理碰撞，场景，游戏实体（包括势力，领主，军队，物品），以及脚本，游戏逻辑内的行为，等等。在本教程中将会对这些一一进行解释。通过在在骑砍2游戏下面的“Modules”文件夹下建立一个模组文件夹，可以建立一个新的模组。该文件夹必须包含名为“SubMoudule.xml”的XML文件。该XML文件必须包含像是“Name”，"ID"，"Version"节点之类的基本信息。
