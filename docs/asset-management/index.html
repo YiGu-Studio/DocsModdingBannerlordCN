@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-10-02T17:20:42 PDT">
+<meta name="revised" content="2020-10-03T01:15:14 PDT">
 <meta name="description" content="">
 
 
@@ -151,36 +151,6 @@
 
 <ul class="menu">
 
-    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/bannerlord-missions/" class="dd-item
-        item_level_$level
-        ">
-
-      
-      
-      
-      
-        
-      
-          <a href="/DocsModdingBannerlordCN/bannerlord-missions/">BANNERLORD 任务</a>
-      
-    </li>
-    
-
-    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/" class="dd-item
-        item_level_$level
-        ">
-
-      
-      
-      
-      
-        
-      
-          <a href="/DocsModdingBannerlordCN/editor/">编辑器</a>
-      
-    </li>
-    
-
     <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/" class="dd-item parent active haschildren
         item_level_$level
         ">
@@ -221,6 +191,100 @@
       
       
           <a href="/DocsModdingBannerlordCN/asset-management/asset-types/">资源类型</a>
+      
+        
+      
+    </li>
+        </ul>
+    </li>
+    
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/bannerlord-missions/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+        
+      
+          <a href="/DocsModdingBannerlordCN/bannerlord-missions/">BANNERLORD 任务</a>
+      
+    </li>
+    
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/" class="dd-item haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      <i class="fas fa-chevron-right ddexp"></i>
+        
+      
+          <a href="/DocsModdingBannerlordCN/editor/">编辑器</a>
+      
+        <ul>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/editor-shortcuts/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/editor-shortcuts/">EDITOR SHORTCUTS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/" class="dd-item haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/resource-editors/">RESOURCE EDITORS</a>
+      <i class="fas fa-chevron-right ddexp"></i>
+        
+      
+        <ul>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/material-editor/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/resource-editors/material-editor/">MATERIAL EDITOR</a>
+      
+        
+      
+    </li>
+        </ul>
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/scene-editor/">SCENE EDITOR</a>
       
         
       
@@ -283,10 +347,10 @@
 
 
 	<div class="content">
-	    <h2 ref="asset-types" >Asset Types</h2><a class="anchor" id="asset-types"></a>
-<p>Adding &amp; Overriding Assets In RGL you can easily override existing assets or create new ones within the editor for your custom mode. Override mechanism works by replacing existing assets with the one you supplied in your module’s assets directory. It tries to match your custom assets with the ones previously registered by other modules by their names. This happens with respect to loading order of the modules. If Module A and Module B are loaded in addition to the Native module respectively, list of final assets and their sources will be as follow :</p>
-<h2 ref="creating-a-module---quick-guide" >Creating a Module - Quick Guide</h2><a class="anchor" id="creating-a-module---quick-guide"></a>
-<p>Modules can contain assets ranging from meshes to physics bodies, scenes, gameplay entities like factions, lords, troops, items and scripts and behaviours that can run any gameplay logic. In this gide, the process of creating one will be explained. Creating A New Module Modules reside inside the “Modules” folder in the root directory. It must contain an XML file named SubModule.xml. This file contains basic information like “Name”, “ID” and “Version” nodes.</p>
+	    <h2 ref="资源类型" >资源类型</h2><a class="anchor" id="资源类型"></a>
+<p>在RGL中增加/覆写资源：在RGL中您可以非常轻松地覆写任何现有的游戏资源，或在编辑器中为您自己的模组创立新资源。覆写机制通过利用现有资源的目录中自定义资源来替换现有游戏资源。它会试图将您的自定义资源与其他模组之前注册的资源的名称进行匹配。这将与模组的加载顺序有关。如果在Native模组外分别加载了模组A和模组B，最终的资源列表和其来源将如下所示：</p>
+<h2 ref="建立模组-快速指南" >建立模组-快速指南</h2><a class="anchor" id="建立模组-快速指南"></a>
+<p>模组可以包含许多类型的资源，无论是模型网格，还是物理碰撞，场景，游戏实体（包括势力，领主，军队，物品），以及脚本，游戏逻辑内的行为，等等。在本教程中将会对这些一一进行解释。通过在在骑砍2游戏下面的“Modules”文件夹下建立一个模组文件夹，可以建立一个新的模组。该文件夹必须包含名为“SubMoudule.xml”的XML文件。该XML文件必须包含像是“Name”，&ldquo;ID&rdquo;，&ldquo;Version&quot;节点之类的基本信息。</p>
 
 		
 </div>

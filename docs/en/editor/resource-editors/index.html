@@ -4,7 +4,7 @@
 <html>
   <head>
     <title>
-	EDITOR :: Mount&amp;Blade Bannerlord Modding Documentation
+	RESOURCE EDITORS :: Mount&amp;Blade Bannerlord Modding Documentation
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -13,7 +13,7 @@
 
 
 
-<title>EDITOR :: Mount&amp;Blade Bannerlord Modding Documentation</title>
+<title>RESOURCE EDITORS :: Mount&amp;Blade Bannerlord Modding Documentation</title>
 
 <link rel="shortcut icon" href='/DocsModdingBannerlordCN/images/favicon.png' type="image/x-icon" />
 
@@ -53,7 +53,7 @@
     
   </head>
 
-  <body data-url="/DocsModdingBannerlordCN/en/editor/"
+  <body data-url="/DocsModdingBannerlordCN/en/editor/resource-editors/"
 
   class="hidebreadcrumb hidetoc ">
 
@@ -213,7 +213,7 @@
     </li>
     
 
-    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/" class="dd-item parent active haschildren
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/" class="dd-item parent haschildren
         item_level_$level
         ">
 
@@ -229,7 +229,7 @@
         <ul>
               
 
-    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/" class="dd-item haschildren
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/" class="dd-item parent active haschildren
         item_level_$level
         ">
 
@@ -238,7 +238,8 @@
       
       
           <a href="/DocsModdingBannerlordCN/en/editor/resource-editors/">RESOURCE EDITORS</a>
-      <i class="fas fa-chevron-right ddexp"></i>
+      
+          <i class="fas fa-chevron-down ddexp"></i>
         
       
         <ul>
@@ -312,7 +313,7 @@
 		
 
 		
-			<h1>EDITOR</h1>
+			<h1>RESOURCE EDITORS</h1>
         
 
 		
@@ -332,10 +333,20 @@
 
 
 	<div class="content">
-	    <h2 ref="resource-editorsresource-editors" ><a href="resource-editors">Resource Editors</a></h2><a class="anchor" id="resource-editorsresource-editors"></a>
-<p>Material Editor Overview Our proprietary game engine uses standard metallic PBR pipeline for material authoring. New materials can easily be created after navigating to a folder, right click on empty space, and select Create &gt; Material. Material editor can be opened by double clicking an existing material in the resource browser. Inspector Shader You can select apporopriate shader from this Shader Selection widget. There are a few mainly used shaders; most important ones are pbr_metallic and pbr_shading.</p>
-<h2 ref="scene-editorscene-editor" ><a href="scene-editor">Scene Editor</a></h2><a class="anchor" id="scene-editorscene-editor"></a>
-<p>Creating Entity Game Entities are basic building blocks of Scenes. Every mesh, light, decal, script behaviour are components of entities. Creating an empty entity In the editor, you can begin by creating a new, empty entity by using the Add Empty Entity button from tool bar, then you can attach different components for different needs. All entities can be composed of multiple components. Adding Component Component can be added from the toolbar after selecting an entity.</p>
+	    <h2 ref="material-editormaterial-editor" ><a href="material-editor">Material Editor</a></h2><a class="anchor" id="material-editormaterial-editor"></a>
+<p>Overview Our proprietary game engine uses standard metallic PBR pipeline for material authoring. New materials can easily be created after navigating to a folder, right click on empty space, and select Create &gt; Material. Material editor can be opened by double clicking an existing material in the resource browser. Inspector Shader You can select apporopriate shader from this Shader Selection widget. There are a few mainly used shaders; most important ones are pbr_metallic and pbr_shading.</p>
+<h2 ref="particle-editor" >Particle Editor</h2><a class="anchor" id="particle-editor"></a>
+<p>Parameter types Random-bias parameters These parameters consists of two numerical values: base value and a random bias value respectively. Values of this parameter are evaluated as value=base+(random value in -bias,bias range) Random-bias parameters with curve(s) These parameters consists of two numerical values and one or two curves: base value ,a random bias value and one or two curves. Most of the curves take emitter life or particle life as input.</p>
+<h2 ref="skeleton-editor" >Skeleton Editor</h2><a class="anchor" id="skeleton-editor"></a>
+<p>Skeleton editor can be used to edit, bones, joints, and ragdoll parameters of skeletons after importing them using resource browser. Editing Bones and Joints To edit a bone or joint, you can select the item you want from the outliner panel. This will create an Inspector of bones/joints for you to edit. All parameters are visualized and all edits will immediately be visible in the preview. Joint Properties Axis lock Axis lock limits the movement the child bone in translation space.</p>
+<h2 ref="cloth-simulation" >Cloth Simulation</h2><a class="anchor" id="cloth-simulation"></a>
+<p>Preparing Mesh Cloth simulation system uses alpha channels of vertices of meshes. Values in the alpha channel represents how much a vertex can move away from its original position. 0.1 of alpha means vertex can be moved 0.1 units from its original position by cloth simulation. If you set zero to alpha value that means that vertex will be fixed to its position and will not be updated by simulation.</p>
+<h2 ref="meta-mesh-editor" >Meta Mesh Editor</h2><a class="anchor" id="meta-mesh-editor"></a>
+<p>Import Settings Divide Into Grid: Divides the meta mesh into grids, and adds all the generated section meshes to the submeshes. Remove Redundant Vertices: The name implies what it does. Recompute Normals: While importing the meta mesh, computes normal vectors for all sub-meshes instead of importing them as well. Normal Computation: Decides whether the normal vector computation will depend on the face area (weighted) or not (default). Recompute Tangents: While importing the meta mesh, computes the tangent vectors for all sub-meshes instead of importing them as well.</p>
+<h2 ref="model-viewer" >Model Viewer</h2><a class="anchor" id="model-viewer"></a>
+<p>The Model Viewer can be accesed from; Editor &gt; Window &gt; Show Model Viewer From the left panel, you can change Atmosphere, hide/show ground, or add as many entities as you want. The entities can either be Human or simple Mesh. Pressing Add Entity will open a modal window for you to select the entity type. Transform From this panel, you can set entities Tranform, Rotation, and Scale. Animation From this panel, you can choose Skeleton type, and Animation.</p>
+<h2 ref="texture-editor" >Texture Editor</h2><a class="anchor" id="texture-editor"></a>
+<p>The Texture Editor can be accesed from; Editor &gt; Window &gt; Show Resource Browser &gt; ..Search for Texture.. &gt; ..Double Click on Texture.. From the Texture Inspector (Right Panel), you can enable/disable MipMap blending by toggling Use Mipmap Blending checkbox. When you enable MipMap Blending, you will see all mip levels of the selected texture next to each other in Preview Window. Clicking on MipMap Blend Amounts will open open a new window where you can adjust blend amounts for every mip level.</p>
 
 		
 </div>
@@ -347,10 +358,10 @@
 
 	 
 	<div class="chevrons">
-		<a class="next" href="/DocsModdingBannerlordCN/en/editor/resource-editors/" title="RESOURCE EDITORS" style="margin-right: 0px;">
+		<a class="next" href="/DocsModdingBannerlordCN/en/editor/resource-editors/material-editor/" title="MATERIAL EDITOR" style="margin-right: 0px;">
             <div>
                 <p>Next page</p>
-                <label>RESOURCE EDITORS</label>
+                <label>MATERIAL EDITOR</label>
             </div>
             <i class="fas fa-arrow-right" style="font-size: 1.7em"></i></a>
 	</div>

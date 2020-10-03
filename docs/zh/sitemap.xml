@@ -3,6 +3,20 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/"
+                />
+  </url>
+  
+  <url>
     <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/bannerlord-missions/</loc>
     <xhtml:link
                 rel="alternate"
@@ -17,6 +31,20 @@
   </url>
   
   <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/"
+                />
+  </url>
+  
+  <url>
     <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -27,6 +55,52 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://yigu-studio.github.io/DocsModdingBannerlordCN/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/editor-shortcuts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/material-editor/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/material-editor/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/material-editor/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/"
                 />
   </url>
   
@@ -55,34 +129,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/quick-guides/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/"
                 />
   </url>
   
