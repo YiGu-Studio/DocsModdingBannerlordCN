@@ -4,7 +4,7 @@
 <html>
   <head>
     <title>
-	ASSET TYPES :: Mount&amp;Blade Bannerlord Modding Documentation
+	RESOURCE EDITORS :: Mount&amp;Blade Bannerlord Modding Documentation
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -13,7 +13,7 @@
 
 
 
-<title>ASSET TYPES :: Mount&amp;Blade Bannerlord Modding Documentation</title>
+<title>RESOURCE EDITORS :: Mount&amp;Blade Bannerlord Modding Documentation</title>
 
 <link rel="shortcut icon" href='/DocsModdingBannerlordCN/images/favicon.png' type="image/x-icon" />
 
@@ -53,7 +53,7 @@
     
   </head>
 
-  <body data-url="/DocsModdingBannerlordCN/en/asset-management/asset-types/"
+  <body data-url="/DocsModdingBannerlordCN/en/editor/resource-editors/"
 
   class="hidebreadcrumb hidetoc ">
 
@@ -151,15 +151,14 @@
 
 <ul class="menu">
 
-    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/" class="dd-item parent haschildren
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/" class="dd-item haschildren
         item_level_$level
         ">
 
       
       
       
-      
-          <i class="fas fa-chevron-down ddexp"></i>
+      <i class="fas fa-chevron-right ddexp"></i>
         
       
           <a href="/DocsModdingBannerlordCN/en/asset-management/">ASSET MANAGEMENT</a>
@@ -167,7 +166,7 @@
         <ul>
               
 
-    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/" class="dd-item parent active
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/" class="dd-item
         item_level_$level
         ">
 
@@ -214,14 +213,15 @@
     </li>
     
 
-    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/" class="dd-item haschildren
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/" class="dd-item parent haschildren
         item_level_$level
         ">
 
       
       
       
-      <i class="fas fa-chevron-right ddexp"></i>
+      
+          <i class="fas fa-chevron-down ddexp"></i>
         
       
           <a href="/DocsModdingBannerlordCN/en/editor/">EDITOR</a>
@@ -229,7 +229,7 @@
         <ul>
               
 
-    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/" class="dd-item haschildren
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/" class="dd-item parent active haschildren
         item_level_$level
         ">
 
@@ -238,7 +238,8 @@
       
       
           <a href="/DocsModdingBannerlordCN/en/editor/resource-editors/">RESOURCE EDITORS</a>
-      <i class="fas fa-chevron-right ddexp"></i>
+      
+          <i class="fas fa-chevron-down ddexp"></i>
         
       
         <ul>
@@ -312,7 +313,7 @@
 		
 
 		
-			<h1>ASSET TYPES</h1>
+			<h1>RESOURCE EDITORS</h1>
         
 
 		
@@ -332,26 +333,20 @@
 
 
 	<div class="content">
-	    <h2 ref="adding--overriding-assets" >Adding &amp; Overriding Assets</h2><a class="anchor" id="adding--overriding-assets"></a>
-<p>In RGL you can easily override existing assets or create new ones within the editor for your custom mode. Override mechanism works by replacing existing assets with the one you supplied in your module’s assets directory. It tries to match your custom assets with the ones previously registered by other modules by their names. This happens with respect to loading order of the modules. If Module A and Module B are loaded in addition to the Native module respectively, list of final assets and their sources will be as follow :</p>
-<h2 ref="bodies" >Bodies</h2><a class="anchor" id="bodies"></a>
-<p>Bodies define the physics boundaries of objects. They can be assigned to entities in scenes or prefabs. Users can edit the Body Flags to change their behaviour. Body Flags Two Sided: Forces the physics engine to use both sides of the polygons for this body. AI Limiter: Used to tag bodies which will only used against AI agents, excluding the player. Destructible Door: Used by the automatic navigation mesh generator to not put nav mesh under destructable doors.</p>
-<h2 ref="entities--prefabs" >Entities &amp; Prefabs</h2><a class="anchor" id="entities--prefabs"></a>
-<p>In RGL, entities are containers for all of the meshes, particles, script components, occluders and physics objects. They can also contain other entities as children. They have their own transformation that determines their position, scale and rotation in the world. Prefabs Prefabs are template entities which do not sever the connection to the prefab even after it is saved in a scene. Complex entities can be constructed one time and saved as a prefab to be used at any time, in any scene.</p>
-<h2 ref="materials" >Materials</h2><a class="anchor" id="materials"></a>
-<p>Materials define the rendering characteristics of meshes. They contain the shader and texture information, also the rendering flags (defined from by shader and the global ones). A mesh can have a single material. The initial value of a mesh’s material will be assigned through it’s given material name in the 3rd party mesh editing applications. Materials can be created and edited through the Material Browser which can be accessed through the Resource Browser.</p>
-<h2 ref="meshes" >Meshes</h2><a class="anchor" id="meshes"></a>
-<p>Meshes contain the polygon positions and attributes to be used at the rendering pass. Every mesh has one material that defines their rendering behaviour. They are grouped inside MetaMesh’s by their LOD level. Also, at the same LOD level, there can be multiple meshes with different materials. More information about importing meshes to the engine can be found at Material Editor. LOD System Modern engines use LOD(level of detail) systems to ensure that the amount of GPU share used by the closer parts of the screen is more than the far ones.</p>
-<h2 ref="naming-conventions" >Naming Conventions</h2><a class="anchor" id="naming-conventions"></a>
-<p>To distinguish and organize assets and simplfy asset authoring process there are some predefined rules to consider. Meshes All meshes imported from a single geometry file(e.g. fbx) are grouped by their names. To add a LOD mesh simply append ”.lod<!-- raw HTML omitted -->“ to the name of your mesh. Here n is the number of lod. Consider an fbx file as below : asset.fbx : wall_damaged wall_damaged_v2 wall_damaged_v2.lod1 wall_damaged.lod1 wall_damaged.lod2 Two meshes will be imported from asset.</p>
-<h2 ref="overriding-scenes-and-prefabs" >Overriding Scenes and Prefabs</h2><a class="anchor" id="overriding-scenes-and-prefabs"></a>
-<p>You can override existing scenes and prefabs by creating new one with the same name. You should keep in mind that overriding prefabs may break existing scripts if you change entity hierarchy. Make sure you preserve entity hierarchy to avoid possible breaking errors if your entity is being used by existing scripts. Prefabs Prefab definitions are stored in xml files located in Prefabs folder in each module’s directory.</p>
-<h2 ref="paths" >Paths</h2><a class="anchor" id="paths"></a>
-<p>In RGL, ‘Paths’ are used to define continous points within a scene. They have unique names and can be used by the gameplay logic for different reasons. Paths define how the siege engines move in missions. Also, for field battle missions, initial spawn point candidates are defined via a path. The spawn logic selects two positions for the teams with respect to the size of the battle. Detailed information about path editing can be found at Path Editing.</p>
-<h2 ref="scripts" >Scripts</h2><a class="anchor" id="scripts"></a>
-<p>Script components are executable scripts that are attached to entities and can be used to implement various gameplay functionalities. In Bannerlord, many gameplay logic are written via script components. For example chairs, dropped weapon, siege machines. There are many different callbacks that can be inherited and filled in these script components. Callbacks Constructor: In constructor one needs to assign default values to its public variables(variables which can be changed by the scene maker).</p>
-<h2 ref="textures" >Textures</h2><a class="anchor" id="textures"></a>
-<p>Textures can be imported through the Asset Browser. They can be assigned to materials via the Material Editor. The texture slots of the PBR materials can be found at Material Editor. The maximum value for the terrain textures’ resolution is 2048 by 2048.</p>
+	    <h2 ref="material-editormaterial-editor" ><a href="material-editor">Material Editor</a></h2><a class="anchor" id="material-editormaterial-editor"></a>
+<p>Overview Our proprietary game engine uses standard metallic PBR pipeline for material authoring. New materials can easily be created after navigating to a folder, right click on empty space, and select Create &gt; Material. Material editor can be opened by double clicking an existing material in the resource browser. Inspector Shader You can select apporopriate shader from this Shader Selection widget. There are a few mainly used shaders; most important ones are pbr_metallic and pbr_shading.</p>
+<h2 ref="particle-editor" >Particle Editor</h2><a class="anchor" id="particle-editor"></a>
+<p>Parameter types Random-bias parameters These parameters consists of two numerical values: base value and a random bias value respectively. Values of this parameter are evaluated as value=base+(random value in -bias,bias range) Random-bias parameters with curve(s) These parameters consists of two numerical values and one or two curves: base value ,a random bias value and one or two curves. Most of the curves take emitter life or particle life as input.</p>
+<h2 ref="skeleton-editor" >Skeleton Editor</h2><a class="anchor" id="skeleton-editor"></a>
+<p>Skeleton editor can be used to edit, bones, joints, and ragdoll parameters of skeletons after importing them using resource browser. Editing Bones and Joints To edit a bone or joint, you can select the item you want from the outliner panel. This will create an Inspector of bones/joints for you to edit. All parameters are visualized and all edits will immediately be visible in the preview. Joint Properties Axis lock Axis lock limits the movement the child bone in translation space.</p>
+<h2 ref="cloth-simulation" >Cloth Simulation</h2><a class="anchor" id="cloth-simulation"></a>
+<p>Preparing Mesh Cloth simulation system uses alpha channels of vertices of meshes. Values in the alpha channel represents how much a vertex can move away from its original position. 0.1 of alpha means vertex can be moved 0.1 units from its original position by cloth simulation. If you set zero to alpha value that means that vertex will be fixed to its position and will not be updated by simulation.</p>
+<h2 ref="meta-mesh-editor" >Meta Mesh Editor</h2><a class="anchor" id="meta-mesh-editor"></a>
+<p>Import Settings Divide Into Grid: Divides the meta mesh into grids, and adds all the generated section meshes to the submeshes. Remove Redundant Vertices: The name implies what it does. Recompute Normals: While importing the meta mesh, computes normal vectors for all sub-meshes instead of importing them as well. Normal Computation: Decides whether the normal vector computation will depend on the face area (weighted) or not (default). Recompute Tangents: While importing the meta mesh, computes the tangent vectors for all sub-meshes instead of importing them as well.</p>
+<h2 ref="model-viewer" >Model Viewer</h2><a class="anchor" id="model-viewer"></a>
+<p>The Model Viewer can be accesed from; Editor &gt; Window &gt; Show Model Viewer From the left panel, you can change Atmosphere, hide/show ground, or add as many entities as you want. The entities can either be Human or simple Mesh. Pressing Add Entity will open a modal window for you to select the entity type. Transform From this panel, you can set entities Tranform, Rotation, and Scale. Animation From this panel, you can choose Skeleton type, and Animation.</p>
+<h2 ref="texture-editor" >Texture Editor</h2><a class="anchor" id="texture-editor"></a>
+<p>The Texture Editor can be accesed from; Editor &gt; Window &gt; Show Resource Browser &gt; ..Search for Texture.. &gt; ..Double Click on Texture.. From the Texture Inspector (Right Panel), you can enable/disable MipMap blending by toggling Use Mipmap Blending checkbox. When you enable MipMap Blending, you will see all mip levels of the selected texture next to each other in Preview Window. Clicking on MipMap Blend Amounts will open open a new window where you can adjust blend amounts for every mip level.</p>
 
 		
 </div>
@@ -363,10 +358,10 @@
 
 	 
 	<div class="chevrons">
-		<a class="next" href="/DocsModdingBannerlordCN/en/asset-management/quick-guides/" title="Creating a Module - Quick Guide" style="margin-right: 0px;">
+		<a class="next" href="/DocsModdingBannerlordCN/en/editor/resource-editors/material-editor/" title="MATERIAL EDITOR" style="margin-right: 0px;">
             <div>
                 <p>Next page</p>
-                <label>Creating a Module - Quick Guide</label>
+                <label>MATERIAL EDITOR</label>
             </div>
             <i class="fas fa-arrow-right" style="font-size: 1.7em"></i></a>
 	</div>
