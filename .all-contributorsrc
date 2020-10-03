@@ -24,6 +24,15 @@
         "translation",
         "review"
       ]
+    },
+    {
+      "login": "Hallavan",
+      "name": "Hallavan",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/24261040?v=4",
+      "profile": "https://github.com/Hallavan",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,
