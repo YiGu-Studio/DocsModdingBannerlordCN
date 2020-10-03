@@ -4,6 +4,8 @@ title: "编辑器"
 hide: 
 - toc
 - breadcrumb
+
+weight: 30
 ---
 
 ## Resource Editors

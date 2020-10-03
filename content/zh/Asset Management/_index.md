@@ -4,6 +4,8 @@ title: "资源管理"
 hide: 
 - toc
 - breadcrumb
+
+weight: 10
 ---
 
 ## Asset Types
