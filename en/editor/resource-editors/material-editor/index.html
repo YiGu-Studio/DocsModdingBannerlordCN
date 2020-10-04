@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-10-03T19:35:53 UTC">
+<meta name="revised" content="2020-10-04T01:37:17 UTC">
 <meta name="description" content="">
 
 
@@ -258,11 +258,71 @@
         
       
     </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/meta-mesh-editor/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/resource-editors/meta-mesh-editor/">META MESH EDITOR</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/model-viewer/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/resource-editors/model-viewer/">MODEL VIEWER</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/skeleton-editor/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/resource-editors/skeleton-editor/">SKELETON EDITOR</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/texture-editor/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/resource-editors/texture-editor/">TEXTURE EDITOR</a>
+      
+        
+      
+    </li>
         </ul>
     </li>
               
 
-    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/" class="dd-item
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/" class="dd-item haschildren
         item_level_$level
         ">
 
@@ -271,9 +331,56 @@
       
       
           <a href="/DocsModdingBannerlordCN/en/editor/scene-editor/">SCENE EDITOR</a>
+      <i class="fas fa-chevron-right ddexp"></i>
+        
+      
+        <ul>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/creating-entity/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/scene-editor/creating-entity/">CREATING ENTITY</a>
       
         
       
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/path-editing/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/scene-editor/path-editing/">PATH EDITING</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/terrain-creation/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/scene-editor/terrain-creation/">TERRAIN CREATION</a>
+      
+        
+      
+    </li>
+        </ul>
     </li>
         </ul>
     </li>
@@ -335,22 +442,22 @@
 	<div class="content">
 	    <h2 ref="overview" >Overview</h2><a class="anchor" id="overview"></a>
 <p><img src="overview.png" alt="overview"></p>
-<p>Our proprietary game engine uses standard metallic PBR pipeline for material authoring.
-New materials can easily be created after navigating to a folder, right click on empty space, and select <strong>Create &gt; Material</strong>.</p>
+<p>Our proprietary game engine uses standard metallic PBR pipeline for material authoring.</p>
+<p>New materials can easily be created after navigating to a folder, right click on empty space, and select <strong>Create &gt; Material</strong>.</p>
 <p>Material editor can be opened by double clicking an existing material in the resource browser.</p>
 <p><img src="create_new.png" alt="create_new"></p>
 <h2 ref="inspector" >Inspector</h2><a class="anchor" id="inspector"></a>
 <h4 ref="shader" >Shader</h4><a class="anchor" id="shader"></a>
 <p><img src="shader.png" alt="shader"></p>
-<p>You can select apporopriate shader from this Shader Selection widget.
-There are a few mainly used shaders; most important ones are pbr_metallic and pbr_shading.</p>
+<p>You can select apporopriate shader from this Shader Selection widget.</p>
+<p>There are a few mainly used shaders; most important ones are pbr_metallic and pbr_shading.</p>
 <h4 ref="pbr_shading" >pbr_shading</h4><a class="anchor" id="pbr_shading"></a>
-<p>This shader is heavily used and exists just because our engine did not use PBR shading pipeline in the early years of development, most content was not created for PBR pipeline, so this shader is created to support our already existing content and only used during the transition phase.
-New content should not use this shader, instead you should use pbr_metallic.</p>
+<p>This shader is heavily used and exists just because our engine did not use PBR shading pipeline in the early years of development, most content was not created for PBR pipeline, so this shader is created to support our already existing content and only used during the transition phase.</p>
+<p>New content should not use this shader, instead you should use pbr_metallic.</p>
 <h4 ref="pbr_metallic" >pbr_metallic</h4><a class="anchor" id="pbr_metallic"></a>
-<p>This is what you should use most of the time. This shader uses standard metallic PBR pipeline and inputs are compatible with most texture authoring softwares.
-<strong>Inputs</strong>:
-Albedo and Normal: These are pretty standard, outputs of texture authoring softwares can directly be used. Specular: This texture uses its 4 channel for different purposes. Red channel contains Metallic information, Green channel contains Glossiness (inverse of Roughness), Blue channel contains Ambient Occlusion, and Alpha channel contains Translucency (for vegetation shaders only)</p>
+<p>This is what you should use most of the time. This shader uses standard metallic PBR pipeline and inputs are compatible with most texture authoring softwares.</p>
+<p><strong>Inputs</strong>:</p>
+<p>Albedo and Normal: These are pretty standard, outputs of texture authoring softwares can directly be used. Specular: This texture uses its 4 channel for different purposes. Red channel contains Metallic information, Green channel contains Glossiness (inverse of Roughness), Blue channel contains Ambient Occlusion, and Alpha channel contains Translucency (for vegetation shaders only)</p>
 <h4 ref="grass" >grass</h4><a class="anchor" id="grass"></a>
 <p>This shader is a derivative of pbr_metallic, and should only be used on grass meshes. Contains special effects like wind animation, sway animation, smooth LOD transition, color multiplication from terrain, etc.</p>
 <h4 ref="flora_leaf" >flora_leaf</h4><a class="anchor" id="flora_leaf"></a>
@@ -359,8 +466,8 @@ Albedo and Normal: These are pretty standard, outputs of texture authoring softw
 <p>This shader is a derivative of pbr_metallic, and should only be used on bark parts of trees / bushes. Contains special effects like wind animation, smooth LOD transition, etc.</p>
 <h2 ref="textures" >Textures</h2><a class="anchor" id="textures"></a>
 <p><img src="textures.png" alt="textures"></p>
-<p>This panel is used to set input textures of shaders.
-Texture names are self explanatory but there are a few special cases.</p>
+<p>This panel is used to set input textures of shaders.</p>
+<p>Texture names are self explanatory but there are a few special cases.</p>
 <h4 ref="diffuse2map" >Diffuse2Map</h4><a class="anchor" id="diffuse2map"></a>
 <p>This input is used internally by engine to create special effects / blendings like Shield Banner Paintings, Banner texture in this slot will only appear where Diffuse 1 Texture contains alpha. Usage of this texture really depends on the shader used.</p>
 <h4 ref="detailnormalmap" >DetailNormalMap</h4><a class="anchor" id="detailnormalmap"></a>
@@ -392,8 +499,8 @@ Texture names are self explanatory but there are a few special cases.</p>
 <p>Sets the middle value to a desired height. (Value of 0.5 in heightmap).</p>
 <h2 ref="material-shader-flags" >Material Shader Flags</h2><a class="anchor" id="material-shader-flags"></a>
 <p><img src="material_flags.png" alt="material_flags"></p>
-<p>You can enable and disable some compile time conditionals in shaders to enable/disable some effects. These are compile time flags and the Material shader will be compiled with these flags.
-Some important onces are:</p>
+<p>You can enable and disable some compile time conditionals in shaders to enable/disable some effects. These are compile time flags and the Material shader will be compiled with these flags.</p>
+<p>Some important onces are:</p>
 <h4 ref="use_detailnormalmap" >use_detailnormalmap</h4><a class="anchor" id="use_detailnormalmap"></a>
 <p>This flag should be enabled to utilize Detail Normal Map feature.</p>
 <h4 ref="alpha_test" >alpha_test</h4><a class="anchor" id="alpha_test"></a>
@@ -417,9 +524,9 @@ Multi Pass Alpha feature can also be enabled here. This technique renders the me
 <p>This panel is usually for technical / internal usage and mostly used to create materials for core engine features.</p>
 <h2 ref="vector-arguments" >Vector Arguments</h2><a class="anchor" id="vector-arguments"></a>
 <p><img src="vector_args.png" alt="vector_args"></p>
-<p>This panel contains two Vector Arguments. Both containing 4 real values, with a total of 8.
-These vector arguments are used as parameters for some special shader effects, like setting the brightness of Self Illumination, speed and direction of Texture Sweep, etc.
-What changes with which vector argument is really depends on the effects it is used for.</p>
+<p>This panel contains two Vector Arguments. Both containing 4 real values, with a total of 8.</p>
+<p>These vector arguments are used as parameters for some special shader effects, like setting the brightness of Self Illumination, speed and direction of Texture Sweep, etc.</p>
+<p>What changes with which vector argument is really depends on the effects it is used for.</p>
 <h2 ref="factor-colors" >Factor Colors</h2><a class="anchor" id="factor-colors"></a>
 <p><img src="factor_color.png" alt="factor_color"></p>
 <p>These colors are multiplied with internal Factor Color on meshes that are usually changed using gameplay code. If you really want some texture to be slightly darker, greener etc. you can multiply them using this panel.</p>
@@ -445,10 +552,10 @@ What changes with which vector argument is really depends on the effects it is u
 
 	 
 	<div class="chevrons">
-		<a class="next" href="/DocsModdingBannerlordCN/en/editor/scene-editor/" title="SCENE EDITOR" style="margin-right: 0px;">
+		<a class="next" href="/DocsModdingBannerlordCN/en/editor/resource-editors/meta-mesh-editor/" title="META MESH EDITOR" style="margin-right: 0px;">
             <div>
                 <p>Next page</p>
-                <label>SCENE EDITOR</label>
+                <label>META MESH EDITOR</label>
             </div>
             <i class="fas fa-arrow-right" style="font-size: 1.7em"></i></a>
 	</div>

@@ -73,6 +73,20 @@
   </url>
   
   <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/creating-entity/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/creating-entity/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/creating-entity/"
+                />
+  </url>
+  
+  <url>
     <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/</loc>
     <xhtml:link
                 rel="alternate"
@@ -97,6 +111,48 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/material-editor/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/meta-mesh-editor/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/meta-mesh-editor/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/meta-mesh-editor/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/model-viewer/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/model-viewer/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/model-viewer/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/path-editing/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/path-editing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/path-editing/"
                 />
   </url>
   
@@ -129,6 +185,20 @@
   </url>
   
   <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/skeleton-editor/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/skeleton-editor/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/skeleton-editor/"
+                />
+  </url>
+  
+  <url>
     <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -139,6 +209,34 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/terrain-creation/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/terrain-creation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/terrain-creation/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/texture-editor/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/texture-editor/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/texture-editor/"
                 />
   </url>
   
