@@ -129,6 +129,10 @@
   </url>
   
   <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/bannerlord-missions/destructible-component/</loc>
+  </url>
+  
+  <url>
     <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/</loc>
     <xhtml:link
                 rel="alternate"
@@ -218,6 +222,10 @@
                 hreflang="en"
                 href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/meta-mesh-editor/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/bannerlord-missions/mission-tactical-positions/</loc>
   </url>
   
   <url>
@@ -331,6 +339,10 @@
   </url>
   
   <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/bannerlord-missions/scene-barrier-builder/</loc>
+  </url>
+  
+  <url>
     <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/</loc>
     <xhtml:link
                 rel="alternate"
@@ -342,6 +354,14 @@
                 hreflang="en"
                 href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/bannerlord-missions/scene-spawn-point-guide/</loc>
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/bannerlord-missions/script-component-callbacks/</loc>
   </url>
   
   <url>
@@ -370,6 +390,10 @@
                 hreflang="en"
                 href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/skeleton-editor/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/bannerlord-missions/spawn-point-debug-tool/</loc>
   </url>
   
   <url>
