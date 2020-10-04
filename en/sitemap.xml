@@ -59,6 +59,20 @@
   </url>
   
   <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/cloth-simulation/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/cloth-simulation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/cloth-simulation/"
+                />
+  </url>
+  
+  <url>
     <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/quick-guides/</loc>
     <xhtml:link
                 rel="alternate"
@@ -139,6 +153,20 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/model-viewer/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/particle-editor/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/particle-editor/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/particle-editor/"
                 />
   </url>
   
