@@ -2,7 +2,7 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 <!-- ?style=flat-square -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg)](#contributors-)
-![Deploy Badge](https://github.com/YiGu-Studio/DocsModdingBannerlordCN/workflows/github%20pages%20Hugo%20Deploy/badge.svg)
+![Deploy Badge](https://github.com/YiGu-Studio/DocsModdingBannerlordCN/workflows/GitHub%20Page%20Deploy/badge.svg)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
