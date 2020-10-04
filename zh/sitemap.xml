@@ -45,6 +45,34 @@
   </url>
   
   <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/overriding-assets/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/overriding-assets/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/overriding-assets/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/bodies/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/bodies/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/bodies/"
+                />
+  </url>
+  
+  <url>
     <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -91,6 +119,20 @@
   </url>
   
   <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/prefabs/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/prefabs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/prefabs/"
+                />
+  </url>
+  
+  <url>
     <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/material-editor/</loc>
     <xhtml:link
                 rel="alternate"
@@ -101,6 +143,34 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/material-editor/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/materials/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/materials/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/materials/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/meshes/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/meshes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/meshes/"
                 />
   </url>
   
@@ -133,6 +203,34 @@
   </url>
   
   <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/asset-naming-conventions/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/asset-naming-conventions/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/asset-naming-conventions/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/overriding-scenes-prefabs/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/overriding-scenes-prefabs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/overriding-scenes-prefabs/"
+                />
+  </url>
+  
+  <url>
     <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/particle-editor/</loc>
     <xhtml:link
                 rel="alternate"
@@ -161,6 +259,20 @@
   </url>
   
   <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/path/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/path/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/path/"
+                />
+  </url>
+  
+  <url>
     <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/</loc>
     <xhtml:link
                 rel="alternate"
@@ -185,6 +297,20 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/scripts/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/scripts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/scripts/"
                 />
   </url>
   
@@ -241,6 +367,20 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/texture-editor/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/textures/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/textures/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/textures/"
                 />
   </url>
   
