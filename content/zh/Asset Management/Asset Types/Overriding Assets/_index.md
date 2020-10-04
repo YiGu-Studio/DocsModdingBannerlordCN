@@ -77,8 +77,7 @@ By following these rules you can export a new geometry file(e.g. fbx) which cont
 
 Overriding textures is very similar to materials. You need to import a new texture with the same name of the texture you want to override. You can also rename any texture already imported to something that matches with the name of the texture to override.
 
-{{% panel footer="
-Existing albedo texture with name **roman_ground_d** overriden by ModuleA with a white texture" %}}![texture](texture_override.png){{% /panel %}}
+{{% panel footer="Existing albedo texture with name **roman_ground_d** overriden by ModuleA with a white texture" %}}![texture](texture_override.png){{% /panel %}}
 
 ## Overriding Physics Shapes
 
