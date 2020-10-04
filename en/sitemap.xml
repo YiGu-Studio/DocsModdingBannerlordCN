@@ -157,6 +157,14 @@
   </url>
   
   <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/entity-inspector/</loc>
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/mass-selection/</loc>
+  </url>
+  
+  <url>
     <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/material-editor/</loc>
     <xhtml:link
                 rel="alternate"
@@ -241,6 +249,10 @@
   </url>
   
   <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/nav-mesh-inspector/</loc>
+  </url>
+  
+  <url>
     <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/overriding-scenes-prefabs/</loc>
     <xhtml:link
                 rel="alternate"
@@ -294,6 +306,14 @@
                 hreflang="en"
                 href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/path/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/prt/</loc>
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/terrain-resize/</loc>
   </url>
   
   <url>
@@ -378,6 +398,10 @@
                 hreflang="en"
                 href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/terrain-creation/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/terrain-mesh-blend/</loc>
   </url>
   
   <url>
