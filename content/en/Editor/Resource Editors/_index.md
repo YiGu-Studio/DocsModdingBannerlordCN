@@ -12,7 +12,7 @@ hide:
 
 Overview Our proprietary game engine uses standard metallic PBR pipeline for material authoring. New materials can easily be created after navigating to a folder, right click on empty space, and select Create > Material. Material editor can be opened by double clicking an existing material in the resource browser. Inspector Shader You can select apporopriate shader from this Shader Selection widget. There are a few mainly used shaders; most important ones are pbr_metallic and pbr_shading.
 
-## Particle Editor
+## [Particle Editor](particle-editor)
 
 Parameter types Random-bias parameters These parameters consists of two numerical values: base value and a random bias value respectively. Values of this parameter are evaluated as value=base+(random value in -bias,bias range) Random-bias parameters with curve(s) These parameters consists of two numerical values and one or two curves: base value ,a random bias value and one or two curves. Most of the curves take emitter life or particle life as input.
 
@@ -20,7 +20,7 @@ Parameter types Random-bias parameters These parameters consists of two numerica
 
 Skeleton editor can be used to edit, bones, joints, and ragdoll parameters of skeletons after importing them using resource browser. Editing Bones and Joints To edit a bone or joint, you can select the item you want from the outliner panel. This will create an Inspector of bones/joints for you to edit. All parameters are visualized and all edits will immediately be visible in the preview. Joint Properties Axis lock Axis lock limits the movement the child bone in translation space.
 
-## Cloth Simulation
+## [Cloth Simulation](cloth-simulation)
 
 Preparing Mesh Cloth simulation system uses alpha channels of vertices of meshes. Values in the alpha channel represents how much a vertex can move away from its original position. 0.1 of alpha means vertex can be moved 0.1 units from its original position by cloth simulation. If you set zero to alpha value that means that vertex will be fixed to its position and will not be updated by simulation.
 
