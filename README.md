@@ -1,8 +1,6 @@
 # DocsModdingBannerlordCN
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<!-- ?style=flat-square -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg)](#contributors-)
-![Deploy Badge](https://github.com/YiGu-Studio/DocsModdingBannerlordCN/workflows/GitHub%20Page%20Deploy/badge.svg)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -21,6 +19,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/Bisstocuz"><img src="https://avatars3.githubusercontent.com/u/42398278?v=4" width="100px;" alt=""/><br /><sub><b>Notealot</b></sub></a><br /><a href="#translation-Bisstocuz" title="Translation">🌍</a> <a href="https://github.com/YiGu-Studio/DocsModdingBannerlordCN/pulls?q=is%3Apr+reviewed-by%3ABisstocuz" title="Reviewed Pull Requests">👀</a></td>
     <td align="center"><a href="https://github.com/Hallavan"><img src="https://avatars2.githubusercontent.com/u/24261040?v=4" width="100px;" alt=""/><br /><sub><b>Hallavan</b></sub></a><br /><a href="#translation-Hallavan" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/Yuxuan1993"><img src="https://avatars1.githubusercontent.com/u/3432535?v=4" width="100px;" alt=""/><br /><sub><b>Yuxuan1993</b></sub></a><br /><a href="#translation-Yuxuan1993" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://github.com/tanjiarui15"><img src="https://avatars3.githubusercontent.com/u/20656904?v=4" width="100px;" alt=""/><br /><sub><b>singleDog</b></sub></a><br /><a href="#translation-tanjiarui15" title="Translation">🌍</a></td>
   </tr>
 </table>
 
