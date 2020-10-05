@@ -32,10 +32,10 @@ If the lock icon is in unlocked state, every scale component can be changed inde
 
 All of the transformation can also be done using Gizmo. Gizmo can be activated by selecting an entity (or multiple entities) and pressing one of the hotkeys below.
 
-|ROTATE|TRANSLATE|SCALE|
-|-|-|-|
-|Hotkey: R	|Hotkey: T	|Hotkey: Y|
-|![rotate](gizmo_rotate.png)|![translate](gizmo_translate.png)|![gizmo](gizmo_scale.png)|
+| ROTATE                      | TRANSLATE                         | SCALE                     |
+| --------------------------- | --------------------------------- | ------------------------- |
+| Hotkey: R                   | Hotkey: T                         | Hotkey: Y                 |
+| ![rotate](gizmo_rotate.png) | ![translate](gizmo_translate.png) | ![gizmo](gizmo_scale.png) |
 
 ### Transform spaces
 
@@ -43,7 +43,7 @@ Gizmo can work in three different spaces; [**World**](#world-space) space, [**Lo
 
 #### World space
 
-World coordinates is just a fixed, parent coordinate system. This is the global coordinate system that everything is defined relative to. World Coordinate has a fixed \[1, 0, 0\] in the <font color=#FF0000>X</font> direction, \[0, 1, 0\] in the <font color=#00FF00>Y</font> direction, and \[0, 0, 1\] in the <font color=#0000FF>Z</font> direction.
+World coordinates is just a fixed, parent coordinate system. This is the global coordinate system that everything is defined relative to. World Coordinate has a fixed \[1, 0, 0\] in the {{< raw-html >}}<font color=#FF0000>X</font>{{< /raw-html >}} direction, \[0, 1, 0\] in the {{< raw-html >}}<font color=#00FF00>Y</font>{{< /raw-html >}} direction, and \[0, 0, 1\] in the {{< raw-html >}}<font color=#0000FF>Z</font>{{< /raw-html >}} direction.
 
 #### Local space
 
@@ -51,7 +51,7 @@ Local coordinates are relative to the entity itself, every transform is defined 
 
 #### Screen space
 
-Screen space coordinates are relative to the camera. Right of your viewport is always the <font color=#FF0000>X</font> axis, Top is always the <font color=#00FF00>Y</font> axis, and forward is always the <font color=#0000FF>-Z</font> (minus Z) axis.
+Screen space coordinates are relative to the camera. Right of your viewport is always the {{< raw-html >}}<font color=#FF0000>X</font>{{< /raw-html >}} axis, Top is always the {{< raw-html >}}<font color=#00FF00>Y</font>{{< /raw-html >}} axis, and forward is always the {{< raw-html >}}<font color=#0000FF>-Z</font>{{< /raw-html >}} (minus Z) axis.
 
 ## Entity Tag System
 
@@ -68,4 +68,3 @@ After clicking on the “Add New Tag” button, from the dropdown menu in the wi
 ### A Special Case: Prefabs
 
 If you are modifying a prefab entity, adding tags to the prefab does not break it. In other words, if you change the prefab after tagging the prefab entity in the scene, the scene entity will have all the changes as well. The tags are stored in the xml files with “&lt; tags &gt;… &lt; / tags &gt;” syntax. (without the white spaces between characters)
-

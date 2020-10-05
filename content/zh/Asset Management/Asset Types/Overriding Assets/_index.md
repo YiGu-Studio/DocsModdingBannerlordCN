@@ -7,12 +7,13 @@ hide:
 ---
 
 In RGL you can easily override existing assets or create new ones within the editor for your custom mode. Override mechanism works by replacing existing assets with the one you supplied in your module’s assets directory. It tries to match your custom assets with the ones previously registered by other modules by their names. This happens with respect to loading order of the modules.
-&ensp;
+
+
 If **Module A** and **Module B** are loaded in addition to the **Native** module respectively, list of final assets and their sources will be as follow:
 
-| NATIVE                                                             | MODULE A                                                       | MODULE B                                        | RESULT                                                                                                                       |
-| ------------------------------------------------------------------ | -------------------------------------------------------------- | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| adobe_wall<br />tarnished_metal<br />ground_mud<br />marble<br />- | adobe_wall<br />tarnished_metal<br />-<br />-<br />metal_plate | adobe_wall<br />-<br />ground_mud<br />-<br />- | Module B::adobe_wall<br />Module A::tarnished_metal<br />Module B::ground_mud<br />Native::marble<br />Module A::metal_plate |
+| NATIVE                                                                                                                                                                                         | MODULE A                                                                                                                                                                                   | MODULE B                                                                                                                                                                    | RESULT                                                                                                                                                                                                                                                   |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| adobe_wall{{< raw-html >}}<br>{{< /raw-html >}}tarnished_metal{{< raw-html >}}<br>{{< /raw-html >}}ground_mud{{< raw-html >}}<br>{{< /raw-html >}}marble{{< raw-html >}}<br>{{< /raw-html >}}- | adobe_wall{{< raw-html >}}<br>{{< /raw-html >}}tarnished_metal{{< raw-html >}}<br>{{< /raw-html >}}-{{< raw-html >}}<br>{{< /raw-html >}}-{{< raw-html >}}<br>{{< /raw-html >}}metal_plate | adobe_wall{{< raw-html >}}<br>{{< /raw-html >}}-{{< raw-html >}}<br>{{< /raw-html >}}ground_mud{{< raw-html >}}<br>{{< /raw-html >}}-{{< raw-html >}}<br>{{< /raw-html >}}- | Module B::adobe_wall{{< raw-html >}}<br>{{< /raw-html >}}Module A::tarnished_metal{{< raw-html >}}<br>{{< /raw-html >}}Module B::ground_mud{{< raw-html >}}<br>{{< /raw-html >}}Native::marble{{< raw-html >}}<br>{{< /raw-html >}}Module A::metal_plate |
 
 Currently moddable asset types are:
 
@@ -21,7 +22,7 @@ Currently moddable asset types are:
 - [Texture](#overriding-textures)
 - [Physics Shape](#overriding-physics-shapes)
 
-&ensp;
+{{< raw-html >}}<br>{{< /raw-html >}}
 
 ## Folder Hierarchy
 
@@ -42,7 +43,7 @@ Asset system looks for different folders according to the version of game’s ru
 - **Editor** : Others can use your module in editor but can not modify it. Used if you want others to derive modules from your module. You must distribute **EmAssetPackages** folder.
 - **Server** : Used for server builds. All data which is not related to server is stripped out. You must distribute **DsAssetPackages** folder.
 
-&ensp;
+{{< raw-html >}}<br>{{< /raw-html >}}
 You can also share your module just like you are using it to allow others to modify it. In this case you must distribute **Assets**, **AssetSources** and optionally **RuntimeDataCache** folders.
 
 ## Overriding Materials
@@ -56,7 +57,7 @@ At this point all material references in the system will be redirected to your c
 ## Overriding Meshes
 
 Models can be imported from several file formats(e.g. Trf, Fbx). Resources imported from a single file are grouped by their names according to <>asset naming convetions<>. Imagine an fbx file as follow :
-&ensp;
+{{< raw-html >}}<br>{{< /raw-html >}}
 
 - Model.fbx
   - wall(Mesh)
@@ -64,14 +65,14 @@ Models can be imported from several file formats(e.g. Trf, Fbx). Resources impor
   - wall.lod3(Mesh)
   - bo_wall(Physics Shape)
 
-&ensp;
+{{< raw-html >}}<br>{{< /raw-html >}}
 According to asset naming conventions, first three resources will be grouped into a single mesh which has three submeshes belong to different LODs. At the end two asset will be imported from Model.fbx : wall(Mesh) and bo_wall(Physics shape).
-&ensp;
+{{< raw-html >}}<br>{{< /raw-html >}}
 By following these rules you can export a new geometry file(e.g. fbx) which contains a group of meshes with their names begin with wall. In this case a new wall mesh will be created from these submeshes and existing mesh will be replaced completely with the one you supplied. Name of the geometry file is not taken into account. It is worth to mention that mesh overrides occur on mesh level. It is not possible to override single submesh via module override.
 
 {{% panel footer="Existing cube mesh with name **testbox** overriden by ModuleA with a teapot" %}}![mesh](metamesh_override.png){{% /panel %}}
 
-&ensp;
+{{< raw-html >}}<br>{{< /raw-html >}}
 
 ## Overriding Textures
 
