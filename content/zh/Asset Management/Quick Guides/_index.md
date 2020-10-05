@@ -11,13 +11,11 @@ subpage: false
 Mod 可以包含从网格到物理实体、场景、游戏实体（如派系、领主、部队、物品）以及可以运行任何游戏逻辑的脚本和行为等资源。在本指南中，将解释创建一个 Mod 的过程。
 
 新建一个Mod
-
 Mod 位于根目录下的 "Modules" 文件夹内，它必须包含名为 SubModule.xml 的 xml 文件。这个文件提供 "Name"、"ID" 和 "Version" 节点等基本信息。另外，还可以在 "DepenendedModules" 节点里面定义依赖模块。如果你想制作一个单人模式 Mod，它的 "DepenendedModules" 也应该包含一个 "SingleplayerModule" 节点。此后，该 Mod 将在游戏启动器中出现。
 
 子Mod 可以定义在运行时加载的 DLL。这些 DLL 应该包含继承自 "MBSubModuleBase" 的 Class，其名称应该与 xml 中的 "SubModuleClassType" 节点一致。该类将被构造，并被调用某些回调，这样 od 就可以将其行为注册到游戏中。
 
 Mod 层次结构
-
 Mod 可以具有多个文件夹，其中包含不同类型的内容：
 
 {{< notice info >}}
