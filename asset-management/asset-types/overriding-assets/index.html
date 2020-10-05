@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-10-05T02:10:17 UTC">
+<meta name="revised" content="2020-10-05T06:51:53 UTC">
 <meta name="description" content="">
 
 
@@ -637,9 +637,8 @@
 
 
 	<div class="content">
-	    <p>In RGL you can easily override existing assets or create new ones within the editor for your custom mode. Override mechanism works by replacing existing assets with the one you supplied in your module’s assets directory. It tries to match your custom assets with the ones previously registered by other modules by their names. This happens with respect to loading order of the modules.
- 
-If <strong>Module A</strong> and <strong>Module B</strong> are loaded in addition to the <strong>Native</strong> module respectively, list of final assets and their sources will be as follow:</p>
+	    <p>In RGL you can easily override existing assets or create new ones within the editor for your custom mode. Override mechanism works by replacing existing assets with the one you supplied in your module’s assets directory. It tries to match your custom assets with the ones previously registered by other modules by their names. This happens with respect to loading order of the modules.</p>
+<p>If <strong>Module A</strong> and <strong>Module B</strong> are loaded in addition to the <strong>Native</strong> module respectively, list of final assets and their sources will be as follow:</p>
 <table>
 <thead>
 <tr>
@@ -651,10 +650,10 @@ If <strong>Module A</strong> and <strong>Module B</strong> are loaded in additio
 </thead>
 <tbody>
 <tr>
-<td>adobe_wall<!-- raw HTML omitted -->tarnished_metal<!-- raw HTML omitted -->ground_mud<!-- raw HTML omitted -->marble<!-- raw HTML omitted -->-</td>
-<td>adobe_wall<!-- raw HTML omitted -->tarnished_metal<!-- raw HTML omitted -->-<!-- raw HTML omitted -->-<!-- raw HTML omitted -->metal_plate</td>
-<td>adobe_wall<!-- raw HTML omitted -->-<!-- raw HTML omitted -->ground_mud<!-- raw HTML omitted -->-<!-- raw HTML omitted -->-</td>
-<td>Module B::adobe_wall<!-- raw HTML omitted -->Module A::tarnished_metal<!-- raw HTML omitted -->Module B::ground_mud<!-- raw HTML omitted -->Native::marble<!-- raw HTML omitted -->Module A::metal_plate</td>
+<td>adobe_wall<br>tarnished_metal<br>ground_mud<br>marble<br>-</td>
+<td>adobe_wall<br>tarnished_metal<br>-<br>-<br>metal_plate</td>
+<td>adobe_wall<br>-<br>ground_mud<br>-<br>-</td>
+<td>Module B::adobe_wall<br>Module A::tarnished_metal<br>Module B::ground_mud<br>Native::marble<br>Module A::metal_plate</td>
 </tr>
 </tbody>
 </table>
@@ -665,7 +664,7 @@ If <strong>Module A</strong> and <strong>Module B</strong> are loaded in additio
 <li><a href="#overriding-textures">Texture</a></li>
 <li><a href="#overriding-physics-shapes">Physics Shape</a></li>
 </ul>
-<p> </p>
+<br>
 <h2 ref="folder-hierarchy" >Folder Hierarchy</h2><a class="anchor" id="folder-hierarchy"></a>
 <p>Asset system treats some folders in module directory specially according to their names. Here is the list of these folders and their uesages :</p>
 <ul>
@@ -683,7 +682,7 @@ If <strong>Module A</strong> and <strong>Module B</strong> are loaded in additio
 <li><strong>Editor</strong> : Others can use your module in editor but can not modify it. Used if you want others to derive modules from your module. You must distribute <strong>EmAssetPackages</strong> folder.</li>
 <li><strong>Server</strong> : Used for server builds. All data which is not related to server is stripped out. You must distribute <strong>DsAssetPackages</strong> folder.</li>
 </ul>
-<p> 
+<p><br>
 You can also share your module just like you are using it to allow others to modify it. In this case you must distribute <strong>Assets</strong>, <strong>AssetSources</strong> and optionally <strong>RuntimeDataCache</strong> folders.</p>
 <h2 ref="overriding-materials" >Overriding Materials</h2><a class="anchor" id="overriding-materials"></a>
 <p>Overriding materials can be done by creating a new material with the same name of the material you want to override. Navigate to assets directory of your module and right click on an empty place in the browser pane. Create a new material and rename it to the same name with the material you want to override.</p>
@@ -697,7 +696,7 @@ You can also share your module just like you are using it to allow others to mod
 <p>At this point all material references in the system will be redirected to your custom material.</p>
 <h2 ref="overriding-meshes" >Overriding Meshes</h2><a class="anchor" id="overriding-meshes"></a>
 <p>Models can be imported from several file formats(e.g. Trf, Fbx). Resources imported from a single file are grouped by their names according to &lt;&gt;asset naming convetions&lt;&gt;. Imagine an fbx file as follow :
- </p>
+<br></p>
 <ul>
 <li>Model.fbx
 <ul>
@@ -708,9 +707,9 @@ You can also share your module just like you are using it to allow others to mod
 </ul>
 </li>
 </ul>
-<p> 
+<p><br>
 According to asset naming conventions, first three resources will be grouped into a single mesh which has three submeshes belong to different LODs. At the end two asset will be imported from Model.fbx : wall(Mesh) and bo_wall(Physics shape).
- 
+<br>
 By following these rules you can export a new geometry file(e.g. fbx) which contains a group of meshes with their names begin with wall. In this case a new wall mesh will be created from these submeshes and existing mesh will be replaced completely with the one you supplied. Name of the geometry file is not taken into account. It is worth to mention that mesh overrides occur on mesh level. It is not possible to override single submesh via module override.</p>
 
 
@@ -719,7 +718,7 @@ By following these rules you can export a new geometry file(e.g. fbx) which cont
     <p class="card-text"><img src="metamesh_override.png" alt="mesh"></p>
   </div><div class="card-footer text-muted">Existing cube mesh with name <strong>testbox</strong> overriden by ModuleA with a teapot</div></div>
 
-<p> </p>
+<br>
 <h2 ref="overriding-textures" >Overriding Textures</h2><a class="anchor" id="overriding-textures"></a>
 <p>Overriding textures is very similar to materials. You need to import a new texture with the same name of the texture you want to override. You can also rename any texture already imported to something that matches with the name of the texture to override.</p>
 
