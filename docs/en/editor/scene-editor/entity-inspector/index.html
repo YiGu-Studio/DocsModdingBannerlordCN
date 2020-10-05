@@ -1,0 +1,901 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+	ENTITY INSPECTOR :: Mount&amp;Blade Bannerlord Modding Documentation
+</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2020-10-04T17:15:03 PDT">
+<meta name="description" content="">
+
+
+
+<title>ENTITY INSPECTOR :: Mount&amp;Blade Bannerlord Modding Documentation</title>
+
+<link rel="shortcut icon" href='/DocsModdingBannerlordCN/images/favicon.png' type="image/x-icon" />
+
+
+<link href='/DocsModdingBannerlordCN/vendor/bootstrap/bootstrap-4.5.2-dist/css/bootstrap.min.css' rel="stylesheet"> 
+
+
+<link rel="preload" as="style" href='/DocsModdingBannerlordCN/fonts/Montserrat/Montserrat.css'>
+<link rel="stylesheet" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/sass/layout.css'>
+<link rel="stylesheet" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/css/style.main.css'>
+<link rel="stylesheet" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/css/style.menu.css'>
+<link href='/DocsModdingBannerlordCN/vendor/FontAwesome/fontawesome-free-5.14.0-web/css/all.min.css' rel="stylesheet"> 
+
+<link rel="stylesheet" type="text/css" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/sass/shortcodes/notice.css'>
+<link rel="stylesheet" type="text/css" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/sass/shortcodes/tabs.css'>
+<link rel="stylesheet" type="text/css" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/sass/shortcodes/panel.css'>
+<link rel="stylesheet" type="text/css" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/sass/shortcodes/columns.css'>
+<link rel="stylesheet" type="text/css" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/sass/shortcodes/children.css'>
+<link rel="stylesheet" type="text/css" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/sass/shortcodes/attachments.css'>
+<link rel="stylesheet" type="text/css" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/sass/shortcodes/alert.css'>
+
+<link rel="stylesheet" href='/DocsModdingBannerlordCN/css/docport.css'>
+
+
+<script src='/DocsModdingBannerlordCN/vendor/jquery/jquery-3.5.1.min.js'></script>
+<script src='/DocsModdingBannerlordCN/vendor/bootstrap/bootstrap-4.5.2-dist/js/bootstrap.min.js' crossorigin="anonymous"></script>
+
+<script src='/DocsModdingBannerlordCN/js/docport.js'></script>
+<script type="text/javascript">
+      var baseurl = "https:\/\/yigu-studio.github.io\/DocsModdingBannerlordCN\/";
+</script>
+
+
+
+
+
+    
+  </head>
+
+  <body data-url="/DocsModdingBannerlordCN/en/editor/scene-editor/entity-inspector/"
+
+  class="hidebreadcrumb hidetoc ">
+
+<style type="text/css">
+  #debug{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 3.5rem;
+    margin-bottom: .35rem;
+    padding: 0 2rem;
+    position: fixed;
+    left: 0;      right: 0;     top: 0;
+   
+    top:0px;
+    
+    min-height: 150px;
+
+    background-color: white;
+    border: 3px solid red;
+    z-index: 10000 ;
+    word-wrap: all;
+    overflow: auto;
+  }
+</style>
+ 
+
+
+    
+    
+    <header style="">
+        <div>
+    
+    <div class="burger ">
+        <a href="javascript:void(0);" style="font-size:15px;" onclick="$('article > aside').toggleClass('responsive')">&#9776;</a>
+    </div>
+    
+
+    <div>
+
+		
+	
+			
+		
+	    	<a class='baselink' href='https://yigu-studio.github.io/DocsModdingBannerlordCN/'>Mount&Blade Bannerlord Modding Documentation</a>
+	  	
+	</div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="/DocsModdingBannerlordCN/zh"  rel="noopener">
+                  中文
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="/DocsModdingBannerlordCN/en"  rel="noopener">
+                  English
+                </a>
+            </li>
+    </nav>
+
+</div>
+    </header>
+    
+
+    <article>
+      
+      <aside class="">
+        
+<div class="search">
+	<div class="searchbox">
+	  <input data-search-input id="search-by" type="text" placeholder="Type to search...">
+	</div>
+	<script type="text/javascript" src="/DocsModdingBannerlordCN/vendor/lunr/lunr.min.js"></script>
+	<script type="text/javascript" src="/DocsModdingBannerlordCN/vendor/auto-complete/auto-complete.js"></script>
+	<link href="/DocsModdingBannerlordCN/vendor/auto-complete/auto-complete.css" rel="stylesheet">
+	<script type="text/javascript">
+	  
+	      var baseurl = "https:\/\/yigu-studio.github.io\/DocsModdingBannerlordCN\/\/en";
+	  
+	</script>
+	<script type="text/javascript" src="/DocsModdingBannerlordCN/js/search.js"></script>
+</div>
+
+		
+	
+			
+		
+	    	
+	  	
+	<div id="close_menu">
+  <a href="javascript:void(0);" style="font-size:15px;" onclick="$('article > aside').toggleClass('responsive')">
+      <i class="fa fa-lg fa-times"></i>
+  </a>
+</div>
+
+<ul class="menu">
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/" class="dd-item haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      <i class="fas fa-chevron-right ddexp"></i>
+        
+      
+          <a href="/DocsModdingBannerlordCN/en/asset-management/">ASSET MANAGEMENT</a>
+      
+        <ul>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/" class="dd-item haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/asset-management/asset-types/">ASSET TYPES</a>
+      <i class="fas fa-chevron-right ddexp"></i>
+        
+      
+        <ul>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/overriding-assets/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/asset-management/asset-types/overriding-assets/">ADDING &amp; OVERRIDING ASSETS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/bodies/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/asset-management/asset-types/bodies/">BODIES</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/prefabs/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/asset-management/asset-types/prefabs/">ENTITIES &amp; PREFABS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/materials/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/asset-management/asset-types/materials/">MATERIALS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/meshes/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/asset-management/asset-types/meshes/">MESHES</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/asset-naming-conventions/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/asset-management/asset-types/asset-naming-conventions/">NAMING CONVENTIONS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/overriding-scenes-prefabs/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/asset-management/asset-types/overriding-scenes-prefabs/">OVERRIDING SCENES AND PREFABS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/path/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/asset-management/asset-types/path/">PATHS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/scripts/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/asset-management/asset-types/scripts/">SCRIPTS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/asset-types/textures/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/asset-management/asset-types/textures/">TEXTURES</a>
+      
+        
+      
+    </li>
+        </ul>
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/asset-management/quick-guides/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/asset-management/quick-guides/">Creating a Module - Quick Guide</a>
+      
+        
+      
+    </li>
+        </ul>
+    </li>
+    
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/bannerlord-missions/" class="dd-item haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      <i class="fas fa-chevron-right ddexp"></i>
+        
+      
+          <a href="/DocsModdingBannerlordCN/en/bannerlord-missions/">BANNERLORD MISSIONS</a>
+      
+        <ul>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/bannerlord-missions/destructible-component/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/bannerlord-missions/destructible-component/">DESTRUCTIBLE COMPONENT</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/bannerlord-missions/mission-tactical-positions/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/bannerlord-missions/mission-tactical-positions/">MISSION TACTICAL POSITIONS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/bannerlord-missions/scene-barrier-builder/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/bannerlord-missions/scene-barrier-builder/">SCENE BARRIER BUILDER</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/bannerlord-missions/scene-spawn-point-guide/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/bannerlord-missions/scene-spawn-point-guide/">SCENE SPAWN POINT GUIDE</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/bannerlord-missions/script-component-callbacks/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/bannerlord-missions/script-component-callbacks/">SCRIPT COMPONENT CALLBACKS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/bannerlord-missions/spawn-point-debug-tool/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/bannerlord-missions/spawn-point-debug-tool/">SPAWN POINT DEBUG TOOL</a>
+      
+        
+      
+    </li>
+        </ul>
+    </li>
+    
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/" class="dd-item parent haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <i class="fas fa-chevron-down ddexp"></i>
+        
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/">EDITOR</a>
+      
+        <ul>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/" class="dd-item haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/resource-editors/">RESOURCE EDITORS</a>
+      <i class="fas fa-chevron-right ddexp"></i>
+        
+      
+        <ul>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/cloth-simulation/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/resource-editors/cloth-simulation/">CLOTH SIMULATION</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/material-editor/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/resource-editors/material-editor/">MATERIAL EDITOR</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/meta-mesh-editor/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/resource-editors/meta-mesh-editor/">META MESH EDITOR</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/model-viewer/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/resource-editors/model-viewer/">MODEL VIEWER</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/particle-editor/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/resource-editors/particle-editor/">PARTICLE EDITOR</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/skeleton-editor/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/resource-editors/skeleton-editor/">SKELETON EDITOR</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/resource-editors/texture-editor/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/resource-editors/texture-editor/">TEXTURE EDITOR</a>
+      
+        
+      
+    </li>
+        </ul>
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/" class="dd-item parent haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/scene-editor/">SCENE EDITOR</a>
+      
+          <i class="fas fa-chevron-down ddexp"></i>
+        
+      
+        <ul>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/creating-entity/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/scene-editor/creating-entity/">CREATING ENTITY</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/entity-inspector/" class="dd-item parent active
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/scene-editor/entity-inspector/">ENTITY INSPECTOR</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/mass-selection/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/scene-editor/mass-selection/">MASS SELECTION</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/nav-mesh-inspector/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/scene-editor/nav-mesh-inspector/">NAVIGATION MESH INSPECTOR</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/path-editing/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/scene-editor/path-editing/">PATH EDITING</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/prt/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/scene-editor/prt/">PRECOMPUTED RADIANCE TRANSFER - GI SYSTEM</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/terrain-resize/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/scene-editor/terrain-resize/">RESIZING TERRAIN</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/terrain-creation/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/scene-editor/terrain-creation/">TERRAIN CREATION</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/terrain-mesh-blend/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/en/editor/scene-editor/terrain-mesh-blend/">TERRAIN MESH BLEND SYSTEM</a>
+      
+        
+      
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    
+
+
+
+</ul>
+
+		
+	
+			
+		
+	    	
+	  	
+	
+      </aside>
+      
+
+      <section class="page ">
+      
+	
+		
+    
+    
+    
+
+    
+		
+        
+		
+		
+		
+		
+		
+		
+		
+
+		
+			<h1>ENTITY INSPECTOR</h1>
+        
+
+		
+										
+		
+
+		
+	
+
+	
+	
+	
+
+
+
+
+
+
+	<div class="content">
+	    <h2 ref="transform-panel" >Transform Panel</h2><a class="anchor" id="transform-panel"></a>
+<p><img src="transform.png" alt="a"></p>
+<p>Transform panel allows you to change position, rotation and scale properties of the selected entities. All of these values are relative to the parent of the selected entity. If Entity has no parent, then they are the Global values. (in <a href="#world-space"><strong>World</strong></a> space).</p>
+<h3 ref="scale" >Scale</h3><a class="anchor" id="scale"></a>
+<h4 ref="locked" >Locked</h4><a class="anchor" id="locked"></a>
+<p><img src="scale_locked.png" alt="b"></p>
+<p>If the lock icon is in locked state, changing any component of scale parameter will set all scale components to the same value, entity will be in uniform scaling mode.</p>
+<h4 ref="unlocked" >Unlocked</h4><a class="anchor" id="unlocked"></a>
+<p><img src="scale_unlocked.png" alt="c"></p>
+<p>If the lock icon is in unlocked state, every scale component can be changed independently, and will allow non-uniform scaling.</p>
+<h2 ref="transform-with-gizmo" >Transform with Gizmo</h2><a class="anchor" id="transform-with-gizmo"></a>
+<h3 ref="transform-modes" >Transform modes</h3><a class="anchor" id="transform-modes"></a>
+<p>All of the transformation can also be done using Gizmo. Gizmo can be activated by selecting an entity (or multiple entities) and pressing one of the hotkeys below.</p>
+<table>
+<thead>
+<tr>
+<th>ROTATE</th>
+<th>TRANSLATE</th>
+<th>SCALE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hotkey: R</td>
+<td>Hotkey: T</td>
+<td>Hotkey: Y</td>
+</tr>
+<tr>
+<td><img src="gizmo_rotate.png" alt="rotate"></td>
+<td><img src="gizmo_translate.png" alt="translate"></td>
+<td><img src="gizmo_scale.png" alt="gizmo"></td>
+</tr>
+</tbody>
+</table>
+<h3 ref="transform-spaces" >Transform spaces</h3><a class="anchor" id="transform-spaces"></a>
+<p>Gizmo can work in three different spaces; <a href="#world-space"><strong>World</strong></a> space, <a href="#local-space"><strong>Local</strong></a> space and <a href="screen-space"><strong>Screen</strong></a> space.</p>
+<h4 ref="world-space" >World space</h4><a class="anchor" id="world-space"></a>
+<p>World coordinates is just a fixed, parent coordinate system. This is the global coordinate system that everything is defined relative to. World Coordinate has a fixed [1, 0, 0] in the <!-- raw HTML omitted -->X<!-- raw HTML omitted --> direction, [0, 1, 0] in the <!-- raw HTML omitted -->Y<!-- raw HTML omitted --> direction, and [0, 0, 1] in the <!-- raw HTML omitted -->Z<!-- raw HTML omitted --> direction.</p>
+<h4 ref="local-space" >Local space</h4><a class="anchor" id="local-space"></a>
+<p>Local coordinates are relative to the entity itself, every transform is defined such as that the center of the entity is center of the universe.</p>
+<h4 ref="screen-space" >Screen space</h4><a class="anchor" id="screen-space"></a>
+<p>Screen space coordinates are relative to the camera. Right of your viewport is always the <!-- raw HTML omitted -->X<!-- raw HTML omitted --> axis, Top is always the <!-- raw HTML omitted -->Y<!-- raw HTML omitted --> axis, and forward is always the <!-- raw HTML omitted -->-Z<!-- raw HTML omitted --> (minus Z) axis.</p>
+<h2 ref="entity-tag-system" >Entity Tag System</h2><a class="anchor" id="entity-tag-system"></a>
+<p>An entity on editor can be identified by a tag defined by the user.</p>
+<h3 ref="adding-tags" >Adding Tags</h3><a class="anchor" id="adding-tags"></a>
+<p>In the Entity Inspector, under the “Tags” title, there is a button with label “Add New Tag”. This button opens a window asking for the name of the tag.</p>
+<h3 ref="using-an-existing-tag" >Using an Existing Tag</h3><a class="anchor" id="using-an-existing-tag"></a>
+<p>After clicking on the “Add New Tag” button, from the dropdown menu in the window, you can select tags, which were added to the current scene entities before.</p>
+<h3 ref="a-special-case-prefabs" >A Special Case: Prefabs</h3><a class="anchor" id="a-special-case-prefabs"></a>
+<p>If you are modifying a prefab entity, adding tags to the prefab does not break it. In other words, if you change the prefab after tagging the prefab entity in the scene, the scene entity will have all the changes as well. The tags are stored in the xml files with “&lt; tags &gt;… &lt; / tags &gt;” syntax. (without the white spaces between characters)</p>
+
+		
+</div>
+
+
+
+
+
+
+	 
+	<div class="chevrons">
+		<a class="next" href="/DocsModdingBannerlordCN/en/editor/scene-editor/mass-selection/" title="MASS SELECTION" style="margin-right: 0px;">
+            <div>
+                <p>Next page</p>
+                <label>MASS SELECTION</label>
+            </div>
+            <i class="fas fa-arrow-right" style="font-size: 1.7em"></i></a>
+	</div>
+	
+	
+
+      </section>
+
+      
+      
+    </article>
+    
+    
+    <footer>
+      
+
+		
+	
+			
+		
+	    	Create a content/_layout/footer/_index.md file to customize the footer content !
+	  	
+	
+    </footer>
+    
+
+
+
+  </body>
+</html>
