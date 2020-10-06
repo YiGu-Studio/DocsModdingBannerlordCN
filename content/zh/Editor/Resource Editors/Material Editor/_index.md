@@ -8,7 +8,7 @@ hide:
 
 ## Overview
 
-![overview](overview.png)
+{{< img src="overview.png" box="true">}}
 
 Our proprietary game engine uses standard metallic PBR pipeline for material authoring.
 
