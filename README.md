@@ -1,7 +1,11 @@
 # DocsModdingBannerlordCN
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+[logo]: https://img.shields.io/badge/all_contributors-5-orange.svg 'Number of contributors on All-Contributors'
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+
+[![All Contributors][logo]](#contributors-)
+![Deploy Badge](https://github.com/YiGu-Studio/DocsModdingBannerlordCN/workflows/GitHub%20Page%20Deploy/badge.svg)
 
 
 Chinese Translation for Documentation of Bannerlord Modding Kit. Original Docs: http://docs.modding.bannerlord.com/
