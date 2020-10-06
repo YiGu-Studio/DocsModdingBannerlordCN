@@ -1,0 +1,29 @@
+{{ $original := .Page.Resources.GetMatch (.Get "src") }}
+{{ $command := .Get "cmd" }}
+{{ $box := .Get "box" }}
+
+{{ if $command }}
+	{{ if findRE "Fit .*" $command 1 }}
+		{{ $options := strings.TrimPrefix "Fit " $command }}
+		{{ .Scratch.Set "image" ($original.Fit $options) }}
+	{{ else if findRE "Resize .*" $command 1 }}
+		{{ $options := strings.TrimPrefix "Resize " $command }}
+		{{ .Scratch.Set "image" ($original.Resize $options) }}
+	{{ else if findRE "Fill .*" $command 1 }}
+		{{ $options := strings.TrimPrefix "Fill " $command }}
+		{{ .Scratch.Set "image" ($original.Fill $options) }}
+	{{ else }}
+		{{ errorf "Invalid image processing command: Must be one of Fit, Fill or Resize."}}
+	{{ end }}
+{{ else }}
+	{{ .Scratch.Set "image" $original }}
+{{ end }}
+
+{{ $image := .Scratch.Get "image" }}
+<figure>
+	{{ if eq $box "true" }}
+		<a data-featherlight="image" href="{{ $original.RelPermalink }}"><img style="max-width: 100%; width: auto; height: auto;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}"></a>
+	{{ else }}
+		<img style="max-width: 100%; width: auto; height: auto;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+	{{ end }}
+</figure>
