@@ -1,6 +1,7 @@
 {{ $original := .Page.Resources.GetMatch (.Get "src") }}
 {{ $command := .Get "cmd" }}
 {{ $box := .Get "box" }}
+{{ $caption := .Get "caption" }}
 
 {{ if $command }}
 	{{ if findRE "Fit .*" $command 1 }}
@@ -26,4 +27,5 @@
 	{{ else }}
 		<img style="max-width: 100%; width: auto; height: auto;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
 	{{ end }}
+	<figcaption style="text-align: center;"> {{ $caption }} </figcaption>
 </figure>
