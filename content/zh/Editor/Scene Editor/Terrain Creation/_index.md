@@ -1,34 +1,34 @@
 ---
-title: "TERRAIN CREATION"
+title: "地形创建"
 
 hide: 
 - toc
 - breadcrumb
 ---
 
-## Create a new terrain
+## 创建新地形
 
-Terrain creation, removal, and node modifications can be done in Terrain Inspector > Properties tab.
+生成，删除和修改地形节点可以通过Terrain Inspector(地形检查器)——>Properties（属性）进行操作。
 
-Terrain node count in both dimensions, their resolution and size can be specified in **New Terrain Properties** panel.
+地形节点Terrain node是二维计算，分辨率和大小可以通过**New Terrain Properties（新地形属性）**界面查看。
 
-This parameters must be specified proir to the creation, although they can be canged per-node basis later.
+这些参数必须在创建之前就有指定数值，尽管可以在之后对各节点进行一一调整。
 
 |                              |                                         |
 | ---------------------------- | --------------------------------------- |
 | ![gen](generate_terrain.png) | ![gen_res](generate_terrain_result.png) |
 
-## Adjusting node properties
+## 调整节点属性
 
-Node resolution can be adjusted by selection nodes (Hold CTRL for multiple selection)m and change the resolution parameter in **Node Properties** panel.
+节点分辨率可以在选择节点后（选择多个节点就要按住CTRL选择）即可在（节点属性） **Node Properties（节点属性）**界面中调整
 
-This feature can be used to further optimize terrain in places where resolution is not that important (eg. Outside of Settlemets where player is not allowed to go, or nodes that are completely under water).
+这个功能可用于分辨率不太重要的地方来优化地形（如定居点之外，玩家无法进入的地方，或者水底）
 
 ![res](resolution.png)
 
-## Import / Export Materialmaps or Heightmap
+## 导入/导出材质地图或者高度地图
 
-To support external terrain generation softwares, engine can Import / Export terrain layer materialmaps or heightmap. You can easly create believable terrains by importing various layers (Debris, flowmap, vegetation, bedrock), and 16-bit heightmaps. To import a materialmap, first you must create a new terrain layer, after selecting this layer, go to Properties tab, select some nodes (CTRL + A to select all) and hit Import Materialmap button. This will open file selection dialog, you can select any 8-bit (grayscale) texture to use as materialmap. You can do the same to import Heightmap, heightmaps can be 8-bit or 16-bit (png or raw).
+为了支持外部地形生成器，引擎可以导入导出地形材质地图或者高度地图。你可以通过导入各种图层（碎屑图，水流图，植被图，基岩图）和16 bit的高度地图来轻松生成想要的地形。要导入材质地图时，首先你必须创建一个新的地形图层，然后选择该图层，进入Properties（属性），选择一些节点（CTRL+A选择所有）然后点击导入Materialmap材质地图按钮。这样就会打开一个文件对话框让你选择文件，你可以选择8 bit的材质当作材质地图。你也可以用同样方法导入高度地图，高度地图8，16bit都可以（PNG或者源文件格式）
 
 ||||||
 |-|-|-|-|-|
