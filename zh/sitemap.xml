@@ -59,6 +59,10 @@
   </url>
   
   <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/</loc>
+  </url>
+  
+  <url>
     <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/bodies/</loc>
     <xhtml:link
                 rel="alternate"
@@ -129,6 +133,34 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/prefabs/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/entity-inspector/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/entity-inspector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/entity-inspector/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/mass-selection/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/mass-selection/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/mass-selection/"
                 />
   </url>
   
@@ -217,6 +249,20 @@
   </url>
   
   <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/nav-mesh-inspector/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/nav-mesh-inspector/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/nav-mesh-inspector/"
+                />
+  </url>
+  
+  <url>
     <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/overriding-scenes-prefabs/</loc>
     <xhtml:link
                 rel="alternate"
@@ -269,6 +315,34 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/path/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/prt/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/prt/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/prt/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/terrain-resize/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/terrain-resize/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/terrain-resize/"
                 />
   </url>
   
@@ -353,6 +427,20 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/terrain-creation/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/terrain-mesh-blend/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/en/editor/scene-editor/terrain-mesh-blend/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/terrain-mesh-blend/"
                 />
   </url>
   

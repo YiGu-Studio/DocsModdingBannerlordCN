@@ -1,0 +1,1036 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+	ALIGNMENT AND SNAPPING TOOLS :: 骑马与砍杀 霸主 Mod 开发文档
+</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content=" 2020-10-07T08:06:06 UTC ">
+<meta name="description" content=""> 
+
+<title>ALIGNMENT AND SNAPPING TOOLS :: 骑马与砍杀 霸主 Mod 开发文档</title>
+
+<link rel="shortcut icon" href='/DocsModdingBannerlordCN/images/favicon.png' type="image/x-icon" />
+
+
+<link href='/DocsModdingBannerlordCN/vendor/bootstrap/bootstrap-4.5.2-dist/css/bootstrap.min.css' rel="stylesheet">
+
+
+<link rel="preload" as="style" href='/DocsModdingBannerlordCN/fonts/Montserrat/Montserrat.css'>
+<link rel="stylesheet" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/sass/layout.css'>
+<link rel="stylesheet" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/css/style.main.css'>
+<link rel="stylesheet" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/css/style.menu.css'>
+<link href='/DocsModdingBannerlordCN/vendor/FontAwesome/fontawesome-free-5.14.0-web/css/all.min.css' rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/sass/shortcodes/notice.css'>
+<link rel="stylesheet" type="text/css" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/sass/shortcodes/tabs.css'>
+<link rel="stylesheet" type="text/css" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/sass/shortcodes/panel.css'>
+<link rel="stylesheet" type="text/css" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/sass/shortcodes/columns.css'>
+<link rel="stylesheet" type="text/css" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/sass/shortcodes/children.css'>
+<link rel="stylesheet" type="text/css" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/sass/shortcodes/attachments.css'>
+<link rel="stylesheet" type="text/css" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/sass/shortcodes/alert.css'>
+
+<link rel="stylesheet" href='/DocsModdingBannerlordCN/css/docport.css'>
+<link rel="stylesheet" href='/DocsModdingBannerlordCN/css/featherlight.min.css' type="text/css" />
+
+
+<script src='/DocsModdingBannerlordCN/vendor/jquery/jquery-3.5.1.min.js'></script>
+<script src='/DocsModdingBannerlordCN/vendor/bootstrap/bootstrap-4.5.2-dist/js/bootstrap.min.js' crossorigin="anonymous"></script>
+
+<script src='/DocsModdingBannerlordCN/js/docport.js'></script>
+<script type="text/javascript">
+    var baseurl = "https:\/\/yigu-studio.github.io\/DocsModdingBannerlordCN\/";
+</script>
+<script src='/DocsModdingBannerlordCN/js/featherlight.min.js' type="text/javascript" charset="utf-8"></script>
+
+
+
+    
+  </head>
+
+  <body data-url="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/"
+
+  class="hidebreadcrumb hidetoc ">
+
+<style type="text/css">
+  #debug{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 3.5rem;
+    margin-bottom: .35rem;
+    padding: 0 2rem;
+    position: fixed;
+    left: 0;      right: 0;     top: 0;
+   
+    top:0px;
+    
+    min-height: 150px;
+
+    background-color: white;
+    border: 3px solid red;
+    z-index: 10000 ;
+    word-wrap: all;
+    overflow: auto;
+  }
+</style>
+ 
+
+
+    
+    
+    <header style="">
+        <div>
+    
+    <div class="burger ">
+        <a href="javascript:void(0);" style="font-size:15px;" onclick="$('article > aside').toggleClass('responsive')">&#9776;</a>
+    </div>
+    
+
+    <div>
+
+		
+	
+			
+		
+	    	<a class='baselink' href='https://yigu-studio.github.io/DocsModdingBannerlordCN/'>骑马与砍杀 霸主 Mod 开发文档</a>
+	  	
+	</div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="/DocsModdingBannerlordCN/zh"  rel="noopener">
+                  中文
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="/DocsModdingBannerlordCN/en"  rel="noopener">
+                  English
+                </a>
+            </li>
+    </nav>
+
+</div>
+    </header>
+    
+
+    <article>
+      
+      <aside class="">
+        
+<div class="search">
+	<div class="searchbox">
+	  <input data-search-input id="search-by" type="text" placeholder="">
+	</div>
+	<script type="text/javascript" src="/DocsModdingBannerlordCN/vendor/lunr/lunr.min.js"></script>
+	<script type="text/javascript" src="/DocsModdingBannerlordCN/vendor/auto-complete/auto-complete.js"></script>
+	<link href="/DocsModdingBannerlordCN/vendor/auto-complete/auto-complete.css" rel="stylesheet">
+	<script type="text/javascript">
+	  
+	      var baseurl = "https:\/\/yigu-studio.github.io\/DocsModdingBannerlordCN\/";
+	  
+	</script>
+	<script type="text/javascript" src="/DocsModdingBannerlordCN/js/search.js"></script>
+</div>
+
+		
+	
+			
+		
+	    	
+	  	
+	<div id="close_menu">
+  <a href="javascript:void(0);" style="font-size:15px;" onclick="$('article > aside').toggleClass('responsive')">
+      <i class="fa fa-lg fa-times"></i>
+  </a>
+</div>
+
+<ul class="menu">
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/" class="dd-item haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      <i class="fas fa-chevron-right ddexp"></i>
+        
+      
+          <a href="/DocsModdingBannerlordCN/asset-management/">资源管理</a>
+      
+        <ul>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/quick-guides/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/asset-management/quick-guides/">创建一个Mod - 快速入门</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/" class="dd-item haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/asset-management/asset-types/">资源类型</a>
+      <i class="fas fa-chevron-right ddexp"></i>
+        
+      
+        <ul>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/overriding-assets/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/asset-management/asset-types/overriding-assets/">ADDING &amp; OVERRIDING ASSETS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/bodies/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/asset-management/asset-types/bodies/">BODIES</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/prefabs/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/asset-management/asset-types/prefabs/">ENTITIES &amp; PREFABS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/materials/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/asset-management/asset-types/materials/">MATERIALS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/meshes/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/asset-management/asset-types/meshes/">MESHES</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/asset-naming-conventions/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/asset-management/asset-types/asset-naming-conventions/">NAMING CONVENTIONS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/overriding-scenes-prefabs/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/asset-management/asset-types/overriding-scenes-prefabs/">OVERRIDING SCENES AND PREFABS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/path/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/asset-management/asset-types/path/">PATHS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/scripts/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/asset-management/asset-types/scripts/">SCRIPTS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/textures/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/asset-management/asset-types/textures/">TEXTURES</a>
+      
+        
+      
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/bannerlord-missions/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+        
+      
+          <a href="/DocsModdingBannerlordCN/bannerlord-missions/">BANNERLORD 任务</a>
+      
+    </li>
+    
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/" class="dd-item parent haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <i class="fas fa-chevron-down ddexp"></i>
+        
+      
+          <a href="/DocsModdingBannerlordCN/editor/">编辑器</a>
+      
+        <ul>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/" class="dd-item haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/resource-editors/">RESOURCE EDITORS</a>
+      <i class="fas fa-chevron-right ddexp"></i>
+        
+      
+        <ul>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/cloth-simulation/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/resource-editors/cloth-simulation/">CLOTH SIMULATION</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/material-editor/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/resource-editors/material-editor/">MATERIAL EDITOR</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/meta-mesh-editor/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/resource-editors/meta-mesh-editor/">META MESH EDITOR</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/model-viewer/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/resource-editors/model-viewer/">MODEL VIEWER</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/particle-editor/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/resource-editors/particle-editor/">PARTICLE EDITOR</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/skeleton-editor/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/resource-editors/skeleton-editor/">SKELETON EDITOR</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/texture-editor/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/resource-editors/texture-editor/">TEXTURE EDITOR</a>
+      
+        
+      
+    </li>
+        </ul>
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/" class="dd-item parent haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/scene-editor/">SCENE EDITOR</a>
+      
+          <i class="fas fa-chevron-down ddexp"></i>
+        
+      
+        <ul>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/" class="dd-item parent active
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/">ALIGNMENT AND SNAPPING TOOLS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/creating-entity/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/scene-editor/creating-entity/">CREATING ENTITY</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/editor-shortcuts/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/scene-editor/editor-shortcuts/">EDITOR SHORTCUTS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/entity-inspector/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/scene-editor/entity-inspector/">ENTITY INSPECTOR</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/mass-selection/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/scene-editor/mass-selection/">MASS SELECTION</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/nav-mesh-inspector/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/scene-editor/nav-mesh-inspector/">NAVIGATION MESH INSPECTOR</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/path-editing/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/scene-editor/path-editing/">PATH EDITING</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/prt/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/scene-editor/prt/">PRECOMPUTED RADIANCE TRANSFER - GI SYSTEM</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/terrain-resize/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/scene-editor/terrain-resize/">RESIZING TERRAIN</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/terrain-creation/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/scene-editor/terrain-creation/">TERRAIN CREATION</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/terrain-mesh-blend/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/scene-editor/terrain-mesh-blend/">TERRAIN MESH BLEND SYSTEM</a>
+      
+        
+      
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    
+
+
+
+</ul>
+
+		
+	
+			
+		
+	    	
+	  	
+	
+      </aside>
+      
+
+      <section class="page ">
+      
+	
+		
+    
+    
+    
+
+    
+		
+        
+		
+		
+		
+		
+		
+		
+		
+
+		
+			<h1>ALIGNMENT AND SNAPPING TOOLS</h1>
+        
+
+		
+										
+		
+
+		
+	
+
+	
+	
+	
+
+
+
+
+
+
+	<div class="content">
+	    <h2 ref="pivot-alignment-tool" >Pivot Alignment Tool</h2><a class="anchor" id="pivot-alignment-tool"></a>
+<p>The <strong>Pivot alignment tool</strong> applies the chosen transform values of one entity to another entity. The tool makes it easier for users to create overlapping or precisely aligned entities. If an entitity is selected in the editor, the user can set up the alignment tool by pressing <strong>Alt + A</strong>. This will register the currently selected entity as the input entity. Selecting a second entity with the <strong>left mouse button</strong>, will then open the interface screen of the alignment tool.</p>
+
+
+
+
+
+
+	
+
+
+
+<figure>
+	
+		<a data-featherlight="image" href="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/pivot_alignment_ui.png"><img style="max-width: 100%; width: auto; height: auto;" src="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/pivot_alignment_ui.png" width="475" height="210"></a>
+	
+	<figcaption style="text-align: center;"> (Pivot Alignment Tool User Interface) </figcaption>
+</figure>
+<ul>
+<li><strong>Translation checkboxes</strong> will translate first entity on the given axis/axes.</li>
+<li><strong>Rotation checkboxes</strong> will rotate the first entity without breaking the local scale. Up, side and forward vectors will be aligned depending on the checkboxes.</li>
+<li>If the <strong>scale checkboxes</strong> are checked, first entity’s scale component of the selected axis or axes will be set as second entity’s scale value which is shown at the inspector.</li>
+<li>If checkboxes are unchecked, first entity will be transformed to its initial frame.</li>
+<li><strong>Align by Pivot</strong> button will apply the alignment depending on the active checkboxes and close the interface.</li>
+<li><strong>Revert and Close</strong> button will transform the entity to its initial frame and revert any transform operation applied to pivot.</li>
+</ul>
+<h2 ref="example-usage" >Example Usage</h2><a class="anchor" id="example-usage"></a>
+
+
+
+
+
+
+	
+
+
+
+<figure>
+	
+		<a data-featherlight="image" href="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/pivot_alignment_a.png"><img style="max-width: 100%; width: auto; height: auto;" src="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/pivot_alignment_a.png" width="1197" height="388"></a>
+	
+	<figcaption style="text-align: center;"> (Initial position of bowl and candle) </figcaption>
+</figure>
+
+
+
+
+
+
+	
+
+
+
+<figure>
+	
+		<a data-featherlight="image" href="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/pivot_alignment_b.png"><img style="max-width: 100%; width: auto; height: auto;" src="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/pivot_alignment_b.png" width="1199" height="302"></a>
+	
+	<figcaption style="text-align: center;"> (Pivot alignment in only y-orientation) </figcaption>
+</figure>
+
+
+
+
+
+
+	
+
+
+
+<figure>
+	
+		<a data-featherlight="image" href="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/pivot_alignment_c.png"><img style="max-width: 100%; width: auto; height: auto;" src="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/pivot_alignment_c.png" width="1197" height="689"></a>
+	
+	<figcaption style="text-align: center;"> (Complete pivot alignment) </figcaption>
+</figure>
+<h2 ref="surface-snapping-feature" >Surface Snapping Feature</h2><a class="anchor" id="surface-snapping-feature"></a>
+<p>The <strong>Surface Snapping Feature</strong> allows a user to snap an entity’s pivot to the surface of another entity. Holding down the I <strong>hot-key</strong> continuously snaps the pivot of the currently selected entity to a surface that the mouse cursor intersects with. <strong>Control + Z</strong> reverts the transformation. This feature aligns the entity’s local y vector with the intersection point’s normal map, so it won’t require the user to make additional adjustments to align the entity with the surface.</p>
+<p>Beware that this will lead to clipping, if the pivot of the entity that you seek to snap to a surface is not located on its own surface.</p>
+<h2 ref="example-usage-1" >Example Usage</h2><a class="anchor" id="example-usage-1"></a>
+
+
+
+
+
+
+	
+
+
+
+<figure>
+	
+		<a data-featherlight="image" href="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/surface_snap_a.png"><img style="max-width: 100%; width: auto; height: auto;" src="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/surface_snap_a.png" width="594" height="443"></a>
+	
+	<figcaption style="text-align: center;"> (Pot is snapped to the side surface of the box.) </figcaption>
+</figure>
+
+
+
+
+
+
+	
+
+
+
+<figure>
+	
+		<a data-featherlight="image" href="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/surface_snap_b.png"><img style="max-width: 100%; width: auto; height: auto;" src="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/surface_snap_b.png" width="559" height="419"></a>
+	
+	<figcaption style="text-align: center;"> (Pot is snapped to the upper surface of the box.) </figcaption>
+</figure>
+
+
+
+
+
+
+	
+
+
+
+<figure>
+	
+		<a data-featherlight="image" href="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/surface_snap_c.png"><img style="max-width: 100%; width: auto; height: auto;" src="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/surface_snap_c.png" width="479" height="461"></a>
+	
+	<figcaption style="text-align: center;"> (Pots are surface snapped to each other.) </figcaption>
+</figure>
+<h2 ref="vertex-snapping-feature" >Vertex Snapping Feature</h2><a class="anchor" id="vertex-snapping-feature"></a>
+<p>The <strong>Vertex snapping feature</strong> allows users to choose any vertex from a selected entity and place that vertex in the same position as any vertex from another entity of their choosing.</p>
+
+
+
+
+
+
+	
+
+
+
+<figure>
+	
+		<a data-featherlight="image" href="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/vertex_snap_fence.png"><img style="max-width: 100%; width: auto; height: auto;" src="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/vertex_snap_fence.png" width="837" height="310"></a>
+	
+	<figcaption style="text-align: center;"> (Two fence entities are vertex snapped to each other.) </figcaption>
+</figure>
+<p><strong>Alt + V</strong> activates and deactivates the vertex snapping feature. It only becomes active if an entity has been selected in the editor. There is a button on the editor toolbar as well, which acts like the hot-key.</p>
+
+
+
+
+
+
+	
+
+
+
+<figure>
+	
+		<a data-featherlight="image" href="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/vertex_snap_button.png"><img style="max-width: 100%; width: auto; height: auto;" src="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/vertex_snap_button.png" width="304" height="62"></a>
+	
+	<figcaption style="text-align: center;"> (Toolbar button for activating/deactivating vertex snapping) </figcaption>
+</figure>
+<p>After activating the tool and while the <strong>left mouse button</strong> is in <strong>a “down” state</strong>, the chosen entity’s selected vertex will continuously snap to the vertex of another, highlighted entity that is closest to the mouse ray’s intersection point. If the distance between the intersection point and the closest vertex is bigger than 2.0f or there is no second entity highlighted, nothing will happen.</p>
+<p>Also, a yellow sphere will be rendered on the vertex to provide head-up display. Thus, user can choose any vertex by moving the mouse. This will be the first vertex. Also, sphere is scaled with respect to camera position’s distance.</p>
+
+
+
+
+
+
+	
+
+
+
+<figure>
+	
+		<a data-featherlight="image" href="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/vertex_snap_cur_vertex.png"><img style="max-width: 100%; width: auto; height: auto;" src="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/vertex_snap_cur_vertex.png" width="717" height="494"></a>
+	
+	<figcaption style="text-align: center;"> (Current vertex is shown with yellow sphere.) </figcaption>
+</figure>
+<p>After deciding on the first vertex, the snap operation can be done by <strong>holding down the left mouse button</strong> and moving the mouse.</p>
+<h2 ref="example-usage-2" >Example Usage</h2><a class="anchor" id="example-usage-2"></a>
+
+
+
+
+
+
+	
+
+
+
+<figure>
+	
+		<a data-featherlight="image" href="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/vertex_snap_a.png"><img style="max-width: 100%; width: auto; height: auto;" src="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/vertex_snap_a.png" width="717" height="393"></a>
+	
+	<figcaption style="text-align: center;"> (First vertex is shown with yellow sphere.) </figcaption>
+</figure>
+
+
+
+
+
+
+	
+
+
+
+<figure>
+	
+		<a data-featherlight="image" href="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/vertex_snap_b.png"><img style="max-width: 100%; width: auto; height: auto;" src="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/vertex_snap_b.png" width="719" height="394"></a>
+	
+	<figcaption style="text-align: center;"> (Snapping path is shown with a yellow line.) </figcaption>
+</figure>
+
+
+
+
+
+
+	
+
+
+
+<figure>
+	
+		<a data-featherlight="image" href="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/vertex_snap_c.png"><img style="max-width: 100%; width: auto; height: auto;" src="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/vertex_snap_c.png" width="716" height="515"></a>
+	
+	<figcaption style="text-align: center;"> (If snapping is successful line color becomes green.) </figcaption>
+</figure>
+
+
+
+
+
+
+	
+
+
+
+<figure>
+	
+		<a data-featherlight="image" href="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/vertex_snap_d.png"><img style="max-width: 100%; width: auto; height: auto;" src="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/vertex_snap_d.png" width="718" height="658"></a>
+	
+	<figcaption style="text-align: center;"> (Two cubes are snapped to each other by vertex.) </figcaption>
+</figure>
+<p>If user releases the left mouse button when the line’s color is green, the snap will be successful. If user releases the left mouse button when the line’s color is yellow, there won’t be any snap and entity will be translated to its initial frame.</p>
+<h2 ref="axis-constraints" >Axis Constraints</h2><a class="anchor" id="axis-constraints"></a>
+<p>When snap tool is active, you will see a gizmo on top of the nearest vertex. You can use axes of this gizmo to constraint axial movement or drag from middle to snap freely.</p>
+
+		
+</div>
+
+
+
+
+
+
+	 
+	<div class="chevrons">
+		<a class="next" href="/DocsModdingBannerlordCN/editor/scene-editor/creating-entity/" title="CREATING ENTITY" style="margin-right: 0px;">
+            <div>
+                <p></p>
+                <label>CREATING ENTITY</label>
+            </div>
+            <i class="fas fa-arrow-right" style="font-size: 1.7em"></i></a>
+	</div>
+	
+	
+
+      </section>
+
+      
+      
+    </article>
+    
+    
+    <footer>
+      
+
+		
+	
+			
+		
+	    	
+	  	
+	
+    </footer>
+    
+
+
+
+  </body>
+</html>

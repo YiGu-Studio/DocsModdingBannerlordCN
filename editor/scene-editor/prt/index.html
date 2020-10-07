@@ -1,0 +1,862 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+	PRECOMPUTED RADIANCE TRANSFER - GI SYSTEM :: 骑马与砍杀 霸主 Mod 开发文档
+</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content=" 2020-10-07T08:06:06 UTC ">
+<meta name="description" content=""> 
+
+<title>PRECOMPUTED RADIANCE TRANSFER - GI SYSTEM :: 骑马与砍杀 霸主 Mod 开发文档</title>
+
+<link rel="shortcut icon" href='/DocsModdingBannerlordCN/images/favicon.png' type="image/x-icon" />
+
+
+<link href='/DocsModdingBannerlordCN/vendor/bootstrap/bootstrap-4.5.2-dist/css/bootstrap.min.css' rel="stylesheet">
+
+
+<link rel="preload" as="style" href='/DocsModdingBannerlordCN/fonts/Montserrat/Montserrat.css'>
+<link rel="stylesheet" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/sass/layout.css'>
+<link rel="stylesheet" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/css/style.main.css'>
+<link rel="stylesheet" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/css/style.menu.css'>
+<link href='/DocsModdingBannerlordCN/vendor/FontAwesome/fontawesome-free-5.14.0-web/css/all.min.css' rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/sass/shortcodes/notice.css'>
+<link rel="stylesheet" type="text/css" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/sass/shortcodes/tabs.css'>
+<link rel="stylesheet" type="text/css" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/sass/shortcodes/panel.css'>
+<link rel="stylesheet" type="text/css" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/sass/shortcodes/columns.css'>
+<link rel="stylesheet" type="text/css" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/sass/shortcodes/children.css'>
+<link rel="stylesheet" type="text/css" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/sass/shortcodes/attachments.css'>
+<link rel="stylesheet" type="text/css" href='https://yigu-studio.github.io/DocsModdingBannerlordCN/sass/shortcodes/alert.css'>
+
+<link rel="stylesheet" href='/DocsModdingBannerlordCN/css/docport.css'>
+<link rel="stylesheet" href='/DocsModdingBannerlordCN/css/featherlight.min.css' type="text/css" />
+
+
+<script src='/DocsModdingBannerlordCN/vendor/jquery/jquery-3.5.1.min.js'></script>
+<script src='/DocsModdingBannerlordCN/vendor/bootstrap/bootstrap-4.5.2-dist/js/bootstrap.min.js' crossorigin="anonymous"></script>
+
+<script src='/DocsModdingBannerlordCN/js/docport.js'></script>
+<script type="text/javascript">
+    var baseurl = "https:\/\/yigu-studio.github.io\/DocsModdingBannerlordCN\/";
+</script>
+<script src='/DocsModdingBannerlordCN/js/featherlight.min.js' type="text/javascript" charset="utf-8"></script>
+
+
+
+    
+  </head>
+
+  <body data-url="/DocsModdingBannerlordCN/editor/scene-editor/prt/"
+
+  class="hidebreadcrumb hidetoc ">
+
+<style type="text/css">
+  #debug{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 3.5rem;
+    margin-bottom: .35rem;
+    padding: 0 2rem;
+    position: fixed;
+    left: 0;      right: 0;     top: 0;
+   
+    top:0px;
+    
+    min-height: 150px;
+
+    background-color: white;
+    border: 3px solid red;
+    z-index: 10000 ;
+    word-wrap: all;
+    overflow: auto;
+  }
+</style>
+ 
+
+
+    
+    
+    <header style="">
+        <div>
+    
+    <div class="burger ">
+        <a href="javascript:void(0);" style="font-size:15px;" onclick="$('article > aside').toggleClass('responsive')">&#9776;</a>
+    </div>
+    
+
+    <div>
+
+		
+	
+			
+		
+	    	<a class='baselink' href='https://yigu-studio.github.io/DocsModdingBannerlordCN/'>骑马与砍杀 霸主 Mod 开发文档</a>
+	  	
+	</div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="/DocsModdingBannerlordCN/zh"  rel="noopener">
+                  中文
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="/DocsModdingBannerlordCN/en"  rel="noopener">
+                  English
+                </a>
+            </li>
+    </nav>
+
+</div>
+    </header>
+    
+
+    <article>
+      
+      <aside class="">
+        
+<div class="search">
+	<div class="searchbox">
+	  <input data-search-input id="search-by" type="text" placeholder="">
+	</div>
+	<script type="text/javascript" src="/DocsModdingBannerlordCN/vendor/lunr/lunr.min.js"></script>
+	<script type="text/javascript" src="/DocsModdingBannerlordCN/vendor/auto-complete/auto-complete.js"></script>
+	<link href="/DocsModdingBannerlordCN/vendor/auto-complete/auto-complete.css" rel="stylesheet">
+	<script type="text/javascript">
+	  
+	      var baseurl = "https:\/\/yigu-studio.github.io\/DocsModdingBannerlordCN\/";
+	  
+	</script>
+	<script type="text/javascript" src="/DocsModdingBannerlordCN/js/search.js"></script>
+</div>
+
+		
+	
+			
+		
+	    	
+	  	
+	<div id="close_menu">
+  <a href="javascript:void(0);" style="font-size:15px;" onclick="$('article > aside').toggleClass('responsive')">
+      <i class="fa fa-lg fa-times"></i>
+  </a>
+</div>
+
+<ul class="menu">
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/" class="dd-item haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      <i class="fas fa-chevron-right ddexp"></i>
+        
+      
+          <a href="/DocsModdingBannerlordCN/asset-management/">资源管理</a>
+      
+        <ul>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/quick-guides/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/asset-management/quick-guides/">创建一个Mod - 快速入门</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/" class="dd-item haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/asset-management/asset-types/">资源类型</a>
+      <i class="fas fa-chevron-right ddexp"></i>
+        
+      
+        <ul>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/overriding-assets/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/asset-management/asset-types/overriding-assets/">ADDING &amp; OVERRIDING ASSETS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/bodies/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/asset-management/asset-types/bodies/">BODIES</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/prefabs/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/asset-management/asset-types/prefabs/">ENTITIES &amp; PREFABS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/materials/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/asset-management/asset-types/materials/">MATERIALS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/meshes/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/asset-management/asset-types/meshes/">MESHES</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/asset-naming-conventions/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/asset-management/asset-types/asset-naming-conventions/">NAMING CONVENTIONS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/overriding-scenes-prefabs/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/asset-management/asset-types/overriding-scenes-prefabs/">OVERRIDING SCENES AND PREFABS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/path/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/asset-management/asset-types/path/">PATHS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/scripts/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/asset-management/asset-types/scripts/">SCRIPTS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/asset-management/asset-types/textures/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/asset-management/asset-types/textures/">TEXTURES</a>
+      
+        
+      
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/bannerlord-missions/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+        
+      
+          <a href="/DocsModdingBannerlordCN/bannerlord-missions/">BANNERLORD 任务</a>
+      
+    </li>
+    
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/" class="dd-item parent haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <i class="fas fa-chevron-down ddexp"></i>
+        
+      
+          <a href="/DocsModdingBannerlordCN/editor/">编辑器</a>
+      
+        <ul>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/" class="dd-item haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/resource-editors/">RESOURCE EDITORS</a>
+      <i class="fas fa-chevron-right ddexp"></i>
+        
+      
+        <ul>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/cloth-simulation/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/resource-editors/cloth-simulation/">CLOTH SIMULATION</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/material-editor/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/resource-editors/material-editor/">MATERIAL EDITOR</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/meta-mesh-editor/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/resource-editors/meta-mesh-editor/">META MESH EDITOR</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/model-viewer/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/resource-editors/model-viewer/">MODEL VIEWER</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/particle-editor/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/resource-editors/particle-editor/">PARTICLE EDITOR</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/skeleton-editor/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/resource-editors/skeleton-editor/">SKELETON EDITOR</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/resource-editors/texture-editor/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/resource-editors/texture-editor/">TEXTURE EDITOR</a>
+      
+        
+      
+    </li>
+        </ul>
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/" class="dd-item parent haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/scene-editor/">SCENE EDITOR</a>
+      
+          <i class="fas fa-chevron-down ddexp"></i>
+        
+      
+        <ul>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/scene-editor/alignment-and-snapping-tools/">ALIGNMENT AND SNAPPING TOOLS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/creating-entity/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/scene-editor/creating-entity/">CREATING ENTITY</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/editor-shortcuts/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/scene-editor/editor-shortcuts/">EDITOR SHORTCUTS</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/entity-inspector/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/scene-editor/entity-inspector/">ENTITY INSPECTOR</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/mass-selection/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/scene-editor/mass-selection/">MASS SELECTION</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/nav-mesh-inspector/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/scene-editor/nav-mesh-inspector/">NAVIGATION MESH INSPECTOR</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/path-editing/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/scene-editor/path-editing/">PATH EDITING</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/prt/" class="dd-item parent active
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/scene-editor/prt/">PRECOMPUTED RADIANCE TRANSFER - GI SYSTEM</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/terrain-resize/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/scene-editor/terrain-resize/">RESIZING TERRAIN</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/terrain-creation/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/scene-editor/terrain-creation/">TERRAIN CREATION</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://yigu-studio.github.io/DocsModdingBannerlordCN/editor/scene-editor/terrain-mesh-blend/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+          <a href="/DocsModdingBannerlordCN/editor/scene-editor/terrain-mesh-blend/">TERRAIN MESH BLEND SYSTEM</a>
+      
+        
+      
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    
+
+
+
+</ul>
+
+		
+	
+			
+		
+	    	
+	  	
+	
+      </aside>
+      
+
+      <section class="page ">
+      
+	
+		
+    
+    
+    
+
+    
+		
+        
+		
+		
+		
+		
+		
+		
+		
+
+		
+			<h1>PRECOMPUTED RADIANCE TRANSFER - GI SYSTEM</h1>
+        
+
+		
+										
+		
+
+		
+	
+
+	
+	
+	
+
+
+
+
+
+
+	<div class="content">
+	    <p>We introduce a new global illumination system to the engine. It is based on a pre-baked system called “Precomputed Radiance Transfer”. This technique allow us to bake the local ambient in the scene and display it in an optimized manner at runtime. Baked data is independent from the atmospheres. Thus, we can light the scene with the same bake data for every atmosphere.</p>
+<table>
+<thead>
+<tr>
+<th>WITH</th>
+<th>WITHOUT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="prt_ss_gi.png" alt="with"></td>
+<td><img src="prt_ss_sky_access.png" alt="without"></td>
+</tr>
+</tbody>
+</table>
+<h3 ref="baking-procedure" ><strong>Baking Procedure</strong></h3><a class="anchor" id="baking-procedure"></a>
+<p>Scene baking is divided into a couple of parts:</p>
+<ul>
+<li>First, the artist should place the border probes to identify the GI boundaries of the scene.</li>
+</ul>
+<p>Side Note 1: If you minimize the GI boundaries as much as possible(not extending it to distant places from navigatable area) , you can decrease the grid dimensions and thus you will have more precision inside the town where it matters the most. For town scenes, we generally use grid dimensions of 1.5 meters width and 2.5 meters height.</p>
+<p>Side Note 2: For the pixels outside the GI borders, we use a fallback probe from the scene. The default is the highest active probe near to the left corner of the GI order. Artist can select any other probe from the scene by first selecting probe and checking the “Fallback Probe” checkbox in the UI.</p>
+<p><img src="grid1.png" alt="grid1"></p>
+<p><img src="grid2.png" alt="grid2"></p>
+<ul>
+<li>AT the next pass, the GI probes are created. The initial positions of the probes computed automatically by using the navigation mesh of the scene. With the navigation mesh, we place the probes where the agents can move and also to everywhere visible from those navigation points. The probes are generated within a 3d grid structure. A directional ambient data is computed for every probe position. Using these ambient light values, every pixel in the screen is illuminated by the nearest 8 probes. In some cases, when the lighting between neighbour probes have a very high difference, light or shadow leaking can occur. In order to fix these issues, we render shadowmaps from the probes just like point lights. Probes with shadowmaps are named as “Visibility Probes”. For memory usage issues, there is a limit for these Visibility Probes, which is 2048. At the automatic placement phase, the system also tries to find the most probable leak positions and assign those probes as Visibility Probes. It takes into account the ambient light difference. For additional leak fixes, the system leaves the last 5 percent Visibility Probe limit empty, so that the scene designer can fix the remaining leak issues.</li>
+</ul>
+<p><img src="prt_probes.png" alt="probes"></p>
+<p><img src="diffuse_ambient.png" alt="ambient"></p>
+<h3 ref="prt-files" ><strong>PRT Files</strong></h3><a class="anchor" id="prt-files"></a>
+<p>Just like the scene edit data system, prt data is divided into two parts. prt_data.bin is located inside the SceneObj folder and is the compressed version which is stripped of any editing data. This file should be sent to the source control. The other file is the edit data file. It is very big (at around 2 - 3 gb) and automaticaly sent to the edit data folder inside the network. Once you open a pre-baked scene in editor, only the compressed data is loaded. To be able to edit the bake data, you should Load the edit data with the ‘Load’ button in the “General Info” panel of the PrtInspector.</p>
+<p><strong>Important Node</strong> : After any changes to the prt data, do not forget to save the data with the ‘Save’ button in the “General Info” panel of the PrtInspector.</p>
+<h3 ref="prt-operations" ><strong>PRT Operations</strong></h3><a class="anchor" id="prt-operations"></a>
+<p><img src="gi_operations_tab.png" alt="tab"></p>
+<ul>
+<li><strong>Load</strong> : Loads the edit data from the server.</li>
+<li><strong>Save</strong> : Saves the current edit data to the server.</li>
+<li><strong>Auto Height Boundary</strong> : Adjusts the PRT boundary probes’s height to the min/max of the scene.</li>
+<li><strong>Bake Single Level</strong> : Bakes the scene with the current levels, should be used for the interior scenes</li>
+<li><strong>Bake All Levels</strong> : Bakes the scene with the pre-defined multiple levels(namely level-1/level-2/level-3 and siege/civilian) combinations.</li>
+</ul>
+<h3 ref="probe-placement-parameters" ><strong>Probe Placement Parameters:</strong></h3><a class="anchor" id="probe-placement-parameters"></a>
+<ul>
+<li><strong>Grid Width</strong> : Determines the probe grid cell size in XY plane. For towns, you can use 1.5. For interiors scenes, you can use between 0.5 to 1.0.</li>
+<li><strong>Grid Height</strong> : Determines the probe grid cell height. For towns, you should use a value near 2.5. For interiors scenes, you can use between 0.5 to 1.0.</li>
+</ul>
+<h3 ref="selection-tools" ><strong>Selection Tools:</strong></h3><a class="anchor" id="selection-tools"></a>
+<p>To ensure fast and smooth editing of probes, various selection tools are implemented.</p>
+<ul>
+<li><strong>Select All</strong> : Selects all probes.</li>
+<li><strong>Grow</strong> : Grows the selection to include neighbour probes in XY plane.</li>
+<li><strong>Shrink</strong> : Shrink the selection to only include the inner neighbour probes in XY plane.</li>
+<li><strong>Fill</strong> : Finds the inner probes of the current selected probe group and selectes them.</li>
+<li><strong>Select Border</strong> : Finds and selects the border probes of the current selection.</li>
+<li><strong>Select Inner Border</strong> : Finds and selects the inner border of the current selection.</li>
+<li><strong>Select Outer Border</strong> : Finds and selects the outer border of the current selection.</li>
+<li><strong>Lasso Tool</strong> : We implemented a screen space lasso tool for easy selection of a group of probes. It can be started by pressing ‘r’ and finished by either double clik or pressing ‘r’ again.</li>
+</ul>
+<p><img src="lasso.png" alt="lasso"></p>
+<h3 ref="visibility-tools" ><strong>Visibility Tools</strong></h3><a class="anchor" id="visibility-tools"></a>
+<ul>
+<li><strong>Show Active Probes</strong> : Shows all active probes</li>
+<li><strong>Show Deactive Probes</strong> : Show deactived probes.</li>
+<li><strong>Show Visibility Probes</strong> : Show the Visibility probes (the ones with the visibility calculation to prevent leaking).</li>
+<li><strong>Level To Show</strong> : Selects the Z level to show. -1 means all levels.</li>
+<li><strong>Show Probe Radius</strong> : Determines the probe radius for debug visualization.</li>
+<li><strong>Box Tool</strong> : Enables a mode where you .</li>
+</ul>
+<p>Side Not : This system only renders the nearest 100 probes with respect to the camera.</p>
+<h3 ref="useful-shortcuts" ><strong>Useful Shortcuts</strong></h3><a class="anchor" id="useful-shortcuts"></a>
+<ul>
+<li><strong>Left Ctrl + x</strong>: Enable/Disable the selected probes</li>
+<li><strong>Left Ctrl + c</strong>: Toggles the “Visibility Probe” status</li>
+<li><strong>Left Alt + Left Mouse Click</strong>: Select the probes that influences a pixel (very neat tool for fixing the leak issue, select the pixel and use the toggle visibility status shortcut to fix the issue)</li>
+</ul>
+
+		
+</div>
+
+
+
+
+
+
+	 
+	<div class="chevrons">
+		<a class="next" href="/DocsModdingBannerlordCN/editor/scene-editor/terrain-resize/" title="RESIZING TERRAIN" style="margin-right: 0px;">
+            <div>
+                <p></p>
+                <label>RESIZING TERRAIN</label>
+            </div>
+            <i class="fas fa-arrow-right" style="font-size: 1.7em"></i></a>
+	</div>
+	
+	
+
+      </section>
+
+      
+      
+    </article>
+    
+    
+    <footer>
+      
+
+		
+	
+			
+		
+	    	
+	  	
+	
+    </footer>
+    
+
+
+
+  </body>
+</html>
