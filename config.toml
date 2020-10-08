@@ -5,7 +5,7 @@ theme = ["hugo-notice", "docport"]
 # disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
 DefaultContentLanguage = "zh"
 copyright = "Taleworlds"
-defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = true
 publishDir = "docs"
 
 [languages]
