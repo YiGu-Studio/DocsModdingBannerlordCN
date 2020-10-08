@@ -16,7 +16,7 @@ hide:
 
 |                              |                                         |
 | ---------------------------- | --------------------------------------- |
-| ![gen](generate_terrain.png) | ![gen_res](generate_terrain_result.png) |
+| {{< img src="generate_terrain.png" box="true">}} | {{< img src="generate_terrain_result.png" box="true">}} |
 
 ## 调整节点属性
 
@@ -24,7 +24,7 @@ hide:
 
 这个功能可用于分辨率不太重要的地方来优化地形（如定居点之外，玩家无法进入的地方，或者水底）
 
-![res](resolution.png)
+{{< img src="resolution.png" box="true">}}
 
 ## 导入/导出材质地图或者高度地图
 
@@ -32,5 +32,5 @@ hide:
 
 ||||||
 |-|-|-|-|-|
-|![a](add_layer.png)|![b](import_weightmap.png)|![c](weightmap.png)|![d](weight_imported.png)|![e](height_imported.png)|
+|{{< img src="add_layer.png" box="true">}}|{{< img src="import_weightmap.png" box="true">}}|{{< img src="weightmap.png" box="true">}}|{{< img src="weight_imported.png" box="true">}}|{{< img src="height_imported.png" box="true">}}|
 
