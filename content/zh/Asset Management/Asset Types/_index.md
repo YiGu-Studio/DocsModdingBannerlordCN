@@ -6,32 +6,39 @@ hide:
 - breadcrumb
 ---
 
-## Adding & Overriding Assets
-In RGL you can easily override existing assets or create new ones within the editor for your custom mode. Override mechanism works by replacing existing assets with the one you supplied in your module’s assets directory. It tries to match your custom assets with the ones previously registered by other modules by their names. This happens with respect to loading order of the modules. If Module A and Module B are loaded in addition to the Native module respectively, list of final assets and their sources will be as follow :
+## 增加/覆写资产
+在RGL中您可以非常轻松地覆写任何现有的资产，或在编辑器中为您自己的模组创立新资产。覆写机制通过利用现有资产的目录中自定义资产来替换现有游戏资产。它会试图将您的自定义资产与其他模组之前注册的资产的名称进行匹配。这将与模组的加载顺序有关。如果在Native模组外分别加载了模组A和模组B，最终的资产列表和其来源将如下所示：
 
-## Bodies
-Bodies define the physics boundaries of objects. They can be assigned to entities in scenes or prefabs. Users can edit the Body Flags to change their behaviour. Body Flags Two Sided: Forces the physics engine to use both sides of the polygons for this body. AI Limiter: Used to tag bodies which will only used against AI agents, excluding the player. Destructible Door: Used by the automatic navigation mesh generator to not put nav mesh under destructable doors.
+## 物体
+物体定义了物体的物理边界，它们可以被分配给场景或者预制物件的实体。用户可以编辑“物体标识”（Body Flag) 来改变其行为。
+双面：强制物理引擎使用多边形的两面。
+Ai限制器：用来标记只针对AI使用的物体，不包括玩家。
+可破坏的门：通过自动导航网格生成器来使用，而非将导航网格直接置于可破坏的门之下。
 
-## Entities & Prefabs
-In RGL, entities are containers for all of the meshes, particles, script components, occluders and physics objects. They can also contain other entities as children. They have their own transformation that determines their position, scale and rotation in the world. Prefabs Prefabs are template entities which do not sever the connection to the prefab even after it is saved in a scene. Complex entities can be constructed one time and saved as a prefab to be used at any time, in any scene.
+## 实体及预制物件
+在RGL中，实体是包含所有网格，粒子，脚本组件，遮挡物和物理对象的容器。它们可以容纳其他实体来作为其子实体。这些子实体有自己的变体存在，决定了它们在整个世界中的位置，比例和旋转角度。
+预制件：预制物件属于模板实体，即便是复杂的实体可以直接一次构造，并在之后保存为预制物件，以便在任何场景中随时使用。
 
-## Materials
-Materials define the rendering characteristics of meshes. They contain the shader and texture information, also the rendering flags (defined from by shader and the global ones). A mesh can have a single material. The initial value of a mesh’s material will be assigned through it’s given material name in the 3rd party mesh editing applications. Materials can be created and edited through the Material Browser which can be accessed through the Resource Browser.
+## 材质
+材质定义了网格模型的渲染特性，它们包含着色器和纹理信息，也包含渲染标志（由着色器和全局标志定义）。它们包含着色器和纹理信息，也包含渲染标志（由着色器和全局标志定义）。一个网格模型可以定义一个材质。在第三方网格编辑程序中，网格材质的初始值将通过它的材质名称来分配。材质可以通过材质浏览器来创建和编辑，而材质浏览器可以通过资源浏览器来访问。
 
-## Meshes
-Meshes contain the polygon positions and attributes to be used at the rendering pass. Every mesh has one material that defines their rendering behaviour. They are grouped inside MetaMesh’s by their LOD level. Also, at the same LOD level, there can be multiple meshes with different materials. More information about importing meshes to the engine can be found at Material Editor. LOD System Modern engines use LOD(level of detail) systems to ensure that the amount of GPU share used by the closer parts of the screen is more than the far ones.
+## 网格
+网格包含了多边形的方位和渲染时要使用的属性。每个网格都会有一个材质以定义其的渲染行为。它们在网格内将按照其LOD级别进行分组。同时，在同一个LOD级别中可以同时有多个不同材质的网格。若想了解更多关于将网格导入引擎的信息,请参阅Material Editor。
+LOD系统：现代引擎通常使用LOD(Level of detail)系统，以确保近处位置的GPU份额可以多于远处位置的份额。
 
-## Naming Conventions
-To distinguish and organize assets and simplfy asset authoring process there are some predefined rules to consider. Meshes All meshes imported from a single geometry file(e.g. fbx) are grouped by their names. To add a LOD mesh simply append ”.lod<n>“ to the name of your mesh. Here n is the number of lod. Consider an fbx file as below : asset.fbx : wall_damaged wall_damaged_v2 wall_damaged_v2.lod1 wall_damaged.lod1 wall_damaged.lod2 Two meshes will be imported from asset.
+## 命名转换
+为了方便归类和编辑，并简化资产制作过程，有一些预定义的规则需要考虑。网格 所有从单一几何文件(如fbx)导入的网格都会根据其名称进行分组。
+要添加一个LOD网格，只需在网格名称后加上".lod<n>"。这里n是lod的数量。考虑一个如下的fbx文件： asset.fbx : wall_damaged wall_damaged_v2 wall_damaged_v2.lod1 wall_damaged.lod1 wall_damaged.lod2 两个网格将从 asset导入。
 
-## Overriding Scenes and Prefabs
-You can override existing scenes and prefabs by creating new one with the same name. You should keep in mind that overriding prefabs may break existing scripts if you change entity hierarchy. Make sure you preserve entity hierarchy to avoid possible breaking errors if your entity is being used by existing scripts. Prefabs Prefab definitions are stored in xml files located in Prefabs folder in each module’s directory.
+## 场景覆盖和预设
+您可以通过创建一个新的同名场景和预设覆盖现有的场景。值得注意的是，如果您改变了实体的层次结构，直接覆盖预制件可能会破坏现有的脚本。请确保保留实体层次结构，以避免在你的实体被现有脚本使用的情况下可能出现的中断错误。预制件： 预制件定义存储在xml文件中，位于每个模块目录下的“Prefabs”文件夹中。
 
-## Paths
-In RGL, ‘Paths’ are used to define continous points within a scene. They have unique names and can be used by the gameplay logic for different reasons. Paths define how the siege engines move in missions. Also, for field battle missions, initial spawn point candidates are defined via a path. The spawn logic selects two positions for the teams with respect to the size of the battle. Detailed information about path editing can be found at Path Editing.
+## 路径
+在RGL中，"路径 "用于定义场景中的连续点。它们都有独特的命名，以便应用于各种情况的游戏逻辑中。路径定义了攻城引擎在任务中的运行方式。另外，野战任务中的出生候选点也需要通过路径进行定义。根据战斗规模，生成逻辑会为队伍分别选定两个位置。关于路径编辑的详情，请参阅Path Editing内容。
 
-## Scripts
-Script components are executable scripts that are attached to entities and can be used to implement various gameplay functionalities. In Bannerlord, many gameplay logic are written via script components. For example chairs, dropped weapon, siege machines. There are many different callbacks that can be inherited and filled in these script components. Callbacks Constructor: In constructor one needs to assign default values to its public variables(variables which can be changed by the scene maker).
+## 脚本
+脚本组件是附加在实体上的可执行脚本，以用来实现各种游戏功能。在《霸主》中，很多游戏逻辑都是通过脚本组件来编写的。例如椅子、掉落武器、攻城器具等等。很多不同类型的回调函数可以被继承并填充到这些脚本组件中。
+回调构造函数：在构造函数中，我们需要给它的公共变量分配默认值（这些变量函数可以被场景制作者所修改）。
 
-## Textures
-Textures can be imported through the Asset Browser. They can be assigned to materials via the Material Editor. The texture slots of the PBR materials can be found at Material Editor. The maximum value for the terrain textures’ resolution is 2048 by 2048.
+## 纹理
+纹理可以通过 "资产浏览器 "导入。它们可以通过材质编辑器来分配给材质。PBR材质的纹理槽可以在材质编辑器中获取。地形纹理的分辨率最大值为2048×2048。
