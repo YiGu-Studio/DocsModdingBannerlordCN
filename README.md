@@ -1,6 +1,8 @@
-# Bannerlord Modding Kit Documentation Chinese Translation
+# 骑马与砍杀2 官方 Mod 文档 中文网站镜像
 
-<Mount & Blade 2: Bannerlord> [MODDING DOCUMENTATION](http://docs.modding.bannerlord.com/) Chinese Translation https://yigu-studio.github.io/DocsModdingBannerlordCN/
+<Mount & Blade 2: Bannerlord> [MODDING DOCUMENTATION](http://docs.modding.bannerlord.com/) 
+
+简体中文版 https://yigu-studio.github.io/DocsModdingBannerlordCN/
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [logo]: https://img.shields.io/badge/all_contributors-5-orange.svg 'Number of contributors on All-Contributors'
@@ -9,42 +11,22 @@
 [![All Contributors][logo]](#contributors-)
 ![Deploy Badge](https://github.com/YiGu-Studio/DocsModdingBannerlordCN/workflows/GitHub%20Page%20Deploy/badge.svg)
 
-## How to contribute
+## 为什么要做中文镜像？
 
-1. Please refer [Issue 50](https://github.com/YiGu-Studio/DocsModdingBannerlordCN/issues/50) for translation tasks. You can claim a task from the check lists by comments.
+因为有时候官方文档服务器不稳定，有时候在境内访问该网站会需要等比较长的时间，所以我们做了这个中文镜像站点。如果你发现官方网站暂时无法访问，可以访问本网站以解燃眉之急。
 
-2. Fork the repo and start a Pull Request when completing the translation. Please create a new branch for one article. Your Pull Request should be named as the article title.
 
-3. After your first PR has been approved and merged. Please check [Issue 7](https://github.com/YiGu-Studio/DocsModdingBannerlordCN/issues/7) to add your name to our contributors list.
+## 这个 Repo 原本的作用？
 
-## File Structure
+这个 Repo 原本是在官方文档未开源时，仿照官方文档的样子做了一个类似的网站，并且翻译了其中一部分文档，目前所有翻译的文档所有的文档已经合并到官方 Repo 下。
 
-Documentation in folder `en` is aligned to original documentation.
-folder `zh` contains all the Chinese Translation.
-2 folders will keep same folder structure.
+## 这个 Repo 还接受任何形式的贡献么？
 
-```
-DocsModdingBannerlordCN
--- ...
--- content
-   -- en
-      -- Folder 1
-         -- _index.md
-         -- ...
-      -- Folder 2
-      -- ...
-   -- zh
-      -- Folder 1
-         -- _index.md
-         -- ...
-      -- Folder 2
-      -- ...
--- ...
-```
+如果有问题，建议直接邮件联系 [Oliver](https://github.com/WuZhuoran)。所有有关文档的贡献请直接提交到 [官方 Repo](https://github.com/TaleWorlds/Documentations)。本 Repo 不再接受任何 Issue 和 PR 的提交。
 
-## Contributors ✨
+## 贡献者 ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感谢以下做出杰出贡献的朋友！
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
