@@ -150,6 +150,15 @@ asset.fbx :
     </item>
     
     <item>
+      <title>Navmesh</title>
+      <link>http://localhost:4444/editor/scene-editor/nav_mesh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/editor/scene-editor/nav_mesh/</guid>
+      <description>What is the Navigation Mesh? Navigation Mesh is a compilation of models created by the scene designer for the use of AI to make sure they can move around without colliding with the physic objects in the scene. What are the important rules for Navigation Mesh? a. 1,5 Meter Rule: Designers needs to arrange the navigation mesh in a 1.5-meter diameter when creating on terrain or other objects that can be walked on or can stand on (Rooftops, castle walls etc.</description>
+    </item>
+    
+    <item>
       <title>Overriding Scenes and Prefabs</title>
       <link>http://localhost:4444/asset-management/asset-types/overriding_scenes_prefabs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -394,6 +403,15 @@ Addinga new level (or deletingan existing one) to a scene can be done in Levelsp
 Levels in Game - Bannerlord - Currently, Bannerlord recognizes a few levels that has a meaning in-game. \
 Which are: \
  level_1 \ level_2 \ level_3 \ siege \ civilian  Setting Entity visibilities Making an entity only visible in a certain level combinations can be done with selecting an entity then going in Scene Level Visibilitiespanel under Entity Inspector.</description>
+    </item>
+    
+    <item>
+      <title>Scene Performance Guide</title>
+      <link>http://localhost:4444/bestpractices/scene_performance_guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/bestpractices/scene_performance_guide/</guid>
+      <description>Performance Requirements of Mount&amp;amp;Blade Bannerlord  Singleplayer Scenes: Very High Config / 60 FPS / Gtx 1060. Multiplayer Scenes: Very High Config / 60 FPS / Gtx 970.  Possible Performance Bottlenecks Missing occluders Occluders are physical objects that define occlusion boundaries for meshes. If an object’s bounding box is fully occluded by an occluder, those objects are not rendered. Occluders drastically reduce the performance problems of wide and large scenes.</description>
     </item>
     
     <item>

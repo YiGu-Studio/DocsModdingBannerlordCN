@@ -28,16 +28,6 @@ Adding Component Component can be added from the toolbar after selecting an enti
     </item>
     
     <item>
-      <title>Entities &amp; Prefabs</title>
-      <link>http://localhost:4444/zh_cn/asset-management/asset-types/prefabs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/prefabs/</guid>
-      <description>In RGL, entities are containers for all of the meshes, particles, script components, occluders and physics objects. They can also contain other entities as children. They have their own transformation that determines their position, scale and rotation in the world.
-Prefabs Prefabs are template entities which do not sever the connection to the prefab even after it is saved in a scene. Complex entities can be constructed one time and saved as a prefab to be used at any time, in any scene.</description>
-    </item>
-    
-    <item>
       <title>Material Editor</title>
       <link>http://localhost:4444/zh_cn/editor/resource-editors/material_editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -45,26 +35,6 @@ Prefabs Prefabs are template entities which do not sever the connection to the p
       <guid>http://localhost:4444/zh_cn/editor/resource-editors/material_editor/</guid>
       <description>Overview Inspector Shader pbr_shading This shader is heavily used and exists just because our engine did not use PBR shading pipeline in the early years of development, most content was not created for PBR pipeline, so this shader is created to support our already existing content and only used during the transition phase. New content should not use this shader, instead you should use pbr_metallic.
 pbr_metallic This is what you should use most of the time.</description>
-    </item>
-    
-    <item>
-      <title>Meshes</title>
-      <link>http://localhost:4444/zh_cn/asset-management/asset-types/meshes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/meshes/</guid>
-      <description>Meshes contain the polygon positions and attributes to be used at the rendering pass. Every mesh has one material that defines their rendering behaviour. They are grouped inside MetaMesh&amp;rsquo;s by their LOD level. Also, at the same LOD level, there can be multiple meshes with different materials. More information about importing meshes to the engine can be found at Material Editor.
-LOD System Modern engines use LOD(level of detail) systems to ensure that the amount of GPU share used by the closer parts of the screen is more than the far ones.</description>
-    </item>
-    
-    <item>
-      <title>Mission Tactical Positions</title>
-      <link>http://localhost:4444/zh_cn/authoring-mission-scenes/tactical_positions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:4444/zh_cn/authoring-mission-scenes/tactical_positions/</guid>
-      <description>TACTICAL POSITIONS AND TACTICAL REGIONS These are scripted entities that let the AI know of the terrain&amp;rsquo;s features. They do not work like siege, the AI will not always use the tactical positions or regions you may place. They may use them under conditions that favor the use of these.
-Depending on player movement and spawn path randomization, there are a very high number of scenarios that can occur during battles.</description>
     </item>
     
     <item>
@@ -81,24 +51,12 @@ asset.fbx :
     </item>
     
     <item>
-      <title>Overriding Scenes and Prefabs</title>
-      <link>http://localhost:4444/zh_cn/asset-management/asset-types/overriding_scenes_prefabs/</link>
+      <title>Navmesh</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/nav_mesh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/overriding_scenes_prefabs/</guid>
-      <description>You can override existing scenes and prefabs by creating new one with the same name.
-Prefabs Prefab definitions are stored in xml files located in Prefabs folder in each module&amp;rsquo;s directory.
-Scenes Scenes are stored in two separate folders SceneObj and SceneEditData in each module&amp;rsquo;s directory. SceneObj folder stores necessary files to open scene in client mode while SceneEditData stores files necessary for editing operations.</description>
-    </item>
-    
-    <item>
-      <title>Path Editing</title>
-      <link>http://localhost:4444/zh_cn/editor/scene-editor/path_editing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:4444/zh_cn/editor/scene-editor/path_editing/</guid>
-      <description>Level designer can easily add, edit or delete paths and path points by the scene editor.
-Adding a new path User can use the Add New Path button at the upper toolbar. User should enter a unique name for every path. After the path is added, the editor&amp;rsquo;s editing state will become &amp;ldquo;Path Select&amp;rdquo;. By spacing either space or the &amp;ldquo;Add a new path point&amp;rdquo; button from the upper toolbar, user can transition to the &amp;ldquo;Path Node Add&amp;rdquo; mode and start adding new path nodes.</description>
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/nav_mesh/</guid>
+      <description>What is the Navigation Mesh? Navigation Mesh is a compilation of models created by the scene designer for the use of AI to make sure they can move around without colliding with the physic objects in the scene. What are the important rules for Navigation Mesh? a. 1,5 Meter Rule: Designers needs to arrange the navigation mesh in a 1.5-meter diameter when creating on terrain or other objects that can be walked on or can stand on (Rooftops, castle walls etc.</description>
     </item>
     
     <item>
@@ -107,7 +65,7 @@ Adding a new path User can use the Add New Path button at the upper toolbar. Use
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:4444/zh_cn/asset-management/asset-types/path/</guid>
-      <description>In RGL, &amp;lsquo;Paths&amp;rsquo; are used to define continous points within a scene. They have unique names and can be used by the gameplay logic for different reasons. Paths define how the siege engines move in missions. Also, for field battle missions, initial spawn point candidates are defined via a path. The spawn logic selects two positions for the teams with respect to the size of the battle. Detailed information about path editing can be found at Path Editing.</description>
+      <description>在 RGL 中，“路径”是由场景中连续的点 (Point) 组成的。他们一般都有独特的命名并且被游戏逻辑 (Gameplay Logic) 调用。路径在任务中定义了攻城器械的移动路线。同时。在遭遇战中，起始的出生点也是通过路径定义的。出生点逻辑可以根据双方军队的人数编制设定两个初始位置。关于路径修改的细节信息可以在 路径编辑 (Path Editing)中查看。</description>
     </item>
     
     <item>
@@ -127,15 +85,6 @@ Editing Bones and Joints To edit a bone or joint, you can select the item you wa
       
       <guid>http://localhost:4444/zh_cn/asset-management/asset-types/skeletons/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Textures</title>
-      <link>http://localhost:4444/zh_cn/asset-management/asset-types/textures/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/textures/</guid>
-      <description>Textures can be imported through the Asset Browser. They can be assigned to materials via the Material Editor. The texture slots of the PBR materials can be found at Material Editor.</description>
     </item>
     
     <item>
@@ -177,6 +126,17 @@ Mod 层次结构 Mod 可以具有多个文件夹，其中包含不同类型的�
     </item>
     
     <item>
+      <title>实体及预制件</title>
+      <link>http://localhost:4444/zh_cn/asset-management/asset-types/prefabs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/prefabs/</guid>
+      <description>在RGL中，实体是包含所有网格，粒子，脚本组件，遮挡物和物理对象的容器。它们可以容纳其他实体来作为其子实体。这些子实体有自己的变体存在，决定了它们在整个世界中的位置，比例和旋转角度。
+预制件(Prefabs) 预制件(Prefabs)属于模板实体，即便是复杂的实体可以直接一次构造，并在之后保存为预制物件，以便在任何场景中随时使用。后期对预制件的更新也会对已经完成的场景造成影响。在《霸主》中，几乎所有的任务对象和场景道具都是预制件。
+连接规则(Connection Rules) 一旦一个预制件被放置到场景中，预制件下的所有值（网格颜色、子实体变换、脚本数值）都与原预制件相连，并且在每次改变原预制件后都会更新。在场景中，任何对这些值的改变都会切断连接。需要注意的是，在场景中对预制件进行的任何 &amp;ldquo;增加 &amp;ldquo;操作，都会将预制件的连接全部断开。例如：添加一个新的网格、粒子系统、光线、子实体或脚本组件</description>
+    </item>
+    
+    <item>
       <title>常见问题解答</title>
       <link>http://localhost:4444/zh_cn/asset-management/faq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -206,7 +166,7 @@ Main_map
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:4444/zh_cn/asset-management/asset-types/materials/</guid>
-      <description>材质（Materials）定义了网格模型的渲染特性。它们包含着色器和纹理信息，也包含渲染标志（由着色器和全局标志定义）。一个网格模型可以拥有一个材质。在第三方网格编辑程序中，网格材质的初始值将通过它的材质名称来分配。材质可以通过材质浏览器来创建和编辑，而材质浏览器则可以通过资源浏览器来访问。材质也可以在运行时通过脚本和行为进行编辑。更多关于材质编辑和引擎默认材质的信息可以可以参阅材质编辑器 (Material Editor) 章节。</description>
+      <description>材质（Materials）定义了网格模型的渲染特性。它们包含着色器和纹理信息，也包含渲染标志（由着色器和全局标志定义）。一个网格模型可以拥有一个材质。在第三方网格编辑程序中，网格材质的初始值将通过它的材质名称来分配。材质可以通过材质浏览器来创建和编辑，而材质浏览器则可以通过资源浏览器来访问。材质也可以在运行时通过脚本和行为进行编辑。更多关于材质编辑和引擎默认材质的信息可以可以参阅 材质编辑器 (Material Editor) 章节。</description>
     </item>
     
     <item>
@@ -235,6 +195,15 @@ Main_map
     </item>
     
     <item>
+      <title>纹理</title>
+      <link>http://localhost:4444/zh_cn/asset-management/asset-types/textures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/textures/</guid>
+      <description>纹理 (Textures) 可以通过资产浏览器 (Asset Browser) 导入。可以通过材质编辑器 (Material Editor) 给纹理指定一些材质。PBR ( 基于物理的渲染 Physically Based Rendering) 材质的纹理槽 (Texture Slot) 可以在 材质编辑器 (Material Editor)中找到。</description>
+    </item>
+    
+    <item>
       <title>给你的Mod添加音乐</title>
       <link>http://localhost:4444/zh_cn/playing-sounds/adding-custom-sounds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -255,6 +224,27 @@ Main_map
     </item>
     
     <item>
+      <title>编辑路径</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/path_editing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/path_editing/</guid>
+      <description>关卡设计师 (Level designer) 可以在场景编辑器 (Scene Editor) 中轻易的增加、修改和删除路径 (Path) 和路径点 (Path Point)。
+添加一个新的了路径 用户可以使用在工具栏上部的 添加新路径 (Add New Path) 按钮，可以为每一个路径设计一个独特的名字。路径添加之后，编辑器的编辑状态 (Editing State) 会变成“路径选择”(&amp;ldquo;Path Select&amp;rdquo;) 状态。此时按空格 (space) 或者 点击工具栏上部的添加一个新路径点 (Add a new path point) 按钮。用户可以回到 &amp;ldquo;路径点添加&amp;rdquo; (Path Node Add) 模式然后添加新的路径点。每点击一次就会在当前选中的路径上添加一个新的路径点。此时再按空格，用户就可以选择并且编辑当前的路径点。每一条路径点都有 3 转换点 (Transform Points)：中心方块 (Center Cube) 和两条切线球面 (Tagent Spheres)。用户可以鼠标悬停于此然后点击鼠标左键选中他们。然后，按 T 键开始产生这 3 个转换点，之后便可以移动他们。每一步操作都可以通过 &amp;ldquo;Control + Z&amp;rdquo; 组合来取消操作。选中的路径点可以通过 &amp;ldquo;Del&amp;rdquo; 键移除。选中的路径也可以通过 &amp;ldquo;Del&amp;rdquo; 键移除。同时，如果想选中另一条路径，可以鼠标悬停在那条路径其中一个点并点击鼠标左键。
+   添加一条新路径 添加一个新的路径点 选中一个路径点           </description>
+    </item>
+    
+    <item>
+      <title>网格</title>
+      <link>http://localhost:4444/zh_cn/asset-management/asset-types/meshes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/meshes/</guid>
+      <description>网格(Meshes)包含了多边形的位置和渲染时使用的属性。每个网格都会有一个材质以定义其的渲染行为。它们在网格内将按照其LOD级别进行分组。同时，在同一个LOD级别中可以同时有多个不同材质的网格。若想了解更多关于将网格导入引擎的信息,请参阅 Material Editor.
+细节级别 (LOD) 现代引擎通常使用LOD(Level of detail)系统，以确保相机近处位置使用的GPU资源量多于远处位置。这将通过增加摄像头的距离时减少网格质量来实现。这一系统将确保每个像素的多边形比例在整个屏幕上都尽可能的相似。默认的LOD距离将包含：15, 22.5, 30, 50, 70, 130, 210米。这些距离设置将保证最佳的图形质量，通过在游戏中设置环境和人物质量可以对其进行调节。</description>
+    </item>
+    
+    <item>
       <title>脚本</title>
       <link>http://localhost:4444/zh_cn/asset-management/asset-types/scripts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -262,6 +252,36 @@ Main_map
       <guid>http://localhost:4444/zh_cn/asset-management/asset-types/scripts/</guid>
       <description>脚本组件是附加在实体上的可执行脚本，可以用来实现各种游戏功能。在《霸主》中，很多游戏逻辑都是通过脚本组件来编写的。例如椅子、掉落的武器、攻城器械。有很多不同的回调函数，可以被继承并填充在这些脚本组件中。
 回调函数  Constructor: 在构造函数中，我们需要给它的公有变量分配默认值（可以被场景制作者改变的变量）。在构造函数中，脚本组件不会被分配给实体或场景。另外，不要在这里写任何有副作用的逻辑，因为即使创建了脚本组件，由于升级等级系统的原因，一旦打开场景，脚本组件就可能会被删除。 OnPreInit: 当脚本组件被分配给场景中的所有者实体后，这个回调被调用。一旦你进入了这个回调，那么该脚本实例中的用户定义变量就被设置了。然而，其他实体的脚本组件可能还没有被分配。因此，在预初始化中，不应该有任何依赖于其他脚本组件的逻辑代码。例如，在预初始化中， ManagedObject 将自己注册到当前任务实例中的托管对象数组。 OnInit: 当任务被加载且所有实体的脚本组件被初始化，这个回调就会被立刻调用。你可以在这个回调里面使用任何类型的逻辑代码。运行时实例化的脚本也会得到这个回调的调用。 OnEditorInit: OnInit 的编辑器版本，在从编辑器加载场景时被调用。当场景从编辑器中加载时，它会被调用。确保编辑器中没有任务或游戏状态。 OnTick: 对于每个脚本组件，该任务在同一线程的任务的每个帧中都被调用。 OnEditorTick: OnTick 的编辑器版本。 IsOnlyVisual: 如果你有一个脚本组件，只是可视化的，没有任何应该在服务器版本上运行的逻辑代码，你应该在这个函数中返回 true 。这确保了这种类型的脚本不会在服务器版本上运行。 OnEditorVariableChanged: 在编辑器中，每当用户改变该脚本组件中的公有变量时，就会调用这个回调。如果艺术家需要在编辑器场景中得到即时反馈，这个回调可以用于任何视觉-逻辑状态的改变。 OnRemoved: 当实体或脚本组件被移除时调用。如果你有任何已分配内存的对象被存储在其他地方（例如静态容器），你可以使用这个回调来确保它们被回收，避免泄露内存。  </description>
+    </item>
+    
+    <item>
+      <title>行动的战术位置</title>
+      <link>http://localhost:4444/zh_cn/authoring-mission-scenes/tactical_positions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/authoring-mission-scenes/tactical_positions/</guid>
+      <description>战术阵地和战术区域 这些是让AI了解地形特征的脚本实体。与攻城战中不同，AI不会总是使用你放置的战术阵地或区域。他们会在自己认为有利的条件下使用它们。
+由于玩家的移动路径和AI刷入路径随机化，在战斗中可能出现的情况非常多。因此，最好尽可能多地标记有意义的阵地和区域。漏掉一些有意义的阵地标记将不会导致像攻城战中那样明显的错误，但会导致战斗的趣味性降低，因为AI不会意识到他们周围的环境。下面是关于战术阵地和战术区域的类型以及使用方法。
+战术阵地 高地（High ground），坡面方向 这些是面向一个方向的有利高地阵地。如果敌人从战术阵地面对的方向靠近，AI可以守住这些阵地。 方向是最重要的部分。要防守的阵地将面对阵地的前进方向（编辑器中的绿色箭头）。参数如下。
+山顶(Top of Hill)，可全方位防御 这是丘陵顶部的高地阵地，易于防御所有方向。无论敌人的进近方向如何，AI都可以守住这些阵地。AI会面朝敌人在山顶布阵。方向并不重要。
+隘口（Choke Points） 这种类型是两边有不可逾越障碍的隘口。人数较少的AI可以尝试守住这些隘口，以减轻自己的人数劣势。
+悬崖（Cliff Positions） 这种战术阵地本身毫无意义。它们应该放在隘口战术阵地下的实体层次结构中。如果放在隘口下，而AI使用了这个隘口，才会使用悬崖阵地。
+战术区域（TACTICAL REGIONS） 这些都是用于标记场景中的区域。只给出一个半径的圆形区域。显然，场景中会有完全自定义/随机形状的森林、险要地貌和开阔地。因此应该定义多个由不同圆形区域组成的战术区域，可以根据需要添加多个圆形区域。每个战术区域的圆形区域半径可以是一个粗略的估计，不需要精确。
+森林区域（Forest Areas） 如果敌人拥有更多的远程和骑兵部队，则AI可以在森林区域内使用阵地，因为弓箭手和骑兵在森林中的效能较低。任何对远程部队和骑兵都不利的地区都可以指定为一个森林区域，它不一定必须是一片有树木的森林，也可以是一个有很多障碍物和掩护物的市场。
+障碍地形（Difficult Terrain） 这包括岩石地形以及沼泽，甚至可能是集市或一些地面有很多障碍物的阵地，任何不妨碍范围性火力(如森林)但阻碍和减缓骑兵的区域都应该被考虑并标记为障碍地形。如果敌方的骑兵部队数量占优，AI可以在困难地形区域内使用阵地。
+开阔地形（Open Areas） 能让骑兵快速移动和清除远程火力的地形。这个区域类型是用来标记合适的战场。如果AI拥有优势或同等数量的射手和骑兵单位，可以选择在开阔区域进行防御。
+战术区域和阵地组合 A节中描述的战术阵地也可以放在战术区域实体下，它们的_tacticalRegionMembership应该被正确选择。在这种情况下，AI会意识到隘口也在森林区域，在合适的条件下，可以相应地选择该隘口或高地。</description>
+    </item>
+    
+    <item>
+      <title>覆盖场景和预制件</title>
+      <link>http://localhost:4444/zh_cn/asset-management/asset-types/overriding_scenes_prefabs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/overriding_scenes_prefabs/</guid>
+      <description>你可以通过在同一个游戏中创建新的方式来覆盖现有的场景 (scenes) 以及预制件 (prefabs)。
+预制件 (Prefabs) 预制件在 xml 文件中的定义在 Prefabs 以及其子目录下可以找到。
+场景 (Scenes) 场景储存在 Mod 目录下的 SceneObj 和 SceneEditData 文件夹中。SceneObj 目录保存了在客户端模式 (Client Mode) 中打开场景所需要的文件，而 SceneEditData 目录保存了编辑场景所需要的文件。</description>
     </item>
     
     <item>
@@ -275,13 +295,13 @@ Scale Locked If the lock icon is in locked state, changing any component of scal
     </item>
     
     <item>
-      <title>Navigation Mesh Inspector</title>
+      <title>导航网格查看器</title>
       <link>http://localhost:4444/zh_cn/editor/scene-editor/nav_mesh_inspector/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:4444/zh_cn/editor/scene-editor/nav_mesh_inspector/</guid>
-      <description>Tools These tools help you to generate and manipulate the navigation mesh:
-Generation Tools  Auto Generate: As the name implies, automatically generates the navigation mesh with resppect to the parameters above. Generate Grids: Generates grid navigation mesh for the terrain only. It ignores the entities on the scene. Create New Face: Creates a new navigation mesh quad face on the coordinates where the camera is. Extrude: Remove: Removes the selected navigation mesh edge.</description>
+      <description>工具 这些工具可以帮助您生成和操作导航网格：
+生成工具（Generation Tools）  Auto Generate: 顾名思义，将根据上述参数自动生成导航网格物体。 Generate Grids: 仅为地形生成格子状导航网格。它会忽略场景中的实体。 Create New Face: 在相机所在的坐标上创建一个新的导航网格四边形面。 Extrude: Remove: 删除选定的导航网格边。 Fill: 在选定的导航网格顶点之间填充并形成一个面。 Grow Selection: 选择选定元素的相邻元素来扩大选择范围（适用于所有顶点，边和面结构）。 Connect: 绘制一条边来连接选定的两个导航网格顶点。 Subdivide: 通过在顶点的中间放置一个顶点来划分它。该顶点连接到相邻的顶点并划分感兴趣的面。 Weld: 移除边而代之以单个顶点。它将旧边的相邻顶点连接到新生成的顶点。 Import Faces From Prefabs: 导入之前导出的面。 Import Body: &amp;lt;not_known&amp;gt; Make Quads When Possible: 选择相邻的三角形面，这些面可以构造四边形（不形成凹多边形）。这不会构造出具有最大表面积的面的最佳导航网格，但是它将局部选择形成最大表面积的三角形。仍然会大大减少面的总数。  调试工具（Debugging Tools）  X-Z Keys: 每个键放入两个不同的球体，当两个球体都放入时，给出这两个球体之间定义路径的统计。 Select Vertices Below Entities: 选择实体下面的顶点。 Select Unwalkable Edges: &amp;lt;not_known&amp;gt; Fix Concave Faces: 使凹面凸出。 Select Unconnected Faces: &amp;lt;not_known&amp;gt; Calculate Auto Weld Points: &amp;lt;not_known&amp;gt; Select Inverted Faces: 查找并选择面向地形的反面。 Find Path: &amp;lt;not_known&amp;gt; Paste Copied Faces: 粘贴复制的面。 Copy Selected Faces: 复制选定的面。 Export Faces as Prefab: 导出所选面以供以后使用。 Ensure Faces Are Not Below Ground: 确保面不在地下。 Remove Unreachable Faces: 删除孤岛面（其中有一个生成点）。（生成点是根据Prefabs/editor_spawnpoints.</description>
     </item>
     
     <item>
@@ -333,25 +353,6 @@ The script can be used to destroy entities in one or more states, with optional 
     </item>
     
     <item>
-      <title>Distance Tool</title>
-      <link>http://localhost:4444/zh_cn/editor/scene-editor/distance_tool/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:4444/zh_cn/editor/scene-editor/distance_tool/</guid>
-      <description>Distance Measure Tool The Distance Toolmeasures the distance between two points in the scene. Distance measure mode can be activated by either pressing Alt + Dshortcut or the respective button on the editor toolbar.
-While holding the left mouse button, drag the mouse between two points in the scene to measure distance. The tool snaps to vertices if close enough to a one by default, holding down Left Shiftoverrides this.</description>
-    </item>
-    
-    <item>
-      <title>Meta Mesh Editor</title>
-      <link>http://localhost:4444/zh_cn/editor/resource-editors/meta_mesh_editor/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:4444/zh_cn/editor/resource-editors/meta_mesh_editor/</guid>
-      <description>Import Settings  Divide Into Grid: Divides the meta mesh into grids, and adds all the generated section meshes to the submeshes. Remove Redundant Vertices: The name implies what it does. Recompute Normals: While importing the meta mesh, computes normal vectors for all sub-meshes instead of importing them as well. Normal Computation: Decides whether the normal vector computation will depend on the face area (weighted) or not (default). Recompute Tangents: While importing the meta mesh, computes the tangent vectors for all sub-meshes instead of importing them as well.</description>
-    </item>
-    
-    <item>
       <title>Model Viewer</title>
       <link>http://localhost:4444/zh_cn/editor/resource-editors/model_viewer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -395,6 +396,15 @@ Which are: \
     </item>
     
     <item>
+      <title>Scene Performance Guide</title>
+      <link>http://localhost:4444/zh_cn/bestpractices/scene_performance_guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/bestpractices/scene_performance_guide/</guid>
+      <description>Performance Requirements of Mount&amp;amp;Blade Bannerlord  Singleplayer Scenes: Very High Config / 60 FPS / Gtx 1060. Multiplayer Scenes: Very High Config / 60 FPS / Gtx 970.  Possible Performance Bottlenecks Missing occluders Occluders are physical objects that define occlusion boundaries for meshes. If an object’s bounding box is fully occluded by an occluder, those objects are not rendered. Occluders drastically reduce the performance problems of wide and large scenes.</description>
+    </item>
+    
+    <item>
       <title>Scene Spawn Point Guide</title>
       <link>http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/scene_spawn_points_guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -405,42 +415,50 @@ Which are: \
     </item>
     
     <item>
-      <title>Script Component Callbacks</title>
-      <link>http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/callbacks/</link>
+      <title>元模型编辑器</title>
+      <link>http://localhost:4444/zh_cn/editor/resource-editors/meta_mesh_editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/callbacks/</guid>
-      <description>The callbacks of the script components are listed below.
-Constructor In constructor one needs to assign default values to its public variables(variables which can be changed by the scene maker). In constructor script component is not assigned to an entity or scene. Also, you should not write any logic that has any side effect because , even though it is created, the script component may be deleted once the scene is opened because of the upgrade level system.</description>
+      <guid>http://localhost:4444/zh_cn/editor/resource-editors/meta_mesh_editor/</guid>
+      <description>导入设置  分解为网格 (Grid)：把元模型 (meta mesh) 分成网格，并且添加所有生成的模型部分到子模型 (submesh) 中。 移除多余的顶点 (Vertices)：功能如其名。 重新计算法线 (Normals)：导入元模型时，计算所有子模型的法线向量，而不是单单全部导入。 法线计算：决定法线向量的计算是否依靠面部区域 (Face Area)，是 (weighted) 或者是 否 (default). 重新计算切线 (Tangents)：导入元模型时，计算所有子模型的切线向量，而不是单单全部导入。 抗锯齿 (whiten)：为每个像素点计算其顶点色和白色的线性插值 (linear interpolation amount)。  多细节层次 (Lod) 模型  所有的在用的元模型的子模型都可以在这儿被看到。材料属性，模型参数以及标签都可以在这个界面被修改。  没用到的模型  这里展示了子模型的使用情况。如果勾选了忽略复选框 (ignore checkbox)，这意味着对应的子模型是处于非激活状态。当需要修改 lod 模型的状态时，请点击 “应用忽略 (Apply Ignores)” 按钮来应用并且保存你的修改。  保存  保存元模型的所有改变。  </description>
     </item>
     
     <item>
-      <title>Spawn Point Debug Tool</title>
+      <title>出生点 Debug 工具</title>
       <link>http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/spawn_point_debug_tool/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/spawn_point_debug_tool/</guid>
-      <description>Introduction The tool which has prefab named &amp;ldquo;SpawnPointDebugView&amp;rdquo; can be added to scene. Prefab has &amp;ldquo;SpawnPointDebugView&amp;rdquo; script attached and tool can be opened through inspector toggle. Tool has 3 tabs named &amp;ldquo;Scene basic information tab&amp;rdquo;, &amp;ldquo;Scene entity check tab&amp;rdquo; and &amp;ldquo;Navigation mesh check tab&amp;rdquo;.
-1. Scene Basic Information Tab This tab tries to determine the scene type in order to find necessities; if detected type is not correct, artist can override the type using toggle buttons below.</description>
+      <description>介绍 这个可以添加进场景的工具有一个预制件 (prefab) 叫做“SpawnPointDebugView”。预制件有附带一个“SpawnPointDebugView”脚本，工具可以通过查看器选项 (Inspector Toggle) 打开。工具有 3 个选项卡，分别叫做“Scene basic information tab”，“Scene entity check tab”和“Navigation mesh check tab”。
+1. 场景基础信息选项卡 (Scene Basic Information Tab) 这个选项卡可以决定场景的类型，从而找到一些场景必须品。如果检测出的类型不正确，设计师可以通过下面的选项按钮 (toggle button) 来重写类型。
+2. 场景实体检查选项卡 (Scene Entity Check Tab) 这个选项卡计算了出生点 (Spawn Point) 数量，并且在数量不在场景规则 (Scene Criteria) 中时提醒设计师。点击“Count Entities”按钮，并且勾选分类，便可以填充计算表了。“DONT USE”选项代表了场景中绝对不能包含的过期的实体。表格的最后一栏体现了多少行为者 (agent) 会在当前出生点生成。
+在每一行的结尾，有一个按钮可以展开所有的游戏预制件，每一个都带着点击过按钮 (clicked button) 的标签 (tag)。点击这个按钮将会打开一个新的窗口，其中展示了所有预制件以及其特有的标签。
+3. 导航网格检查选项卡 (Navigation Mesh Check Tab) 这个工具标记了没在导航网络或者被“Navigation Mesh Deactivator”停用的导航网络中的出生点。如果一个场景没有“Navigation Mesh Deactivator”那么停用的面部 ID 将会为 0，同时场景实体检查选项卡中会提醒设计师要放一个上去。点击“CHECK”按钮，同时勾选分类，将给不合法的出生点生成对应分类颜色 Debug 线。
+导航网格检查工具展示了场景级别 (Scene Level) 的出生点。每一个勾选框将会激活两个按钮，分别叫做“Previous”和“Next”。点击这两个按钮可以分别使编辑器镜头 (Camera) 一个一个聚焦于放错的出生点。</description>
     </item>
     
     <item>
-      <title>Terrain Mesh Blend System</title>
+      <title>地形网格混合系统</title>
       <link>http://localhost:4444/zh_cn/editor/scene-editor/terrain_mesh_blend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:4444/zh_cn/editor/scene-editor/terrain_mesh_blend/</guid>
-      <description>We introduce a new terrain mesh blending system. Certain terrain layers can blend into chosen meshes. Blend height, smoothness and random height offsets can be changed. These values can be saved to prefabs and can also be changed in scene per mesh. Heightmap blending can also be used to change the blending behaviour with respect to the mesh&amp;rsquo;s heightmap.
-   With Blending Without Blending          Terrain Layer Restrictions Terrain layers should satisfy some restrictions before they are eligible to be a mesh blend layer.</description>
+      <description>在此介绍一个新的地形网格的混合 (blending) 系统。特定的地形 (terrain) 层可以和选中的网格 (mesh) 混合起来。可以修改混合的高度，平滑度以及随机高度偏移量。
+这些值可以存在预制件 (prefabs) 中或者是在场景中根据网格而改变。高度图 (Heightmap) 混合还可以根据网格的高度图来改变不同的混合行为。
+   有混合 没有混合          地形层限制 地形层需要在变成网格混合层 (mesh blend layer) 之前满足一部分限制。
+ 漫反射贴图 (Diffuse Texture) 应该有 (2048, 2048) 尺寸并且是 DXT1 格式 （没有 alpha）。 普通贴图 (Normal Texture) 应该有 (2048, 2048) 尺寸并且是 BC5 格式。 高光贴图 (Specular Texture) 应该有 (2048, 2048) 尺寸并且是 DXT1 格式。 每一层级不应该应用 “diffuse alpha” 和 “ground slope” 标记 (flag)。  材料属性 网格应该有一个带着 “terrain_mesh_blend_shader” 着色器 (shader) 的材料。为了应用高度图混合，需要指定一个高度图纹理并应用着色器的标记。</description>
     </item>
     
     <item>
-      <title>Texture Editor</title>
+      <title>纹理编辑器</title>
       <link>http://localhost:4444/zh_cn/editor/resource-editors/mipmap_editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:4444/zh_cn/editor/resource-editors/mipmap_editor/</guid>
-      <description>The Texture Editor can be accesed from; Editor &amp;gt;Window &amp;gt;Show Resource Browser &amp;gt;..Search for Texture.. &amp;gt;..Double Click on Texture.. From the Texture Inspector (Right Panel), you can enable/disable MipMap blending by toggling Use Mipmap Blendingcheckbox. When you enable MipMap Blending, you will see all mip levels of the selected texture next to each other in Preview Window. Clicking on MipMap Blend Amountswill open open a new window where you can adjust blend amounts for every mip level.</description>
+      <description>纹理编辑器 (Texture Editor) 可以通过 编辑器 (Editor) &amp;gt;窗口 (Windows) &amp;gt;资源展示浏览器 (Show Resource Browser) &amp;gt;寻找目标纹理 (..Search for Texture..) &amp;gt;双击找到的纹理 (..Double Click on Texture..)
+从右侧面板中的 纹理查看器 (Texture Inspector) 中，你可以通过选中 使用纹理细节混合 (Use Mipmap Blending) 启用/禁用 纹理细节混合 (MipMap Blending) 功能。当时启用该功能的时候，你会在预览框 (Preview Windows) 中看到所有的被选中贴图的所有纹理细节层级。
+点击 纹理细节量 (MipMap Blend Amounts) 将会打开一个新的窗口，在这个窗口中你可以修改每一层级混合的数量。
+你可以选中 细节纹理混合颜色 (MipMap Blend Color) (1)并点击 重新编译 (Recompile) (2)来应用混合。结果会立即显示在预览框和游戏中。</description>
     </item>
     
     <item>
@@ -455,6 +473,23 @@ Constructor In constructor one needs to assign default values to its public vari
     </item>
     
     <item>
+      <title>脚本组件回调函数</title>
+      <link>http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/callbacks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/callbacks/</guid>
+      <description>以下为脚本组件 (Script Components) 的回调函数 (Callbacks)。
+构造函数 (Constructor) 在构造函数中，需要指定一些公共变量 (Public Variables) 的默认值（变量可能会被场景设计师修改）。在构造函数中，脚本组件是不会指定到一个特定的实体或者场景的。同时，你不应该在构造函数中写任何有副作用 (Side Effect) 的逻辑代码，因为即使创建了，脚本组件也可能会在场景打开时，因为关卡系统 (Level System) 的升级而被删除。
+On Pre Init 当一个脚本组件被指定一个场景中的实体时，调用本函数。当你回调该函数时，你要确定用户在脚本中定义的变量都是设定好的。但是，其他实体的脚本组件可能还没有指定。所以，在 pre init 函数中，不应该有任何需要调用其他脚本组件的逻辑代码。例如，ManagedObject 在 pre-init 函数中指定它自己到当前任务实例中的对象数列 (managed object array) 中。
+On Init 这个函数在任务载入的时候被调用，函数会初始化脚本组件中的所有实体。你可以在此回调函数中添加任何类型的逻辑代码。运行实例化脚本 (Run Time Instantiated Scripts) 也会调用该函数。
+On Editor Init 编辑器版本的 On Init 函数。这个函数是在场景在编辑器中加载时候调用的。值得注意的是，在编辑器中没有任务或者游戏状态 (game state)。
+On Tick 在同一个线程下，每一个脚本组件的任务的每一帧都会调用这个函数。
+On Editor Tick 编辑器版本的 On Tick 函数。
+Is Only Visual 如果你的脚本组件是仅供查看，即不会在专用服务器 (dedicated server) 上运行任何逻辑代码，那么你想要在函数中设置返回值为 真 (True)。这个可以确保这个类型的脚本不会在服务器上运行。
+On Editor Variable Changed 在编辑器中，当一个脚本组件中的公共变量被用户修改的时候，调用该函数。当设计者需要在编辑场景中得到即时反馈的时候，该函数可以被用于任何视觉和逻辑上的状态改变。</description>
+    </item>
+    
+    <item>
       <title>调整地形大小</title>
       <link>http://localhost:4444/zh_cn/editor/scene-editor/terrain_resize/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -462,6 +497,18 @@ Constructor In constructor one needs to assign default values to its public vari
       <guid>http://localhost:4444/zh_cn/editor/scene-editor/terrain_resize/</guid>
       <description>调整地形大小 如果需要，地形节点数量可以在 Terrain Inspector的 Resize Terrain面板调整。
  你可以从 4 个方向添加新的节点或移除已有的节点。+X, +Y, -X, -Y（分别是南，东，北，西）（上色和 Gizmo 一致） 添加和移除节点会自动重新在新的位置分配现存的实体 (entities) 和植物 (floras)。新的节点由于他们的高度信息还未定义，可能会显得无法和其他地形连接。设计者应该可以用编辑器内置的高度笔刷 (Height Brushes) 来修改，或者导出高度图在其他高度图生成软件中修改，之后在导入回编辑器中。 如果在地形的一边输入正数，那么地形像那一边扩展那么多的节点。如果你往每一边写了 +2，那么地形就会像每一边扩展 2 格。如果你写了 +3 在 +X 方向，其他方向为 0 那么地形只会往 +X 方向扩展 3 格。 如果你输入一个负数，那么将会减少相应的节点数。 如果你输入 0（默认值），那么将不会有改变。     添加 删除          </description>
+    </item>
+    
+    <item>
+      <title>距离工具</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/distance_tool/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/distance_tool/</guid>
+      <description>测距工具 Distance Tool 可以测量场景内两个点之间的距离。 可以通过按 Alt + D 快捷键 或者点击编辑器工具栏上的对应按钮来激活距离测量模式 (Distance Measure Mode)。
+使用时，按住 鼠标左键 ，在场景内从一个点拖动鼠标到另一个点来测量距离。如果靠近一个点过近，工具会默认吸附在顶点上，按住 左 Shift来取消吸附。
+该模式可以通过按 Alt + D 或者点击编辑器工具栏上对应按钮来取消（操作）。为了以后方便，测量的图标 (Gizmo) 在取消模式后也会一直可见。按住 Alt + Shift + D 来清除屏幕中的测量图标。
+ 绿线 展示了点之间的实际距离。 蓝线 展示了经纬度坐标距离。 黄色圆圈 描述了范围。  </description>
     </item>
     
     <item>

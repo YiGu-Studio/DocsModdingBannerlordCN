@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Taleworlds Documentation</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2020-11-12T05:15:38 UTC">
+<title>Navmesh :: Taleworlds Documentation</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "http:\/\/localhost:4444\/";
+</script>
+<meta name="description" content="Navigation Mesh Modeling Creation Guides and Examples">
+
+
+
+    
+  </head>
+  <body data-url="/editor/scene-editor/nav_mesh/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/asset-management/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/asset-management/">Asset Management</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/asset-management/asset-browser/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/asset-management/asset-browser/">Asset Browser</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/asset-management/asset-browser/filterqueries/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-browser/filterqueries/">
+            Filter Queries
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/asset-management/asset-types/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/asset-management/asset-types/">Asset Types</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/asset-management/asset-types/overriding_assets/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/overriding_assets/">
+            Adding &amp; Overriding Assets
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/animations/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/animations/">
+            Animations
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/bodies/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/bodies/">
+            Bodies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/prefabs/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/prefabs/">
+            Entities &amp; Prefabs
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/materials/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/materials/">
+            Materials
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/meshes/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/meshes/">
+            Meshes
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/asset_naming_conventions/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/asset_naming_conventions/">
+            Naming Conventions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/overriding_scenes_prefabs/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/overriding_scenes_prefabs/">
+            Overriding Scenes and Prefabs
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/path/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/path/">
+            Paths
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/scripts/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/scripts/">
+            Scripts
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/skeletons/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/skeletons/">
+            Skeletons
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/textures/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/textures/">
+            Textures
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/asset-management/quickguide_create_a_mod/" class="dd-item">
+        <div>
+          <a href="/asset-management/quickguide_create_a_mod/">
+            Creating a Module - Quick Guide
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/faq/" class="dd-item">
+        <div>
+          <a href="/asset-management/faq/">
+            Frequently Asked Questions
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/authoring-mission-scenes/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/authoring-mission-scenes/">Bannerlord Missions</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/authoring-mission-scenes/tactical_positions/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/tactical_positions/">
+            Mission Tactical Positions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/villages/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/villages/">
+            What Makes a Village Scene
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/script-components/bannerlord_destructible_component/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/script-components/bannerlord_destructible_component/">
+            Destructible Component
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/script-components/scene_barrier_builder/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/script-components/scene_barrier_builder/">
+            Scene Barrier Builder
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/script-components/scene_spawn_points_guide/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/script-components/scene_spawn_points_guide/">
+            Scene Spawn Point Guide
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/script-components/callbacks/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/script-components/callbacks/">
+            Script Component Callbacks
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/script-components/spawn_point_debug_tool/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/script-components/spawn_point_debug_tool/">
+            Spawn Point Debug Tool
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/bestpractices/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/bestpractices/">Best Practices</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/bestpractices/scene_performance_guide/" class="dd-item">
+        <div>
+          <a href="/bestpractices/scene_performance_guide/">
+            Scene Performance Guide
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/editor/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/editor/">Editor</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/editor/resource-editors/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/editor/resource-editors/">Resource Editors</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/editor/resource-editors/material_editor/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/material_editor/">
+            Material Editor
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/resource-editors/skeleton_editor/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/skeleton_editor/">
+            Skeleton Editor
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/resource-editors/cloth_simulation/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/cloth_simulation/">
+            Cloth Simulation
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/resource-editors/meta_mesh_editor/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/meta_mesh_editor/">
+            Meta Mesh Editor
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/resource-editors/model_viewer/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/model_viewer/">
+            Model Viewer
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/resource-editors/mipmap_editor/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/mipmap_editor/">
+            Texture Editor
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/editor/scene-editor/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/editor/scene-editor/">Scene Editor</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/editor/scene-editor/creating_entity/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/creating_entity/">
+            Creating Entity
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/editor_shortcuts/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/editor_shortcuts/">
+            Editor Shortcuts
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/nav_mesh/" class="dd-item active">
+        <div>
+          <a href="/editor/scene-editor/nav_mesh/">
+            Navmesh
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/path_editing/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/path_editing/">
+            Path Editing
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/terrain_creation/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/terrain_creation/">
+            Terrain Creation
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/entity_inspector/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/entity_inspector/">
+            Entity Inspector
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/nav_mesh_inspector/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/nav_mesh_inspector/">
+            Navigation Mesh Inspector
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/alignment_and_snapping/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/alignment_and_snapping/">
+            Alignment and Snapping Tools
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/distance_tool/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/distance_tool/">
+            Distance Tool
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/mass_selection/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/mass_selection/">
+            Mass Selection
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/prt/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/prt/">
+            Precomputed Radiance Transfer - GI System
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/terrain_resize/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/terrain_resize/">
+            Resizing Terrain
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/level_system/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/level_system/">
+            Scene Level System
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/terrain_mesh_blend/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/terrain_mesh_blend/">
+            Terrain Mesh Blend System
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/playing-sounds/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/playing-sounds/">Playing Sounds</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/playing-sounds/adding-custom-sounds/" class="dd-item">
+        <div>
+          <a href="/playing-sounds/adding-custom-sounds/">
+            Adding Sounds to Your Module
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+<select id="select-language" onchange="location = this.value;">
+	
+	
+	
+	  
+	  
+	    
+	      
+	        <option id="en" value="/editor/scene-editor/nav_mesh/" selected>English</option>
+	      
+	    
+	  
+	    
+	  
+	
+	  
+	  
+	    
+	  
+	    
+	      
+	        <option id="zh_cn" value="/zh_cn/editor/scene-editor/nav_mesh/">简体中文</option>
+	      
+	    
+	  
+	
+</select>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation: 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/asset-management/" >
+   Asset Management</option>
+    <option value="/authoring-mission-scenes/" >
+   Bannerlord Missions</option>
+    <option value="/bestpractices/" >
+   Best Practices</option>
+    <option value="/editor/" >
+   Editor</option> 
+    <option value="/editor/resource-editors/" >
+  - 
+   Resource Editors</option>
+    <option value="/editor/scene-editor/" >
+  - 
+   Scene Editor</option> 
+      <option value="/editor/scene-editor/creating_entity/" >-- Creating Entity</option>
+      <option value="/editor/scene-editor/editor_shortcuts/" >-- Editor Shortcuts</option>
+      <option value="/editor/scene-editor/nav_mesh/"  selected>-- Navmesh</option>
+      <option value="/editor/scene-editor/path_editing/" >-- Path Editing</option>
+      <option value="/editor/scene-editor/terrain_creation/" >-- Terrain Creation</option>
+      <option value="/editor/scene-editor/entity_inspector/" >-- Entity Inspector</option>
+      <option value="/editor/scene-editor/nav_mesh_inspector/" >-- Navigation Mesh Inspector</option>
+      <option value="/editor/scene-editor/alignment_and_snapping/" >-- Alignment and Snapping Tools</option>
+      <option value="/editor/scene-editor/distance_tool/" >-- Distance Tool</option>
+      <option value="/editor/scene-editor/mass_selection/" >-- Mass Selection</option>
+      <option value="/editor/scene-editor/prt/" >-- Precomputed Radiance Transfer - GI System</option>
+      <option value="/editor/scene-editor/terrain_resize/" >-- Resizing Terrain</option>
+      <option value="/editor/scene-editor/level_system/" >-- Scene Level System</option>
+      <option value="/editor/scene-editor/terrain_mesh_blend/" >-- Terrain Mesh Blend System</option>
+  
+  
+    <option value="/playing-sounds/" >
+   Playing Sounds</option>
+
+
+
+        </select>
+      </center>
+      <center>Language: 
+        
+<select id="select-language" onchange="location = this.value;">
+	
+	
+	
+	  
+	  
+	    
+	      
+	        <option id="en" value="/editor/scene-editor/nav_mesh/" selected>English</option>
+	      
+	    
+	  
+	    
+	  
+	
+	  
+	  
+	    
+	  
+	    
+	      
+	        <option id="zh_cn" value="/zh_cn/editor/scene-editor/nav_mesh/">简体中文</option>
+	      
+	    
+	  
+	
+</select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/js/auto-complete.js"></script>
+        <link href="/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "http:\/\/localhost:4444\/";
+          
+        </script>
+        <script type="text/javascript" src="/js/search.js"></script>
+      </div>
+    
+
+    <h1>Navmesh</h1>
+    
+    
+    
+    <hr>
+<h3 id="what-is-the-navigation-mesh">What is the Navigation Mesh?</h3>
+<p><!-- raw HTML omitted -->Navigation Mesh is a compilation of models created by the scene designer for the use of AI to make sure they can move around without colliding with the physic objects in the scene.<!-- raw HTML omitted --></p>
+<hr>
+<h3 id="what-are-the-important-rules-for-navigation-mesh">What are the important rules for Navigation Mesh?</h3>
+<p><!-- raw HTML omitted -->a. 1,5 Meter Rule: <!-- raw HTML omitted -->Designers needs to arrange the navigation mesh in a 1.5-meter diameter when creating on terrain or other objects that can be walked on or can stand on (Rooftops, castle walls etc.) This diameter needs to be in 1.5 meters on a vertical axis. If this 1.5 rule is not applied, AI won’t be able to find the way when walking.</p>
+<p><!-- raw HTML omitted -->b. Spawn Point Pivot Points:<!-- raw HTML omitted --> Each spawn point in a scene has pivot points. Navmesh polygon faces have to include these spawn point pivot points. Otherwise, spawn points will not work.</p>
+<p><!-- raw HTML omitted -->c. Existing Trees:<!-- raw HTML omitted --> Each tree in a scene has a physical object which we call ‘capsules’. AI will see these capsules automatically when in a battle. Because of this, AI won’t walk into trees. Navmesh can be applied under trees.</p>
+<p><!-- raw HTML omitted -->d. Terrain Angle:<!-- raw HTML omitted --> There are some areas that won’t be traversable because of their steep angle. These areas can be enabled with: Shaded &gt; Debug - Terrain Angle. On the opened Angel Limit window, designers can input &ldquo;50&rdquo; to enable these. You can see two areas which are green and red. Green areas are traversable and red areas aren&rsquo;t.</p>
+<p><!-- raw HTML omitted -->e. Where to apply Navemesh:<!-- raw HTML omitted --> Navigation Mesh should be applied to every surface upon which players can walk. Navigation mesh should not be applied under the physical objects. Since the AI can’t jump, areas which can be accessible with jumping should not contain the navigation mesh.<!-- raw HTML omitted --></p>
+<p><strong>There is no &ldquo;Undo&rdquo; operation in the Navigation Mesh. If you press CTRL + Z, the last scene change will be reverted. Do not try to undo when applying Navigation Mesh</strong></p>
+<hr>
+<h3 id="how-many-types-of-navigation-mesh-need-to-be-applied">How many types of Navigation Mesh need to be applied?</h3>
+<p>There are three types of Navigation Mesh:</p>
+<p>1.<!-- raw HTML omitted -->Basic navigation mesh areas<!-- raw HTML omitted --> (without an ID, ID:0), for example, battle_terrain, hideout or lords hall.
+2.<!-- raw HTML omitted -->Village Scenes<!-- raw HTML omitted -->. Scenes like villages have multiple navigation mesh ID’s.
+3.<!-- raw HTML omitted -->Siege-Town scenes<!-- raw HTML omitted -->. In these kind of scenes, there are two main visibility modes for Civilian and Siege. The town scene in civilian mode can be seen as a big village scene. But on Siege mode, there are some places and cases that demand Navigation Mesh faces to have special ID’s.<!-- raw HTML omitted --></p>
+<hr>
+<h3 id="navigation-mesh-modeling-foreknowledge">Navigation Mesh Modeling Foreknowledge</h3>
+<p><strong>When opening the editor you will see a toolbar as shown in the photo below.</strong></p>
+<p><img src="/img/navmesh/toolbarnav.png" alt=""></p>
+<p><strong>The icon in the red square is for the Navigation Mesh. When you click on it, you will see that the “NavigationMeshInspector” is opened in the inspector.</strong></p>
+<p><img src="/img/navmesh/navmeshinspector.png" alt=""></p>
+<p><strong>After the Navigation Mesh Inspector is opened you will see ‘Editor Mode: Navigation Mesh Select’ in the UI.</strong></p>
+<p><img src="/img/navmesh/editormode.png" alt=""></p>
+<p><strong>All the dropdown menu functions in the Navigation Mesh Inspector can be used in the Navigation Mesh Select mode. Hitting 1,2 or 3 on the keyboard will select these faces:</strong>
+<strong>1: Vertices 2: Edges 3: Faces.</strong></p>
+<hr>
+<h3 id="navigation-mesh-modeling">Navigation Mesh Modeling</h3>
+<p>**Until now we spoke about the <strong>Navigation Mesh Select Tool mode. Another editor mode for Navigation Mesh is Navigtation Mesh Add mode.</strong></p>
+<p><img src="/img/navmesh/editormode2.png" alt=""></p>
+<p><img src="/img/navmesh/navmeshadd.png" alt=""></p>
+<p><strong>To open this mode you can press the ‘Spacebar’ key. You will see a vertex preview in the mouse pointer.</strong></p>
+<p><strong>After pointing out 4 different points in the map, press CTRL+Space to create the Navigation Mesh polygon.</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/img/navmesh/fourverts.png" alt=""></td>
+<td><img src="/img/navmesh/buildface.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p><strong>The shortcut table below can be helpful after the polygon creation phase. Below that, you also have the explanation of the tools available under the Generation Tools tab in the Navigation Mesh Inspector.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Navmesh hotkeys</th>
+<th>Shortcut</th>
+<th>Editor State</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fill in closest 4 vertices (creates a quad)</td>
+<td>Shift + Click</td>
+<td>Navigation Mesh Add</td>
+</tr>
+<tr>
+<td>Fill in the last 4 vertices (creates a quad)</td>
+<td>Ctrl + Space</td>
+<td>Navigation Mesh Add</td>
+</tr>
+<tr>
+<td>Move vertex without selecting</td>
+<td>Ctrl + Drag</td>
+<td>Navigation Mesh Add</td>
+</tr>
+<tr>
+<td>Delete face with mouse over (leaves vertices)</td>
+<td>Alt + Click</td>
+<td>Navigation Mesh Add</td>
+</tr>
+<tr>
+<td>Delete face and remove all vertices</td>
+<td>Alt + X + Click</td>
+<td>Navigation Mesh Add</td>
+</tr>
+<tr>
+<td>Selection mode - vertex</td>
+<td>1</td>
+<td>Navigation Mesh Select</td>
+</tr>
+<tr>
+<td>Selection mode - edge</td>
+<td>2</td>
+<td>Navigation Mesh Select</td>
+</tr>
+<tr>
+<td>Selection mode - face</td>
+<td>3</td>
+<td>Navigation Mesh Select</td>
+</tr>
+<tr>
+<td>Select all vertices, edges or face (depends on the current selection)</td>
+<td>Ctrl + A</td>
+<td>Navigation Mesh Select</td>
+</tr>
+<tr>
+<td>Delete selected vertices, edges or face</td>
+<td>Delete</td>
+<td>Navigation Mesh Select</td>
+</tr>
+</tbody>
+</table>
+<h3 id="generation-tools">Generation Tools</h3>
+<p>The most useful and used tools are:</p>
+<ul>
+<li>Extrude: Extrusion along the selected edge&rsquo;s (or edges') axis.</li>
+<li>Fill: Fills between the selected navigation mesh vertices (or edges) and forms a face.</li>
+<li>Grow Selection: Grows the selection by selecting the adjacent elements to the selected elements (works for all vertex, edge and face structures).</li>
+<li>Connect: Connects the selected two navigation mesh vertices by drawing an edge between them.</li>
+<li>Weld: Removes vertices forming the edge and makes the edge one single vertex. It connects the old adjacent vertices to the newly generated vertex.</li>
+</ul>
+<hr>
+<h3 id="navigation-mesh-modeling-on-scene-types">Navigation Mesh Modeling on Scene Types</h3>
+<p><strong>We discussed briefly how to create and apply the Navigation Mesh. Let’s consolidate this information by creating a Navigation Mesh for a village scene with the help of some screenshots along the way.</strong></p>
+<h4 id="strong-1village-scene-strong"><!-- raw HTML omitted --> 1.Village Scene <!-- raw HTML omitted --></h4>
+<p><strong>After opening a village scene, let’s navigate to the Visibility tab and change it as seen in the screenshot below to work more comfortably. Visibility Masks &gt; Game Entities (Uchecked), Particle Systems (Unchecked), Layer Flora (Unchecked), Show Paths (Unchecked) Physics Options &gt; Show Entity Physics (Checked).</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/img/navmesh/1.png" alt=""></td>
+<td><img src="/img/navmesh/2.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Click on the Navigation Mesh Icon on the toolbar and open the Navigation Mesh Inspector tab on the right side. After that, press 3 on your keyboard to open the Face mode. Change the ID part from 0 to 2.</strong></p>
+<p><img src="/img/navmesh/3.png" alt=""></p>
+<p><strong>Let’s create our first face. As seen in the screenshot below, place the vertices on top of the road and click CTRL+Space. You will see a Navigation Mesh Polygon created. We can place 2 more vertices near the existing polygon and press Shift+Left Mouse Button to create additional Polygons.</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/img/navmesh/4.png" alt=""></td>
+<td><img src="/img/navmesh/5.png" alt=""></td>
+<td><img src="/img/navmesh/6.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/img/navmesh/navbuild.gif" alt=""></td>
+<td><img src="/img/navmesh/navbuild2.gif" alt=""></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>By holding CTRL while navigating the mouse to the vertices we can see the yellow previews. Holding these vertices with Left Mouse Button will allow us to move the vertex freely.</strong></p>
+<p><img src="/img/navmesh/vertmove.gif" alt=""></p>
+<p><strong>In the  Navigation Mesh Select mode, select what mode you want to use (1 (Vertex) 2 (Edge) 3 (Face)) and use Alt+Delete to remove. This will leave the vertices in the scene (If Edge 2 ((Edge)) and 3 ((Face)) are selected). If you want the vertices to be inactive you can press Alt+X+Delete keys.</strong>
+<strong>The other remove method is in the Navigation Mesh Add mode. If we hover over the vertex, edge or faces with ALT button pressed we can see a red preview. We can remove them by clicking the Left Mouse Button.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Navigation Mesh Select Mode-NavDelete</th>
+<th>Navigation Mesh Add Mode-NavDelete</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/img/navmesh/nmselectsilme.gif" alt=""></td>
+<td><img src="/img/navmesh/nmaddsilme.gif" alt=""></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h5 id="easy-and-faster-navmesh-creation-tip">EASY AND FASTER NAVMESH CREATION TIP</h5>
+<p><img src="/img/navmesh/navbuildtipstricks.gif" alt=""></p>
+<hr>
+<p><strong>Navigation Mesh needs to contain the spawn point pivot points. Let’s apply the navigation mesh as they are connected with all the roads and navigation mesh face on spawn points.</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/img/navmesh/8.png" alt=""></td>
+<td><img src="/img/navmesh/8b.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>Let’s press the Spacebar after creating a navigation mesh face to check that the ID is set to 2 and change the Editor mode to Navigation Mesh Select mode and press the &ldquo;3&rdquo; key on the keyboard. This process will ensure that we chose the navigation mesh face. After this, let’s select the face and make sure that the ID is 2 on the Navigation Mesh Inspector. We already saw it was 2 when we started but we are now sure it is 2. We can deselect what we chose by clicking on an empty space on Viewport. Now, we can press the Spacebar to change the Editor mode to the Navigation Mesh add and continue.</strong></p>
+<p><img src="/img/navmesh/7.png" alt=""></p>
+<hr>
+<p><strong>Please make sure your navigation mesh areas don&rsquo;t contain any physical objects.</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/img/navmesh/11.png" alt=""></td>
+<td><img src="/img/navmesh/12.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p><strong>The animal spawn points can be seen in the screenshot below. To make sure the scene has animal spawn points you can click on the entity in the scene and check the text located on the bottom left of the screen.</strong></p>
+<p><img src="/img/navmesh/9.png" alt=""></p>
+<p><strong>To prevent animals from escaping let&rsquo;s apply navigation mesh like an island and use the mesh ID 2. After that, let’s change the ID of the surrounding mesh faces to 3. That way, the animals won&rsquo;t be connected with the rode and won&rsquo;t be able to escape.</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/img/navmesh/10.png" alt=""></td>
+<td><img src="/img/navmesh/10b.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p><strong>There are special fields in the scenes that we call ‘common areas’. You can see these areas in the scene with a sphere. Let’s fill in this sphere with the navigation mesh faces that has the ID 2, while making sure there are no physical objects inside of them.</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/img/navmesh/13.png" alt=""></td>
+<td><img src="/img/navmesh/14.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p><strong>After making sure all the roads and spawn points are applied and connected to each other we have finished the phase one.</strong></p>
+<p><img src="/img/navmesh/15.png" alt=""></p>
+<p><strong>If there are any unwalkable terrain fields, you can click on the “Shaded” option in the dropdown menu located in the top bar. Choose the Terrain Angle in the “Debug” field and change the Angle Limit to 50. Now, we can see the red areas and apply navigation mesh according to this information.</strong></p>
+<p><img src="/img/navmesh/terrain_angle.gif" alt=""></p>
+<p><strong>Let’s change the ID to 1 in the Navigation Mesh Inspector while making sure there are no selected navigation mesh faces. Let’s continue to apply navigation mesh while making sure there are no physical objects inside of them.</strong></p>
+<p><img src="/img/navmesh/physicsmesh.png" alt=""></p>
+<p><strong>Let’s complete the navigation mesh of the scene after we make sure every surface on the scene is inside of the borders (you can toggle the Border view with Visibility &gt; Visibility Masks).</strong></p>
+<p><img src="/img/navmesh/16.png" alt=""></p>
+<p><strong>The navigation mesh of this village scene is complete.</strong></p>
+<p><img src="/img/navmesh/sahnebittigeneldurum.png" alt=""></p>
+<p><strong>Now, let’s take a look at the scripting of the Navigation Mesh IDs. Navigate to the Prefabs tab and search for “navigation_mesh_deactivator” in the filter field. Let’s put that into the scene. Select the Navigation_Mesh_Deactivator entity in the scene tab. Let’s open the dropdown menus in the Entity Inspector &gt; Scripts &gt; NavigationMeshDeactivator. Set the DisableFaceWithId to 1 and DisableFaceWithIdForAnimals to 3.</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/img/navmesh/19.png" alt=""></td>
+<td><img src="/img/navmesh/20.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p>Save the scene. <strong>The navigation mesh process for our village scene is completed.</strong></p>
+<hr>
+<h3 id="the-logic-of-navigation-mesh-ids">The Logic of Navigation Mesh IDs</h3>
+<p><strong>The navigation mesh faces with the ID of 2, are the navigation mesh faces that the AI sees while we take a walk in a scene. These faces needs to be connected to each other. The faces which include the animal spawn points need to have the ID of 2, as well. The reason why these faces are not connected is because we don’t want the animals to walk on the roads as the human NPCs. To make sure that the animal spawn points are active their navigation mesh face ID has to be 2. To disconnect their connection with the road, we apply navigation mesh that surrounds the animal spawn point faces with the ID of 2 and give the new navigation mesh faces the ID of 3. After this we also include this to the navigation_mesh_deactivator script. The faces with the ID of 1 are the faces that are not active in the walk mode, but they have to be applied. When a village is raided all the navigation meshes are active, without looking out for the IDs. Those are activated when we take a walk in the scene.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Navigation Meshes with the ID of 2 are active</th>
+<th>All the navigation meshes are active</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/img/navmesh/17.png" alt=""></td>
+<td><img src="/img/navmesh/18.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/editor/scene-editor/editor_shortcuts/" title="Editor Shortcuts"> <i class="fa fa-chevron-left"></i><label>Editor Shortcuts</label></a>
+    <a class="nav nav-next" href="/editor/scene-editor/path_editing/" title="Path Editing" style="margin-right: 0px;"><label>Path Editing</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+
+    
+  </div>
+
+
+	<div>
+
+
+  
+    
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/clipboard.min.js"></script>
+
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<script src="/js/featherlight.min.js"></script>
+
+
+
+<script src="/theme-flex/script.js"></script>
+
+
+    
+
+    
+    
+
+    <div style="text-align:center">
+	<footer>
+		&copy; 2005-2020 TaleWorlds Entertainment. All rights reserved.
+	</footer> 
+</div>
+  </body>
+</html>

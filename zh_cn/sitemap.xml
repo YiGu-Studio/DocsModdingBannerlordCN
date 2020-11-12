@@ -17,6 +17,20 @@
   </url>
   
   <url>
+    <loc>http://localhost:4444/zh_cn/bestpractices/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:4444/bestpractices/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh_cn"
+                href="http://localhost:4444/zh_cn/bestpractices/"
+                />
+  </url>
+  
+  <url>
     <loc>http://localhost:4444/zh_cn/editor/scene-editor/creating_entity/</loc>
     <xhtml:link
                 rel="alternate"
@@ -27,20 +41,6 @@
                 rel="alternate"
                 hreflang="zh_cn"
                 href="http://localhost:4444/zh_cn/editor/scene-editor/creating_entity/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://localhost:4444/zh_cn/asset-management/asset-types/prefabs/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:4444/asset-management/asset-types/prefabs/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh_cn"
-                href="http://localhost:4444/zh_cn/asset-management/asset-types/prefabs/"
                 />
   </url>
   
@@ -73,34 +73,6 @@
   </url>
   
   <url>
-    <loc>http://localhost:4444/zh_cn/asset-management/asset-types/meshes/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:4444/asset-management/asset-types/meshes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh_cn"
-                href="http://localhost:4444/zh_cn/asset-management/asset-types/meshes/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://localhost:4444/zh_cn/authoring-mission-scenes/tactical_positions/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:4444/authoring-mission-scenes/tactical_positions/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh_cn"
-                href="http://localhost:4444/zh_cn/authoring-mission-scenes/tactical_positions/"
-                />
-  </url>
-  
-  <url>
     <loc>http://localhost:4444/zh_cn/asset-management/asset-types/asset_naming_conventions/</loc>
     <xhtml:link
                 rel="alternate"
@@ -115,30 +87,16 @@
   </url>
   
   <url>
-    <loc>http://localhost:4444/zh_cn/asset-management/asset-types/overriding_scenes_prefabs/</loc>
+    <loc>http://localhost:4444/zh_cn/editor/scene-editor/nav_mesh/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:4444/asset-management/asset-types/overriding_scenes_prefabs/"
+                href="http://localhost:4444/editor/scene-editor/nav_mesh/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh_cn"
-                href="http://localhost:4444/zh_cn/asset-management/asset-types/overriding_scenes_prefabs/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://localhost:4444/zh_cn/editor/scene-editor/path_editing/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:4444/editor/scene-editor/path_editing/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh_cn"
-                href="http://localhost:4444/zh_cn/editor/scene-editor/path_editing/"
+                href="http://localhost:4444/zh_cn/editor/scene-editor/nav_mesh/"
                 />
   </url>
   
@@ -181,20 +139,6 @@
                 rel="alternate"
                 hreflang="zh_cn"
                 href="http://localhost:4444/zh_cn/asset-management/asset-types/skeletons/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://localhost:4444/zh_cn/asset-management/asset-types/textures/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:4444/asset-management/asset-types/textures/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh_cn"
-                href="http://localhost:4444/zh_cn/asset-management/asset-types/textures/"
                 />
   </url>
   
@@ -255,6 +199,20 @@
   </url>
   
   <url>
+    <loc>http://localhost:4444/zh_cn/asset-management/asset-types/prefabs/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:4444/asset-management/asset-types/prefabs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh_cn"
+                href="http://localhost:4444/zh_cn/asset-management/asset-types/prefabs/"
+                />
+  </url>
+  
+  <url>
     <loc>http://localhost:4444/zh_cn/asset-management/faq/</loc>
     <xhtml:link
                 rel="alternate"
@@ -311,6 +269,20 @@
   </url>
   
   <url>
+    <loc>http://localhost:4444/zh_cn/asset-management/asset-types/textures/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:4444/asset-management/asset-types/textures/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh_cn"
+                href="http://localhost:4444/zh_cn/asset-management/asset-types/textures/"
+                />
+  </url>
+  
+  <url>
     <loc>http://localhost:4444/zh_cn/playing-sounds/adding-custom-sounds/</loc>
     <xhtml:link
                 rel="alternate"
@@ -321,6 +293,20 @@
                 rel="alternate"
                 hreflang="zh_cn"
                 href="http://localhost:4444/zh_cn/playing-sounds/adding-custom-sounds/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://localhost:4444/zh_cn/authoring-mission-scenes/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:4444/authoring-mission-scenes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh_cn"
+                href="http://localhost:4444/zh_cn/authoring-mission-scenes/"
                 />
   </url>
   
@@ -353,6 +339,34 @@
   </url>
   
   <url>
+    <loc>http://localhost:4444/zh_cn/editor/scene-editor/path_editing/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:4444/editor/scene-editor/path_editing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh_cn"
+                href="http://localhost:4444/zh_cn/editor/scene-editor/path_editing/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://localhost:4444/zh_cn/asset-management/asset-types/meshes/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:4444/asset-management/asset-types/meshes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh_cn"
+                href="http://localhost:4444/zh_cn/asset-management/asset-types/meshes/"
+                />
+  </url>
+  
+  <url>
     <loc>http://localhost:4444/zh_cn/asset-management/asset-types/scripts/</loc>
     <xhtml:link
                 rel="alternate"
@@ -363,6 +377,34 @@
                 rel="alternate"
                 hreflang="zh_cn"
                 href="http://localhost:4444/zh_cn/asset-management/asset-types/scripts/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://localhost:4444/zh_cn/authoring-mission-scenes/tactical_positions/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:4444/authoring-mission-scenes/tactical_positions/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh_cn"
+                href="http://localhost:4444/zh_cn/authoring-mission-scenes/tactical_positions/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://localhost:4444/zh_cn/asset-management/asset-types/overriding_scenes_prefabs/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:4444/asset-management/asset-types/overriding_scenes_prefabs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh_cn"
+                href="http://localhost:4444/zh_cn/asset-management/asset-types/overriding_scenes_prefabs/"
                 />
   </url>
   
@@ -419,20 +461,6 @@
                 rel="alternate"
                 hreflang="zh_cn"
                 href="http://localhost:4444/zh_cn/editor/resource-editors/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://localhost:4444/zh_cn/authoring-mission-scenes/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:4444/authoring-mission-scenes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh_cn"
-                href="http://localhost:4444/zh_cn/authoring-mission-scenes/"
                 />
   </url>
   
@@ -564,34 +592,6 @@
   </url>
   
   <url>
-    <loc>http://localhost:4444/zh_cn/editor/scene-editor/distance_tool/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:4444/editor/scene-editor/distance_tool/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh_cn"
-                href="http://localhost:4444/zh_cn/editor/scene-editor/distance_tool/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://localhost:4444/zh_cn/editor/resource-editors/meta_mesh_editor/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:4444/editor/resource-editors/meta_mesh_editor/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh_cn"
-                href="http://localhost:4444/zh_cn/editor/resource-editors/meta_mesh_editor/"
-                />
-  </url>
-  
-  <url>
     <loc>http://localhost:4444/zh_cn/editor/resource-editors/model_viewer/</loc>
     <xhtml:link
                 rel="alternate"
@@ -648,6 +648,20 @@
   </url>
   
   <url>
+    <loc>http://localhost:4444/zh_cn/bestpractices/scene_performance_guide/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:4444/bestpractices/scene_performance_guide/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh_cn"
+                href="http://localhost:4444/zh_cn/bestpractices/scene_performance_guide/"
+                />
+  </url>
+  
+  <url>
     <loc>http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/scene_spawn_points_guide/</loc>
     <xhtml:link
                 rel="alternate"
@@ -662,16 +676,30 @@
   </url>
   
   <url>
-    <loc>http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/callbacks/</loc>
+    <loc>http://localhost:4444/zh_cn/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:4444/authoring-mission-scenes/script-components/callbacks/"
+                href="http://localhost:4444/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh_cn"
-                href="http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/callbacks/"
+                href="http://localhost:4444/zh_cn/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://localhost:4444/zh_cn/editor/resource-editors/meta_mesh_editor/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:4444/editor/resource-editors/meta_mesh_editor/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh_cn"
+                href="http://localhost:4444/zh_cn/editor/resource-editors/meta_mesh_editor/"
                 />
   </url>
   
@@ -686,20 +714,6 @@
                 rel="alternate"
                 hreflang="zh_cn"
                 href="http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/spawn_point_debug_tool/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://localhost:4444/zh_cn/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:4444/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh_cn"
-                href="http://localhost:4444/zh_cn/tags/"
                 />
   </url>
   
@@ -746,6 +760,20 @@
   </url>
   
   <url>
+    <loc>http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/callbacks/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:4444/authoring-mission-scenes/script-components/callbacks/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh_cn"
+                href="http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/callbacks/"
+                />
+  </url>
+  
+  <url>
     <loc>http://localhost:4444/zh_cn/editor/scene-editor/terrain_resize/</loc>
     <xhtml:link
                 rel="alternate"
@@ -756,6 +784,20 @@
                 rel="alternate"
                 hreflang="zh_cn"
                 href="http://localhost:4444/zh_cn/editor/scene-editor/terrain_resize/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://localhost:4444/zh_cn/editor/scene-editor/distance_tool/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:4444/editor/scene-editor/distance_tool/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh_cn"
+                href="http://localhost:4444/zh_cn/editor/scene-editor/distance_tool/"
                 />
   </url>
   

@@ -16,26 +16,6 @@
     </item>
     
     <item>
-      <title>Entities &amp; Prefabs</title>
-      <link>http://localhost:4444/zh_cn/asset-management/asset-types/prefabs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/prefabs/</guid>
-      <description>In RGL, entities are containers for all of the meshes, particles, script components, occluders and physics objects. They can also contain other entities as children. They have their own transformation that determines their position, scale and rotation in the world.
-Prefabs Prefabs are template entities which do not sever the connection to the prefab even after it is saved in a scene. Complex entities can be constructed one time and saved as a prefab to be used at any time, in any scene.</description>
-    </item>
-    
-    <item>
-      <title>Meshes</title>
-      <link>http://localhost:4444/zh_cn/asset-management/asset-types/meshes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/meshes/</guid>
-      <description>Meshes contain the polygon positions and attributes to be used at the rendering pass. Every mesh has one material that defines their rendering behaviour. They are grouped inside MetaMesh&amp;rsquo;s by their LOD level. Also, at the same LOD level, there can be multiple meshes with different materials. More information about importing meshes to the engine can be found at Material Editor.
-LOD System Modern engines use LOD(level of detail) systems to ensure that the amount of GPU share used by the closer parts of the screen is more than the far ones.</description>
-    </item>
-    
-    <item>
       <title>Naming Conventions</title>
       <link>http://localhost:4444/zh_cn/asset-management/asset-types/asset_naming_conventions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -49,23 +29,12 @@ asset.fbx :
     </item>
     
     <item>
-      <title>Overriding Scenes and Prefabs</title>
-      <link>http://localhost:4444/zh_cn/asset-management/asset-types/overriding_scenes_prefabs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/overriding_scenes_prefabs/</guid>
-      <description>You can override existing scenes and prefabs by creating new one with the same name.
-Prefabs Prefab definitions are stored in xml files located in Prefabs folder in each module&amp;rsquo;s directory.
-Scenes Scenes are stored in two separate folders SceneObj and SceneEditData in each module&amp;rsquo;s directory. SceneObj folder stores necessary files to open scene in client mode while SceneEditData stores files necessary for editing operations.</description>
-    </item>
-    
-    <item>
       <title>Paths</title>
       <link>http://localhost:4444/zh_cn/asset-management/asset-types/path/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:4444/zh_cn/asset-management/asset-types/path/</guid>
-      <description>In RGL, &amp;lsquo;Paths&amp;rsquo; are used to define continous points within a scene. They have unique names and can be used by the gameplay logic for different reasons. Paths define how the siege engines move in missions. Also, for field battle missions, initial spawn point candidates are defined via a path. The spawn logic selects two positions for the teams with respect to the size of the battle. Detailed information about path editing can be found at Path Editing.</description>
+      <description>在 RGL 中，“路径”是由场景中连续的点 (Point) 组成的。他们一般都有独特的命名并且被游戏逻辑 (Gameplay Logic) 调用。路径在任务中定义了攻城器械的移动路线。同时。在遭遇战中，起始的出生点也是通过路径定义的。出生点逻辑可以根据双方军队的人数编制设定两个初始位置。关于路径修改的细节信息可以在 路径编辑 (Path Editing)中查看。</description>
     </item>
     
     <item>
@@ -78,12 +47,14 @@ Scenes Scenes are stored in two separate folders SceneObj and SceneEditData in e
     </item>
     
     <item>
-      <title>Textures</title>
-      <link>http://localhost:4444/zh_cn/asset-management/asset-types/textures/</link>
+      <title>实体及预制件</title>
+      <link>http://localhost:4444/zh_cn/asset-management/asset-types/prefabs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/textures/</guid>
-      <description>Textures can be imported through the Asset Browser. They can be assigned to materials via the Material Editor. The texture slots of the PBR materials can be found at Material Editor.</description>
+      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/prefabs/</guid>
+      <description>在RGL中，实体是包含所有网格，粒子，脚本组件，遮挡物和物理对象的容器。它们可以容纳其他实体来作为其子实体。这些子实体有自己的变体存在，决定了它们在整个世界中的位置，比例和旋转角度。
+预制件(Prefabs) 预制件(Prefabs)属于模板实体，即便是复杂的实体可以直接一次构造，并在之后保存为预制物件，以便在任何场景中随时使用。后期对预制件的更新也会对已经完成的场景造成影响。在《霸主》中，几乎所有的任务对象和场景道具都是预制件。
+连接规则(Connection Rules) 一旦一个预制件被放置到场景中，预制件下的所有值（网格颜色、子实体变换、脚本数值）都与原预制件相连，并且在每次改变原预制件后都会更新。在场景中，任何对这些值的改变都会切断连接。需要注意的是，在场景中对预制件进行的任何 &amp;ldquo;增加 &amp;ldquo;操作，都会将预制件的连接全部断开。例如：添加一个新的网格、粒子系统、光线、子实体或脚本组件</description>
     </item>
     
     <item>
@@ -92,7 +63,7 @@ Scenes Scenes are stored in two separate folders SceneObj and SceneEditData in e
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:4444/zh_cn/asset-management/asset-types/materials/</guid>
-      <description>材质（Materials）定义了网格模型的渲染特性。它们包含着色器和纹理信息，也包含渲染标志（由着色器和全局标志定义）。一个网格模型可以拥有一个材质。在第三方网格编辑程序中，网格材质的初始值将通过它的材质名称来分配。材质可以通过材质浏览器来创建和编辑，而材质浏览器则可以通过资源浏览器来访问。材质也可以在运行时通过脚本和行为进行编辑。更多关于材质编辑和引擎默认材质的信息可以可以参阅材质编辑器 (Material Editor) 章节。</description>
+      <description>材质（Materials）定义了网格模型的渲染特性。它们包含着色器和纹理信息，也包含渲染标志（由着色器和全局标志定义）。一个网格模型可以拥有一个材质。在第三方网格编辑程序中，网格材质的初始值将通过它的材质名称来分配。材质可以通过材质浏览器来创建和编辑，而材质浏览器则可以通过资源浏览器来访问。材质也可以在运行时通过脚本和行为进行编辑。更多关于材质编辑和引擎默认材质的信息可以可以参阅 材质编辑器 (Material Editor) 章节。</description>
     </item>
     
     <item>
@@ -121,6 +92,25 @@ Scenes Scenes are stored in two separate folders SceneObj and SceneEditData in e
     </item>
     
     <item>
+      <title>纹理</title>
+      <link>http://localhost:4444/zh_cn/asset-management/asset-types/textures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/textures/</guid>
+      <description>纹理 (Textures) 可以通过资产浏览器 (Asset Browser) 导入。可以通过材质编辑器 (Material Editor) 给纹理指定一些材质。PBR ( 基于物理的渲染 Physically Based Rendering) 材质的纹理槽 (Texture Slot) 可以在 材质编辑器 (Material Editor)中找到。</description>
+    </item>
+    
+    <item>
+      <title>网格</title>
+      <link>http://localhost:4444/zh_cn/asset-management/asset-types/meshes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/meshes/</guid>
+      <description>网格(Meshes)包含了多边形的位置和渲染时使用的属性。每个网格都会有一个材质以定义其的渲染行为。它们在网格内将按照其LOD级别进行分组。同时，在同一个LOD级别中可以同时有多个不同材质的网格。若想了解更多关于将网格导入引擎的信息,请参阅 Material Editor.
+细节级别 (LOD) 现代引擎通常使用LOD(Level of detail)系统，以确保相机近处位置使用的GPU资源量多于远处位置。这将通过增加摄像头的距离时减少网格质量来实现。这一系统将确保每个像素的多边形比例在整个屏幕上都尽可能的相似。默认的LOD距离将包含：15, 22.5, 30, 50, 70, 130, 210米。这些距离设置将保证最佳的图形质量，通过在游戏中设置环境和人物质量可以对其进行调节。</description>
+    </item>
+    
+    <item>
       <title>脚本</title>
       <link>http://localhost:4444/zh_cn/asset-management/asset-types/scripts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -128,6 +118,17 @@ Scenes Scenes are stored in two separate folders SceneObj and SceneEditData in e
       <guid>http://localhost:4444/zh_cn/asset-management/asset-types/scripts/</guid>
       <description>脚本组件是附加在实体上的可执行脚本，可以用来实现各种游戏功能。在《霸主》中，很多游戏逻辑都是通过脚本组件来编写的。例如椅子、掉落的武器、攻城器械。有很多不同的回调函数，可以被继承并填充在这些脚本组件中。
 回调函数  Constructor: 在构造函数中，我们需要给它的公有变量分配默认值（可以被场景制作者改变的变量）。在构造函数中，脚本组件不会被分配给实体或场景。另外，不要在这里写任何有副作用的逻辑，因为即使创建了脚本组件，由于升级等级系统的原因，一旦打开场景，脚本组件就可能会被删除。 OnPreInit: 当脚本组件被分配给场景中的所有者实体后，这个回调被调用。一旦你进入了这个回调，那么该脚本实例中的用户定义变量就被设置了。然而，其他实体的脚本组件可能还没有被分配。因此，在预初始化中，不应该有任何依赖于其他脚本组件的逻辑代码。例如，在预初始化中， ManagedObject 将自己注册到当前任务实例中的托管对象数组。 OnInit: 当任务被加载且所有实体的脚本组件被初始化，这个回调就会被立刻调用。你可以在这个回调里面使用任何类型的逻辑代码。运行时实例化的脚本也会得到这个回调的调用。 OnEditorInit: OnInit 的编辑器版本，在从编辑器加载场景时被调用。当场景从编辑器中加载时，它会被调用。确保编辑器中没有任务或游戏状态。 OnTick: 对于每个脚本组件，该任务在同一线程的任务的每个帧中都被调用。 OnEditorTick: OnTick 的编辑器版本。 IsOnlyVisual: 如果你有一个脚本组件，只是可视化的，没有任何应该在服务器版本上运行的逻辑代码，你应该在这个函数中返回 true 。这确保了这种类型的脚本不会在服务器版本上运行。 OnEditorVariableChanged: 在编辑器中，每当用户改变该脚本组件中的公有变量时，就会调用这个回调。如果艺术家需要在编辑器场景中得到即时反馈，这个回调可以用于任何视觉-逻辑状态的改变。 OnRemoved: 当实体或脚本组件被移除时调用。如果你有任何已分配内存的对象被存储在其他地方（例如静态容器），你可以使用这个回调来确保它们被回收，避免泄露内存。  </description>
+    </item>
+    
+    <item>
+      <title>覆盖场景和预制件</title>
+      <link>http://localhost:4444/zh_cn/asset-management/asset-types/overriding_scenes_prefabs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/overriding_scenes_prefabs/</guid>
+      <description>你可以通过在同一个游戏中创建新的方式来覆盖现有的场景 (scenes) 以及预制件 (prefabs)。
+预制件 (Prefabs) 预制件在 xml 文件中的定义在 Prefabs 以及其子目录下可以找到。
+场景 (Scenes) 场景储存在 Mod 目录下的 SceneObj 和 SceneEditData 文件夹中。SceneObj 目录保存了在客户端模式 (Client Mode) 中打开场景所需要的文件，而 SceneEditData 目录保存了编辑场景所需要的文件。</description>
     </item>
     
   </channel>

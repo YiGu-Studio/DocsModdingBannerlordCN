@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>霸主任务系统 on Taleworlds Documentation</title>
+    <title>编辑任务场景 on Taleworlds Documentation</title>
     <link>http://localhost:4444/zh_cn/authoring-mission-scenes/</link>
-    <description>Recent content in 霸主任务系统 on Taleworlds Documentation</description>
+    <description>Recent content in 编辑任务场景 on Taleworlds Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="http://localhost:4444/zh_cn/authoring-mission-scenes/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Mission Tactical Positions</title>
-      <link>http://localhost:4444/zh_cn/authoring-mission-scenes/tactical_positions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:4444/zh_cn/authoring-mission-scenes/tactical_positions/</guid>
-      <description>TACTICAL POSITIONS AND TACTICAL REGIONS These are scripted entities that let the AI know of the terrain&amp;rsquo;s features. They do not work like siege, the AI will not always use the tactical positions or regions you may place. They may use them under conditions that favor the use of these.
-Depending on player movement and spawn path randomization, there are a very high number of scenarios that can occur during battles.</description>
-    </item>
-    
     <item>
       <title>What Makes a Village Scene</title>
       <link>http://localhost:4444/zh_cn/authoring-mission-scenes/villages/</link>
@@ -24,6 +14,25 @@ Depending on player movement and spawn path randomization, there are a very high
       <guid>http://localhost:4444/zh_cn/authoring-mission-scenes/villages/</guid>
       <description>Introduction This list of checkpoints should aid you in creation of village scenes and provide you with an insight into what we pay attention to when creating village scenes.
 Navigation Mesh  Navigation mesh consists of triangles and quads. It is used by the AI for pathfinding. The global illumination system also uses it to find the visible locations of the scene. Keep in mind that the navigation mesh faces should not be too far away from the physics below it.</description>
+    </item>
+    
+    <item>
+      <title>行动的战术位置</title>
+      <link>http://localhost:4444/zh_cn/authoring-mission-scenes/tactical_positions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/authoring-mission-scenes/tactical_positions/</guid>
+      <description>战术阵地和战术区域 这些是让AI了解地形特征的脚本实体。与攻城战中不同，AI不会总是使用你放置的战术阵地或区域。他们会在自己认为有利的条件下使用它们。
+由于玩家的移动路径和AI刷入路径随机化，在战斗中可能出现的情况非常多。因此，最好尽可能多地标记有意义的阵地和区域。漏掉一些有意义的阵地标记将不会导致像攻城战中那样明显的错误，但会导致战斗的趣味性降低，因为AI不会意识到他们周围的环境。下面是关于战术阵地和战术区域的类型以及使用方法。
+战术阵地 高地（High ground），坡面方向 这些是面向一个方向的有利高地阵地。如果敌人从战术阵地面对的方向靠近，AI可以守住这些阵地。 方向是最重要的部分。要防守的阵地将面对阵地的前进方向（编辑器中的绿色箭头）。参数如下。
+山顶(Top of Hill)，可全方位防御 这是丘陵顶部的高地阵地，易于防御所有方向。无论敌人的进近方向如何，AI都可以守住这些阵地。AI会面朝敌人在山顶布阵。方向并不重要。
+隘口（Choke Points） 这种类型是两边有不可逾越障碍的隘口。人数较少的AI可以尝试守住这些隘口，以减轻自己的人数劣势。
+悬崖（Cliff Positions） 这种战术阵地本身毫无意义。它们应该放在隘口战术阵地下的实体层次结构中。如果放在隘口下，而AI使用了这个隘口，才会使用悬崖阵地。
+战术区域（TACTICAL REGIONS） 这些都是用于标记场景中的区域。只给出一个半径的圆形区域。显然，场景中会有完全自定义/随机形状的森林、险要地貌和开阔地。因此应该定义多个由不同圆形区域组成的战术区域，可以根据需要添加多个圆形区域。每个战术区域的圆形区域半径可以是一个粗略的估计，不需要精确。
+森林区域（Forest Areas） 如果敌人拥有更多的远程和骑兵部队，则AI可以在森林区域内使用阵地，因为弓箭手和骑兵在森林中的效能较低。任何对远程部队和骑兵都不利的地区都可以指定为一个森林区域，它不一定必须是一片有树木的森林，也可以是一个有很多障碍物和掩护物的市场。
+障碍地形（Difficult Terrain） 这包括岩石地形以及沼泽，甚至可能是集市或一些地面有很多障碍物的阵地，任何不妨碍范围性火力(如森林)但阻碍和减缓骑兵的区域都应该被考虑并标记为障碍地形。如果敌方的骑兵部队数量占优，AI可以在困难地形区域内使用阵地。
+开阔地形（Open Areas） 能让骑兵快速移动和清除远程火力的地形。这个区域类型是用来标记合适的战场。如果AI拥有优势或同等数量的射手和骑兵单位，可以选择在开阔区域进行防御。
+战术区域和阵地组合 A节中描述的战术阵地也可以放在战术区域实体下，它们的_tacticalRegionMembership应该被正确选择。在这种情况下，AI会意识到隘口也在森林区域，在合适的条件下，可以相应地选择该隘口或高地。</description>
     </item>
     
     <item>
@@ -59,23 +68,34 @@ Usage   Create a path, you can use the button on toolbar   Give a name to path  
     </item>
     
     <item>
-      <title>Script Component Callbacks</title>
-      <link>http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/callbacks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/callbacks/</guid>
-      <description>The callbacks of the script components are listed below.
-Constructor In constructor one needs to assign default values to its public variables(variables which can be changed by the scene maker). In constructor script component is not assigned to an entity or scene. Also, you should not write any logic that has any side effect because , even though it is created, the script component may be deleted once the scene is opened because of the upgrade level system.</description>
-    </item>
-    
-    <item>
-      <title>Spawn Point Debug Tool</title>
+      <title>出生点 Debug 工具</title>
       <link>http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/spawn_point_debug_tool/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/spawn_point_debug_tool/</guid>
-      <description>Introduction The tool which has prefab named &amp;ldquo;SpawnPointDebugView&amp;rdquo; can be added to scene. Prefab has &amp;ldquo;SpawnPointDebugView&amp;rdquo; script attached and tool can be opened through inspector toggle. Tool has 3 tabs named &amp;ldquo;Scene basic information tab&amp;rdquo;, &amp;ldquo;Scene entity check tab&amp;rdquo; and &amp;ldquo;Navigation mesh check tab&amp;rdquo;.
-1. Scene Basic Information Tab This tab tries to determine the scene type in order to find necessities; if detected type is not correct, artist can override the type using toggle buttons below.</description>
+      <description>介绍 这个可以添加进场景的工具有一个预制件 (prefab) 叫做“SpawnPointDebugView”。预制件有附带一个“SpawnPointDebugView”脚本，工具可以通过查看器选项 (Inspector Toggle) 打开。工具有 3 个选项卡，分别叫做“Scene basic information tab”，“Scene entity check tab”和“Navigation mesh check tab”。
+1. 场景基础信息选项卡 (Scene Basic Information Tab) 这个选项卡可以决定场景的类型，从而找到一些场景必须品。如果检测出的类型不正确，设计师可以通过下面的选项按钮 (toggle button) 来重写类型。
+2. 场景实体检查选项卡 (Scene Entity Check Tab) 这个选项卡计算了出生点 (Spawn Point) 数量，并且在数量不在场景规则 (Scene Criteria) 中时提醒设计师。点击“Count Entities”按钮，并且勾选分类，便可以填充计算表了。“DONT USE”选项代表了场景中绝对不能包含的过期的实体。表格的最后一栏体现了多少行为者 (agent) 会在当前出生点生成。
+在每一行的结尾，有一个按钮可以展开所有的游戏预制件，每一个都带着点击过按钮 (clicked button) 的标签 (tag)。点击这个按钮将会打开一个新的窗口，其中展示了所有预制件以及其特有的标签。
+3. 导航网格检查选项卡 (Navigation Mesh Check Tab) 这个工具标记了没在导航网络或者被“Navigation Mesh Deactivator”停用的导航网络中的出生点。如果一个场景没有“Navigation Mesh Deactivator”那么停用的面部 ID 将会为 0，同时场景实体检查选项卡中会提醒设计师要放一个上去。点击“CHECK”按钮，同时勾选分类，将给不合法的出生点生成对应分类颜色 Debug 线。
+导航网格检查工具展示了场景级别 (Scene Level) 的出生点。每一个勾选框将会激活两个按钮，分别叫做“Previous”和“Next”。点击这两个按钮可以分别使编辑器镜头 (Camera) 一个一个聚焦于放错的出生点。</description>
+    </item>
+    
+    <item>
+      <title>脚本组件回调函数</title>
+      <link>http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/callbacks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/callbacks/</guid>
+      <description>以下为脚本组件 (Script Components) 的回调函数 (Callbacks)。
+构造函数 (Constructor) 在构造函数中，需要指定一些公共变量 (Public Variables) 的默认值（变量可能会被场景设计师修改）。在构造函数中，脚本组件是不会指定到一个特定的实体或者场景的。同时，你不应该在构造函数中写任何有副作用 (Side Effect) 的逻辑代码，因为即使创建了，脚本组件也可能会在场景打开时，因为关卡系统 (Level System) 的升级而被删除。
+On Pre Init 当一个脚本组件被指定一个场景中的实体时，调用本函数。当你回调该函数时，你要确定用户在脚本中定义的变量都是设定好的。但是，其他实体的脚本组件可能还没有指定。所以，在 pre init 函数中，不应该有任何需要调用其他脚本组件的逻辑代码。例如，ManagedObject 在 pre-init 函数中指定它自己到当前任务实例中的对象数列 (managed object array) 中。
+On Init 这个函数在任务载入的时候被调用，函数会初始化脚本组件中的所有实体。你可以在此回调函数中添加任何类型的逻辑代码。运行实例化脚本 (Run Time Instantiated Scripts) 也会调用该函数。
+On Editor Init 编辑器版本的 On Init 函数。这个函数是在场景在编辑器中加载时候调用的。值得注意的是，在编辑器中没有任务或者游戏状态 (game state)。
+On Tick 在同一个线程下，每一个脚本组件的任务的每一帧都会调用这个函数。
+On Editor Tick 编辑器版本的 On Tick 函数。
+Is Only Visual 如果你的脚本组件是仅供查看，即不会在专用服务器 (dedicated server) 上运行任何逻辑代码，那么你想要在函数中设置返回值为 真 (True)。这个可以确保这个类型的脚本不会在服务器上运行。
+On Editor Variable Changed 在编辑器中，当一个脚本组件中的公共变量被用户修改的时候，调用该函数。当设计者需要在编辑场景中得到即时反馈的时候，该函数可以被用于任何视觉和逻辑上的状态改变。</description>
     </item>
     
   </channel>

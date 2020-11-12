@@ -28,6 +28,15 @@ Adding Component Component can be added from the toolbar after selecting an enti
     </item>
     
     <item>
+      <title>Navmesh</title>
+      <link>http://localhost:4444/editor/scene-editor/nav_mesh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/editor/scene-editor/nav_mesh/</guid>
+      <description>What is the Navigation Mesh? Navigation Mesh is a compilation of models created by the scene designer for the use of AI to make sure they can move around without colliding with the physic objects in the scene. What are the important rules for Navigation Mesh? a. 1,5 Meter Rule: Designers needs to arrange the navigation mesh in a 1.5-meter diameter when creating on terrain or other objects that can be walked on or can stand on (Rooftops, castle walls etc.</description>
+    </item>
+    
+    <item>
       <title>Path Editing</title>
       <link>http://localhost:4444/editor/scene-editor/path_editing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

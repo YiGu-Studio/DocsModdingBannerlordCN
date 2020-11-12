@@ -19,13 +19,12 @@ Adding Component Component can be added from the toolbar after selecting an enti
     </item>
     
     <item>
-      <title>Path Editing</title>
-      <link>http://localhost:4444/zh_cn/editor/scene-editor/path_editing/</link>
+      <title>Navmesh</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/nav_mesh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4444/zh_cn/editor/scene-editor/path_editing/</guid>
-      <description>Level designer can easily add, edit or delete paths and path points by the scene editor.
-Adding a new path User can use the Add New Path button at the upper toolbar. User should enter a unique name for every path. After the path is added, the editor&amp;rsquo;s editing state will become &amp;ldquo;Path Select&amp;rdquo;. By spacing either space or the &amp;ldquo;Add a new path point&amp;rdquo; button from the upper toolbar, user can transition to the &amp;ldquo;Path Node Add&amp;rdquo; mode and start adding new path nodes.</description>
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/nav_mesh/</guid>
+      <description>What is the Navigation Mesh? Navigation Mesh is a compilation of models created by the scene designer for the use of AI to make sure they can move around without colliding with the physic objects in the scene. What are the important rules for Navigation Mesh? a. 1,5 Meter Rule: Designers needs to arrange the navigation mesh in a 1.5-meter diameter when creating on terrain or other objects that can be walked on or can stand on (Rooftops, castle walls etc.</description>
     </item>
     
     <item>
@@ -53,6 +52,17 @@ Adding a new path User can use the Add New Path button at the upper toolbar. Use
     </item>
     
     <item>
+      <title>编辑路径</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/path_editing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/path_editing/</guid>
+      <description>关卡设计师 (Level designer) 可以在场景编辑器 (Scene Editor) 中轻易的增加、修改和删除路径 (Path) 和路径点 (Path Point)。
+添加一个新的了路径 用户可以使用在工具栏上部的 添加新路径 (Add New Path) 按钮，可以为每一个路径设计一个独特的名字。路径添加之后，编辑器的编辑状态 (Editing State) 会变成“路径选择”(&amp;ldquo;Path Select&amp;rdquo;) 状态。此时按空格 (space) 或者 点击工具栏上部的添加一个新路径点 (Add a new path point) 按钮。用户可以回到 &amp;ldquo;路径点添加&amp;rdquo; (Path Node Add) 模式然后添加新的路径点。每点击一次就会在当前选中的路径上添加一个新的路径点。此时再按空格，用户就可以选择并且编辑当前的路径点。每一条路径点都有 3 转换点 (Transform Points)：中心方块 (Center Cube) 和两条切线球面 (Tagent Spheres)。用户可以鼠标悬停于此然后点击鼠标左键选中他们。然后，按 T 键开始产生这 3 个转换点，之后便可以移动他们。每一步操作都可以通过 &amp;ldquo;Control + Z&amp;rdquo; 组合来取消操作。选中的路径点可以通过 &amp;ldquo;Del&amp;rdquo; 键移除。选中的路径也可以通过 &amp;ldquo;Del&amp;rdquo; 键移除。同时，如果想选中另一条路径，可以鼠标悬停在那条路径其中一个点并点击鼠标左键。
+   添加一条新路径 添加一个新的路径点 选中一个路径点           </description>
+    </item>
+    
+    <item>
       <title>Entity Inspector</title>
       <link>http://localhost:4444/zh_cn/editor/scene-editor/entity_inspector/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -63,13 +73,13 @@ Scale Locked If the lock icon is in locked state, changing any component of scal
     </item>
     
     <item>
-      <title>Navigation Mesh Inspector</title>
+      <title>导航网格查看器</title>
       <link>http://localhost:4444/zh_cn/editor/scene-editor/nav_mesh_inspector/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:4444/zh_cn/editor/scene-editor/nav_mesh_inspector/</guid>
-      <description>Tools These tools help you to generate and manipulate the navigation mesh:
-Generation Tools  Auto Generate: As the name implies, automatically generates the navigation mesh with resppect to the parameters above. Generate Grids: Generates grid navigation mesh for the terrain only. It ignores the entities on the scene. Create New Face: Creates a new navigation mesh quad face on the coordinates where the camera is. Extrude: Remove: Removes the selected navigation mesh edge.</description>
+      <description>工具 这些工具可以帮助您生成和操作导航网格：
+生成工具（Generation Tools）  Auto Generate: 顾名思义，将根据上述参数自动生成导航网格物体。 Generate Grids: 仅为地形生成格子状导航网格。它会忽略场景中的实体。 Create New Face: 在相机所在的坐标上创建一个新的导航网格四边形面。 Extrude: Remove: 删除选定的导航网格边。 Fill: 在选定的导航网格顶点之间填充并形成一个面。 Grow Selection: 选择选定元素的相邻元素来扩大选择范围（适用于所有顶点，边和面结构）。 Connect: 绘制一条边来连接选定的两个导航网格顶点。 Subdivide: 通过在顶点的中间放置一个顶点来划分它。该顶点连接到相邻的顶点并划分感兴趣的面。 Weld: 移除边而代之以单个顶点。它将旧边的相邻顶点连接到新生成的顶点。 Import Faces From Prefabs: 导入之前导出的面。 Import Body: &amp;lt;not_known&amp;gt; Make Quads When Possible: 选择相邻的三角形面，这些面可以构造四边形（不形成凹多边形）。这不会构造出具有最大表面积的面的最佳导航网格，但是它将局部选择形成最大表面积的三角形。仍然会大大减少面的总数。  调试工具（Debugging Tools）  X-Z Keys: 每个键放入两个不同的球体，当两个球体都放入时，给出这两个球体之间定义路径的统计。 Select Vertices Below Entities: 选择实体下面的顶点。 Select Unwalkable Edges: &amp;lt;not_known&amp;gt; Fix Concave Faces: 使凹面凸出。 Select Unconnected Faces: &amp;lt;not_known&amp;gt; Calculate Auto Weld Points: &amp;lt;not_known&amp;gt; Select Inverted Faces: 查找并选择面向地形的反面。 Find Path: &amp;lt;not_known&amp;gt; Paste Copied Faces: 粘贴复制的面。 Copy Selected Faces: 复制选定的面。 Export Faces as Prefab: 导出所选面以供以后使用。 Ensure Faces Are Not Below Ground: 确保面不在地下。 Remove Unreachable Faces: 删除孤岛面（其中有一个生成点）。（生成点是根据Prefabs/editor_spawnpoints.</description>
     </item>
     
     <item>
@@ -79,16 +89,6 @@ Generation Tools  Auto Generate: As the name implies, automatically generates th
       
       <guid>http://localhost:4444/zh_cn/editor/scene-editor/alignment_and_snapping/</guid>
       <description>Pivot Alignment Tool The Pivot alignment toolapplies the chosen transform values of one entity to another entity. The tool makes it easier for users to create overlapping or precisely aligned entities. If an entitity is selected in the editor, the user can set up the alignment tool by pressing Alt + A.This will register the currently selected entity as the input entity. Selecting a second entity with the left mouse button, will then open the interface screen of the alignment tool.</description>
-    </item>
-    
-    <item>
-      <title>Distance Tool</title>
-      <link>http://localhost:4444/zh_cn/editor/scene-editor/distance_tool/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:4444/zh_cn/editor/scene-editor/distance_tool/</guid>
-      <description>Distance Measure Tool The Distance Toolmeasures the distance between two points in the scene. Distance measure mode can be activated by either pressing Alt + Dshortcut or the respective button on the editor toolbar.
-While holding the left mouse button, drag the mouse between two points in the scene to measure distance. The tool snaps to vertices if close enough to a one by default, holding down Left Shiftoverrides this.</description>
     </item>
     
     <item>
@@ -115,13 +115,15 @@ Which are: \
     </item>
     
     <item>
-      <title>Terrain Mesh Blend System</title>
+      <title>地形网格混合系统</title>
       <link>http://localhost:4444/zh_cn/editor/scene-editor/terrain_mesh_blend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:4444/zh_cn/editor/scene-editor/terrain_mesh_blend/</guid>
-      <description>We introduce a new terrain mesh blending system. Certain terrain layers can blend into chosen meshes. Blend height, smoothness and random height offsets can be changed. These values can be saved to prefabs and can also be changed in scene per mesh. Heightmap blending can also be used to change the blending behaviour with respect to the mesh&amp;rsquo;s heightmap.
-   With Blending Without Blending          Terrain Layer Restrictions Terrain layers should satisfy some restrictions before they are eligible to be a mesh blend layer.</description>
+      <description>在此介绍一个新的地形网格的混合 (blending) 系统。特定的地形 (terrain) 层可以和选中的网格 (mesh) 混合起来。可以修改混合的高度，平滑度以及随机高度偏移量。
+这些值可以存在预制件 (prefabs) 中或者是在场景中根据网格而改变。高度图 (Heightmap) 混合还可以根据网格的高度图来改变不同的混合行为。
+   有混合 没有混合          地形层限制 地形层需要在变成网格混合层 (mesh blend layer) 之前满足一部分限制。
+ 漫反射贴图 (Diffuse Texture) 应该有 (2048, 2048) 尺寸并且是 DXT1 格式 （没有 alpha）。 普通贴图 (Normal Texture) 应该有 (2048, 2048) 尺寸并且是 BC5 格式。 高光贴图 (Specular Texture) 应该有 (2048, 2048) 尺寸并且是 DXT1 格式。 每一层级不应该应用 “diffuse alpha” 和 “ground slope” 标记 (flag)。  材料属性 网格应该有一个带着 “terrain_mesh_blend_shader” 着色器 (shader) 的材料。为了应用高度图混合，需要指定一个高度图纹理并应用着色器的标记。</description>
     </item>
     
     <item>
@@ -143,6 +145,18 @@ Which are: \
       <guid>http://localhost:4444/zh_cn/editor/scene-editor/terrain_resize/</guid>
       <description>调整地形大小 如果需要，地形节点数量可以在 Terrain Inspector的 Resize Terrain面板调整。
  你可以从 4 个方向添加新的节点或移除已有的节点。+X, +Y, -X, -Y（分别是南，东，北，西）（上色和 Gizmo 一致） 添加和移除节点会自动重新在新的位置分配现存的实体 (entities) 和植物 (floras)。新的节点由于他们的高度信息还未定义，可能会显得无法和其他地形连接。设计者应该可以用编辑器内置的高度笔刷 (Height Brushes) 来修改，或者导出高度图在其他高度图生成软件中修改，之后在导入回编辑器中。 如果在地形的一边输入正数，那么地形像那一边扩展那么多的节点。如果你往每一边写了 +2，那么地形就会像每一边扩展 2 格。如果你写了 +3 在 +X 方向，其他方向为 0 那么地形只会往 +X 方向扩展 3 格。 如果你输入一个负数，那么将会减少相应的节点数。 如果你输入 0（默认值），那么将不会有改变。     添加 删除          </description>
+    </item>
+    
+    <item>
+      <title>距离工具</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/distance_tool/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/distance_tool/</guid>
+      <description>测距工具 Distance Tool 可以测量场景内两个点之间的距离。 可以通过按 Alt + D 快捷键 或者点击编辑器工具栏上的对应按钮来激活距离测量模式 (Distance Measure Mode)。
+使用时，按住 鼠标左键 ，在场景内从一个点拖动鼠标到另一个点来测量距离。如果靠近一个点过近，工具会默认吸附在顶点上，按住 左 Shift来取消吸附。
+该模式可以通过按 Alt + D 或者点击编辑器工具栏上对应按钮来取消（操作）。为了以后方便，测量的图标 (Gizmo) 在取消模式后也会一直可见。按住 Alt + Shift + D 来清除屏幕中的测量图标。
+ 绿线 展示了点之间的实际距离。 蓝线 展示了经纬度坐标距离。 黄色圆圈 描述了范围。  </description>
     </item>
     
   </channel>

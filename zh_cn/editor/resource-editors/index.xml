@@ -36,15 +36,6 @@ Editing Bones and Joints To edit a bone or joint, you can select the item you wa
     </item>
     
     <item>
-      <title>Meta Mesh Editor</title>
-      <link>http://localhost:4444/zh_cn/editor/resource-editors/meta_mesh_editor/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:4444/zh_cn/editor/resource-editors/meta_mesh_editor/</guid>
-      <description>Import Settings  Divide Into Grid: Divides the meta mesh into grids, and adds all the generated section meshes to the submeshes. Remove Redundant Vertices: The name implies what it does. Recompute Normals: While importing the meta mesh, computes normal vectors for all sub-meshes instead of importing them as well. Normal Computation: Decides whether the normal vector computation will depend on the face area (weighted) or not (default). Recompute Tangents: While importing the meta mesh, computes the tangent vectors for all sub-meshes instead of importing them as well.</description>
-    </item>
-    
-    <item>
       <title>Model Viewer</title>
       <link>http://localhost:4444/zh_cn/editor/resource-editors/model_viewer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -55,12 +46,24 @@ Animation From this panel, you can choose Skeleton type, and Animation.</descrip
     </item>
     
     <item>
-      <title>Texture Editor</title>
+      <title>元模型编辑器</title>
+      <link>http://localhost:4444/zh_cn/editor/resource-editors/meta_mesh_editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/resource-editors/meta_mesh_editor/</guid>
+      <description>导入设置  分解为网格 (Grid)：把元模型 (meta mesh) 分成网格，并且添加所有生成的模型部分到子模型 (submesh) 中。 移除多余的顶点 (Vertices)：功能如其名。 重新计算法线 (Normals)：导入元模型时，计算所有子模型的法线向量，而不是单单全部导入。 法线计算：决定法线向量的计算是否依靠面部区域 (Face Area)，是 (weighted) 或者是 否 (default). 重新计算切线 (Tangents)：导入元模型时，计算所有子模型的切线向量，而不是单单全部导入。 抗锯齿 (whiten)：为每个像素点计算其顶点色和白色的线性插值 (linear interpolation amount)。  多细节层次 (Lod) 模型  所有的在用的元模型的子模型都可以在这儿被看到。材料属性，模型参数以及标签都可以在这个界面被修改。  没用到的模型  这里展示了子模型的使用情况。如果勾选了忽略复选框 (ignore checkbox)，这意味着对应的子模型是处于非激活状态。当需要修改 lod 模型的状态时，请点击 “应用忽略 (Apply Ignores)” 按钮来应用并且保存你的修改。  保存  保存元模型的所有改变。  </description>
+    </item>
+    
+    <item>
+      <title>纹理编辑器</title>
       <link>http://localhost:4444/zh_cn/editor/resource-editors/mipmap_editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:4444/zh_cn/editor/resource-editors/mipmap_editor/</guid>
-      <description>The Texture Editor can be accesed from; Editor &amp;gt;Window &amp;gt;Show Resource Browser &amp;gt;..Search for Texture.. &amp;gt;..Double Click on Texture.. From the Texture Inspector (Right Panel), you can enable/disable MipMap blending by toggling Use Mipmap Blendingcheckbox. When you enable MipMap Blending, you will see all mip levels of the selected texture next to each other in Preview Window. Clicking on MipMap Blend Amountswill open open a new window where you can adjust blend amounts for every mip level.</description>
+      <description>纹理编辑器 (Texture Editor) 可以通过 编辑器 (Editor) &amp;gt;窗口 (Windows) &amp;gt;资源展示浏览器 (Show Resource Browser) &amp;gt;寻找目标纹理 (..Search for Texture..) &amp;gt;双击找到的纹理 (..Double Click on Texture..)
+从右侧面板中的 纹理查看器 (Texture Inspector) 中，你可以通过选中 使用纹理细节混合 (Use Mipmap Blending) 启用/禁用 纹理细节混合 (MipMap Blending) 功能。当时启用该功能的时候，你会在预览框 (Preview Windows) 中看到所有的被选中贴图的所有纹理细节层级。
+点击 纹理细节量 (MipMap Blend Amounts) 将会打开一个新的窗口，在这个窗口中你可以修改每一层级混合的数量。
+你可以选中 细节纹理混合颜色 (MipMap Blend Color) (1)并点击 重新编译 (Recompile) (2)来应用混合。结果会立即显示在预览框和游戏中。</description>
     </item>
     
   </channel>

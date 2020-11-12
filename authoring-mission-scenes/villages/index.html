@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-11-12T04:42:13 UTC">
+<meta name="revised" content="2020-11-12T05:15:38 UTC">
 <title>What Makes a Village Scene :: Taleworlds Documentation</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -233,6 +233,21 @@
     </li>
         </ul>
     </li>
+    <li data-nav-id="/bestpractices/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/bestpractices/">Best Practices</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/bestpractices/scene_performance_guide/" class="dd-item">
+        <div>
+          <a href="/bestpractices/scene_performance_guide/">
+            Scene Performance Guide
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
     <li data-nav-id="/editor/" class="dd-item haschildren
         ">
       <div>
@@ -306,6 +321,13 @@
         <div>
           <a href="/editor/scene-editor/editor_shortcuts/">
             Editor Shortcuts
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/nav_mesh/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/nav_mesh/">
+            Navmesh
           </a>
         </div>
     </li>
@@ -458,6 +480,8 @@
       <option value="/authoring-mission-scenes/script-components/callbacks/" >- Script Component Callbacks</option>
       <option value="/authoring-mission-scenes/script-components/spawn_point_debug_tool/" >- Spawn Point Debug Tool</option>
   
+    <option value="/bestpractices/" >
+   Best Practices</option>
     <option value="/editor/" >
    Editor</option>
     <option value="/playing-sounds/" >
@@ -528,8 +552,8 @@
 <li>In order to make the agents follow roads, we label the faces on top of the roads with the ID 2.</li>
 <li>Note that all of the agent spawnpoints should be connected by navigation mesh faces with ID 2.</li>
 <li>For the animals, navigation mesh ID 3 can be used. Typically, these faces are kept within separate islands in structures like ditches. The animals will then roam inside those islands only.</li>
-<li>All other faces should have the ID 0.</li>
-<li>Remember that the agents should use the navigation mesh ID&rsquo;s 1 in order to create realistic pathing (on roads), scene designer should put an entity with the Navigation Mesh Deactivator (prefab name is Navigation_Mesh_Deactivator). It can be placed anywhere in the scene. Its purpose is to disable the ID 0 faces in civilian modes. The DisableFaceWithID variable of the script should be 1.</li>
+<li>Change the ID&rsquo;s of all other faces to 1 (from 0).</li>
+<li>Remember that the agents will use the navigation mesh ID&rsquo;s 2. In order to create realistic pathing (on roads), scene designers should place a Navigation Mesh Deactivator (prefab name is Navigation_Mesh_Deactivator). It can be placed anywhere in the scene. Its purpose is to disable the ID 1 faces in civilian modes. The DisableFaceWithID variable of the script should be 1.</li>
 <li>For the animals, the variable &ldquo;DisableFaceWithIDForAnimals&rdquo; within the same script should be 3.</li>
 <li>Make sure the faces are fairly equal in size outside of the village area / where troops will maneuver.</li>
 <li>Make sure there are no disconnected navmeshes.</li>

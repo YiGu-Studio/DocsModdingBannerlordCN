@@ -101,6 +101,20 @@
   </url>
   
   <url>
+    <loc>http://localhost:4444/bestpractices/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh_cn"
+                href="http://localhost:4444/zh_cn/bestpractices/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:4444/bestpractices/"
+                />
+  </url>
+  
+  <url>
     <loc>http://localhost:4444/asset-management/asset-types/bodies/</loc>
     <xhtml:link
                 rel="alternate"
@@ -279,6 +293,20 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:4444/asset-management/asset-types/asset_naming_conventions/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://localhost:4444/editor/scene-editor/nav_mesh/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh_cn"
+                href="http://localhost:4444/zh_cn/editor/scene-editor/nav_mesh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:4444/editor/scene-editor/nav_mesh/"
                 />
   </url>
   
@@ -686,6 +714,20 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:4444/editor/scene-editor/level_system/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://localhost:4444/bestpractices/scene_performance_guide/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh_cn"
+                href="http://localhost:4444/zh_cn/bestpractices/scene_performance_guide/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:4444/bestpractices/scene_performance_guide/"
                 />
   </url>
   
