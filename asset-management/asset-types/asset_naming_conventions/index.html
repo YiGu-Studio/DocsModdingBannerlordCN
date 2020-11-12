@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Taleworlds Documentation</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2020-11-12T04:42:13 UTC">
+<title>Naming Conventions :: Taleworlds Documentation</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "http:\/\/localhost:4444\/";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/asset-management/asset-types/asset_naming_conventions/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/asset-management/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/asset-management/">Asset Management</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/asset-management/asset-browser/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/asset-management/asset-browser/">Asset Browser</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/asset-management/asset-browser/filterqueries/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-browser/filterqueries/">
+            Filter Queries
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/asset-management/asset-types/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/asset-management/asset-types/">Asset Types</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/asset-management/asset-types/overriding_assets/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/overriding_assets/">
+            Adding &amp; Overriding Assets
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/animations/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/animations/">
+            Animations
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/bodies/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/bodies/">
+            Bodies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/prefabs/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/prefabs/">
+            Entities &amp; Prefabs
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/materials/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/materials/">
+            Materials
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/meshes/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/meshes/">
+            Meshes
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/asset_naming_conventions/" class="dd-item active">
+        <div>
+          <a href="/asset-management/asset-types/asset_naming_conventions/">
+            Naming Conventions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/overriding_scenes_prefabs/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/overriding_scenes_prefabs/">
+            Overriding Scenes and Prefabs
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/path/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/path/">
+            Paths
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/scripts/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/scripts/">
+            Scripts
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/skeletons/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/skeletons/">
+            Skeletons
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/textures/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/textures/">
+            Textures
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/asset-management/quickguide_create_a_mod/" class="dd-item">
+        <div>
+          <a href="/asset-management/quickguide_create_a_mod/">
+            Creating a Module - Quick Guide
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/faq/" class="dd-item">
+        <div>
+          <a href="/asset-management/faq/">
+            Frequently Asked Questions
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/authoring-mission-scenes/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/authoring-mission-scenes/">Bannerlord Missions</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/authoring-mission-scenes/tactical_positions/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/tactical_positions/">
+            Mission Tactical Positions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/villages/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/villages/">
+            What Makes a Village Scene
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/script-components/bannerlord_destructible_component/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/script-components/bannerlord_destructible_component/">
+            Destructible Component
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/script-components/scene_barrier_builder/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/script-components/scene_barrier_builder/">
+            Scene Barrier Builder
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/script-components/scene_spawn_points_guide/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/script-components/scene_spawn_points_guide/">
+            Scene Spawn Point Guide
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/script-components/callbacks/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/script-components/callbacks/">
+            Script Component Callbacks
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/script-components/spawn_point_debug_tool/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/script-components/spawn_point_debug_tool/">
+            Spawn Point Debug Tool
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/editor/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/editor/">Editor</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/editor/resource-editors/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/editor/resource-editors/">Resource Editors</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/editor/resource-editors/material_editor/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/material_editor/">
+            Material Editor
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/resource-editors/skeleton_editor/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/skeleton_editor/">
+            Skeleton Editor
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/resource-editors/cloth_simulation/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/cloth_simulation/">
+            Cloth Simulation
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/resource-editors/meta_mesh_editor/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/meta_mesh_editor/">
+            Meta Mesh Editor
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/resource-editors/model_viewer/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/model_viewer/">
+            Model Viewer
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/resource-editors/mipmap_editor/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/mipmap_editor/">
+            Texture Editor
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/editor/scene-editor/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/editor/scene-editor/">Scene Editor</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/editor/scene-editor/creating_entity/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/creating_entity/">
+            Creating Entity
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/editor_shortcuts/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/editor_shortcuts/">
+            Editor Shortcuts
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/path_editing/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/path_editing/">
+            Path Editing
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/terrain_creation/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/terrain_creation/">
+            Terrain Creation
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/entity_inspector/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/entity_inspector/">
+            Entity Inspector
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/nav_mesh_inspector/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/nav_mesh_inspector/">
+            Navigation Mesh Inspector
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/alignment_and_snapping/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/alignment_and_snapping/">
+            Alignment and Snapping Tools
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/distance_tool/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/distance_tool/">
+            Distance Tool
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/mass_selection/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/mass_selection/">
+            Mass Selection
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/prt/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/prt/">
+            Precomputed Radiance Transfer - GI System
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/terrain_resize/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/terrain_resize/">
+            Resizing Terrain
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/level_system/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/level_system/">
+            Scene Level System
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/terrain_mesh_blend/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/terrain_mesh_blend/">
+            Terrain Mesh Blend System
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/playing-sounds/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/playing-sounds/">Playing Sounds</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/playing-sounds/adding-custom-sounds/" class="dd-item">
+        <div>
+          <a href="/playing-sounds/adding-custom-sounds/">
+            Adding Sounds to Your Module
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+<select id="select-language" onchange="location = this.value;">
+	
+	
+	
+	  
+	  
+	    
+	      
+	        <option id="en" value="/asset-management/asset-types/asset_naming_conventions/" selected>English</option>
+	      
+	    
+	  
+	    
+	  
+	
+	  
+	  
+	    
+	  
+	    
+	      
+	        <option id="zh_cn" value="/zh_cn/asset-management/asset-types/asset_naming_conventions/">简体中文</option>
+	      
+	    
+	  
+	
+</select>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation: 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/asset-management/" >
+   Asset Management</option> 
+    <option value="/asset-management/asset-browser/" >
+  - 
+   Asset Browser</option>
+    <option value="/asset-management/asset-types/" >
+  - 
+   Asset Types</option> 
+      <option value="/asset-management/asset-types/overriding_assets/" >-- Adding &amp; Overriding Assets</option>
+      <option value="/asset-management/asset-types/animations/" >-- Animations</option>
+      <option value="/asset-management/asset-types/bodies/" >-- Bodies</option>
+      <option value="/asset-management/asset-types/prefabs/" >-- Entities &amp; Prefabs</option>
+      <option value="/asset-management/asset-types/materials/" >-- Materials</option>
+      <option value="/asset-management/asset-types/meshes/" >-- Meshes</option>
+      <option value="/asset-management/asset-types/asset_naming_conventions/"  selected>-- Naming Conventions</option>
+      <option value="/asset-management/asset-types/overriding_scenes_prefabs/" >-- Overriding Scenes and Prefabs</option>
+      <option value="/asset-management/asset-types/path/" >-- Paths</option>
+      <option value="/asset-management/asset-types/scripts/" >-- Scripts</option>
+      <option value="/asset-management/asset-types/skeletons/" >-- Skeletons</option>
+      <option value="/asset-management/asset-types/textures/" >-- Textures</option>
+  
+      <option value="/asset-management/quickguide_create_a_mod/" >- Creating a Module - Quick Guide</option>
+      <option value="/asset-management/faq/" >- Frequently Asked Questions</option>
+  
+    <option value="/authoring-mission-scenes/" >
+   Bannerlord Missions</option>
+    <option value="/editor/" >
+   Editor</option>
+    <option value="/playing-sounds/" >
+   Playing Sounds</option>
+
+
+
+        </select>
+      </center>
+      <center>Language: 
+        
+<select id="select-language" onchange="location = this.value;">
+	
+	
+	
+	  
+	  
+	    
+	      
+	        <option id="en" value="/asset-management/asset-types/asset_naming_conventions/" selected>English</option>
+	      
+	    
+	  
+	    
+	  
+	
+	  
+	  
+	    
+	  
+	    
+	      
+	        <option id="zh_cn" value="/zh_cn/asset-management/asset-types/asset_naming_conventions/">简体中文</option>
+	      
+	    
+	  
+	
+</select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/js/auto-complete.js"></script>
+        <link href="/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "http:\/\/localhost:4444\/";
+          
+        </script>
+        <script type="text/javascript" src="/js/search.js"></script>
+      </div>
+    
+
+    <h1>Naming Conventions</h1>
+    
+    
+    
+    <p>To distinguish and organize assets and simplfy asset authoring process there are some predefined rules to consider.</p>
+<h5 id="meshes">Meshes</h5>
+<p>All meshes imported from a single geometry file(e.g. fbx) are grouped by their names. To add a LOD mesh simply append <strong>&quot;.lod&lt;n&gt;&quot;</strong> to the name of your mesh. Here <strong>n</strong> is the number of lod.<br>
+Consider an fbx file as below :</p>
+<p>asset.fbx :</p>
+<ul>
+<li>wall_damaged</li>
+<li>wall_damaged_v2</li>
+<li>wall_damaged_v2.lod1</li>
+<li>wall_damaged.lod1</li>
+<li>wall_damaged.lod2</li>
+</ul>
+<p>Two meshes will be imported from asset.fbx file : wall_damaged, wall_damaged_v2. These meshes will have one and two lods respectively. If your modelling software does not support dots in names(e.g. Maya) you can also use &ldquo;_&rdquo; insted of &ldquo;.&rdquo; to specifiy lods(e.g. wall_damaged_v2_lod1).<br>
+A mesh can not have more than one material so during import phase meshes wil be divided into submeshes according to material usages of polygons. Consecutive numbers will be appended to the names of these auto generated meshes. Consider a mesh <strong>wall_damaged</strong> using three different materials. Name of the imported mesh will be <strong>wall_damaged</strong> and it will have three submeshes with names <strong>wall_damaged.1</strong>, <strong>wall_damaged.2</strong>, <strong>wall_damaged.3</strong>.</p>
+<!-- raw HTML omitted -->
+<h5 id="physics-shapes">Physics shapes</h5>
+<p>You can export physics shapes just like regular meshes. The only difference between a mesh and a physics shape is that name of physics shapes begin with &ldquo;bo_&rdquo; prefix. You can also export analytical capsules and spheres as well.</p>
+<p><strong>Capsules</strong></p>
+<p>If name of a node begins with <strong>&ldquo;bo_capsule&rdquo;</strong> it will be imported as an analytical capsule shape. Sizes of this capsule is determined by following rules :</p>
+<ul>
+<li>Local XY axes assumed as the radial plane of capsule</li>
+<li>Local Z axis assumed as the direction of capsule(height)</li>
+<li>Scale of object in XY directions should be equal</li>
+</ul>
+<p>Only orientation and extents of capsule nodes are used. Any content attached to them(like mesh) is ignored.</p>
+<p><strong>Spheres</strong></p>
+<p>If name of a node begins with <strong>&ldquo;bo_sphere&rdquo;</strong> it will be imported as an analytical sphere shape. Sizes of this sphere is determined by the extents of the node. Center of the node will also be the center of the sphere shape.
+Only orientation and extents of sphere nodes are used. Any content attached to them(like mesh) is ignored.</p>
+<p><strong>Composite Shapes</strong></p>
+<p>You can combine different shape types to create more complex shapes. To export a composite shape you must create a node whose name begins with <strong>&ldquo;bo_composite&rdquo;</strong>. You can append child nodes with different shape types to this node.</p>
+<ul>
+<li>bo_composite_building1</li>
+<li>bo_capsule1</li>
+<li>bo_capsule2</li>
+<li>bo_sphere</li>
+<li>bo_building_walls</li>
+</ul>
+<p>This shape will be imported as a single asset with name <strong>bo_composite_building1</strong>.</p>
+<h5 id="textures">Textures</h5>
+<p>You can provide basic hints for your texture by following by following these rules:</p>
+<ul>
+<li>Albedo textures ends with _d</li>
+<li>Normal textures ends with _n</li>
+<li>Specular textures ends with _s</li>
+<li>Heightmap textures ends with _h</li>
+</ul>
+<p>Despite these rules are not obligatory, it will help engine to decide best compilation rules during first import and help some features of editor to work(e.g. auto completing normal texture slot of material). If your textures do not follow them you can change import settings later though.</p>
+<h5 id="skeletons">Skeletons</h5>
+<p>Most of in-house assets are organized so that skeletons, meshes and animations using these skeletons are stored in separate files. So we follow some naming rules to correctly establish cross-references between these files. If you are also planning to import skeletons, meshes and animations from different files :</p>
+<ul>
+<li>Bone hierarchy of skeletons must match</li>
+<li>Every bone node should have its name ending with a hardcoded bone number(e.g. _0, _1) to make sure skeletons originating from different files have their bone numbers match regardless of export process of your modelling software or exporting tool. There are these rules that each bone name must follow :</li>
+<li>Appended bone indices must start from zero</li>
+<li>Appended bone indices must not be greater than or equal to number of bones</li>
+<li>Two bones can not have same bone index</li>
+</ul>
+<!-- raw HTML omitted -->
+<p>Skeletons take their names from the root node of bone hierarchy in your geometry file. This is to let you name your skeletons something other than the name of root bone. If your root bone does not have a parent node, you can create a dummy node and make your root bone child of it. By renaming dummy node you will be able to rename your skeleton without affecting bone names.</p>
+<!-- raw HTML omitted -->
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/asset-management/asset-types/meshes/" title="Meshes"> <i class="fa fa-chevron-left"></i><label>Meshes</label></a>
+    <a class="nav nav-next" href="/asset-management/asset-types/overriding_scenes_prefabs/" title="Overriding Scenes and Prefabs" style="margin-right: 0px;"><label>Overriding Scenes and Prefabs</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+
+    
+  </div>
+
+
+	<div>
+
+
+  
+    
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/clipboard.min.js"></script>
+
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<script src="/js/featherlight.min.js"></script>
+
+
+
+<script src="/theme-flex/script.js"></script>
+
+
+    
+
+    
+    
+
+    <div style="text-align:center">
+	<footer>
+		&copy; 2005-2020 TaleWorlds Entertainment. All rights reserved.
+	</footer> 
+</div>
+  </body>
+</html>

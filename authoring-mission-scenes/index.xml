@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bannerlord Missions on Taleworlds Documentation</title>
+    <link>http://localhost:4444/authoring-mission-scenes/</link>
+    <description>Recent content in Bannerlord Missions on Taleworlds Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://localhost:4444/authoring-mission-scenes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mission Tactical Positions</title>
+      <link>http://localhost:4444/authoring-mission-scenes/tactical_positions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/authoring-mission-scenes/tactical_positions/</guid>
+      <description>TACTICAL POSITIONS AND TACTICAL REGIONS These are scripted entities that let the AI know of the terrain&amp;rsquo;s features. They do not work like siege, the AI will not always use the tactical positions or regions you may place. They may use them under conditions that favor the use of these.
+Depending on player movement and spawn path randomization, there are a very high number of scenarios that can occur during battles.</description>
+    </item>
+    
+    <item>
+      <title>What Makes a Village Scene</title>
+      <link>http://localhost:4444/authoring-mission-scenes/villages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/authoring-mission-scenes/villages/</guid>
+      <description>Introduction This list of checkpoints should aid you in creation of village scenes and provide you with an insight into what we pay attention to when creating village scenes.
+Navigation Mesh  Navigation mesh consists of triangles and quads. It is used by the AI for pathfinding. The global illumination system also uses it to find the visible locations of the scene. Keep in mind that the navigation mesh faces should not be too far away from the physics below it.</description>
+    </item>
+    
+    <item>
+      <title>Destructible Component</title>
+      <link>http://localhost:4444/authoring-mission-scenes/script-components/bannerlord_destructible_component/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/authoring-mission-scenes/script-components/bannerlord_destructible_component/</guid>
+      <description>The destruction system which gives artists a lot more freedom is explained below.
+Characteristics It is a ScriptComponent which can be applied to any entity in a scene, as long as that entity has a collision body.
+When not given any information, the script will just make the entity disappear after being destroyed. It will also re-appear when the mission resets.
+The script can be used to destroy entities in one or more states, with optional sound, particles and dynamic objects spawning in each state.</description>
+    </item>
+    
+    <item>
+      <title>Scene Barrier Builder</title>
+      <link>http://localhost:4444/authoring-mission-scenes/script-components/scene_barrier_builder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/authoring-mission-scenes/script-components/scene_barrier_builder/</guid>
+      <description>Introduction Barrier Builder is a tool that helps artist to generate barriers over walls to prevent agents to fall down.
+Usage   Create a path, you can use the button on toolbar   Give a name to path   Build your path as you wish   Press &amp;ldquo;Enable Barrier Build&amp;rdquo; chekbox on path inspector, it will create your barrier entity for you.   You can go to that entity with &amp;ldquo;Go to Entity&amp;rdquo; Button and chnage its options like height, the entity named as &amp;ldquo;path_barrier_PATHNAME&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>Scene Spawn Point Guide</title>
+      <link>http://localhost:4444/authoring-mission-scenes/script-components/scene_spawn_points_guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/authoring-mission-scenes/script-components/scene_spawn_points_guide/</guid>
+      <description>How to design fully featured scenes in Bannerlord Each scene has own basic necessities to run without crashing and has extras to give better experience to player. Designers can check these necessities with &amp;ldquo;Spawn Point Debug Tool&amp;rdquo; to be sure that their scene will not crash.
+1. Town Center Scene Player will be spawned on the &amp;ldquo;sp_player_outside&amp;rdquo; prefab if he/she is entering the city for the first time, because of this feature &amp;ldquo;sp_player_outside&amp;rdquo; must be placed far from city&amp;rsquo;s entrance; otherwise player will be spawned on &amp;ldquo;sp_player&amp;rdquo; and this spawnpoint can be next to the entrance gate.</description>
+    </item>
+    
+    <item>
+      <title>Script Component Callbacks</title>
+      <link>http://localhost:4444/authoring-mission-scenes/script-components/callbacks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/authoring-mission-scenes/script-components/callbacks/</guid>
+      <description>The callbacks of the script components are listed below.
+Constructor In constructor one needs to assign default values to its public variables(variables which can be changed by the scene maker). In constructor script component is not assigned to an entity or scene. Also, you should not write any logic that has any side effect because , even though it is created, the script component may be deleted once the scene is opened because of the upgrade level system.</description>
+    </item>
+    
+    <item>
+      <title>Spawn Point Debug Tool</title>
+      <link>http://localhost:4444/authoring-mission-scenes/script-components/spawn_point_debug_tool/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/authoring-mission-scenes/script-components/spawn_point_debug_tool/</guid>
+      <description>Introduction The tool which has prefab named &amp;ldquo;SpawnPointDebugView&amp;rdquo; can be added to scene. Prefab has &amp;ldquo;SpawnPointDebugView&amp;rdquo; script attached and tool can be opened through inspector toggle. Tool has 3 tabs named &amp;ldquo;Scene basic information tab&amp;rdquo;, &amp;ldquo;Scene entity check tab&amp;rdquo; and &amp;ldquo;Navigation mesh check tab&amp;rdquo;.
+1. Scene Basic Information Tab This tab tries to determine the scene type in order to find necessities; if detected type is not correct, artist can override the type using toggle buttons below.</description>
+    </item>
+    
+  </channel>
+</rss>

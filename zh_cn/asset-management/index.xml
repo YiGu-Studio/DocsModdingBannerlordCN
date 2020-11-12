@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>资产管理 on Taleworlds Documentation</title>
+    <link>http://localhost:4444/zh_cn/asset-management/</link>
+    <description>Recent content in 资产管理 on Taleworlds Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://localhost:4444/zh_cn/asset-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>创建一个Mod - 快速入门</title>
+      <link>http://localhost:4444/zh_cn/asset-management/quickguide_create_a_mod/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/asset-management/quickguide_create_a_mod/</guid>
+      <description>Mod 可以包含从网格到物理实体、场景、游戏实体（如派系、领主、部队、物品）以及可以运行任何游戏逻辑的脚本和行为等资产 (Assets)。在本指南中，将解释创建一个 Mod 的过程。
+新建一个Mod Mod 位于根目录下的 &amp;ldquo;Modules&amp;rdquo; 文件夹内，它必须包含名为 SubModule.xml 的 xml 文件。这个文件提供 &amp;ldquo;Name&amp;rdquo;、&amp;ldquo;ID&amp;rdquo; 和 &amp;ldquo;Version&amp;rdquo; 节点等基本信息。另外，还可以在 &amp;ldquo;DepenendedModules&amp;rdquo; 节点里面定义依赖模块。如果你想制作一个单人模式 Mod，它的 &amp;ldquo;DepenendedModules&amp;rdquo; 也应该包含一个 &amp;ldquo;SingleplayerModule&amp;rdquo; 节点。此后，该 Mod 将在游戏启动器中出现。
+子Mod 可以定义在运行时加载的 DLL。这些 DLL 应该包含继承自 &amp;ldquo;MBSubModuleBase&amp;rdquo; 的 Class，其名称应该与 xml 中的 &amp;ldquo;SubModuleClassType&amp;rdquo; 节点一致。该类将被构造，并被调用某些回调，这样 od 就可以将其行为注册到游戏中。
+Mod 层次结构 Mod 可以具有多个文件夹，其中包含不同类型的内容：
+ bin: 编译后的DLL应该放在 &amp;ldquo;bin/Win64_Shipping_Client&amp;quot;文件夹内，这样游戏才能找到并加载DLL。 Atmospheres: 此文件夹包含可在游戏中使用的不同环境 (Atmosphere) 模板。可以从编辑器将新的环境保存到任何 Mod。 AssetSources: 此文件夹包含资产的来源。编辑器将资产导入此文件夹。在发布 Mod 之前可以过滤掉这个文件夹。关于向模块添加新内容的更多信息，请参见 添加&amp;amp;覆盖资产。 Assets: 此文件夹包含从内容源派生的资产数据。它仅在 mod 开发阶段使用。在发布 mod 之前，该文件夹可能会被过滤掉。 AssetPackages: 当模块的内容工作完成后，内容创建者应该开始 &amp;ldquo;Publish&amp;rdquo; 操作，为内容的发布做好准备。此文件夹包含了被发布的资产。 GUI: 此文件夹包含任何新的可供游戏使用的GUI元素，预制件或笔刷。 ModuleData: 此文件夹有许多包含了重要游戏逻辑的 xml 文件。&amp;ldquo;project.</description>
+    </item>
+    
+    <item>
+      <title>常见问题解答</title>
+      <link>http://localhost:4444/zh_cn/asset-management/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/asset-management/faq/</guid>
+      <description>如何安装工具？ 从 Steam 库的工具部分中找到并下载“Mount &amp;amp; Blade Bannerlord Modding Tools”。请注意，本工具会使用部分已经下载好的游戏本体的文件，因此，工具的版本应与游戏版本一致并且应与游戏本体安装在同一驱动器中。
+如何启动工具？ 选择启动器中的 Singleplayer 选项并启动，等你进入到游戏主菜单界面后，你既可以单击 Editor 启动编辑器，也可以按下组合键 Ctrl + E 来启动编辑器。
+如何创建你自己的模组？ 我们在编辑器里内置了一个功能，可以直接创建一个有 XML 模板文件的模组，方便你快速开始添加新内容。打开编辑器后，在顶端工具栏的“File”菜单下找到“Create New Module”选项，点击它。请注意，你需要重启游戏来让启动器识别该模组。
+如何编辑游戏本体(Native)资源？ 你无法直接编辑游戏本体资源，但你可以在你的模组中覆盖掉它们。详情请参阅： 添加&amp;amp;覆盖资产我无法添加新模型、材质等 你无法直接向游戏本体添加资源，你需要在你自己的模组里添加它们。
+首先，你需要新建一个模组：快速入门指南更多关于添加新的资产的信息请参阅： 添加&amp;amp;覆盖资产可供参考的示例场景？ empire_village_003
+khuzait_castle_002
+sturgia_town_b
+battle_terrain_v
+empire_castle_keep_a_l3_interior
+empire_house_c_tavern_a
+empire_dungeon_a
+arena_empire_a
+Main_map
+在哪能找到示例资产？ 你可以从资源浏览器(Resource Browser)中查看这些游戏本体的资源，但没有源文件提供，因此你也无法导出它们。我们很快会提供一些示例的源文件。
+我有包含 DLL 文件的模组然后我的工具无法启动？ 如果你有任何包含 DLL 文件的模组，请确保它们同样被复制到了 Modules\MOD_NAME\bin\Win64_Shipping_wEditor 目录下。
+我的模组工具无法启动 请确定你的机器安装了 Visual Studio 2013 Redist x64。此外，请检查你的游戏本体版本是否与模组开发工具版本相匹配。如果完成了以上检查仍旧无法启动，你可以在官方论坛的modding forums分区下的“Bug &amp;amp; Crashes”板块发帖反馈：https://forums.taleworlds.com/index.php?forums/bug-crash-reports.784/</description>
+    </item>
+    
+  </channel>
+</rss>

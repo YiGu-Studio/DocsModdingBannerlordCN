@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Taleworlds Documentation</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2020-11-12T04:42:13 UTC">
+<title>Cloth Simulation :: Taleworlds Documentation</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "http:\/\/localhost:4444\/";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/editor/resource-editors/cloth_simulation/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/asset-management/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/asset-management/">Asset Management</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/asset-management/asset-browser/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/asset-management/asset-browser/">Asset Browser</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/asset-management/asset-browser/filterqueries/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-browser/filterqueries/">
+            Filter Queries
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/asset-management/asset-types/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/asset-management/asset-types/">Asset Types</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/asset-management/asset-types/overriding_assets/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/overriding_assets/">
+            Adding &amp; Overriding Assets
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/animations/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/animations/">
+            Animations
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/bodies/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/bodies/">
+            Bodies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/prefabs/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/prefabs/">
+            Entities &amp; Prefabs
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/materials/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/materials/">
+            Materials
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/meshes/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/meshes/">
+            Meshes
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/asset_naming_conventions/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/asset_naming_conventions/">
+            Naming Conventions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/overriding_scenes_prefabs/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/overriding_scenes_prefabs/">
+            Overriding Scenes and Prefabs
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/path/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/path/">
+            Paths
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/scripts/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/scripts/">
+            Scripts
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/skeletons/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/skeletons/">
+            Skeletons
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/textures/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/textures/">
+            Textures
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/asset-management/quickguide_create_a_mod/" class="dd-item">
+        <div>
+          <a href="/asset-management/quickguide_create_a_mod/">
+            Creating a Module - Quick Guide
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/faq/" class="dd-item">
+        <div>
+          <a href="/asset-management/faq/">
+            Frequently Asked Questions
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/authoring-mission-scenes/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/authoring-mission-scenes/">Bannerlord Missions</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/authoring-mission-scenes/tactical_positions/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/tactical_positions/">
+            Mission Tactical Positions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/villages/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/villages/">
+            What Makes a Village Scene
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/script-components/bannerlord_destructible_component/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/script-components/bannerlord_destructible_component/">
+            Destructible Component
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/script-components/scene_barrier_builder/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/script-components/scene_barrier_builder/">
+            Scene Barrier Builder
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/script-components/scene_spawn_points_guide/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/script-components/scene_spawn_points_guide/">
+            Scene Spawn Point Guide
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/script-components/callbacks/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/script-components/callbacks/">
+            Script Component Callbacks
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/script-components/spawn_point_debug_tool/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/script-components/spawn_point_debug_tool/">
+            Spawn Point Debug Tool
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/editor/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/editor/">Editor</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/editor/resource-editors/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/editor/resource-editors/">Resource Editors</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/editor/resource-editors/material_editor/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/material_editor/">
+            Material Editor
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/resource-editors/skeleton_editor/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/skeleton_editor/">
+            Skeleton Editor
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/resource-editors/cloth_simulation/" class="dd-item active">
+        <div>
+          <a href="/editor/resource-editors/cloth_simulation/">
+            Cloth Simulation
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/resource-editors/meta_mesh_editor/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/meta_mesh_editor/">
+            Meta Mesh Editor
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/resource-editors/model_viewer/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/model_viewer/">
+            Model Viewer
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/resource-editors/mipmap_editor/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/mipmap_editor/">
+            Texture Editor
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/editor/scene-editor/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/editor/scene-editor/">Scene Editor</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/editor/scene-editor/creating_entity/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/creating_entity/">
+            Creating Entity
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/editor_shortcuts/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/editor_shortcuts/">
+            Editor Shortcuts
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/path_editing/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/path_editing/">
+            Path Editing
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/terrain_creation/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/terrain_creation/">
+            Terrain Creation
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/entity_inspector/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/entity_inspector/">
+            Entity Inspector
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/nav_mesh_inspector/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/nav_mesh_inspector/">
+            Navigation Mesh Inspector
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/alignment_and_snapping/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/alignment_and_snapping/">
+            Alignment and Snapping Tools
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/distance_tool/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/distance_tool/">
+            Distance Tool
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/mass_selection/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/mass_selection/">
+            Mass Selection
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/prt/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/prt/">
+            Precomputed Radiance Transfer - GI System
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/terrain_resize/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/terrain_resize/">
+            Resizing Terrain
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/level_system/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/level_system/">
+            Scene Level System
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/terrain_mesh_blend/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/terrain_mesh_blend/">
+            Terrain Mesh Blend System
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/playing-sounds/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/playing-sounds/">Playing Sounds</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/playing-sounds/adding-custom-sounds/" class="dd-item">
+        <div>
+          <a href="/playing-sounds/adding-custom-sounds/">
+            Adding Sounds to Your Module
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+<select id="select-language" onchange="location = this.value;">
+	
+	
+	
+	  
+	  
+	    
+	      
+	        <option id="en" value="/editor/resource-editors/cloth_simulation/" selected>English</option>
+	      
+	    
+	  
+	    
+	  
+	
+	  
+	  
+	    
+	  
+	    
+	      
+	        <option id="zh_cn" value="/zh_cn/editor/resource-editors/cloth_simulation/">简体中文</option>
+	      
+	    
+	  
+	
+</select>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation: 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/asset-management/" >
+   Asset Management</option>
+    <option value="/authoring-mission-scenes/" >
+   Bannerlord Missions</option>
+    <option value="/editor/" >
+   Editor</option> 
+    <option value="/editor/resource-editors/" >
+  - 
+   Resource Editors</option> 
+      <option value="/editor/resource-editors/material_editor/" >-- Material Editor</option>
+      <option value="/editor/resource-editors/skeleton_editor/" >-- Skeleton Editor</option>
+      <option value="/editor/resource-editors/cloth_simulation/"  selected>-- Cloth Simulation</option>
+      <option value="/editor/resource-editors/meta_mesh_editor/" >-- Meta Mesh Editor</option>
+      <option value="/editor/resource-editors/model_viewer/" >-- Model Viewer</option>
+      <option value="/editor/resource-editors/mipmap_editor/" >-- Texture Editor</option>
+  
+    <option value="/editor/scene-editor/" >
+  - 
+   Scene Editor</option>
+  
+    <option value="/playing-sounds/" >
+   Playing Sounds</option>
+
+
+
+        </select>
+      </center>
+      <center>Language: 
+        
+<select id="select-language" onchange="location = this.value;">
+	
+	
+	
+	  
+	  
+	    
+	      
+	        <option id="en" value="/editor/resource-editors/cloth_simulation/" selected>English</option>
+	      
+	    
+	  
+	    
+	  
+	
+	  
+	  
+	    
+	  
+	    
+	      
+	        <option id="zh_cn" value="/zh_cn/editor/resource-editors/cloth_simulation/">简体中文</option>
+	      
+	    
+	  
+	
+</select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/js/auto-complete.js"></script>
+        <link href="/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "http:\/\/localhost:4444\/";
+          
+        </script>
+        <script type="text/javascript" src="/js/search.js"></script>
+      </div>
+    
+
+    <h1>Cloth Simulation</h1>
+    
+    
+    
+    <h2 id="preparing-mesh">Preparing Mesh</h2>
+<p>Cloth simulation system uses alpha channels of vertices of meshes. Values in the alpha channel represents how much a vertex can move away from its original position. 0.1 of alpha means vertex can be moved 0.1 units from its original position by cloth simulation. If you set zero to alpha value that means that vertex will be fixed to its position and will not be updated by simulation.</p>
+<table>
+<thead>
+<tr>
+<th>Shaded</th>
+<th>Vertex Alpha</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/img/cloth_simulation/image1.png" alt=""></td>
+<td><img src="/img/cloth_simulation/image6.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p>Black parts are driven by skinning system while white parts are simulated. It is worth to mention that skinning calculations are done for all vertices whether they are fixed or not. Positions of skinned vertices are used as anchor points for simulated vertices. You can imagine that a simulated vertex can only move inside a sphere with radius R and center C. Here alpha channel of the vertex color is used as radius and skinned position is used as center.</p>
+<table>
+<thead>
+<tr>
+<th>Shaded</th>
+<th>Vertex Alpha</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/img/cloth_simulation/image7.png" alt=""></td>
+<td><img src="/img/cloth_simulation/image3.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<h2 id="simulation-types">Simulation Types</h2>
+<h3 id="direct-simulation">Direct simulation</h3>
+<p>In direct simulation, vertices of rendered mesh are simulated directly by cloth simulation. This technique can be used for meshes with simple topology(like grid) and small amount of vertices. As the number of vertices increases performance hit of simulation will be greater.</p>
+<h3 id="mapped-simulation">Mapped simulation</h3>
+<p>In some cases, your mesh may not be suitable for cloth simulation. Some examples are armors with double sided polygons, clothes with more than one layer or meshes with high numbers of polygons. For such cases a separate mesh can be used for simulation. If a separate simulation mesh is used vertices of this mesh are simulated by cloth simulation. Vertices of original mesh will be mapped to simulated mesh and move with them.</p>
+<p><img src="/img/cloth_simulation/image4.png" alt="">
+<img src="/img/cloth_simulation/image2.png" alt=""></p>
+<p>In the above images, meshes on the right side are used for simulation and the left ones are rendered according to simulated results.
+To achieve realistic results, your simulation mesh should tightly map to render mesh and it must never cover it. In other words, render mesh should never penetrate to simulation mesh. If it does, since collision calculations are done for simulation mesh you may see collision artifacts like penetrating leg to armor.</p>
+<h2 id="cloth-editor">Cloth Editor</h2>
+<p>To enable cloth simulation for a mesh some ingame settings must be adjusted. Cloth editor is used to setup a mesh for simulation. Cloth editor can be opened from toolbar menu in editor.</p>
+<p><img src="/img/cloth_simulation/image5.png" alt=""></p>
+<h3 id="preview-properties">Preview properties</h3>
+<h4 id="preview-mesh">Preview mesh</h4>
+<p>To start working with a mesh you should select it from Preview mesh menu and select the sub meshes which will be simulated from Render mesh cloth properties panel. If alpha channels of mesh painted properly it should start to be simulated on the preview window.</p>
+<h4 id="simulation-mesh">Simulation mesh</h4>
+<p>If you want to use a separate simulation mesh, select it from Simulation mesh menu. Alpha channel of this mesh must also be painted because it is the actual mesh being simulated. In this case alpha channel of preview mesh is used to determine if a vertex will be mapped to the simulation mesh or it will be rendered with original skinning data. Alpha values greater than zero means that vertex must be mapped to simulation mesh. Vertices with zero alpha values will use the original skinning data. Since simulation mesh has less polygon count than the original mesh, this can be used to increase skinning quality of original mesh for non-simulated parts.</p>
+<h4 id="helper-mesh">Helper mesh</h4>
+<p>You can select a helper mesh to preview your actual simulation mesh with an arbitrary mesh. Selecting a horse mesh for a simulated mane mesh is a good example.</p>
+<h4 id="preview-skeleton">Preview skeleton</h4>
+<p>If you want to work on a skinned mesh and preview collision capsules and animations, you should select corresponding skeleton.</p>
+<h4 id="preview-body">Preview body</h4>
+<p>You can assign an existing collision body to your Preview mesh with Preview body menu. Modification of collision bodies can be done from Cloth Bodies panel.</p>
+<h4 id="preview-animation-name">Preview animation name</h4>
+<p>You can test your cloth with an animation. You must write its name in asset folder, not the one in animations*.xml and its start and end frame numbers and duration. You can start and stop animation with Toggle Animation button.</p>
+<h4 id="scene-update-coef">Scene update coef</h4>
+<p>Slow motion can be simulated by decreasing this value. Default value is 1 which means all simulations are done normally.</p>
+<h4 id="render-mesh-cloth-properties">Render mesh cloth properties</h4>
+<p>You can select which submeshes will be simulated by checking checkbox next to each submesh.
+Different cloth materials can be assigned to each submesh by Cloth material column. Max distance multiplier is used to scale vertex color paintings of mesh which controls how much a vertex can move away from its original position. 0.5 value of vertex alpha with 3.0 max distance multiplier value means that, that vertex can move 1.5 units away from its original position.
+\<br>
+If you are using a separate simulation mesh, max distance value and cloth material of simulation mesh overrides these settings. All submeshes will use same cloth material assigned to simulation mesh.</p>
+<h4 id="simulation-mesh-cloth-properties">Simulation mesh cloth properties</h4>
+<p>If you use a separate simulation mesh, you can adjust its settings from here just like render mesh properties mentioned above. Cloth material and max distance value selected here will be used for all sub meshes of render mesh.</p>
+<!-- raw HTML omitted -->
+<h3 id="collision-bodies">Collision Bodies</h3>
+<p>Collision presets can be created and modified from <!-- raw HTML omitted -->Collision bodies<!-- raw HTML omitted --> window. You can open <!-- raw HTML omitted -->Collision bodies<!-- raw HTML omitted --> window from <!-- raw HTML omitted -->Edit &gt; Edit collision bodies<!-- raw HTML omitted --> menu.
+<img src="/img/cloth_simulation/image8.png" alt=""></p>
+<p>A capsule consists of two end points. These points can be skinned to a skeleton separately by assigning owner bones and weights. One capsule point can be skinned to at most two bones. Like mesh skinning, weights are used to determine influence of that bone on the selected capsule.</p>
+<h3 id="cloth-materials">Cloth materials</h3>
+<p>All simulation parameters to customize cloth behaviour is supplied with cloth materials. Cloth material presets can be created and modified from <!-- raw HTML omitted -->Material templates<!-- raw HTML omitted --> window.
+<img src="/img/cloth_simulation/image9.png" alt="">
+You can open this window from <!-- raw HTML omitted -->Edit &gt; Edit merial templates<!-- raw HTML omitted --> menu.
+Materials shown in this windows are presets so changing these presets does not affect configurations of existing cloth meshes. To change parameters of an existing cloth mesh, you can click <!-- raw HTML omitted -->Change parameters<!-- raw HTML omitted --> button in Simulation/Render mesh properties panel and adjust each settings in <!-- raw HTML omitted -->Mesh specific parameters<!-- raw HTML omitted --> window.
+<img src="/img/cloth_simulation/image10.png" alt="">
+<img src="/img/cloth_simulation/image11.png" alt="">
+Current parameters are as follows:</p>
+<h4 id="bending-stretching-shearing-stiffness">Bending, Stretching, Shearing, Stiffness</h4>
+<p>Determines how much a fabric constraint will resist to the corresponding case.</p>
+<h4 id="anchor-stiffness">Anchor Stiffness</h4>
+<p>This constraint strictly limits the freedom of a vertex. It tries to keep distances constant between simulated and fixed vertices. You can try to increase this value if your mesh stretches too much.</p>
+<h4 id="damping">Damping</h4>
+<p>Dampening values for vertices. Determines the fraction of current frame&rsquo;s velocity to transfer to the next frame.</p>
+<h4 id="linear-inertia">Linear Inertia</h4>
+<p>Since our cloth simulation is done in local space, global frame changes are transferred to cloth virtually. This value determines how much of acceleration of entity will be transferred to cloth. You can test this by adding a cloth mesh into a scene and shake its entity randomly.</p>
+<h4 id="air-drag">Air drag</h4>
+<p>For a cloth mesh moving with a constant velocity this value determines how much air force will affect its vertices.</p>
+<h4 id="wind">Wind</h4>
+<p>You can control how much wind force the cloth will use. This value is a multiplier for actual wind force of scene. If there is no wind in the scene increasing this value has no effect.</p>
+<h4 id="gravity">Gravity</h4>
+<p>Constant gravity force affecting each simulated vertex. You can decrease this value to achieve a silky cloth behaviour.</p>
+<h4 id="iteration-frequency">Iteration Frequency</h4>
+<p>How many times a cloth mesh will be simulated in a second. You can leave this parameter with its default value unless your mesh has big triangles or it moves so fast that collision capsules can not catch simulated vertices. Increasing this value results in more stable collision behaviour but performance hit also increases linearly.</p>
+<h4 id="precise-simulation">Precise Simulation</h4>
+<p>We trade accuracy with performance by doing some compressions during simulation. As a result simulated mesh might move to a different state than its rest state slightly. If this accuracy is important for your mesh, you can enable this option to get more correct results.</p>
+<h4 id="dummy-collision-particles">Dummy Collision Particles</h4>
+<p>If simulated mesh has big triangle sizes with respect to collision capsules, capsules may not collide with cloth mesh properly. To overcome this we place dummy vertices in every triangle of mesh. These vertices are not simulated but only used during collision stage. This option has big performance hit so you should avoid enabling this as much as possible.</p>
+<h2 id="cloth-content-files">Cloth Content Files</h2>
+<p>Our simulation system generates two files with <!-- raw HTML omitted --> *.tcc<!-- raw HTML omitted --> and <!-- raw HTML omitted --> *.tcm<!-- raw HTML omitted --> extensions.
+Tcc files contains preprocessed data used by cloth simulation like constraint indices, constraint lengths etc.
+Tcm files contains mapping data of a render mesh to a simulation mesh.
+You must commit both these files to Plastic SCM to ensure that nobody will wait for cooking process to complete during scene loading stage.</p>
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/editor/resource-editors/skeleton_editor/" title="Skeleton Editor"> <i class="fa fa-chevron-left"></i><label>Skeleton Editor</label></a>
+    <a class="nav nav-next" href="/editor/resource-editors/meta_mesh_editor/" title="Meta Mesh Editor" style="margin-right: 0px;"><label>Meta Mesh Editor</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+
+    
+  </div>
+
+
+	<div>
+
+
+  
+    
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/clipboard.min.js"></script>
+
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<script src="/js/featherlight.min.js"></script>
+
+
+
+<script src="/theme-flex/script.js"></script>
+
+
+    
+
+    
+    
+
+    <div style="text-align:center">
+	<footer>
+		&copy; 2005-2020 TaleWorlds Entertainment. All rights reserved.
+	</footer> 
+</div>
+  </body>
+</html>

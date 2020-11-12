@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Asset Management on Taleworlds Documentation</title>
+    <link>http://localhost:4444/asset-management/</link>
+    <description>Recent content in Asset Management on Taleworlds Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://localhost:4444/asset-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating a Module - Quick Guide</title>
+      <link>http://localhost:4444/asset-management/quickguide_create_a_mod/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/asset-management/quickguide_create_a_mod/</guid>
+      <description>Modules can contain assets ranging from meshes to physics bodies, scenes, gameplay entities like factions, lords, troops, items, sounds, scripts and behaviours that can run any gameplay logic. In this guide, the process of creating one will be explained.
+Creating A New Module Modules reside inside the &amp;ldquo;Modules&amp;rdquo; folder in the root directory. It must contain an XML file named SubModule.xml. This file contains basic information like &amp;ldquo;Name&amp;rdquo;, &amp;ldquo;ID&amp;rdquo; and &amp;ldquo;Version&amp;rdquo; nodes.</description>
+    </item>
+    
+    <item>
+      <title>Frequently Asked Questions</title>
+      <link>http://localhost:4444/asset-management/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/asset-management/faq/</guid>
+      <description>How to install the tools? You can download the “Mount &amp;amp; Blade Bannerlord Modding Tools” from the Tools section of steam. Note that the tools use some of the files downloaded within the game itself. Thus, the tools and game should be at the same version and installed on the same harddrive.
+How to launch the tools? You can use the SinglePlayer option from the Launcher and once you are in the Initial Menu, you can either press the Editor button or press the Ctrl + E key combination to start up the editor.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>资源编辑器 on Taleworlds Documentation</title>
+    <link>http://localhost:4444/zh_cn/editor/resource-editors/</link>
+    <description>Recent content in 资源编辑器 on Taleworlds Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://localhost:4444/zh_cn/editor/resource-editors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Material Editor</title>
+      <link>http://localhost:4444/zh_cn/editor/resource-editors/material_editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/resource-editors/material_editor/</guid>
+      <description>Overview Inspector Shader pbr_shading This shader is heavily used and exists just because our engine did not use PBR shading pipeline in the early years of development, most content was not created for PBR pipeline, so this shader is created to support our already existing content and only used during the transition phase. New content should not use this shader, instead you should use pbr_metallic.
+pbr_metallic This is what you should use most of the time.</description>
+    </item>
+    
+    <item>
+      <title>Skeleton Editor</title>
+      <link>http://localhost:4444/zh_cn/editor/resource-editors/skeleton_editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/resource-editors/skeleton_editor/</guid>
+      <description>Skeleton editor can be used to edit, bones, joints, and ragdoll parameters of skeletons after importing them using resource browser.
+Editing Bones and Joints To edit a bone or joint, you can select the item you want from the outliner panel. This will create an Inspector of bones/joints for you to edit. All parameters are visualized and all edits will immediately be visible in the preview. Joint Properties Axis lock Axis lock limits the movement the child bone in translation space.</description>
+    </item>
+    
+    <item>
+      <title>Cloth Simulation</title>
+      <link>http://localhost:4444/zh_cn/editor/resource-editors/cloth_simulation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/resource-editors/cloth_simulation/</guid>
+      <description>Preparing Mesh Cloth simulation system uses alpha channels of vertices of meshes. Values in the alpha channel represents how much a vertex can move away from its original position. 0.1 of alpha means vertex can be moved 0.1 units from its original position by cloth simulation. If you set zero to alpha value that means that vertex will be fixed to its position and will not be updated by simulation.</description>
+    </item>
+    
+    <item>
+      <title>Meta Mesh Editor</title>
+      <link>http://localhost:4444/zh_cn/editor/resource-editors/meta_mesh_editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/resource-editors/meta_mesh_editor/</guid>
+      <description>Import Settings  Divide Into Grid: Divides the meta mesh into grids, and adds all the generated section meshes to the submeshes. Remove Redundant Vertices: The name implies what it does. Recompute Normals: While importing the meta mesh, computes normal vectors for all sub-meshes instead of importing them as well. Normal Computation: Decides whether the normal vector computation will depend on the face area (weighted) or not (default). Recompute Tangents: While importing the meta mesh, computes the tangent vectors for all sub-meshes instead of importing them as well.</description>
+    </item>
+    
+    <item>
+      <title>Model Viewer</title>
+      <link>http://localhost:4444/zh_cn/editor/resource-editors/model_viewer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/resource-editors/model_viewer/</guid>
+      <description>The Model Viewer can be accesed from; Editor &amp;gt;Window &amp;gt;Show Model Viewer From the left panel, you can change Atmosphere, hide/show ground, or add as many entities as you want. The entities can either be Humanor simple Mesh.Pressing Add Entitywill open a modal window for you to select the entity type. Transform From this panel, you can set entities Tranform, Rotation, and Scale.
+Animation From this panel, you can choose Skeleton type, and Animation.</description>
+    </item>
+    
+    <item>
+      <title>Texture Editor</title>
+      <link>http://localhost:4444/zh_cn/editor/resource-editors/mipmap_editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/resource-editors/mipmap_editor/</guid>
+      <description>The Texture Editor can be accesed from; Editor &amp;gt;Window &amp;gt;Show Resource Browser &amp;gt;..Search for Texture.. &amp;gt;..Double Click on Texture.. From the Texture Inspector (Right Panel), you can enable/disable MipMap blending by toggling Use Mipmap Blendingcheckbox. When you enable MipMap Blending, you will see all mip levels of the selected texture next to each other in Preview Window. Clicking on MipMap Blend Amountswill open open a new window where you can adjust blend amounts for every mip level.</description>
+    </item>
+    
+  </channel>
+</rss>

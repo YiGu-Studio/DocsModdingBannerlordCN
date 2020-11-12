@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Taleworlds Documentation</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2020-11-12T04:42:13 UTC">
+<title>Scene Spawn Point Guide :: Taleworlds Documentation</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "http:\/\/localhost:4444\/";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/authoring-mission-scenes/script-components/scene_spawn_points_guide/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/asset-management/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/asset-management/">Asset Management</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/asset-management/asset-browser/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/asset-management/asset-browser/">Asset Browser</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/asset-management/asset-browser/filterqueries/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-browser/filterqueries/">
+            Filter Queries
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/asset-management/asset-types/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/asset-management/asset-types/">Asset Types</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/asset-management/asset-types/overriding_assets/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/overriding_assets/">
+            Adding &amp; Overriding Assets
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/animations/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/animations/">
+            Animations
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/bodies/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/bodies/">
+            Bodies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/prefabs/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/prefabs/">
+            Entities &amp; Prefabs
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/materials/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/materials/">
+            Materials
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/meshes/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/meshes/">
+            Meshes
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/asset_naming_conventions/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/asset_naming_conventions/">
+            Naming Conventions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/overriding_scenes_prefabs/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/overriding_scenes_prefabs/">
+            Overriding Scenes and Prefabs
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/path/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/path/">
+            Paths
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/scripts/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/scripts/">
+            Scripts
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/skeletons/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/skeletons/">
+            Skeletons
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/textures/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/textures/">
+            Textures
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/asset-management/quickguide_create_a_mod/" class="dd-item">
+        <div>
+          <a href="/asset-management/quickguide_create_a_mod/">
+            Creating a Module - Quick Guide
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/faq/" class="dd-item">
+        <div>
+          <a href="/asset-management/faq/">
+            Frequently Asked Questions
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/authoring-mission-scenes/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/authoring-mission-scenes/">Bannerlord Missions</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/authoring-mission-scenes/tactical_positions/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/tactical_positions/">
+            Mission Tactical Positions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/villages/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/villages/">
+            What Makes a Village Scene
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/script-components/bannerlord_destructible_component/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/script-components/bannerlord_destructible_component/">
+            Destructible Component
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/script-components/scene_barrier_builder/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/script-components/scene_barrier_builder/">
+            Scene Barrier Builder
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/script-components/scene_spawn_points_guide/" class="dd-item active">
+        <div>
+          <a href="/authoring-mission-scenes/script-components/scene_spawn_points_guide/">
+            Scene Spawn Point Guide
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/script-components/callbacks/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/script-components/callbacks/">
+            Script Component Callbacks
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/script-components/spawn_point_debug_tool/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/script-components/spawn_point_debug_tool/">
+            Spawn Point Debug Tool
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/editor/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/editor/">Editor</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/editor/resource-editors/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/editor/resource-editors/">Resource Editors</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/editor/resource-editors/material_editor/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/material_editor/">
+            Material Editor
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/resource-editors/skeleton_editor/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/skeleton_editor/">
+            Skeleton Editor
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/resource-editors/cloth_simulation/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/cloth_simulation/">
+            Cloth Simulation
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/resource-editors/meta_mesh_editor/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/meta_mesh_editor/">
+            Meta Mesh Editor
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/resource-editors/model_viewer/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/model_viewer/">
+            Model Viewer
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/resource-editors/mipmap_editor/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/mipmap_editor/">
+            Texture Editor
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/editor/scene-editor/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/editor/scene-editor/">Scene Editor</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/editor/scene-editor/creating_entity/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/creating_entity/">
+            Creating Entity
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/editor_shortcuts/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/editor_shortcuts/">
+            Editor Shortcuts
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/path_editing/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/path_editing/">
+            Path Editing
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/terrain_creation/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/terrain_creation/">
+            Terrain Creation
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/entity_inspector/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/entity_inspector/">
+            Entity Inspector
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/nav_mesh_inspector/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/nav_mesh_inspector/">
+            Navigation Mesh Inspector
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/alignment_and_snapping/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/alignment_and_snapping/">
+            Alignment and Snapping Tools
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/distance_tool/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/distance_tool/">
+            Distance Tool
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/mass_selection/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/mass_selection/">
+            Mass Selection
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/prt/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/prt/">
+            Precomputed Radiance Transfer - GI System
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/terrain_resize/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/terrain_resize/">
+            Resizing Terrain
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/level_system/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/level_system/">
+            Scene Level System
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/terrain_mesh_blend/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/terrain_mesh_blend/">
+            Terrain Mesh Blend System
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/playing-sounds/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/playing-sounds/">Playing Sounds</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/playing-sounds/adding-custom-sounds/" class="dd-item">
+        <div>
+          <a href="/playing-sounds/adding-custom-sounds/">
+            Adding Sounds to Your Module
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+<select id="select-language" onchange="location = this.value;">
+	
+	
+	
+	  
+	  
+	    
+	      
+	        <option id="en" value="/authoring-mission-scenes/script-components/scene_spawn_points_guide/" selected>English</option>
+	      
+	    
+	  
+	    
+	  
+	
+	  
+	  
+	    
+	  
+	    
+	      
+	        <option id="zh_cn" value="/zh_cn/authoring-mission-scenes/script-components/scene_spawn_points_guide/">简体中文</option>
+	      
+	    
+	  
+	
+</select>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation: 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/asset-management/" >
+   Asset Management</option>
+    <option value="/authoring-mission-scenes/" >
+   Bannerlord Missions</option> 
+      <option value="/authoring-mission-scenes/tactical_positions/" >- Mission Tactical Positions</option>
+      <option value="/authoring-mission-scenes/villages/" >- What Makes a Village Scene</option>
+      <option value="/authoring-mission-scenes/script-components/bannerlord_destructible_component/" >- Destructible Component</option>
+      <option value="/authoring-mission-scenes/script-components/scene_barrier_builder/" >- Scene Barrier Builder</option>
+      <option value="/authoring-mission-scenes/script-components/scene_spawn_points_guide/"  selected>- Scene Spawn Point Guide</option>
+      <option value="/authoring-mission-scenes/script-components/callbacks/" >- Script Component Callbacks</option>
+      <option value="/authoring-mission-scenes/script-components/spawn_point_debug_tool/" >- Spawn Point Debug Tool</option>
+  
+    <option value="/editor/" >
+   Editor</option>
+    <option value="/playing-sounds/" >
+   Playing Sounds</option>
+
+
+
+        </select>
+      </center>
+      <center>Language: 
+        
+<select id="select-language" onchange="location = this.value;">
+	
+	
+	
+	  
+	  
+	    
+	      
+	        <option id="en" value="/authoring-mission-scenes/script-components/scene_spawn_points_guide/" selected>English</option>
+	      
+	    
+	  
+	    
+	  
+	
+	  
+	  
+	    
+	  
+	    
+	      
+	        <option id="zh_cn" value="/zh_cn/authoring-mission-scenes/script-components/scene_spawn_points_guide/">简体中文</option>
+	      
+	    
+	  
+	
+</select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/js/auto-complete.js"></script>
+        <link href="/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "http:\/\/localhost:4444\/";
+          
+        </script>
+        <script type="text/javascript" src="/js/search.js"></script>
+      </div>
+    
+
+    <h1>Scene Spawn Point Guide</h1>
+    
+    
+    
+    <h2 id="how-to-design-fully-featured-scenes-in-bannerlord">How to design fully featured scenes in Bannerlord</h2>
+<p>Each scene has own basic necessities to run without crashing and has extras to give better experience to player. Designers can check these necessities with &ldquo;<!-- raw HTML omitted -->Spawn Point Debug Tool<!-- raw HTML omitted -->&rdquo; to be sure that their scene will not crash.</p>
+<h2 id="1-town-center-scene">1. Town Center Scene</h2>
+<p>Player will be spawned on the &ldquo;sp_player_outside&rdquo; prefab if he/she is entering the city for the first time,
+because of this feature &ldquo;sp_player_outside&rdquo; must be placed far from city&rsquo;s entrance; otherwise player will be
+spawned on &ldquo;sp_player&rdquo; and this spawnpoint can be next to the entrance gate. Town center scene has some
+mandatory characters as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Player Spawn Point</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>When player enters the town center from top right panel in the map scene, player and the conversation NPC will be spawned on &ldquo;sp_player_conversation&rdquo; prefab. Scene must have these prefabs more than 1 in order increase variation. <!-- raw HTML omitted --> The scale of the conversation prefab must not change.</td>
+</tr>
+</tbody>
+</table>
+<!-- raw HTML omitted -->
+<table>
+<thead>
+<tr>
+<th>Traders</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Traders such as armorers, blacksmiths and horse merchants are mandatory for town center scenes. If scene has more than one market place, it is ok to have more then one trader NPCs. Traders in market places may have their own sets. These sets can be considered as prefabs with some spawn points in it. For example, for weaponsmith there can be 3 points in weaponsmith set but there must be 1 spawned weaponsmith. This NPC will go to these points randomly, in a word NPC may go to his/her selling table and start trading or go to the backside of his/her shop and sit on a chair for some time. <!-- raw HTML omitted --> Designer may want to change these wait times between actions with &ldquo;MinWaitInSeconds&rdquo; and &ldquo;MaxWaitInSeconds&rdquo; parameters. (-1: forever).</td>
+</tr>
+</tbody>
+</table>
+<!-- raw HTML omitted -->
+<table>
+<thead>
+<tr>
+<th>Notables</th>
+</tr>
+</thead>
+</table>
+<h2 id="notable-parent-prefab">Notable Parent Prefab</h2>
+<p>Scene must have some notables. In order to find them easy, notable spawn points must be placed near center area of the city.
+Every notable have their own spawn point tag and every notable have their unique helper characters.</p>
+<table>
+<thead>
+<tr>
+<th>Notable</th>
+<th>Spawn Point Tag</th>
+<th>Helper Character Tag</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Preacher</strong></td>
+<td>sp_notable_preacher</td>
+<td>sp_preacher_notary</td>
+</tr>
+<tr>
+<td><strong>Gang Leader</strong></td>
+<td>sp_notable_gangleader</td>
+<td>sp_gangleader_bodyguard</td>
+</tr>
+<tr>
+<td><strong>Rural Notable</strong></td>
+<td>sp_notable_rural_notable</td>
+<td>sp_rural_notable_notary</td>
+</tr>
+<tr>
+<td><strong>Artisan</strong></td>
+<td>sp_notable_artisan</td>
+<td>sp_artisan_notary</td>
+</tr>
+<tr>
+<td><strong>Merchant</strong></td>
+<td>sp_notable_merchant</td>
+<td>sp_merchant_notary</td>
+</tr>
+</tbody>
+</table>
+<p>Notables have one parent prefab named <strong>&ldquo;sp_notables_parent&rdquo;</strong>. Each notable has 1 set as child so, parent prefab has 5 child notable sets.</p>
+<p>Artists must place this parent prefab and put it in a prominent place of town center. Also prefab must be seen easily by player. After mission start, game logic will activate the notable set according to the notables in the town center.</p>
+<p>In the notable sets, every notable will have unique helper character and their spawn point as well. (bodyguards for gangleader, notary for merchant&hellip;).</p>
+<p>In the picture below. There were 2 parent prefabs in the scene. After mission start, one prefab is activated for <strong>gangleader</strong> and her bodyguards. Other prefab is activated for <strong>merchant</strong> and his notary.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p><img src="/img/notable_spawn_points/document1.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th>Guards</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>There are some idle guards and patrolling guards. Patrolling guards are programmed as moving one point to another while activating the next point and deactivating the current one.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Passages</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Town center scene must include all passages to other scenes such as Tavern, Arena, Lords hall&hellip;</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Battle Sets</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>For town scenes, battle sets are only used for common area clearing. so they should not be too far apart, and should be placed to represent a fight between gangs rather than a battle between armies.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Townsfolk</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NPCs are always moving around the city. In order to prettify the scene, designer may want to use some extra prefabs. If scene has &ldquo;sp_npc_repair_set&rdquo;, one NPC will go to that point and start hammering away while other NPC complains about the situation or scene may have some beggars begging for townsfolk help.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-tavern-scene">2. Tavern Scene</h2>
+<table>
+<thead>
+<tr>
+<th>Player Spawn Point</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spawnpoint for player, &ldquo;sp_player&rdquo;,  must be placed nearby to the town center passage. Scene must include at least one &ldquo;sp_player_conversation&rdquo; prefab or more. <!-- raw HTML omitted --> The scale of the conversation prefab must not change.</td>
+</tr>
+</tbody>
+</table>
+<!-- raw HTML omitted -->
+<table>
+<thead>
+<tr>
+<th>Game Hosts (Gambler NPCs)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Each tavern scene must have gambler (game host) NPC. The chair underneath NPC must have &ldquo;gambler_npc&rdquo; and &ldquo;npc_wait&rdquo; tags both. The chair which player will use to join game must have &ldquo;gambler_player&rdquo; and &ldquo;reserved&rdquo; tags both.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-lords-hall-scene">3. Lords Hall Scene</h2>
+<table>
+<thead>
+<tr>
+<th>Player Spawn Point</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Player spawn points for Lords Hall scene is as same as Tavern scene. Spawn point for player must be placed nearby to the town center passage.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-village-scene">4. Village Scene</h2>
+<table>
+<thead>
+<tr>
+<th>Player Spawn Point</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Village scene don&rsquo;t have &ldquo;sp_player_outside&rdquo; prefab. &ldquo;sp_player&rdquo; prefab must not be placed far from village center nor very near. When spawned, player must see the walking villagers from afar. When player enters the village from top right panel in the map scene, player and the conversation NPC will be spawned on &ldquo;sp_player_conversation&rdquo; prefab. Scene must have these prefabs more than one in order to increase variation. <!-- raw HTML omitted --> The scale of the conversation prefab must not change.</td>
+</tr>
+</tbody>
+</table>
+<!-- raw HTML omitted -->
+<table>
+<thead>
+<tr>
+<th>Notables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scene must have some notables. In order to find them easy, notable spawn points must be placed near center area of the city.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Villagers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Villagers have lots of extra activities in village center such as collecting grapes, repairing something or grooming horse. The activities must be balanced between physical and social activities. Villager NPC may go and clean walls then sit and chat with others.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Common areas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Each village has 3 common areas which are not in the village center. Any type of spawn points can be used inside of the common area. &ldquo;common_area_NUMBER&rdquo; prefabs should be placed to specify the area. This prefabs has a script attached named &ldquo;CommonAreaScript&rdquo;. The script has some parameters as follows:</td>
+</tr>
+<tr>
+<td>AreaRadius : Artist can change this parameter script to extend or reduce the area.</td>
+</tr>
+<tr>
+<td>AreaIndex : Already set in prefabs for three common areas</td>
+</tr>
+<tr>
+<td>Type : Type of the area should be set from the list below</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Area Types</th>
+<th>Scene</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Backstreet</td>
+<td>Town Center</td>
+<td>Back alley where thugs are spawned</td>
+</tr>
+<tr>
+<td>Clearing</td>
+<td>Town Center</td>
+<td>Open area</td>
+</tr>
+<tr>
+<td>Waterfront</td>
+<td>Town Center</td>
+<td>Near coast or port</td>
+</tr>
+<tr>
+<td>Pasture</td>
+<td>Village</td>
+<td>Pasture, forage (usually a heath or moor)</td>
+</tr>
+<tr>
+<td>Thicket</td>
+<td>Village</td>
+<td>Shrubbery</td>
+</tr>
+<tr>
+<td>Bog</td>
+<td>Village</td>
+<td>Swampy area</td>
+</tr>
+<tr>
+<td>Forest</td>
+<td>Village</td>
+<td>Lots of trees</td>
+</tr>
+<tr>
+<td>Ravine</td>
+<td>Village</td>
+<td>Valley or canyon</td>
+</tr>
+<tr>
+<td>Spring</td>
+<td>Village</td>
+<td>Puddle in desert</td>
+</tr>
+<tr>
+<td>Cove</td>
+<td>Village</td>
+<td>Bay</td>
+</tr>
+<tr>
+<td>Marsh</td>
+<td>Village</td>
+<td>Swampy area near river</td>
+</tr>
+<tr>
+<td>Wadi</td>
+<td>Village</td>
+<td>Valley, does not have rocks on both sides</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Battle Spawnpoints</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>If game is opening the scene with battle mode. Battle sets will be initiated and battle troops will be spawned on each. Battle sets must be placed far from each other, and with defender and attacker sides in mind.</td>
+</tr>
+</tbody>
+</table>
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/authoring-mission-scenes/script-components/scene_barrier_builder/" title="Scene Barrier Builder"> <i class="fa fa-chevron-left"></i><label>Scene Barrier Builder</label></a>
+    <a class="nav nav-next" href="/authoring-mission-scenes/script-components/callbacks/" title="Script Component Callbacks" style="margin-right: 0px;"><label>Script Component Callbacks</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+
+    
+  </div>
+
+
+	<div>
+
+
+  
+    
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/clipboard.min.js"></script>
+
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<script src="/js/featherlight.min.js"></script>
+
+
+
+<script src="/theme-flex/script.js"></script>
+
+
+    
+
+    
+    
+
+    <div style="text-align:center">
+	<footer>
+		&copy; 2005-2020 TaleWorlds Entertainment. All rights reserved.
+	</footer> 
+</div>
+  </body>
+</html>

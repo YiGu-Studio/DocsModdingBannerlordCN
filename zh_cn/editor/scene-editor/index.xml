@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>场景编辑器 on Taleworlds Documentation</title>
+    <link>http://localhost:4444/zh_cn/editor/scene-editor/</link>
+    <description>Recent content in 场景编辑器 on Taleworlds Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://localhost:4444/zh_cn/editor/scene-editor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating Entity</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/creating_entity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/creating_entity/</guid>
+      <description>Game Entities are basic building blocks of Scenes. Every mesh, light, decal, script behaviour are components of entities. \
+Creating an empty entity In the editor, you can begin by creating a new, empty entity by using the Add Empty Entitybutton from tool bar, then you can attach different components for different needs.
+All entities can be composed of multiple components.
+Adding Component Component can be added from the toolbar after selecting an entity.</description>
+    </item>
+    
+    <item>
+      <title>Path Editing</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/path_editing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/path_editing/</guid>
+      <description>Level designer can easily add, edit or delete paths and path points by the scene editor.
+Adding a new path User can use the Add New Path button at the upper toolbar. User should enter a unique name for every path. After the path is added, the editor&amp;rsquo;s editing state will become &amp;ldquo;Path Select&amp;rdquo;. By spacing either space or the &amp;ldquo;Add a new path point&amp;rdquo; button from the upper toolbar, user can transition to the &amp;ldquo;Path Node Add&amp;rdquo; mode and start adding new path nodes.</description>
+    </item>
+    
+    <item>
+      <title>地形创建</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/terrain_creation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/terrain_creation/</guid>
+      <description> 创建新地形 生成，删除和修改地形节点可以通过 地形检查器 (Terrain Inspector) —&amp;gt; 属性 (Properties) 进行操作。
+地形节点Terrain node是二维计算，分辨率和大小可以通过 新地形属性 (New Terrain Properties) 界面查看。
+这些参数必须在创建之前就有指定数值，尽管可以在之后对各节点进行一一调整。
+              调整节点属性 节点分辨率可以在选择节点后（选择多个节点就要按住CTRL选择）即可在 节点属性（Node Properties） 界面中调整。
+这个功能可用于分辨率不太重要的地方来优化地形（如定居点之外，玩家无法进入的地方，或者水底）
+导入/导出材质地图或者高度地图 为了支持外部地形生成器，引擎可以导入导出地形材质地图或者高度地图。你可以通过导入各种图层（碎屑图，水流图，植被图，基岩图）和16 bit的高度地图来轻松生成想要的地形。要导入材质地图时，首先你必须创建一个新的地形图层，然后选择该图层，进入属性 (Properties)，选择一些节点（CTRL+A 选择所有）然后点击导入材质地图(Import Materialmap)按钮。这样就会打开一个文件对话框让你选择文件，你可以选择8 bit的材质当作材质地图。你也可以用同样方法导入高度地图(Heightmap)，高度地图可以是8、16位的（PNG或者源文件格式）。
+                    </description>
+    </item>
+    
+    <item>
+      <title>编辑器快捷键</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/editor_shortcuts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/editor_shortcuts/</guid>
+      <description>   常用按键 按键 编辑器模式     显示/隐藏帮助 H 任何模式   创建场景 Alt + 1 任何模式   保存场景 Alt + 2 任何模式   打开场景 Alt + 3 任何模式   开始任务 Alt + 4 任何模式   以…方式开始任务 Alt + 5 任何模式   场景选项 Alt + 6 任何模式   地形选项 Alt + 7 地形选项   地形海拔 Alt + 8 地形海拔   地形涂色 Alt + 9 地形涂色   切换相关编辑模式 (选择-增加，选择-海拔和涂色等) 空格 任何模式   返回/撤回 Ctrl+Z, Ctrl+Y 任何模式       视角控制 按键 编辑器模式     聚焦到选定模型 F 选择Entity   编辑器摄像头旋转模式 按住Alt +鼠标右键滑动 选择Entity   Pan 按住Alt +鼠标中键 选择Entity   拉近拉远摄像头 按住ALT + 滑动鼠标中键 选择Entity   加快减慢摄像头速度 Ctrl + 滑动鼠标中键 任何模式   摄像头速度设置为1 Ctrl + 鼠标中键 任何模式       PREFAB TRANSFORM 按键 编辑器模式     原地旋转 垂直旋转按Z, 左右旋转按X, 前后旋转按C, T, 返回默认按 R Entity Add   移动模型并放置在地面上 按住P 选择Entity   上下移动 按住N 选择Entity   水平移动 按住G 选择Entity   显示XYZ轴 T 选择Entity   显示旋转轴 R 选择Entity   显示大小比例轴 Y 选择Entity   复制粘贴模型 Shift+单击鼠标或者 Shift+拖拽 选择Entity   隐藏轴 V 选择Entity   切换为本地变换视图 Alt+L 选择Entity   切换为世界变换视图 Alt+W 选择Entity   打开模型材质视图 M+单击鼠标 选择Entity       地形 按键 编辑器模式     全选所有地形节点 Ctrl + A 选择地形   当选择提高时下降海拔 Alt + 点击 地形海拔   当选择下降时提高海拔 Alt + 点击 地形海拔   平整地形 Ctrl +鼠标左键 地形海拔   平滑地形 Shift + 点击 地形海拔   当选择平整地形时，以该高度为平整海拔 Alt + 单击 地形海拔   添加植被（不在图层上增加） 鼠标左键 涂色Entity   重新规划当前植被面积大小 按住B+鼠标左右拖拽 涂色Entity   放置单个植被 Ctrl + 左键单击 涂色Entity       NAVMESH HOTKEYS 按键 编辑器模式     填充最近的4个顶点（形成一个面） Shift +单击 添加导航网格   填充最末端的4个顶点（形成一个面） Ctrl + 空格 添加导航网格   不用选择也可以挪动顶点 Ctrl +拖拽 添加导航网格   删除面并留下顶点 Alt + 单击 添加导航网格   删除面及其顶点 Alt + X + 单击 添加导航网格   选择顶点模式 1 选择导航网格   选择边模式 2 选择导航网格   选择面模式 3 选择导航网格   选择连接的所有顶点，边和面、 Ctrl + A 选择导航网格   删除顶点/边/面 Delete 选择导航网格    </description>
+    </item>
+    
+    <item>
+      <title>Entity Inspector</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/entity_inspector/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/entity_inspector/</guid>
+      <description>Transform Panel Transform panel allows you to change position, rotation and scale properties of the selected entities. All of these values are relative to the parent of the selected entity. If Entity has no parent, then they are the Global values. (in Worldspace).
+Scale Locked If the lock icon is in locked state, changing any component of scale parameter will set all scale components to the same value, entity will be in uniform scaling mode.</description>
+    </item>
+    
+    <item>
+      <title>Navigation Mesh Inspector</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/nav_mesh_inspector/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/nav_mesh_inspector/</guid>
+      <description>Tools These tools help you to generate and manipulate the navigation mesh:
+Generation Tools  Auto Generate: As the name implies, automatically generates the navigation mesh with resppect to the parameters above. Generate Grids: Generates grid navigation mesh for the terrain only. It ignores the entities on the scene. Create New Face: Creates a new navigation mesh quad face on the coordinates where the camera is. Extrude: Remove: Removes the selected navigation mesh edge.</description>
+    </item>
+    
+    <item>
+      <title>Alignment and Snapping Tools</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/alignment_and_snapping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/alignment_and_snapping/</guid>
+      <description>Pivot Alignment Tool The Pivot alignment toolapplies the chosen transform values of one entity to another entity. The tool makes it easier for users to create overlapping or precisely aligned entities. If an entitity is selected in the editor, the user can set up the alignment tool by pressing Alt + A.This will register the currently selected entity as the input entity. Selecting a second entity with the left mouse button, will then open the interface screen of the alignment tool.</description>
+    </item>
+    
+    <item>
+      <title>Distance Tool</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/distance_tool/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/distance_tool/</guid>
+      <description>Distance Measure Tool The Distance Toolmeasures the distance between two points in the scene. Distance measure mode can be activated by either pressing Alt + Dshortcut or the respective button on the editor toolbar.
+While holding the left mouse button, drag the mouse between two points in the scene to measure distance. The tool snaps to vertices if close enough to a one by default, holding down Left Shiftoverrides this.</description>
+    </item>
+    
+    <item>
+      <title>Precomputed Radiance Transfer - GI System</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/prt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/prt/</guid>
+      <description>We introduce a new global illumination system to the engine. It is based on a pre-baked system called &amp;ldquo;Precomputed Radiance Transfer&amp;rdquo;. This technique allow us to bake the local ambient in the scene and display it in an optimized manner at runtime. Baked data is independent from the atmospheres. Thus, we can light the scene with the same bake data for every atmosphere.
+   With Without          Baking Procedure Scene baking is divided into a couple of parts:</description>
+    </item>
+    
+    <item>
+      <title>Scene Level System</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/level_system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/level_system/</guid>
+      <description>Level System New level system replaces the old, hardcoded system with a much more extandable and unified system. \
+Addinga new level (or deletingan existing one) to a scene can be done in Levelspanel under SceneOptionsinspector.
+Levels in Game - Bannerlord - Currently, Bannerlord recognizes a few levels that has a meaning in-game. \
+Which are: \
+ level_1 \ level_2 \ level_3 \ siege \ civilian  Setting Entity visibilities Making an entity only visible in a certain level combinations can be done with selecting an entity then going in Scene Level Visibilitiespanel under Entity Inspector.</description>
+    </item>
+    
+    <item>
+      <title>Terrain Mesh Blend System</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/terrain_mesh_blend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/terrain_mesh_blend/</guid>
+      <description>We introduce a new terrain mesh blending system. Certain terrain layers can blend into chosen meshes. Blend height, smoothness and random height offsets can be changed. These values can be saved to prefabs and can also be changed in scene per mesh. Heightmap blending can also be used to change the blending behaviour with respect to the mesh&amp;rsquo;s heightmap.
+   With Blending Without Blending          Terrain Layer Restrictions Terrain layers should satisfy some restrictions before they are eligible to be a mesh blend layer.</description>
+    </item>
+    
+    <item>
+      <title>群体选择</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/mass_selection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/mass_selection/</guid>
+      <description>群体选择 (Mass Selection) 允许你选中多个游戏中的物品 (Objects)，并且进行旋转等操作。你可以重新放置，或者是平移、旋转和缩放有 mass_selection 属性的实体。
+包围盒限制 (Bounding Box Constraint) 属性允许你选中有比这个属性更小值的物品。
+   定位选中框 选中之后 随机旋转之后           </description>
+    </item>
+    
+    <item>
+      <title>调整地形大小</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/terrain_resize/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/terrain_resize/</guid>
+      <description>调整地形大小 如果需要，地形节点数量可以在 Terrain Inspector的 Resize Terrain面板调整。
+ 你可以从 4 个方向添加新的节点或移除已有的节点。+X, +Y, -X, -Y（分别是南，东，北，西）（上色和 Gizmo 一致） 添加和移除节点会自动重新在新的位置分配现存的实体 (entities) 和植物 (floras)。新的节点由于他们的高度信息还未定义，可能会显得无法和其他地形连接。设计者应该可以用编辑器内置的高度笔刷 (Height Brushes) 来修改，或者导出高度图在其他高度图生成软件中修改，之后在导入回编辑器中。 如果在地形的一边输入正数，那么地形像那一边扩展那么多的节点。如果你往每一边写了 +2，那么地形就会像每一边扩展 2 格。如果你写了 +3 在 +X 方向，其他方向为 0 那么地形只会往 +X 方向扩展 3 格。 如果你输入一个负数，那么将会减少相应的节点数。 如果你输入 0（默认值），那么将不会有改变。     添加 删除          </description>
+    </item>
+    
+  </channel>
+</rss>

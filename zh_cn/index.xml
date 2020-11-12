@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Live on Taleworlds Documentation</title>
+    <link>http://localhost:4444/zh_cn/</link>
+    <description>Recent content in Live on Taleworlds Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://localhost:4444/zh_cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Animations</title>
+      <link>http://localhost:4444/zh_cn/asset-management/asset-types/animations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/animations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Creating Entity</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/creating_entity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/creating_entity/</guid>
+      <description>Game Entities are basic building blocks of Scenes. Every mesh, light, decal, script behaviour are components of entities. \
+Creating an empty entity In the editor, you can begin by creating a new, empty entity by using the Add Empty Entitybutton from tool bar, then you can attach different components for different needs.
+All entities can be composed of multiple components.
+Adding Component Component can be added from the toolbar after selecting an entity.</description>
+    </item>
+    
+    <item>
+      <title>Entities &amp; Prefabs</title>
+      <link>http://localhost:4444/zh_cn/asset-management/asset-types/prefabs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/prefabs/</guid>
+      <description>In RGL, entities are containers for all of the meshes, particles, script components, occluders and physics objects. They can also contain other entities as children. They have their own transformation that determines their position, scale and rotation in the world.
+Prefabs Prefabs are template entities which do not sever the connection to the prefab even after it is saved in a scene. Complex entities can be constructed one time and saved as a prefab to be used at any time, in any scene.</description>
+    </item>
+    
+    <item>
+      <title>Material Editor</title>
+      <link>http://localhost:4444/zh_cn/editor/resource-editors/material_editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/resource-editors/material_editor/</guid>
+      <description>Overview Inspector Shader pbr_shading This shader is heavily used and exists just because our engine did not use PBR shading pipeline in the early years of development, most content was not created for PBR pipeline, so this shader is created to support our already existing content and only used during the transition phase. New content should not use this shader, instead you should use pbr_metallic.
+pbr_metallic This is what you should use most of the time.</description>
+    </item>
+    
+    <item>
+      <title>Meshes</title>
+      <link>http://localhost:4444/zh_cn/asset-management/asset-types/meshes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/meshes/</guid>
+      <description>Meshes contain the polygon positions and attributes to be used at the rendering pass. Every mesh has one material that defines their rendering behaviour. They are grouped inside MetaMesh&amp;rsquo;s by their LOD level. Also, at the same LOD level, there can be multiple meshes with different materials. More information about importing meshes to the engine can be found at Material Editor.
+LOD System Modern engines use LOD(level of detail) systems to ensure that the amount of GPU share used by the closer parts of the screen is more than the far ones.</description>
+    </item>
+    
+    <item>
+      <title>Mission Tactical Positions</title>
+      <link>http://localhost:4444/zh_cn/authoring-mission-scenes/tactical_positions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/authoring-mission-scenes/tactical_positions/</guid>
+      <description>TACTICAL POSITIONS AND TACTICAL REGIONS These are scripted entities that let the AI know of the terrain&amp;rsquo;s features. They do not work like siege, the AI will not always use the tactical positions or regions you may place. They may use them under conditions that favor the use of these.
+Depending on player movement and spawn path randomization, there are a very high number of scenarios that can occur during battles.</description>
+    </item>
+    
+    <item>
+      <title>Naming Conventions</title>
+      <link>http://localhost:4444/zh_cn/asset-management/asset-types/asset_naming_conventions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/asset_naming_conventions/</guid>
+      <description>To distinguish and organize assets and simplfy asset authoring process there are some predefined rules to consider.
+Meshes All meshes imported from a single geometry file(e.g. fbx) are grouped by their names. To add a LOD mesh simply append &amp;quot;.lod&amp;lt;n&amp;gt;&amp;quot; to the name of your mesh. Here n is the number of lod.
+Consider an fbx file as below :
+asset.fbx :
+ wall_damaged wall_damaged_v2 wall_damaged_v2.lod1 wall_damaged.lod1 wall_damaged.lod2  Two meshes will be imported from asset.</description>
+    </item>
+    
+    <item>
+      <title>Overriding Scenes and Prefabs</title>
+      <link>http://localhost:4444/zh_cn/asset-management/asset-types/overriding_scenes_prefabs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/overriding_scenes_prefabs/</guid>
+      <description>You can override existing scenes and prefabs by creating new one with the same name.
+Prefabs Prefab definitions are stored in xml files located in Prefabs folder in each module&amp;rsquo;s directory.
+Scenes Scenes are stored in two separate folders SceneObj and SceneEditData in each module&amp;rsquo;s directory. SceneObj folder stores necessary files to open scene in client mode while SceneEditData stores files necessary for editing operations.</description>
+    </item>
+    
+    <item>
+      <title>Path Editing</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/path_editing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/path_editing/</guid>
+      <description>Level designer can easily add, edit or delete paths and path points by the scene editor.
+Adding a new path User can use the Add New Path button at the upper toolbar. User should enter a unique name for every path. After the path is added, the editor&amp;rsquo;s editing state will become &amp;ldquo;Path Select&amp;rdquo;. By spacing either space or the &amp;ldquo;Add a new path point&amp;rdquo; button from the upper toolbar, user can transition to the &amp;ldquo;Path Node Add&amp;rdquo; mode and start adding new path nodes.</description>
+    </item>
+    
+    <item>
+      <title>Paths</title>
+      <link>http://localhost:4444/zh_cn/asset-management/asset-types/path/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/path/</guid>
+      <description>In RGL, &amp;lsquo;Paths&amp;rsquo; are used to define continous points within a scene. They have unique names and can be used by the gameplay logic for different reasons. Paths define how the siege engines move in missions. Also, for field battle missions, initial spawn point candidates are defined via a path. The spawn logic selects two positions for the teams with respect to the size of the battle. Detailed information about path editing can be found at Path Editing.</description>
+    </item>
+    
+    <item>
+      <title>Skeleton Editor</title>
+      <link>http://localhost:4444/zh_cn/editor/resource-editors/skeleton_editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/resource-editors/skeleton_editor/</guid>
+      <description>Skeleton editor can be used to edit, bones, joints, and ragdoll parameters of skeletons after importing them using resource browser.
+Editing Bones and Joints To edit a bone or joint, you can select the item you want from the outliner panel. This will create an Inspector of bones/joints for you to edit. All parameters are visualized and all edits will immediately be visible in the preview. Joint Properties Axis lock Axis lock limits the movement the child bone in translation space.</description>
+    </item>
+    
+    <item>
+      <title>Skeletons</title>
+      <link>http://localhost:4444/zh_cn/asset-management/asset-types/skeletons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/skeletons/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Textures</title>
+      <link>http://localhost:4444/zh_cn/asset-management/asset-types/textures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/textures/</guid>
+      <description>Textures can be imported through the Asset Browser. They can be assigned to materials via the Material Editor. The texture slots of the PBR materials can be found at Material Editor.</description>
+    </item>
+    
+    <item>
+      <title>What Makes a Village Scene</title>
+      <link>http://localhost:4444/zh_cn/authoring-mission-scenes/villages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/authoring-mission-scenes/villages/</guid>
+      <description>Introduction This list of checkpoints should aid you in creation of village scenes and provide you with an insight into what we pay attention to when creating village scenes.
+Navigation Mesh  Navigation mesh consists of triangles and quads. It is used by the AI for pathfinding. The global illumination system also uses it to find the visible locations of the scene. Keep in mind that the navigation mesh faces should not be too far away from the physics below it.</description>
+    </item>
+    
+    <item>
+      <title>创建一个Mod - 快速入门</title>
+      <link>http://localhost:4444/zh_cn/asset-management/quickguide_create_a_mod/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/asset-management/quickguide_create_a_mod/</guid>
+      <description>Mod 可以包含从网格到物理实体、场景、游戏实体（如派系、领主、部队、物品）以及可以运行任何游戏逻辑的脚本和行为等资产 (Assets)。在本指南中，将解释创建一个 Mod 的过程。
+新建一个Mod Mod 位于根目录下的 &amp;ldquo;Modules&amp;rdquo; 文件夹内，它必须包含名为 SubModule.xml 的 xml 文件。这个文件提供 &amp;ldquo;Name&amp;rdquo;、&amp;ldquo;ID&amp;rdquo; 和 &amp;ldquo;Version&amp;rdquo; 节点等基本信息。另外，还可以在 &amp;ldquo;DepenendedModules&amp;rdquo; 节点里面定义依赖模块。如果你想制作一个单人模式 Mod，它的 &amp;ldquo;DepenendedModules&amp;rdquo; 也应该包含一个 &amp;ldquo;SingleplayerModule&amp;rdquo; 节点。此后，该 Mod 将在游戏启动器中出现。
+子Mod 可以定义在运行时加载的 DLL。这些 DLL 应该包含继承自 &amp;ldquo;MBSubModuleBase&amp;rdquo; 的 Class，其名称应该与 xml 中的 &amp;ldquo;SubModuleClassType&amp;rdquo; 节点一致。该类将被构造，并被调用某些回调，这样 od 就可以将其行为注册到游戏中。
+Mod 层次结构 Mod 可以具有多个文件夹，其中包含不同类型的内容：
+ bin: 编译后的DLL应该放在 &amp;ldquo;bin/Win64_Shipping_Client&amp;quot;文件夹内，这样游戏才能找到并加载DLL。 Atmospheres: 此文件夹包含可在游戏中使用的不同环境 (Atmosphere) 模板。可以从编辑器将新的环境保存到任何 Mod。 AssetSources: 此文件夹包含资产的来源。编辑器将资产导入此文件夹。在发布 Mod 之前可以过滤掉这个文件夹。关于向模块添加新内容的更多信息，请参见 添加&amp;amp;覆盖资产。 Assets: 此文件夹包含从内容源派生的资产数据。它仅在 mod 开发阶段使用。在发布 mod 之前，该文件夹可能会被过滤掉。 AssetPackages: 当模块的内容工作完成后，内容创建者应该开始 &amp;ldquo;Publish&amp;rdquo; 操作，为内容的发布做好准备。此文件夹包含了被发布的资产。 GUI: 此文件夹包含任何新的可供游戏使用的GUI元素，预制件或笔刷。 ModuleData: 此文件夹有许多包含了重要游戏逻辑的 xml 文件。&amp;ldquo;project.</description>
+    </item>
+    
+    <item>
+      <title>地形创建</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/terrain_creation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/terrain_creation/</guid>
+      <description> 创建新地形 生成，删除和修改地形节点可以通过 地形检查器 (Terrain Inspector) —&amp;gt; 属性 (Properties) 进行操作。
+地形节点Terrain node是二维计算，分辨率和大小可以通过 新地形属性 (New Terrain Properties) 界面查看。
+这些参数必须在创建之前就有指定数值，尽管可以在之后对各节点进行一一调整。
+              调整节点属性 节点分辨率可以在选择节点后（选择多个节点就要按住CTRL选择）即可在 节点属性（Node Properties） 界面中调整。
+这个功能可用于分辨率不太重要的地方来优化地形（如定居点之外，玩家无法进入的地方，或者水底）
+导入/导出材质地图或者高度地图 为了支持外部地形生成器，引擎可以导入导出地形材质地图或者高度地图。你可以通过导入各种图层（碎屑图，水流图，植被图，基岩图）和16 bit的高度地图来轻松生成想要的地形。要导入材质地图时，首先你必须创建一个新的地形图层，然后选择该图层，进入属性 (Properties)，选择一些节点（CTRL+A 选择所有）然后点击导入材质地图(Import Materialmap)按钮。这样就会打开一个文件对话框让你选择文件，你可以选择8 bit的材质当作材质地图。你也可以用同样方法导入高度地图(Heightmap)，高度地图可以是8、16位的（PNG或者源文件格式）。
+                    </description>
+    </item>
+    
+    <item>
+      <title>常见问题解答</title>
+      <link>http://localhost:4444/zh_cn/asset-management/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/asset-management/faq/</guid>
+      <description>如何安装工具？ 从 Steam 库的工具部分中找到并下载“Mount &amp;amp; Blade Bannerlord Modding Tools”。请注意，本工具会使用部分已经下载好的游戏本体的文件，因此，工具的版本应与游戏版本一致并且应与游戏本体安装在同一驱动器中。
+如何启动工具？ 选择启动器中的 Singleplayer 选项并启动，等你进入到游戏主菜单界面后，你既可以单击 Editor 启动编辑器，也可以按下组合键 Ctrl + E 来启动编辑器。
+如何创建你自己的模组？ 我们在编辑器里内置了一个功能，可以直接创建一个有 XML 模板文件的模组，方便你快速开始添加新内容。打开编辑器后，在顶端工具栏的“File”菜单下找到“Create New Module”选项，点击它。请注意，你需要重启游戏来让启动器识别该模组。
+如何编辑游戏本体(Native)资源？ 你无法直接编辑游戏本体资源，但你可以在你的模组中覆盖掉它们。详情请参阅： 添加&amp;amp;覆盖资产我无法添加新模型、材质等 你无法直接向游戏本体添加资源，你需要在你自己的模组里添加它们。
+首先，你需要新建一个模组：快速入门指南更多关于添加新的资产的信息请参阅： 添加&amp;amp;覆盖资产可供参考的示例场景？ empire_village_003
+khuzait_castle_002
+sturgia_town_b
+battle_terrain_v
+empire_castle_keep_a_l3_interior
+empire_house_c_tavern_a
+empire_dungeon_a
+arena_empire_a
+Main_map
+在哪能找到示例资产？ 你可以从资源浏览器(Resource Browser)中查看这些游戏本体的资源，但没有源文件提供，因此你也无法导出它们。我们很快会提供一些示例的源文件。
+我有包含 DLL 文件的模组然后我的工具无法启动？ 如果你有任何包含 DLL 文件的模组，请确保它们同样被复制到了 Modules\MOD_NAME\bin\Win64_Shipping_wEditor 目录下。
+我的模组工具无法启动 请确定你的机器安装了 Visual Studio 2013 Redist x64。此外，请检查你的游戏本体版本是否与模组开发工具版本相匹配。如果完成了以上检查仍旧无法启动，你可以在官方论坛的modding forums分区下的“Bug &amp;amp; Crashes”板块发帖反馈：https://forums.taleworlds.com/index.php?forums/bug-crash-reports.784/</description>
+    </item>
+    
+    <item>
+      <title>材质</title>
+      <link>http://localhost:4444/zh_cn/asset-management/asset-types/materials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/materials/</guid>
+      <description>材质（Materials）定义了网格模型的渲染特性。它们包含着色器和纹理信息，也包含渲染标志（由着色器和全局标志定义）。一个网格模型可以拥有一个材质。在第三方网格编辑程序中，网格材质的初始值将通过它的材质名称来分配。材质可以通过材质浏览器来创建和编辑，而材质浏览器则可以通过资源浏览器来访问。材质也可以在运行时通过脚本和行为进行编辑。更多关于材质编辑和引擎默认材质的信息可以可以参阅材质编辑器 (Material Editor) 章节。</description>
+    </item>
+    
+    <item>
+      <title>添加与覆盖资产</title>
+      <link>http://localhost:4444/zh_cn/asset-management/asset-types/overriding_assets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/overriding_assets/</guid>
+      <description>在 RGL 中，您可以轻松地覆盖现有资产或在编辑器中为自定义模组创建新资产。覆盖机制的生效方式是将现有资产替换为你的模组资产目录中提供的对应资产。 它会尝试匹配您的自定义资产与其他模块先前通过其名称注册的资产。模块的加载顺序会影响这一过程。
+如果除了 Native 模块之外还分别加载了 模组 A 和 模组 B ，则最终资产及其来源列表如下：
+当前可在自定义模组中替换的资产类型为：
+ 材质 (Material) 网格模型 (Mesh) 纹理 (Texture) 物理形状 (Physics Shape)  文件夹结构 资产系统会根据模块目录中的某些文件夹名称进行处理。这是这些文件夹及其用法的列表：
+ Assets : 包括可编辑的 *.tpac 文件，该文件存储每个资产的元数据。 AssetSources : 包括导入资产（.psd，.fbx）的源文件。 AssetPackages : 包括只读 *.tpac 文件。当一个模组被打包用于客户端构建时，将生成该文件。 EmAssetPackages : 包括只读 *.tpac 文件。当一个模组被打包用于编辑器构建时，将生成该文件。 DsAssetPackages : 包括只读 *.tpac 文件。当一个模组被打包用于服务器构建时，将生成该文件。 RuntimeDataCache : 包括引擎所需的对每个资产自动生成的数据。可以删除，但在启动过程中从头开始生成可能会花费时间。  Modding Permissions 资产系统会根据游戏运行的可执行文件的版本寻找不同的文件夹。根据这些文件夹的存在与否，它判定一个模块是否可以被修改，或只能在只读模式下使用。如果您想发布您的模块，您可以打包您的资产并共享打包后的文件夹，而不需要发布成千上万的文件及其源文件。您有三个选项来打包您的资产。
+ Client : 其他人可以激活您的模组并运行。您必须分发 AssetPackages 文件夹。 Editor : 其他人可以在编辑器中使用您的模组，但不能修改它。如果您希望其他人从您的模组派生模组，则使用它。您必须分发 EmAssetPackages 文件夹。 Server : 用于服务器构建。需要剥离与服务器无关的所有数据。您必须分发 DsAssetPackages 文件夹。  您也可以像使用您的模组一样共享您的模组，以允许其他人修改它。在这种情况下，你必须分发 Assets、AssetSources 和可选的 RuntimeDataCache 文件夹。</description>
+    </item>
+    
+    <item>
+      <title>物体</title>
+      <link>http://localhost:4444/zh_cn/asset-management/asset-types/bodies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/bodies/</guid>
+      <description>物体定义了物体的物理边界，它们可以被分配给场景或者预制物件的实体。用户可以编辑“物体标识”（Body Flag) 来改变其行为。
+物体标识(Body Flags)  双面（Two Sided）：让物理引擎可以使用多边形的两面。 Ai限制器（AI Limiter）：用来标记只针对AI使用的物体，不包括玩家。 可破坏的门（Destructible Door）: 通过自动导航网格生成器来使用，而非将导航网格直接置于可破坏的门之下。 禁用（Disabled）:禁用预制物体，或者实体实例的物理特性。 边界（Barrier）：使对象可以顺利移出物体内部 排除路径对齐（Exclude Path Snap）：适用于路径点无法对齐物体的情况 避免镜头碰撞（Don’t Collide With Camera）：玩家的镜头不会和对应物品产生碰撞。 动态化（Dynamic）：可以让物理引擎会模拟实体的运动 可移动化（Moveable）：该标识标志该物品及其所有的实体可以移动 梯形化（Ladder）：赋予梯形网格，从而使其正常运行。 台阶化（Has Steps）：决定是否将实体物品楼梯化，使得对象能够正确地攀爬楼梯。(楼梯的物体应与实体的其他部分分开)。  自主体的物理引擎要求平滑和低多边形的物理对象来保证性能。投射物则要求更高的精度，以达到能更好的模拟投射物卡顿效果。以下的标识可以用于让每个物体拥有两个不同的机体，以适应两种不同的情况。若两者均未被标记，投射物和自主体都会对该物体做出反应。
+ 仅限自主体（Agent Only）: 只有自主体会对该物体做出反应。 仅限投射物（Missile Only）: 只有投射物会对该物体做出反应。  遮蔽器（Occluders） 遮蔽器被用于网格模型表面，从而让渲染系统不会去渲染物体的另一面。通常来说，它们对物理模拟过程通常作用不大。但对于大城镇和村庄来说，精心布置的遮蔽器将会非常有用。用户可以直接在场景中放置遮蔽器，也可以将其附加到到实体物品和预制件上。</description>
+    </item>
+    
+    <item>
+      <title>给你的Mod添加音乐</title>
+      <link>http://localhost:4444/zh_cn/playing-sounds/adding-custom-sounds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/playing-sounds/adding-custom-sounds/</guid>
+      <description>《霸主》的音频系统是基于 FMOD 音频引擎建立的。 为了保持音频引擎性能的同时让大家都能使用它，我们需要建立一个 中间层 (InterLayer)。
+关键要素  ...\Modules\*YOUR_MOD*\ModuleData\module_sounds.xml 文件， 你可以在此添加你自己音乐的定义。 ...\Modules\*YOUR_MOD*\ModuleSounds 文件夹，你可以在此添加音频文件 （.ogg 或 .wav）。  你可以查看 Native Mod 中的例子。
+基础指南  复制样例的文件和文件夹到你的 Mod 目录下； 添加新的音频文件到 ModuleSounds 文件夹； 打开编辑你 Mod 下的 module_sounds.xml 文件； 你会在 module_sounds.xml 文件中看到音频的目录，播放音乐的代码样例，以及样例的 module_sound 实体 (Entries)； 在 module_sounds.xml 文件中为你的 Mod 添加新的音频实体； 根据代码播放新的音频实体。  下一步 使用 module_sounds.xml 文件 &amp;lt;module_sound name=&amp;#34;example/combat/hit&amp;#34; is_2d=&amp;#34;true&amp;#34; sound_category=&amp;#34;mission_combat&amp;#34; path=&amp;#34;example_sound_modders.ogg&amp;#34; /&amp;gt;  &amp;lsquo;name&amp;rsquo;: 任何你想要的唯一名字，这个是你音频的 ID。  通过代码播放音乐的时候使用。 想播放有声动画 (animation sound) 时，添加进动画 sound_code 特性 (attribute) 中。   &amp;lsquo;is_2d&amp;rsquo;: 是否使用音频的空间属性 (spatial properties)。 3D 音频会有例如 位置、速度等属性。 &amp;lsquo;sound_category&amp;rsquo;: 所有的音频必须被分配一个分类 (category) 来分配其在通信管道 (pipes) 中的路由 (route)。可用的分类有：  mission_ambient_bed (2D 环境声 (ambient loops) 比如基本风声 ) mission_ambient_3d_big (一般从远距离听到的音频，比如一个正在燃烧/战斗的城堡) mission_ambient_3d_medium (一般从中距离听到的音频，比如烽火) mission_ambient_3d_small (一般从附近近距离听到的音频，比如营火) mission_material_impact (物理材质效果比如 金属 剑击打 石 墙) mission_combat_trivial (造成不重要伤害时候的音频，比如低伤害或者无伤) mission_combat (普通造成伤害的音频) mission_foley (回转，移动以及动物移动的音频) mission_voice_shout (一般被远距离听到的人物/动物的声音，比如战斗的呐喊) mission_voice (人或者动物咕噜 (grunts) 或者击倒 (knockouts) 的音频。) mission_voice_trivial (比较安静的发声，比如攀爬和跳跃) mission_siege_loud (大型攻城战的声响，比如巨石击中墙壁、火焰投石车以及城门破坏的音频) mission_footstep (人类和小型动物的标准脚步) mission_footstep_run (更大的脚步声，指那种可在一定距离的人群中能听到的声音) mission_horse_gallop (马匹和骆驼疾驰的声音) mission_horse_walk (马匹和骆驼慢走的声音) ui (UI 和 提示的 2D 音频) alert (伪3D音频 (Psuedo-3d sounds)，用于从中距离警告玩家) campaign_node (位置性的声音节点，一般用于世界地图，农场，海和瀑布等) campaign_bed (2D 环境声，一般用于世界地图，沙漠阵风和牧场的风等)   &amp;lsquo;path&amp;rsquo;: 声音文件的路径。路径是基于你 Mod 的 ModuleSounds 文件夹的相对路径，你可以创建自己的子目录。  播放音频的代码样例 int soundIndex = SoundEvent.</description>
+    </item>
+    
+    <item>
+      <title>编辑器快捷键</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/editor_shortcuts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/editor_shortcuts/</guid>
+      <description>   常用按键 按键 编辑器模式     显示/隐藏帮助 H 任何模式   创建场景 Alt + 1 任何模式   保存场景 Alt + 2 任何模式   打开场景 Alt + 3 任何模式   开始任务 Alt + 4 任何模式   以…方式开始任务 Alt + 5 任何模式   场景选项 Alt + 6 任何模式   地形选项 Alt + 7 地形选项   地形海拔 Alt + 8 地形海拔   地形涂色 Alt + 9 地形涂色   切换相关编辑模式 (选择-增加，选择-海拔和涂色等) 空格 任何模式   返回/撤回 Ctrl+Z, Ctrl+Y 任何模式       视角控制 按键 编辑器模式     聚焦到选定模型 F 选择Entity   编辑器摄像头旋转模式 按住Alt +鼠标右键滑动 选择Entity   Pan 按住Alt +鼠标中键 选择Entity   拉近拉远摄像头 按住ALT + 滑动鼠标中键 选择Entity   加快减慢摄像头速度 Ctrl + 滑动鼠标中键 任何模式   摄像头速度设置为1 Ctrl + 鼠标中键 任何模式       PREFAB TRANSFORM 按键 编辑器模式     原地旋转 垂直旋转按Z, 左右旋转按X, 前后旋转按C, T, 返回默认按 R Entity Add   移动模型并放置在地面上 按住P 选择Entity   上下移动 按住N 选择Entity   水平移动 按住G 选择Entity   显示XYZ轴 T 选择Entity   显示旋转轴 R 选择Entity   显示大小比例轴 Y 选择Entity   复制粘贴模型 Shift+单击鼠标或者 Shift+拖拽 选择Entity   隐藏轴 V 选择Entity   切换为本地变换视图 Alt+L 选择Entity   切换为世界变换视图 Alt+W 选择Entity   打开模型材质视图 M+单击鼠标 选择Entity       地形 按键 编辑器模式     全选所有地形节点 Ctrl + A 选择地形   当选择提高时下降海拔 Alt + 点击 地形海拔   当选择下降时提高海拔 Alt + 点击 地形海拔   平整地形 Ctrl +鼠标左键 地形海拔   平滑地形 Shift + 点击 地形海拔   当选择平整地形时，以该高度为平整海拔 Alt + 单击 地形海拔   添加植被（不在图层上增加） 鼠标左键 涂色Entity   重新规划当前植被面积大小 按住B+鼠标左右拖拽 涂色Entity   放置单个植被 Ctrl + 左键单击 涂色Entity       NAVMESH HOTKEYS 按键 编辑器模式     填充最近的4个顶点（形成一个面） Shift +单击 添加导航网格   填充最末端的4个顶点（形成一个面） Ctrl + 空格 添加导航网格   不用选择也可以挪动顶点 Ctrl +拖拽 添加导航网格   删除面并留下顶点 Alt + 单击 添加导航网格   删除面及其顶点 Alt + X + 单击 添加导航网格   选择顶点模式 1 选择导航网格   选择边模式 2 选择导航网格   选择面模式 3 选择导航网格   选择连接的所有顶点，边和面、 Ctrl + A 选择导航网格   删除顶点/边/面 Delete 选择导航网格    </description>
+    </item>
+    
+    <item>
+      <title>脚本</title>
+      <link>http://localhost:4444/zh_cn/asset-management/asset-types/scripts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/asset-management/asset-types/scripts/</guid>
+      <description>脚本组件是附加在实体上的可执行脚本，可以用来实现各种游戏功能。在《霸主》中，很多游戏逻辑都是通过脚本组件来编写的。例如椅子、掉落的武器、攻城器械。有很多不同的回调函数，可以被继承并填充在这些脚本组件中。
+回调函数  Constructor: 在构造函数中，我们需要给它的公有变量分配默认值（可以被场景制作者改变的变量）。在构造函数中，脚本组件不会被分配给实体或场景。另外，不要在这里写任何有副作用的逻辑，因为即使创建了脚本组件，由于升级等级系统的原因，一旦打开场景，脚本组件就可能会被删除。 OnPreInit: 当脚本组件被分配给场景中的所有者实体后，这个回调被调用。一旦你进入了这个回调，那么该脚本实例中的用户定义变量就被设置了。然而，其他实体的脚本组件可能还没有被分配。因此，在预初始化中，不应该有任何依赖于其他脚本组件的逻辑代码。例如，在预初始化中， ManagedObject 将自己注册到当前任务实例中的托管对象数组。 OnInit: 当任务被加载且所有实体的脚本组件被初始化，这个回调就会被立刻调用。你可以在这个回调里面使用任何类型的逻辑代码。运行时实例化的脚本也会得到这个回调的调用。 OnEditorInit: OnInit 的编辑器版本，在从编辑器加载场景时被调用。当场景从编辑器中加载时，它会被调用。确保编辑器中没有任务或游戏状态。 OnTick: 对于每个脚本组件，该任务在同一线程的任务的每个帧中都被调用。 OnEditorTick: OnTick 的编辑器版本。 IsOnlyVisual: 如果你有一个脚本组件，只是可视化的，没有任何应该在服务器版本上运行的逻辑代码，你应该在这个函数中返回 true 。这确保了这种类型的脚本不会在服务器版本上运行。 OnEditorVariableChanged: 在编辑器中，每当用户改变该脚本组件中的公有变量时，就会调用这个回调。如果艺术家需要在编辑器场景中得到即时反馈，这个回调可以用于任何视觉-逻辑状态的改变。 OnRemoved: 当实体或脚本组件被移除时调用。如果你有任何已分配内存的对象被存储在其他地方（例如静态容器），你可以使用这个回调来确保它们被回收，避免泄露内存。  </description>
+    </item>
+    
+    <item>
+      <title>Entity Inspector</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/entity_inspector/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/entity_inspector/</guid>
+      <description>Transform Panel Transform panel allows you to change position, rotation and scale properties of the selected entities. All of these values are relative to the parent of the selected entity. If Entity has no parent, then they are the Global values. (in Worldspace).
+Scale Locked If the lock icon is in locked state, changing any component of scale parameter will set all scale components to the same value, entity will be in uniform scaling mode.</description>
+    </item>
+    
+    <item>
+      <title>Navigation Mesh Inspector</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/nav_mesh_inspector/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/nav_mesh_inspector/</guid>
+      <description>Tools These tools help you to generate and manipulate the navigation mesh:
+Generation Tools  Auto Generate: As the name implies, automatically generates the navigation mesh with resppect to the parameters above. Generate Grids: Generates grid navigation mesh for the terrain only. It ignores the entities on the scene. Create New Face: Creates a new navigation mesh quad face on the coordinates where the camera is. Extrude: Remove: Removes the selected navigation mesh edge.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:4444/zh_cn/_footer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/_footer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:4444/zh_cn/_header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/_header/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Alignment and Snapping Tools</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/alignment_and_snapping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/alignment_and_snapping/</guid>
+      <description>Pivot Alignment Tool The Pivot alignment toolapplies the chosen transform values of one entity to another entity. The tool makes it easier for users to create overlapping or precisely aligned entities. If an entitity is selected in the editor, the user can set up the alignment tool by pressing Alt + A.This will register the currently selected entity as the input entity. Selecting a second entity with the left mouse button, will then open the interface screen of the alignment tool.</description>
+    </item>
+    
+    <item>
+      <title>Cloth Simulation</title>
+      <link>http://localhost:4444/zh_cn/editor/resource-editors/cloth_simulation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/resource-editors/cloth_simulation/</guid>
+      <description>Preparing Mesh Cloth simulation system uses alpha channels of vertices of meshes. Values in the alpha channel represents how much a vertex can move away from its original position. 0.1 of alpha means vertex can be moved 0.1 units from its original position by cloth simulation. If you set zero to alpha value that means that vertex will be fixed to its position and will not be updated by simulation.</description>
+    </item>
+    
+    <item>
+      <title>Destructible Component</title>
+      <link>http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/bannerlord_destructible_component/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/bannerlord_destructible_component/</guid>
+      <description>The destruction system which gives artists a lot more freedom is explained below.
+Characteristics It is a ScriptComponent which can be applied to any entity in a scene, as long as that entity has a collision body.
+When not given any information, the script will just make the entity disappear after being destroyed. It will also re-appear when the mission resets.
+The script can be used to destroy entities in one or more states, with optional sound, particles and dynamic objects spawning in each state.</description>
+    </item>
+    
+    <item>
+      <title>Distance Tool</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/distance_tool/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/distance_tool/</guid>
+      <description>Distance Measure Tool The Distance Toolmeasures the distance between two points in the scene. Distance measure mode can be activated by either pressing Alt + Dshortcut or the respective button on the editor toolbar.
+While holding the left mouse button, drag the mouse between two points in the scene to measure distance. The tool snaps to vertices if close enough to a one by default, holding down Left Shiftoverrides this.</description>
+    </item>
+    
+    <item>
+      <title>Meta Mesh Editor</title>
+      <link>http://localhost:4444/zh_cn/editor/resource-editors/meta_mesh_editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/resource-editors/meta_mesh_editor/</guid>
+      <description>Import Settings  Divide Into Grid: Divides the meta mesh into grids, and adds all the generated section meshes to the submeshes. Remove Redundant Vertices: The name implies what it does. Recompute Normals: While importing the meta mesh, computes normal vectors for all sub-meshes instead of importing them as well. Normal Computation: Decides whether the normal vector computation will depend on the face area (weighted) or not (default). Recompute Tangents: While importing the meta mesh, computes the tangent vectors for all sub-meshes instead of importing them as well.</description>
+    </item>
+    
+    <item>
+      <title>Model Viewer</title>
+      <link>http://localhost:4444/zh_cn/editor/resource-editors/model_viewer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/resource-editors/model_viewer/</guid>
+      <description>The Model Viewer can be accesed from; Editor &amp;gt;Window &amp;gt;Show Model Viewer From the left panel, you can change Atmosphere, hide/show ground, or add as many entities as you want. The entities can either be Humanor simple Mesh.Pressing Add Entitywill open a modal window for you to select the entity type. Transform From this panel, you can set entities Tranform, Rotation, and Scale.
+Animation From this panel, you can choose Skeleton type, and Animation.</description>
+    </item>
+    
+    <item>
+      <title>Precomputed Radiance Transfer - GI System</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/prt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/prt/</guid>
+      <description>We introduce a new global illumination system to the engine. It is based on a pre-baked system called &amp;ldquo;Precomputed Radiance Transfer&amp;rdquo;. This technique allow us to bake the local ambient in the scene and display it in an optimized manner at runtime. Baked data is independent from the atmospheres. Thus, we can light the scene with the same bake data for every atmosphere.
+   With Without          Baking Procedure Scene baking is divided into a couple of parts:</description>
+    </item>
+    
+    <item>
+      <title>Scene Barrier Builder</title>
+      <link>http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/scene_barrier_builder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/scene_barrier_builder/</guid>
+      <description>Introduction Barrier Builder is a tool that helps artist to generate barriers over walls to prevent agents to fall down.
+Usage   Create a path, you can use the button on toolbar   Give a name to path   Build your path as you wish   Press &amp;ldquo;Enable Barrier Build&amp;rdquo; chekbox on path inspector, it will create your barrier entity for you.   You can go to that entity with &amp;ldquo;Go to Entity&amp;rdquo; Button and chnage its options like height, the entity named as &amp;ldquo;path_barrier_PATHNAME&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>Scene Level System</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/level_system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/level_system/</guid>
+      <description>Level System New level system replaces the old, hardcoded system with a much more extandable and unified system. \
+Addinga new level (or deletingan existing one) to a scene can be done in Levelspanel under SceneOptionsinspector.
+Levels in Game - Bannerlord - Currently, Bannerlord recognizes a few levels that has a meaning in-game. \
+Which are: \
+ level_1 \ level_2 \ level_3 \ siege \ civilian  Setting Entity visibilities Making an entity only visible in a certain level combinations can be done with selecting an entity then going in Scene Level Visibilitiespanel under Entity Inspector.</description>
+    </item>
+    
+    <item>
+      <title>Scene Spawn Point Guide</title>
+      <link>http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/scene_spawn_points_guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/scene_spawn_points_guide/</guid>
+      <description>How to design fully featured scenes in Bannerlord Each scene has own basic necessities to run without crashing and has extras to give better experience to player. Designers can check these necessities with &amp;ldquo;Spawn Point Debug Tool&amp;rdquo; to be sure that their scene will not crash.
+1. Town Center Scene Player will be spawned on the &amp;ldquo;sp_player_outside&amp;rdquo; prefab if he/she is entering the city for the first time, because of this feature &amp;ldquo;sp_player_outside&amp;rdquo; must be placed far from city&amp;rsquo;s entrance; otherwise player will be spawned on &amp;ldquo;sp_player&amp;rdquo; and this spawnpoint can be next to the entrance gate.</description>
+    </item>
+    
+    <item>
+      <title>Script Component Callbacks</title>
+      <link>http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/callbacks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/callbacks/</guid>
+      <description>The callbacks of the script components are listed below.
+Constructor In constructor one needs to assign default values to its public variables(variables which can be changed by the scene maker). In constructor script component is not assigned to an entity or scene. Also, you should not write any logic that has any side effect because , even though it is created, the script component may be deleted once the scene is opened because of the upgrade level system.</description>
+    </item>
+    
+    <item>
+      <title>Spawn Point Debug Tool</title>
+      <link>http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/spawn_point_debug_tool/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/authoring-mission-scenes/script-components/spawn_point_debug_tool/</guid>
+      <description>Introduction The tool which has prefab named &amp;ldquo;SpawnPointDebugView&amp;rdquo; can be added to scene. Prefab has &amp;ldquo;SpawnPointDebugView&amp;rdquo; script attached and tool can be opened through inspector toggle. Tool has 3 tabs named &amp;ldquo;Scene basic information tab&amp;rdquo;, &amp;ldquo;Scene entity check tab&amp;rdquo; and &amp;ldquo;Navigation mesh check tab&amp;rdquo;.
+1. Scene Basic Information Tab This tab tries to determine the scene type in order to find necessities; if detected type is not correct, artist can override the type using toggle buttons below.</description>
+    </item>
+    
+    <item>
+      <title>Terrain Mesh Blend System</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/terrain_mesh_blend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/terrain_mesh_blend/</guid>
+      <description>We introduce a new terrain mesh blending system. Certain terrain layers can blend into chosen meshes. Blend height, smoothness and random height offsets can be changed. These values can be saved to prefabs and can also be changed in scene per mesh. Heightmap blending can also be used to change the blending behaviour with respect to the mesh&amp;rsquo;s heightmap.
+   With Blending Without Blending          Terrain Layer Restrictions Terrain layers should satisfy some restrictions before they are eligible to be a mesh blend layer.</description>
+    </item>
+    
+    <item>
+      <title>Texture Editor</title>
+      <link>http://localhost:4444/zh_cn/editor/resource-editors/mipmap_editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/resource-editors/mipmap_editor/</guid>
+      <description>The Texture Editor can be accesed from; Editor &amp;gt;Window &amp;gt;Show Resource Browser &amp;gt;..Search for Texture.. &amp;gt;..Double Click on Texture.. From the Texture Inspector (Right Panel), you can enable/disable MipMap blending by toggling Use Mipmap Blendingcheckbox. When you enable MipMap Blending, you will see all mip levels of the selected texture next to each other in Preview Window. Clicking on MipMap Blend Amountswill open open a new window where you can adjust blend amounts for every mip level.</description>
+    </item>
+    
+    <item>
+      <title>群体选择</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/mass_selection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/mass_selection/</guid>
+      <description>群体选择 (Mass Selection) 允许你选中多个游戏中的物品 (Objects)，并且进行旋转等操作。你可以重新放置，或者是平移、旋转和缩放有 mass_selection 属性的实体。
+包围盒限制 (Bounding Box Constraint) 属性允许你选中有比这个属性更小值的物品。
+   定位选中框 选中之后 随机旋转之后           </description>
+    </item>
+    
+    <item>
+      <title>调整地形大小</title>
+      <link>http://localhost:4444/zh_cn/editor/scene-editor/terrain_resize/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/editor/scene-editor/terrain_resize/</guid>
+      <description>调整地形大小 如果需要，地形节点数量可以在 Terrain Inspector的 Resize Terrain面板调整。
+ 你可以从 4 个方向添加新的节点或移除已有的节点。+X, +Y, -X, -Y（分别是南，东，北，西）（上色和 Gizmo 一致） 添加和移除节点会自动重新在新的位置分配现存的实体 (entities) 和植物 (floras)。新的节点由于他们的高度信息还未定义，可能会显得无法和其他地形连接。设计者应该可以用编辑器内置的高度笔刷 (Height Brushes) 来修改，或者导出高度图在其他高度图生成软件中修改，之后在导入回编辑器中。 如果在地形的一边输入正数，那么地形像那一边扩展那么多的节点。如果你往每一边写了 +2，那么地形就会像每一边扩展 2 格。如果你写了 +3 在 +X 方向，其他方向为 0 那么地形只会往 +X 方向扩展 3 格。 如果你输入一个负数，那么将会减少相应的节点数。 如果你输入 0（默认值），那么将不会有改变。     添加 删除          </description>
+    </item>
+    
+    <item>
+      <title>过滤器查询</title>
+      <link>http://localhost:4444/zh_cn/asset-management/asset-browser/filterqueries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:4444/zh_cn/asset-management/asset-browser/filterqueries/</guid>
+      <description>你可以使用 SQL 语法 查询资产 (assets) 中特定的属性 (properties)，比如查找分辨率大于 1024 的纹理 (Textures)。你可以在额外菜单 (extras menu) 中使用查询模式：
+从右边栏的纹理检查器 (Texture Inspector)中，你可以通过勾选 Use Mipmap Blending来启用/禁用 混合纹理映射。 当你启用 混合纹理映射 (MipMap Blending) 的时候，你可以在预览界面 (Preview Window) 看到所有的选中纹理的映射层级。
+点击 MipMap Blend Amounts将会打开一个新的窗口，在这个窗口中你可以调整每一层映射的混合量 (amounts)。
+之后你可以选中 MipMap Blend Color (1)然后点击 Recompile (2)来应用混合。结果会立即在预览界面和游戏中显示。</description>
+    </item>
+    
+  </channel>
+</rss>

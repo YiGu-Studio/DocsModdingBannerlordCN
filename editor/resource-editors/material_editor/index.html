@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Taleworlds Documentation</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2020-11-12T04:42:13 UTC">
+<title>Material Editor :: Taleworlds Documentation</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "http:\/\/localhost:4444\/";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/editor/resource-editors/material_editor/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/asset-management/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/asset-management/">Asset Management</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/asset-management/asset-browser/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/asset-management/asset-browser/">Asset Browser</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/asset-management/asset-browser/filterqueries/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-browser/filterqueries/">
+            Filter Queries
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/asset-management/asset-types/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/asset-management/asset-types/">Asset Types</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/asset-management/asset-types/overriding_assets/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/overriding_assets/">
+            Adding &amp; Overriding Assets
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/animations/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/animations/">
+            Animations
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/bodies/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/bodies/">
+            Bodies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/prefabs/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/prefabs/">
+            Entities &amp; Prefabs
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/materials/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/materials/">
+            Materials
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/meshes/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/meshes/">
+            Meshes
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/asset_naming_conventions/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/asset_naming_conventions/">
+            Naming Conventions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/overriding_scenes_prefabs/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/overriding_scenes_prefabs/">
+            Overriding Scenes and Prefabs
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/path/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/path/">
+            Paths
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/scripts/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/scripts/">
+            Scripts
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/skeletons/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/skeletons/">
+            Skeletons
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/asset-types/textures/" class="dd-item">
+        <div>
+          <a href="/asset-management/asset-types/textures/">
+            Textures
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/asset-management/quickguide_create_a_mod/" class="dd-item">
+        <div>
+          <a href="/asset-management/quickguide_create_a_mod/">
+            Creating a Module - Quick Guide
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/asset-management/faq/" class="dd-item">
+        <div>
+          <a href="/asset-management/faq/">
+            Frequently Asked Questions
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/authoring-mission-scenes/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/authoring-mission-scenes/">Bannerlord Missions</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/authoring-mission-scenes/tactical_positions/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/tactical_positions/">
+            Mission Tactical Positions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/villages/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/villages/">
+            What Makes a Village Scene
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/script-components/bannerlord_destructible_component/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/script-components/bannerlord_destructible_component/">
+            Destructible Component
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/script-components/scene_barrier_builder/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/script-components/scene_barrier_builder/">
+            Scene Barrier Builder
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/script-components/scene_spawn_points_guide/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/script-components/scene_spawn_points_guide/">
+            Scene Spawn Point Guide
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/script-components/callbacks/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/script-components/callbacks/">
+            Script Component Callbacks
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/authoring-mission-scenes/script-components/spawn_point_debug_tool/" class="dd-item">
+        <div>
+          <a href="/authoring-mission-scenes/script-components/spawn_point_debug_tool/">
+            Spawn Point Debug Tool
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/editor/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/editor/">Editor</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/editor/resource-editors/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/editor/resource-editors/">Resource Editors</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/editor/resource-editors/material_editor/" class="dd-item active">
+        <div>
+          <a href="/editor/resource-editors/material_editor/">
+            Material Editor
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/resource-editors/skeleton_editor/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/skeleton_editor/">
+            Skeleton Editor
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/resource-editors/cloth_simulation/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/cloth_simulation/">
+            Cloth Simulation
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/resource-editors/meta_mesh_editor/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/meta_mesh_editor/">
+            Meta Mesh Editor
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/resource-editors/model_viewer/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/model_viewer/">
+            Model Viewer
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/resource-editors/mipmap_editor/" class="dd-item">
+        <div>
+          <a href="/editor/resource-editors/mipmap_editor/">
+            Texture Editor
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/editor/scene-editor/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/editor/scene-editor/">Scene Editor</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/editor/scene-editor/creating_entity/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/creating_entity/">
+            Creating Entity
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/editor_shortcuts/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/editor_shortcuts/">
+            Editor Shortcuts
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/path_editing/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/path_editing/">
+            Path Editing
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/terrain_creation/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/terrain_creation/">
+            Terrain Creation
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/entity_inspector/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/entity_inspector/">
+            Entity Inspector
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/nav_mesh_inspector/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/nav_mesh_inspector/">
+            Navigation Mesh Inspector
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/alignment_and_snapping/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/alignment_and_snapping/">
+            Alignment and Snapping Tools
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/distance_tool/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/distance_tool/">
+            Distance Tool
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/mass_selection/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/mass_selection/">
+            Mass Selection
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/prt/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/prt/">
+            Precomputed Radiance Transfer - GI System
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/terrain_resize/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/terrain_resize/">
+            Resizing Terrain
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/level_system/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/level_system/">
+            Scene Level System
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/editor/scene-editor/terrain_mesh_blend/" class="dd-item">
+        <div>
+          <a href="/editor/scene-editor/terrain_mesh_blend/">
+            Terrain Mesh Blend System
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/playing-sounds/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/playing-sounds/">Playing Sounds</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/playing-sounds/adding-custom-sounds/" class="dd-item">
+        <div>
+          <a href="/playing-sounds/adding-custom-sounds/">
+            Adding Sounds to Your Module
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+<select id="select-language" onchange="location = this.value;">
+	
+	
+	
+	  
+	  
+	    
+	      
+	        <option id="en" value="/editor/resource-editors/material_editor/" selected>English</option>
+	      
+	    
+	  
+	    
+	  
+	
+	  
+	  
+	    
+	  
+	    
+	      
+	        <option id="zh_cn" value="/zh_cn/editor/resource-editors/material_editor/">简体中文</option>
+	      
+	    
+	  
+	
+</select>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation: 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/asset-management/" >
+   Asset Management</option>
+    <option value="/authoring-mission-scenes/" >
+   Bannerlord Missions</option>
+    <option value="/editor/" >
+   Editor</option> 
+    <option value="/editor/resource-editors/" >
+  - 
+   Resource Editors</option> 
+      <option value="/editor/resource-editors/material_editor/"  selected>-- Material Editor</option>
+      <option value="/editor/resource-editors/skeleton_editor/" >-- Skeleton Editor</option>
+      <option value="/editor/resource-editors/cloth_simulation/" >-- Cloth Simulation</option>
+      <option value="/editor/resource-editors/meta_mesh_editor/" >-- Meta Mesh Editor</option>
+      <option value="/editor/resource-editors/model_viewer/" >-- Model Viewer</option>
+      <option value="/editor/resource-editors/mipmap_editor/" >-- Texture Editor</option>
+  
+    <option value="/editor/scene-editor/" >
+  - 
+   Scene Editor</option>
+  
+    <option value="/playing-sounds/" >
+   Playing Sounds</option>
+
+
+
+        </select>
+      </center>
+      <center>Language: 
+        
+<select id="select-language" onchange="location = this.value;">
+	
+	
+	
+	  
+	  
+	    
+	      
+	        <option id="en" value="/editor/resource-editors/material_editor/" selected>English</option>
+	      
+	    
+	  
+	    
+	  
+	
+	  
+	  
+	    
+	  
+	    
+	      
+	        <option id="zh_cn" value="/zh_cn/editor/resource-editors/material_editor/">简体中文</option>
+	      
+	    
+	  
+	
+</select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/js/auto-complete.js"></script>
+        <link href="/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "http:\/\/localhost:4444\/";
+          
+        </script>
+        <script type="text/javascript" src="/js/search.js"></script>
+      </div>
+    
+
+    <h1>Material Editor</h1>
+    
+    
+    
+    <h3 id="overview">Overview</h3>
+<!-- raw HTML omitted -->
+<h3 id="inspector">Inspector</h3>
+<h4 id="shader">Shader</h4>
+<!-- raw HTML omitted -->
+<h5 id="pbr_shading">pbr_shading</h5>
+<p>This shader is heavily used and exists just because our engine did not use PBR shading pipeline in the early years of development, most content was not created for PBR pipeline, so this shader is created to support our already existing content and only used during the transition phase. <!-- raw HTML omitted -->
+New content should not use this shader, instead you should use pbr_metallic.</p>
+<h5 id="pbr_metallic">pbr_metallic</h5>
+<p>This is what you should use most of the time. This shader uses standard metallic PBR pipeline and inputs are compatible with most texture authoring softwares.<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->Inputs:<!-- raw HTML omitted --><!-- raw HTML omitted -->
+Albedo and Normal: These are pretty standard, outputs of texture authoring softwares can directly be used.
+Specular: This texture uses its 4 channel for different purposes. Red channel contains Metallic information, Green channel contains Glossiness (inverse of Roughness), Blue channel contains Ambient Occlusion, and Alpha channel contains Translucency (for vegetation shaders only) <!-- raw HTML omitted --></p>
+<h5 id="grass">grass</h5>
+<p>This shader is a derivative of pbr_metallic, and should only be used on grass meshes. Contains special effects like wind animation, sway animation, smooth LOD transition, color multiplication from terrain, etc.</p>
+<h5 id="flora_leaf">flora_leaf</h5>
+<p>This shader is a derivative of pbr_metallic, and should only be used on leaf parts of trees / bushes. Contains special effects like wind animation, sway animation, color multiplication from terrain, smooth LOD transition, translucency (Alpha channel of Specular texture), etc.</p>
+<h5 id="flora_bark">flora_bark</h5>
+<p>This shader is a derivative of pbr_metallic, and should only be used on bark parts of trees / bushes. Contains special effects like wind animation, smooth LOD transition, etc.</p>
+<h3 id="textures">Textures</h3>
+<!-- raw HTML omitted -->
+<h5 id="diffuse2map">Diffuse2Map</h5>
+<p>This input is used internally by engine to create special effects / blendings like Shield Banner Paintings, Banner texture in this slot will only appear where Diffuse 1 Texture contains alpha.
+Usage of this texture really depends on the shader used.</p>
+<h5 id="detailnormalmap">DetailNormalMap</h5>
+<p>This input is used to create micro imperfections and additional high frequency detail on top on regular normal mapping. Scale of this texture can be adjusted in <!-- raw HTML omitted -->Texture Settings<!-- raw HTML omitted --> panel</p>
+<h5 id="heightmap">HeightMap</h5>
+<p>This input is used in both Parallax Occlusion Shading, and Displacement.</p>
+<h5 id="decal___map">Decal(___)Map</h5>
+<p>These inputs are used internally by engine to create skinned decals on entities (like blood and mud on agents).</p>
+<h3 id="texture-settings">Texture Settings</h3>
+<!-- raw HTML omitted -->
+<h5 id="areamap-scale">Areamap Scale</h5>
+<p>Used internally for parameter passing.</p>
+<h5 id="specular-coef">Specular Coef</h5>
+<p>Metallic channel (Red channel of Specular texture) is multiplied by this value in shader.</p>
+<h5 id="gloss-coef">Gloss Coef</h5>
+<p>Gloss channel (Green channel of Specular texture) is multiplied by this value in shader.</p>
+<h5 id="ambient-occlusion-coef">Ambient Occlusion Coef</h5>
+<p>AO channel (Blue channel of Specular texture) is multiplied by this value in shader.</p>
+<h5 id="normal-depth">Normal Depth</h5>
+<p>Normal textures X and Y channels are multiplied by this value. If you set a value close to Zero, surface will appear more flat since X and Y values will be close to zero and only Z direction is contributed to normal mapping.</p>
+<h5 id="detail-normal-scale">Detail Normal Scale</h5>
+<p>This parameters sets how many times the detail textures should tile. Higher values increases frequency.</p>
+<h5 id="parallax-mode">Parallax Mode</h5>
+<p>You can select displacement method to use for this material. Options are, Parallax or Displacement. Both require a heightmap texture. Parallax uses Parallax Occlusion Mapping in shader, Displacement uses hardware tesselation.</p>
+<h5 id="parallax-amount">Parallax Amount</h5>
+<p>Intensity of displacement effect.</p>
+<h5 id="parallax-offset">Parallax Offset</h5>
+<p>Sets the middle value to a desired height. (Value of 0.5 in heightmap).</p>
+<h3 id="material-shader-flags">Material Shader Flags</h3>
+<!-- raw HTML omitted -->
+<h5 id="use_detailnormalmap">use_detailnormalmap</h5>
+<p>This flag should be enabled to utilize Detail Normal Map feature.</p>
+<h5 id="alpha_test">alpha_test</h5>
+<p>Diffuse 1 textures alpha values are used as a cut-out texture. Alpha threshold can be specified in <!-- raw HTML omitted -->Transparency<!-- raw HTML omitted --> panel.</p>
+<h5 id="use_specular">use_specular</h5>
+<p>This flag should be enabled in all cases. It is only here for lagecy reasons.</p>
+<h5 id="use_procedural_wind_animation">use_procedural_wind_animation</h5>
+<p>Can be enabled to create a very simple and cheap, sine wave wind effect. Mostly used for tents / flags. (Should not be mistaken with cloth physics feature).</p>
+<h5 id="self_illumination">self_illumination</h5>
+<p>Enables self illumination. Illumination texture should be specified in Diffuse 2. Brightness parameters can be adjusted in Vector Arguments panel.</p>
+<h5 id="use_specular_from_diffuse">use_specular_from_diffuse</h5>
+<p>Never ever use this. It is only used in pbr pipeline transitioning phase and only here for legacy reasons. Simply grayscales the diffuse texture, and uses it as specular texture.</p>
+<h5 id="use_double_colormap_with_mask_texture">use_double_colormap_with_mask_texture</h5>
+<p>Used internally to create team color effect in clothing. A special texture is created to specify which parts of clothing should be affected by team colors. A simple Red / green texture for primary and secondary colors is specified in Diffuse 2 texture. Primary and Secondary colors are set by gameplay code as Factor Colors.</p>
+<h3 id="transparency">Transparency</h3>
+<!-- raw HTML omitted -->
+<h3 id="others">Others</h3>
+<!-- raw HTML omitted -->
+<h3 id="vector-arguments">Vector Arguments</h3>
+<!-- raw HTML omitted -->
+<h3 id="factor-colors">Factor Colors</h3>
+<!-- raw HTML omitted -->
+<h3 id="vertex-layout">Vertex Layout</h3>
+<!-- raw HTML omitted -->
+<h5 id="bump-map">Bump Map</h5>
+<p>Should be enabled in most cases (Standard PBR requires this).</p>
+<h5 id="skinning-and-skinning-precise">Skinning and Skinning Precise</h5>
+<p>If your material is going to be used with a skinned mesh, enable Skinning, if your skinned mesh is quite large that has important small polygons (like eyes) enable Skinning Precise. (This disables some optimizations so only use if it is really necessary).</p>
+<h5 id="double-uv">Double UV</h5>
+<p>Enable if your custom shaders require double UV channels.</p>
+<h5 id="postfx">PostFX</h5>
+<p>Used internally by engine.</p>
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/editor/resource-editors/" title="Resource Editors"> <i class="fa fa-chevron-left"></i><label>Resource Editors</label></a>
+    <a class="nav nav-next" href="/editor/resource-editors/skeleton_editor/" title="Skeleton Editor" style="margin-right: 0px;"><label>Skeleton Editor</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+
+    
+  </div>
+
+
+	<div>
+
+
+  
+    
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/clipboard.min.js"></script>
+
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<script src="/js/featherlight.min.js"></script>
+
+
+
+<script src="/theme-flex/script.js"></script>
+
+
+    
+
+    
+    
+
+    <div style="text-align:center">
+	<footer>
+		&copy; 2005-2020 TaleWorlds Entertainment. All rights reserved.
+	</footer> 
+</div>
+  </body>
+</html>

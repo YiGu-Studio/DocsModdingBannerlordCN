@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Taleworlds Documentation</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2020-11-12T04:42:14 UTC">
+<title>Scene Level System :: Taleworlds Documentation</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "http:\/\/localhost:4444\/";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/zh_cn/editor/scene-editor/level_system/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/zh_cn/" class="dd-item">
+          <a href="/zh_cn/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/zh_cn/editor/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/zh_cn/editor/">编辑器</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/zh_cn/editor/scene-editor/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/zh_cn/editor/scene-editor/">场景编辑器</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/zh_cn/editor/scene-editor/creating_entity/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/scene-editor/creating_entity/">
+            Creating Entity
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/scene-editor/path_editing/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/scene-editor/path_editing/">
+            Path Editing
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/scene-editor/terrain_creation/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/scene-editor/terrain_creation/">
+            地形创建
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/scene-editor/editor_shortcuts/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/scene-editor/editor_shortcuts/">
+            编辑器快捷键
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/scene-editor/entity_inspector/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/scene-editor/entity_inspector/">
+            Entity Inspector
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/scene-editor/nav_mesh_inspector/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/scene-editor/nav_mesh_inspector/">
+            Navigation Mesh Inspector
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/scene-editor/alignment_and_snapping/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/scene-editor/alignment_and_snapping/">
+            Alignment and Snapping Tools
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/scene-editor/distance_tool/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/scene-editor/distance_tool/">
+            Distance Tool
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/scene-editor/prt/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/scene-editor/prt/">
+            Precomputed Radiance Transfer - GI System
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/scene-editor/level_system/" class="dd-item active">
+        <div>
+          <a href="/zh_cn/editor/scene-editor/level_system/">
+            Scene Level System
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/scene-editor/terrain_mesh_blend/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/scene-editor/terrain_mesh_blend/">
+            Terrain Mesh Blend System
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/scene-editor/mass_selection/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/scene-editor/mass_selection/">
+            群体选择
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/scene-editor/terrain_resize/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/scene-editor/terrain_resize/">
+            调整地形大小
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/zh_cn/editor/resource-editors/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/zh_cn/editor/resource-editors/">资源编辑器</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/zh_cn/editor/resource-editors/material_editor/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/resource-editors/material_editor/">
+            Material Editor
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/resource-editors/skeleton_editor/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/resource-editors/skeleton_editor/">
+            Skeleton Editor
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/resource-editors/cloth_simulation/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/resource-editors/cloth_simulation/">
+            Cloth Simulation
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/resource-editors/meta_mesh_editor/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/resource-editors/meta_mesh_editor/">
+            Meta Mesh Editor
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/resource-editors/model_viewer/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/resource-editors/model_viewer/">
+            Model Viewer
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/resource-editors/mipmap_editor/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/resource-editors/mipmap_editor/">
+            Texture Editor
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/zh_cn/asset-management/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/zh_cn/asset-management/">资产管理</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/zh_cn/asset-management/quickguide_create_a_mod/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/quickguide_create_a_mod/">
+            创建一个Mod - 快速入门
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/asset-management/faq/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/faq/">
+            常见问题解答
+          </a>
+        </div>
+    </li>
+    <li data-nav-id="/zh_cn/asset-management/asset-browser/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/zh_cn/asset-management/asset-browser/">资产浏览器</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/zh_cn/asset-management/asset-browser/filterqueries/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/asset-browser/filterqueries/">
+            过滤器查询
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/zh_cn/asset-management/asset-types/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/zh_cn/asset-management/asset-types/">资产类型</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/zh_cn/asset-management/asset-types/animations/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/asset-types/animations/">
+            Animations
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/asset-management/asset-types/prefabs/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/asset-types/prefabs/">
+            Entities &amp; Prefabs
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/asset-management/asset-types/meshes/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/asset-types/meshes/">
+            Meshes
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/asset-management/asset-types/asset_naming_conventions/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/asset-types/asset_naming_conventions/">
+            Naming Conventions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/asset-management/asset-types/overriding_scenes_prefabs/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/asset-types/overriding_scenes_prefabs/">
+            Overriding Scenes and Prefabs
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/asset-management/asset-types/path/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/asset-types/path/">
+            Paths
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/asset-management/asset-types/skeletons/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/asset-types/skeletons/">
+            Skeletons
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/asset-management/asset-types/textures/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/asset-types/textures/">
+            Textures
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/asset-management/asset-types/materials/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/asset-types/materials/">
+            材质
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/asset-management/asset-types/overriding_assets/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/asset-types/overriding_assets/">
+            添加与覆盖资产
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/asset-management/asset-types/bodies/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/asset-types/bodies/">
+            物体
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/asset-management/asset-types/scripts/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/asset-types/scripts/">
+            脚本
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/zh_cn/authoring-mission-scenes/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/zh_cn/authoring-mission-scenes/">霸主任务系统</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/zh_cn/authoring-mission-scenes/tactical_positions/" class="dd-item">
+        <div>
+          <a href="/zh_cn/authoring-mission-scenes/tactical_positions/">
+            Mission Tactical Positions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/authoring-mission-scenes/villages/" class="dd-item">
+        <div>
+          <a href="/zh_cn/authoring-mission-scenes/villages/">
+            What Makes a Village Scene
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/authoring-mission-scenes/script-components/bannerlord_destructible_component/" class="dd-item">
+        <div>
+          <a href="/zh_cn/authoring-mission-scenes/script-components/bannerlord_destructible_component/">
+            Destructible Component
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/authoring-mission-scenes/script-components/scene_barrier_builder/" class="dd-item">
+        <div>
+          <a href="/zh_cn/authoring-mission-scenes/script-components/scene_barrier_builder/">
+            Scene Barrier Builder
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/authoring-mission-scenes/script-components/scene_spawn_points_guide/" class="dd-item">
+        <div>
+          <a href="/zh_cn/authoring-mission-scenes/script-components/scene_spawn_points_guide/">
+            Scene Spawn Point Guide
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/authoring-mission-scenes/script-components/callbacks/" class="dd-item">
+        <div>
+          <a href="/zh_cn/authoring-mission-scenes/script-components/callbacks/">
+            Script Component Callbacks
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/authoring-mission-scenes/script-components/spawn_point_debug_tool/" class="dd-item">
+        <div>
+          <a href="/zh_cn/authoring-mission-scenes/script-components/spawn_point_debug_tool/">
+            Spawn Point Debug Tool
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/zh_cn/playing-sounds/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/zh_cn/playing-sounds/">音乐</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/zh_cn/playing-sounds/adding-custom-sounds/" class="dd-item">
+        <div>
+          <a href="/zh_cn/playing-sounds/adding-custom-sounds/">
+            给你的Mod添加音乐
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+<select id="select-language" onchange="location = this.value;">
+	
+	
+	
+	  
+	  
+	    
+	      
+	        <option id="en" value="/editor/scene-editor/level_system/">English</option>
+	      
+	    
+	  
+	    
+	  
+	
+	  
+	  
+	    
+	  
+	    
+	      
+	        <option id="zh_cn" value="/zh_cn/editor/scene-editor/level_system/" selected>简体中文</option>
+	      
+	    
+	  
+	
+</select>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation: 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/zh_cn/editor/" >
+   编辑器</option> 
+    <option value="/zh_cn/editor/scene-editor/" >
+  - 
+   场景编辑器</option> 
+      <option value="/zh_cn/editor/scene-editor/creating_entity/" >-- Creating Entity</option>
+      <option value="/zh_cn/editor/scene-editor/path_editing/" >-- Path Editing</option>
+      <option value="/zh_cn/editor/scene-editor/terrain_creation/" >-- 地形创建</option>
+      <option value="/zh_cn/editor/scene-editor/editor_shortcuts/" >-- 编辑器快捷键</option>
+      <option value="/zh_cn/editor/scene-editor/entity_inspector/" >-- Entity Inspector</option>
+      <option value="/zh_cn/editor/scene-editor/nav_mesh_inspector/" >-- Navigation Mesh Inspector</option>
+      <option value="/zh_cn/editor/scene-editor/alignment_and_snapping/" >-- Alignment and Snapping Tools</option>
+      <option value="/zh_cn/editor/scene-editor/distance_tool/" >-- Distance Tool</option>
+      <option value="/zh_cn/editor/scene-editor/prt/" >-- Precomputed Radiance Transfer - GI System</option>
+      <option value="/zh_cn/editor/scene-editor/level_system/"  selected>-- Scene Level System</option>
+      <option value="/zh_cn/editor/scene-editor/terrain_mesh_blend/" >-- Terrain Mesh Blend System</option>
+      <option value="/zh_cn/editor/scene-editor/mass_selection/" >-- 群体选择</option>
+      <option value="/zh_cn/editor/scene-editor/terrain_resize/" >-- 调整地形大小</option>
+  
+    <option value="/zh_cn/editor/resource-editors/" >
+  - 
+   资源编辑器</option>
+  
+    <option value="/zh_cn/asset-management/" >
+   资产管理</option>
+    <option value="/zh_cn/authoring-mission-scenes/" >
+   霸主任务系统</option>
+    <option value="/zh_cn/playing-sounds/" >
+   音乐</option>
+
+
+
+        </select>
+      </center>
+      <center>Language: 
+        
+<select id="select-language" onchange="location = this.value;">
+	
+	
+	
+	  
+	  
+	    
+	      
+	        <option id="en" value="/editor/scene-editor/level_system/">English</option>
+	      
+	    
+	  
+	    
+	  
+	
+	  
+	  
+	    
+	  
+	    
+	      
+	        <option id="zh_cn" value="/zh_cn/editor/scene-editor/level_system/" selected>简体中文</option>
+	      
+	    
+	  
+	
+</select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/js/auto-complete.js"></script>
+        <link href="/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "http:\/\/localhost:4444\/\/zh_cn";
+          
+        </script>
+        <script type="text/javascript" src="/js/search.js"></script>
+      </div>
+    
+
+    <h1>Scene Level System</h1>
+    
+    
+    
+    <h2 id="level-system">Level System</h2>
+<p>New level system replaces the old, hardcoded system with a much more extandable and unified system. \<br>
+<!-- raw HTML omitted --><!-- raw HTML omitted -->Adding<!-- raw HTML omitted --><!-- raw HTML omitted --> a new level (or <!-- raw HTML omitted --><!-- raw HTML omitted -->deleting<!-- raw HTML omitted --><!-- raw HTML omitted --> an existing one) to a scene can be done in <!-- raw HTML omitted --><!-- raw HTML omitted -->Levels<!-- raw HTML omitted --><!-- raw HTML omitted --> panel under <!-- raw HTML omitted -->SceneOptions<!-- raw HTML omitted --> inspector.</p>
+<p><img src="/img/level_system/level_system_panel.png" alt=""></p>
+<h2 id="levels-in-game">Levels in Game</h2>
+<h4 id="--bannerlord--">- Bannerlord -</h4>
+<p>Currently, Bannerlord recognizes a few levels that has a meaning in-game. \<br>
+Which are: \</p>
+<ol>
+<li>level_1 \</li>
+<li>level_2 \</li>
+<li>level_3 \</li>
+<li>siege \</li>
+<li>civilian</li>
+</ol>
+<h2 id="setting-entity-visibilities">Setting Entity visibilities</h2>
+<p>Making an entity only visible in a certain level combinations can be done with selecting an entity then going in <!-- raw HTML omitted -->Scene Level Visibilities<!-- raw HTML omitted --> panel under <!-- raw HTML omitted -->Entity Inspector<!-- raw HTML omitted -->.
+<img src="/img/level_system/level_system_entity_visibility.png" alt=""></p>
+<p>Select the levels you want this entity to be visible.
+<!-- raw HTML omitted -->Entity levels in missions are checked as a whole.<!-- raw HTML omitted --></p>
+<h3 id="example">Example</h3>
+<p>If you select both level_1 and siege, and if you open a mission that has <em>level_2</em> and siege, this entity will NOT be visible since it does not has &ldquo;level_2&rdquo;. \<br>
+If you select both level_1 and siege, and if you open a mission that has level_1 and <em>civilian</em>, this entity will NOT be visible since it does not has &ldquo;siege&rdquo;. \<br>
+It will only and only be visible if you open a mission that has level_1 and siege.</p>
+<p>So if you want an entity to be visible in both level_1 and level_2 and only in civilian mission, select level_1, level_2, and civilian; \<br>
+so this entity will not be visible in ANY siege missions, and will not be visible in ANY mission as level_3.</p>
+<h2 id="testing-visibility-in-editor">Testing visibility in editor</h2>
+<p><img src="/img/level_system/level_system_visibility_panel.png" alt=""></p>
+<p>There are two options to see entities with different level visibilities.</p>
+<p><strong>1) Require all levels (Same as missions)</strong> \<br>
+<strong>2) Require at least one level (Editor only, to see all entities at once)</strong></p>
+<h3 id="require-all-levels">Require all levels</h3>
+<p>In this mode, visibility system will work as same as the missions, you can use this mode to test what entities will be visible in what combinations. \<br>
+If you select level_1 and siege, you will only see entities that has <strong>both</strong> level_1 and siege, not the others.</p>
+<h3 id="require-at-least-one-level">Require at least one level</h3>
+<p>This is an editor only mode, if you select a level, it will be visible, no matter what combinations that entity has; if entity has that level, it will be visible. \<br>
+Can be useful if you want to see all <em>civilian</em> entities no matter what level they are, or you can see <em>level_1</em> entites no matter if they are siege or civilian.</p>
+<h2 id="testing-a-scene">Testing a scene</h2>
+<p><img src="/img/level_system/level_system_start_mission_as.png" alt="">
+For this purpose, <strong>Start mission as</strong> window modified in a way that allows you to select level combinations.
+If you want to test a castle scene with level_1 and siege mode, Select these leves and press OK. The mission will start in Level 1 Siege mode.</p>
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/zh_cn/editor/scene-editor/prt/" title="Precomputed Radiance Transfer - GI System"> <i class="fa fa-chevron-left"></i><label>Precomputed Radiance Transfer - GI System</label></a>
+    <a class="nav nav-next" href="/zh_cn/editor/scene-editor/terrain_mesh_blend/" title="Terrain Mesh Blend System" style="margin-right: 0px;"><label>Terrain Mesh Blend System</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+
+    
+  </div>
+
+
+	<div>
+
+
+  
+    
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/clipboard.min.js"></script>
+
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<script src="/js/featherlight.min.js"></script>
+
+
+
+<script src="/theme-flex/script.js"></script>
+
+
+    
+
+    
+    
+
+    <div style="text-align:center">
+	<footer>
+		&copy; 2005-2020 TaleWorlds Entertainment. All rights reserved.
+	</footer> 
+</div>
+  </body>
+</html>

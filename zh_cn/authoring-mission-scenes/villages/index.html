@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Taleworlds Documentation</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2020-11-12T04:42:14 UTC">
+<title>What Makes a Village Scene :: Taleworlds Documentation</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "http:\/\/localhost:4444\/";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/zh_cn/authoring-mission-scenes/villages/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/zh_cn/" class="dd-item">
+          <a href="/zh_cn/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/zh_cn/editor/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/zh_cn/editor/">编辑器</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/zh_cn/editor/scene-editor/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/zh_cn/editor/scene-editor/">场景编辑器</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/zh_cn/editor/scene-editor/creating_entity/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/scene-editor/creating_entity/">
+            Creating Entity
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/scene-editor/path_editing/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/scene-editor/path_editing/">
+            Path Editing
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/scene-editor/terrain_creation/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/scene-editor/terrain_creation/">
+            地形创建
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/scene-editor/editor_shortcuts/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/scene-editor/editor_shortcuts/">
+            编辑器快捷键
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/scene-editor/entity_inspector/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/scene-editor/entity_inspector/">
+            Entity Inspector
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/scene-editor/nav_mesh_inspector/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/scene-editor/nav_mesh_inspector/">
+            Navigation Mesh Inspector
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/scene-editor/alignment_and_snapping/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/scene-editor/alignment_and_snapping/">
+            Alignment and Snapping Tools
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/scene-editor/distance_tool/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/scene-editor/distance_tool/">
+            Distance Tool
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/scene-editor/prt/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/scene-editor/prt/">
+            Precomputed Radiance Transfer - GI System
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/scene-editor/level_system/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/scene-editor/level_system/">
+            Scene Level System
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/scene-editor/terrain_mesh_blend/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/scene-editor/terrain_mesh_blend/">
+            Terrain Mesh Blend System
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/scene-editor/mass_selection/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/scene-editor/mass_selection/">
+            群体选择
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/scene-editor/terrain_resize/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/scene-editor/terrain_resize/">
+            调整地形大小
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/zh_cn/editor/resource-editors/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/zh_cn/editor/resource-editors/">资源编辑器</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/zh_cn/editor/resource-editors/material_editor/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/resource-editors/material_editor/">
+            Material Editor
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/resource-editors/skeleton_editor/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/resource-editors/skeleton_editor/">
+            Skeleton Editor
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/resource-editors/cloth_simulation/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/resource-editors/cloth_simulation/">
+            Cloth Simulation
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/resource-editors/meta_mesh_editor/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/resource-editors/meta_mesh_editor/">
+            Meta Mesh Editor
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/resource-editors/model_viewer/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/resource-editors/model_viewer/">
+            Model Viewer
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/editor/resource-editors/mipmap_editor/" class="dd-item">
+        <div>
+          <a href="/zh_cn/editor/resource-editors/mipmap_editor/">
+            Texture Editor
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/zh_cn/asset-management/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/zh_cn/asset-management/">资产管理</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/zh_cn/asset-management/quickguide_create_a_mod/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/quickguide_create_a_mod/">
+            创建一个Mod - 快速入门
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/asset-management/faq/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/faq/">
+            常见问题解答
+          </a>
+        </div>
+    </li>
+    <li data-nav-id="/zh_cn/asset-management/asset-browser/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/zh_cn/asset-management/asset-browser/">资产浏览器</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/zh_cn/asset-management/asset-browser/filterqueries/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/asset-browser/filterqueries/">
+            过滤器查询
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/zh_cn/asset-management/asset-types/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/zh_cn/asset-management/asset-types/">资产类型</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/zh_cn/asset-management/asset-types/animations/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/asset-types/animations/">
+            Animations
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/asset-management/asset-types/prefabs/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/asset-types/prefabs/">
+            Entities &amp; Prefabs
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/asset-management/asset-types/meshes/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/asset-types/meshes/">
+            Meshes
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/asset-management/asset-types/asset_naming_conventions/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/asset-types/asset_naming_conventions/">
+            Naming Conventions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/asset-management/asset-types/overriding_scenes_prefabs/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/asset-types/overriding_scenes_prefabs/">
+            Overriding Scenes and Prefabs
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/asset-management/asset-types/path/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/asset-types/path/">
+            Paths
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/asset-management/asset-types/skeletons/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/asset-types/skeletons/">
+            Skeletons
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/asset-management/asset-types/textures/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/asset-types/textures/">
+            Textures
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/asset-management/asset-types/materials/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/asset-types/materials/">
+            材质
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/asset-management/asset-types/overriding_assets/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/asset-types/overriding_assets/">
+            添加与覆盖资产
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/asset-management/asset-types/bodies/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/asset-types/bodies/">
+            物体
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/asset-management/asset-types/scripts/" class="dd-item">
+        <div>
+          <a href="/zh_cn/asset-management/asset-types/scripts/">
+            脚本
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/zh_cn/authoring-mission-scenes/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/zh_cn/authoring-mission-scenes/">霸主任务系统</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/zh_cn/authoring-mission-scenes/tactical_positions/" class="dd-item">
+        <div>
+          <a href="/zh_cn/authoring-mission-scenes/tactical_positions/">
+            Mission Tactical Positions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/authoring-mission-scenes/villages/" class="dd-item active">
+        <div>
+          <a href="/zh_cn/authoring-mission-scenes/villages/">
+            What Makes a Village Scene
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/authoring-mission-scenes/script-components/bannerlord_destructible_component/" class="dd-item">
+        <div>
+          <a href="/zh_cn/authoring-mission-scenes/script-components/bannerlord_destructible_component/">
+            Destructible Component
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/authoring-mission-scenes/script-components/scene_barrier_builder/" class="dd-item">
+        <div>
+          <a href="/zh_cn/authoring-mission-scenes/script-components/scene_barrier_builder/">
+            Scene Barrier Builder
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/authoring-mission-scenes/script-components/scene_spawn_points_guide/" class="dd-item">
+        <div>
+          <a href="/zh_cn/authoring-mission-scenes/script-components/scene_spawn_points_guide/">
+            Scene Spawn Point Guide
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/authoring-mission-scenes/script-components/callbacks/" class="dd-item">
+        <div>
+          <a href="/zh_cn/authoring-mission-scenes/script-components/callbacks/">
+            Script Component Callbacks
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/zh_cn/authoring-mission-scenes/script-components/spawn_point_debug_tool/" class="dd-item">
+        <div>
+          <a href="/zh_cn/authoring-mission-scenes/script-components/spawn_point_debug_tool/">
+            Spawn Point Debug Tool
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/zh_cn/playing-sounds/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/zh_cn/playing-sounds/">音乐</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/zh_cn/playing-sounds/adding-custom-sounds/" class="dd-item">
+        <div>
+          <a href="/zh_cn/playing-sounds/adding-custom-sounds/">
+            给你的Mod添加音乐
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+<select id="select-language" onchange="location = this.value;">
+	
+	
+	
+	  
+	  
+	    
+	      
+	        <option id="en" value="/authoring-mission-scenes/villages/">English</option>
+	      
+	    
+	  
+	    
+	  
+	
+	  
+	  
+	    
+	  
+	    
+	      
+	        <option id="zh_cn" value="/zh_cn/authoring-mission-scenes/villages/" selected>简体中文</option>
+	      
+	    
+	  
+	
+</select>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation: 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/zh_cn/editor/" >
+   编辑器</option>
+    <option value="/zh_cn/asset-management/" >
+   资产管理</option>
+    <option value="/zh_cn/authoring-mission-scenes/" >
+   霸主任务系统</option> 
+      <option value="/zh_cn/authoring-mission-scenes/tactical_positions/" >- Mission Tactical Positions</option>
+      <option value="/zh_cn/authoring-mission-scenes/villages/"  selected>- What Makes a Village Scene</option>
+      <option value="/zh_cn/authoring-mission-scenes/script-components/bannerlord_destructible_component/" >- Destructible Component</option>
+      <option value="/zh_cn/authoring-mission-scenes/script-components/scene_barrier_builder/" >- Scene Barrier Builder</option>
+      <option value="/zh_cn/authoring-mission-scenes/script-components/scene_spawn_points_guide/" >- Scene Spawn Point Guide</option>
+      <option value="/zh_cn/authoring-mission-scenes/script-components/callbacks/" >- Script Component Callbacks</option>
+      <option value="/zh_cn/authoring-mission-scenes/script-components/spawn_point_debug_tool/" >- Spawn Point Debug Tool</option>
+  
+    <option value="/zh_cn/playing-sounds/" >
+   音乐</option>
+
+
+
+        </select>
+      </center>
+      <center>Language: 
+        
+<select id="select-language" onchange="location = this.value;">
+	
+	
+	
+	  
+	  
+	    
+	      
+	        <option id="en" value="/authoring-mission-scenes/villages/">English</option>
+	      
+	    
+	  
+	    
+	  
+	
+	  
+	  
+	    
+	  
+	    
+	      
+	        <option id="zh_cn" value="/zh_cn/authoring-mission-scenes/villages/" selected>简体中文</option>
+	      
+	    
+	  
+	
+</select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/js/auto-complete.js"></script>
+        <link href="/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "http:\/\/localhost:4444\/\/zh_cn";
+          
+        </script>
+        <script type="text/javascript" src="/js/search.js"></script>
+      </div>
+    
+
+    <h1>What Makes a Village Scene</h1>
+    
+    
+    
+    <h4 id="introduction">Introduction</h4>
+<p>This list of checkpoints should aid you in creation of village scenes and provide you with an insight into what we pay attention to when creating village scenes.</p>
+<h4 id="navigation-mesh">Navigation Mesh</h4>
+<ul>
+<li>Navigation mesh consists of triangles and quads. It is used by the AI for pathfinding. The global illumination system also uses it to find the visible locations of the scene.</li>
+<li>Keep in mind that the navigation mesh faces should not be too far away from the physics below it. The distance should at 1.5m maximum.</li>
+<li>The faces can be labeled to give cues to the agent spawning and the navigation inside the scene.</li>
+<li>In order to make the agents follow roads, we label the faces on top of the roads with the ID 2.</li>
+<li>Note that all of the agent spawnpoints should be connected by navigation mesh faces with ID 2.</li>
+<li>For the animals, navigation mesh ID 3 can be used. Typically, these faces are kept within separate islands in structures like ditches. The animals will then roam inside those islands only.</li>
+<li>All other faces should have the ID 0.</li>
+<li>Remember that the agents should use the navigation mesh ID&rsquo;s 1 in order to create realistic pathing (on roads), scene designer should put an entity with the Navigation Mesh Deactivator (prefab name is Navigation_Mesh_Deactivator). It can be placed anywhere in the scene. Its purpose is to disable the ID 0 faces in civilian modes. The DisableFaceWithID variable of the script should be 1.</li>
+<li>For the animals, the variable &ldquo;DisableFaceWithIDForAnimals&rdquo; within the same script should be 3.</li>
+<li>Make sure the faces are fairly equal in size outside of the village area / where troops will maneuver.</li>
+<li>Make sure there are no disconnected navmeshes.</li>
+<li>The better the navmesh, the better will AI perform on it. Always think about that there might be big field battle inside the village. So try to avoid having many enclosed areas like a pig farm with only 1 entrance (for example: throw over some fences to create more entries)</li>
+<li>Avoid having big areas accessible to the player but not AI. Player will be able to shoot AI from places without navmesh.</li>
+<li>Use “_barrier_ai_x” to prevent AI from falling off from cliffs or getting stuck in tight areas (like a market booth) off the navmesh.</li>
+</ul>
+<p><img src="/img/village_scenes/navmesh.png" alt=""></p>
+<h4 id="spawn-points">Spawn Points</h4>
+<p>As noted before, all spawn points need to be placed on top of navmesh (ID 2) and inside the soft borders. Remember that some prefabs (like chairs and benches) come with spawn points attached to them. If the spawn points aren&rsquo;t compatible with the village mission, they will most likely crash the game or cause errors. One example is &ldquo;sp_blacksmith_with_smithing_machine&rdquo;. The most important thing about the entry points are their tags. They decide what type of NPC will spawn there. For your own sake, don&rsquo;t play around with those tags too much and keep them as they are from the prefabs.</p>
+<p>![](/img/village_scenes/3. Entry Points.png)</p>
+<h5 id="player-spawnpoint">Player Spawnpoint</h5>
+<ul>
+<li>Prefab: <strong>sp_player</strong>.</li>
+<li>Make sure it&rsquo;s placed in a location where it can be seen from or at least has a clear path leading towards it. Do not place it too far away.</li>
+<li>There should be a navigation mesh under the spawnpoint.</li>
+</ul>
+<h5 id="battle-spawnpoints">Battle Spawnpoints</h5>
+<ul>
+<li>Prefab: <strong>Sp_battle_set</strong>.</li>
+<li>Make sure the attacker and defender spawns aren&rsquo;t too close to each other or at least don&rsquo;t have direct line of sight to each other.</li>
+<li>Make sure to move the reinforcement point out of sight as best as possible while still not being too far from the front lines.</li>
+<li>Make sure all spawnpoints have some empty space around for troops to properly spawn in.</li>
+</ul>
+<h5 id="conversation-spawnpoints-civilian">Conversation Spawnpoints (civilian)</h5>
+<ul>
+<li>Prefab: <strong>sp_player_conversation</strong>.</li>
+<li>Conversation points define where the agent and the conversation partner spawn when the player enters the village via the &ldquo;Talk to Notable&rdquo; button from the World Map.</li>
+<li>Make sure they have a nice vista but keep them relatively close to the village center.</li>
+</ul>
+<h5 id="animation-points-civilian">Animation Points (civilian)</h5>
+<ul>
+<li>Prefab: <strong>sp_npc_x</strong>.</li>
+<li>These are used for normal villagers. You can use around 40 positions.</li>
+<li>They define the positions in scenes where the villagers will spawn and walk to.</li>
+<li>Make sure they are nicely spaced throughout the village and close surroundings.</li>
+<li>Villagers will wonder along paths to get to them.</li>
+<li>If the paths are too long you might find your villagers wondering around at all times with nobody actually doing anything. Try to avoid long distances and place points close to the main paths.</li>
+<li>Placing more or less spawnpoints doesn&rsquo;t influence how many villagers will populate the scene.</li>
+</ul>
+<h5 id="rural-noteable-spawnpoints">Rural Noteable Spawnpoints</h5>
+<ul>
+<li>Prefab: <strong>sp_notable_x</strong>.</li>
+<li>The number of prefabs should be around 6.</li>
+<li>These are the spawnpoints for the notables of the village (quest givers) and lords.</li>
+<li>Make sure they are in a prominent location of the village or generally places where village elder / lords would hang around.</li>
+<li>You can check the Debug Window (documentation will cover that) to make sure you have placed the correct notable positions.</li>
+<li>Go to the “Scene Entity Check Tab” and tick the “NPCs” Box and count.</li>
+</ul>
+<h5 id="bandit-camps">Bandit Camps</h5>
+<ul>
+<li>Prefab: <strong>common_area_x</strong>.</li>
+<li>Each village scene has 3 Bandit Camps outside the village (place 3 prefabs), used for scene quests.</li>
+<li>Use the same spawns as for normal villagers (~15 per camp). Try to not have them do chores like farming.</li>
+<li>You can also use patrol spawnpoints: <strong>sp_guard_patrol_simple, sp_guard_patrol”.</strong></li>
+<li>All spawn points in the radius will spawn bandits instead of villagers.</li>
+<li>You can increase the radius by scaling the common area prefab.</li>
+<li>Use civilian animation points as spawn points for bandits, some suggestions: “sp_npc_wait_wall, lookout, sp_npc_argue_set, sp_npc_wait”.</li>
+<li>Make sure that there is some indication to where they could be so that the player has a chance of finding them (especially at night).</li>
+<li>Don&rsquo;t place them too close to each other.</li>
+</ul>
+<p>![](/img/village_scenes/4. Bandit Camps.png)</p>
+<h5 id="animal-spawnpoints">Animal Spawnpoints</h5>
+<ul>
+<li>Prefab: <strong>sp_animalName</strong>.</li>
+<li>Use “DisableWandering” in the AnimalSpawnSettings script, to stop animals from walking around your scene.</li>
+<li>Overall its best to put it on all bigger animals like cows and pigs if they aren&rsquo;t there to wonder around.</li>
+</ul>
+<h5 id="tactical-region">Tactical Region</h5>
+<ul>
+<li>Prefab: <strong>TacticalRegion</strong>.</li>
+<li>Used to tell the AI where there are relevant bigger regions (forests, hills etc.).</li>
+<li>AI will position themselves inside the radius or avoid it.</li>
+<li>Don&rsquo;t overuse it, stick to ~5 (make sure there is some variety).</li>
+</ul>
+<h5 id="tactical-positions">Tactical Positions</h5>
+<ul>
+<li>Prefab: <strong>TacticalPosition</strong>.</li>
+<li>Used to tell the AI where there are relevant smaller positions (like choke points between buildings, cliffs for archers and so on).</li>
+<li>AI will position themselves according to the rotation of the Prefab and in regards to the width given by the script.</li>
+<li>You can use them quite often.</li>
+<li>The higher the slope the “better” is the position.</li>
+</ul>
+<p>![](/img/village_scenes/5. Tactical Positions.png)</p>
+<h5 id="flee-positions">Flee Positions</h5>
+<ul>
+<li>Positions to which fleeing troops and also horses will run away too.</li>
+<li>Make sure they are inside the Soft Border and that there is a navmesh below them.</li>
+</ul>
+<p>![](/img/village_scenes/7. Flee Positions.png)</p>
+<h4 id="debug-window">Debug Window</h4>
+<ul>
+<li>Prefab: <strong>SpawnPointDebugView</strong>.</li>
+<li>There is a built-in debug tool which can be enabled by adding the above prefab to the scene. Place the prefab anywhere in the scene and activate the window with the check box in its script.</li>
+<li>This prefab opens a little debug window in the editor that helps you make sure you meet the requirements for the mission (like spawn points, navmesh).</li>
+<li>In the “Scene Entity Check Tab” you can count your Entry Points and make sure you have placed enough of them (or too many).</li>
+<li>In the “Navigation Mesh Check Tab” you can make sure all your Entry Points are connected to the navmesh properly.</li>
+</ul>
+<p>![](/img/village_scenes/2. Debug Window.png)</p>
+<h4 id="soft-border">Soft Border</h4>
+<ul>
+<li>Prefab: <strong>border_soft</strong>.</li>
+<li>They define the red borders of the scene.</li>
+<li>When placed they form a polygon where the 2 edges connect between the closest two border entities (but never more than two).</li>
+<li>To check the current borders, go into the &ldquo;Visibility Window&rdquo; → &ldquo;Visibility Masks&rdquo; and enable &ldquo;Borders&rdquo;.</li>
+<li>After crossing them the player has a few seconds to return inside the map borders, make sure this can&rsquo;t be abused somehow.</li>
+</ul>
+<p>![](/img/village_scenes/6. Borders.png)</p>
+<h4 id="sounds">Sounds</h4>
+<h5 id="master-ambient-sound">Master Ambient Sound</h5>
+<ul>
+<li>Prefab: <strong>x_ambient_sound</strong>.</li>
+<li>Choose a mandatory master ambient sound.</li>
+<li>You can place the prefab for the mandatory ambient sound anywhere.</li>
+<li>Make sure it has the “Is Master Sound” enabled.</li>
+<li>Make sure it doesn&rsquo;t have the “Is Triggered” enabled.</li>
+</ul>
+<h5 id="additional-ambient-sounds">Additional Ambient sounds</h5>
+<ul>
+<li>Used for bigger areas (like forests).</li>
+<li>Needs to have the “Is Triggered” bool.</li>
+<li>To see how far it reaches, from the &ldquo;Visibility Window&rdquo; enable &ldquo;Sound Entities&rdquo; under the &ldquo;&ldquo;Visibility Masks&rdquo; group.</li>
+<li>To change their reach, you can scale them like you would do with other editor entities (using the “b” key or the gizmo).</li>
+</ul>
+<p>![](/img/village_scenes/8. Sounds.png)</p>
+<h5 id="reverb">Reverb</h5>
+<ul>
+<li>There are different prefabs for each use case: <strong>reverb_x</strong>.</li>
+<li>Adds reverb effect to any sound spawned inside its boundary.</li>
+<li>They are generally used for tight or underground areas.</li>
+<li>You can place these in tight alleys between taller buildings, cliffs, in caves or in dense forests.</li>
+<li>Needs to have the “Is Triggered” enabled.</li>
+</ul>
+<h5 id="detail">Detail</h5>
+<ul>
+<li>Used for small details.</li>
+<li>Make sure “Is Triggered” is disabled.</li>
+<li>Place them where ever you want them to play.</li>
+</ul>
+<h5 id="moving-sounds-on-paths-for-rivers-and-such">Moving sounds on paths (for rivers and such)</h5>
+<p>Sometimes it&rsquo;s useful to move sounds along a coast line or a river. The below technique is more performance-friendly and more precise than placing multiple sound entities along your river for example.</p>
+<ul>
+<li>Place a path on the river. For more information, see <!-- raw HTML omitted --><a href="http://localhost:4444/zh_cn/editor/scene-editor/path_editing/">Path Editing</a><!-- raw HTML omitted -->.</li>
+<li>Add the sound to the scene.</li>
+<li>Place any additional Ambient sound as explained above.</li>
+<li>Add the “path_converger” script to your ambient sound&rsquo;s entity.</li>
+<li>Enter the name of your path to the &ldquo;path_converger&rdquo;.</li>
+<li>The sound will now follow the path according to the camera position.</li>
+</ul>
+<h5 id="sounds-in-the-engine">Sounds in the Engine</h5>
+<p>You can check the &ldquo;MODDING_TOOLS_DIRECTORY/Sounds/GUIDs.txt&rdquo; file for the list of the sounds in the game. These names can be used inside the script of the sound entities.</p>
+<h4 id="lights">Lights</h4>
+<ul>
+<li>Have at least one “<strong>envmap_prop</strong>” in your scene.</li>
+<li>For darker areas like caves use “<strong>local_envmap_prop</strong>”.</li>
+<li>It will affect the lighting in an area depending on the values of its “ReflectionCapturer” script.</li>
+<li>Make sure the village and bandit camps are nicely lit.</li>
+<li>Take extra care for the conversation points.</li>
+<li>Use torches and other entities.</li>
+<li>Make sure torches inside buildings and other dark areas have “alwaysBurn” enabled in the LightCycle script.</li>
+<li>Try to avoid placing “artificial lights” without an actual source.</li>
+<li>You can bake the ambient lighting in your scene with the GI system. This will make the ambient lighting much more realistic. For more information, see <!-- raw HTML omitted --><a href="http://localhost:4444/zh_cn/editor/scene-editor/prt/">GI System</a><!-- raw HTML omitted -->.</li>
+</ul>
+<p>![](/img/village_scenes/9. Lights.png)</p>
+<h4 id="atmosphere">Atmosphere</h4>
+<ul>
+<li>Make sure your scene works and looks fine with all of the “<strong>TOD_x</strong>” atmospheres and in all seasons! (since it will be tested with those).</li>
+<li>Choose a “Color Grade” that fits your scene (we suggest using the ones for the faction your scene is for, like: “color_grade_empire_soft”).</li>
+</ul>
+<p>![](/img/village_scenes/10. Atmosphere.png)</p>
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/zh_cn/authoring-mission-scenes/tactical_positions/" title="Mission Tactical Positions"> <i class="fa fa-chevron-left"></i><label>Mission Tactical Positions</label></a>
+    <a class="nav nav-next" href="/zh_cn/authoring-mission-scenes/script-components/bannerlord_destructible_component/" title="Destructible Component" style="margin-right: 0px;"><label>Destructible Component</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+
+    
+  </div>
+
+
+	<div>
+
+
+  
+    
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/clipboard.min.js"></script>
+
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<script src="/js/featherlight.min.js"></script>
+
+
+
+<script src="/theme-flex/script.js"></script>
+
+
+    
+
+    
+    
+
+    <div style="text-align:center">
+	<footer>
+		&copy; 2005-2020 TaleWorlds Entertainment. All rights reserved.
+	</footer> 
+</div>
+  </body>
+</html>
