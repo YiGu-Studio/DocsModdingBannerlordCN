@@ -1,0 +1,101 @@
+INFO 2020/10/10 01:15:36 Translation func for language zh_cn not found, use default.
+INFO 2020/10/10 01:15:36 Using config file: 
+Start building sites … 
+INFO 2020/10/10 01:15:36 syncing static files to /
+WARN 2020/10/10 01:15:36 .File.BaseFileName on zero object. Wrap it in if or with: {{ with .File }}{{ .BaseFileName }}{{ end }}
+WARN 2020/10/10 01:15:36 Page.URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url
+
+                   | EN  | ZH CN  
+-------------------+-----+--------
+  Pages            |  67 |    67  
+  Paginator pages  |   0 |     0  
+  Non-page files   |   0 |     0  
+  Static files     | 485 |   485  
+  Processed images |   0 |     0  
+  Aliases          |   3 |     2  
+  Sitemaps         |   2 |     1  
+  Cleaned          |   0 |     0  
+
+Built in 637 ms
+Watching for changes in /Users/oliver/Documents/git/Documentations/docs/{content,i18n,layouts,static,themes}
+Watching for config changes in /Users/oliver/Documents/git/Documentations/docs/config.toml
+Environment: "development"
+Serving pages from memory
+Web Server is available at http://localhost:4444/ (bind address 0.0.0.0)
+Press Ctrl+C to stop
+INFO 2020/10/10 01:16:29 Received System Events: ["/Users/oliver/Documents/git/Documentations/docs/themes/hugo-theme-docdock-master/i18n/zh_cn.toml": RENAME]
+
+Change detected, rebuilding site.
+2020-10-10 01:16:29.573 -0700
+i18n changed "/Users/oliver/Documents/git/Documentations/docs/themes/hugo-theme-docdock-master/i18n/zh_cn.toml": RENAME
+INFO 2020/10/10 01:16:29 Translation func for language zh_cn not found, use default.
+WARN 2020/10/10 01:16:29 Page.URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url
+Total in 161 ms
+
+Change of config file detected, rebuilding site.
+2020-10-10 01:17:20.574 -0700
+INFO 2020/10/10 01:17:20 Translation func for language zh_cn not found, use default.
+INFO 2020/10/10 01:17:20 Using config file: 
+INFO 2020/10/10 01:17:20 syncing static files to /
+WARN 2020/10/10 01:17:21 .File.BaseFileName on zero object. Wrap it in if or with: {{ with .File }}{{ .BaseFileName }}{{ end }}
+WARN 2020/10/10 01:17:21 Page.URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url
+Rebuilt in 789 ms
+
+Change of config file detected, rebuilding site.
+2020-10-10 01:18:21.573 -0700
+INFO 2020/10/10 01:18:21 Translation func for language zh_cn not found, use default.
+INFO 2020/10/10 01:18:21 Using config file: 
+INFO 2020/10/10 01:18:21 syncing static files to /
+WARN 2020/10/10 01:18:22 .File.BaseFileName on zero object. Wrap it in if or with: {{ with .File }}{{ .BaseFileName }}{{ end }}
+WARN 2020/10/10 01:18:22 Page.URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url
+Rebuilt in 752 ms
+
+Change of config file detected, rebuilding site.
+2020-10-10 01:18:32.575 -0700
+INFO 2020/10/10 01:18:32 Translation func for language zh_cn not found, use default.
+INFO 2020/10/10 01:18:32 Using config file: 
+INFO 2020/10/10 01:18:32 syncing static files to /
+WARN 2020/10/10 01:18:33 .File.BaseFileName on zero object. Wrap it in if or with: {{ with .File }}{{ .BaseFileName }}{{ end }}
+WARN 2020/10/10 01:18:33 Page.URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url
+Rebuilt in 783 ms
+
+Change of config file detected, rebuilding site.
+2020-10-10 01:18:52.575 -0700
+INFO 2020/10/10 01:18:52 Translation func for language zh_cn not found, use default.
+INFO 2020/10/10 01:18:52 Using config file: 
+INFO 2020/10/10 01:18:52 syncing static files to /
+WARN 2020/10/10 01:18:53 .File.BaseFileName on zero object. Wrap it in if or with: {{ with .File }}{{ .BaseFileName }}{{ end }}
+WARN 2020/10/10 01:18:53 Page.URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url
+Rebuilt in 786 ms
+INFO 2020/10/10 01:22:02 Received System Events: ["/Users/oliver/Documents/git/Documentations/docs/themes/hugo-theme-docdock-master/layouts/partials/flex/body-beforecontent.html": CHMOD "/Users/oliver/Documents/git/Documentations/docs/themes/hugo-theme-docdock-master/layouts/partials/flex/body-beforecontent.html": WRITE]
+
+Change detected, rebuilding site.
+2020-10-10 01:22:02.576 -0700
+Template changed "/Users/oliver/Documents/git/Documentations/docs/themes/hugo-theme-docdock-master/layouts/partials/flex/body-beforecontent.html": WRITE
+INFO 2020/10/10 01:22:02 Translation func for language zh_cn not found, use default.
+WARN 2020/10/10 01:22:02 Page.URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url
+Total in 176 ms
+INFO 2020/10/10 01:22:05 Received System Events: ["/Users/oliver/Documents/git/Documentations/docs/themes/hugo-theme-docdock-master/layouts/partials/flex/body-beforecontent.html": CHMOD "/Users/oliver/Documents/git/Documentations/docs/themes/hugo-theme-docdock-master/layouts/partials/flex/body-beforecontent.html": WRITE]
+
+Change detected, rebuilding site.
+2020-10-10 01:22:05.580 -0700
+Template changed "/Users/oliver/Documents/git/Documentations/docs/themes/hugo-theme-docdock-master/layouts/partials/flex/body-beforecontent.html": WRITE
+INFO 2020/10/10 01:22:05 Translation func for language zh_cn not found, use default.
+WARN 2020/10/10 01:22:05 Page.URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url
+Total in 176 ms
+INFO 2020/10/10 01:22:22 Received System Events: ["/Users/oliver/Documents/git/Documentations/docs/themes/hugo-theme-docdock-master/layouts/partials/flex/body-beforecontent.html": CHMOD "/Users/oliver/Documents/git/Documentations/docs/themes/hugo-theme-docdock-master/layouts/partials/flex/body-beforecontent.html": WRITE]
+
+Change detected, rebuilding site.
+2020-10-10 01:22:22.577 -0700
+Template changed "/Users/oliver/Documents/git/Documentations/docs/themes/hugo-theme-docdock-master/layouts/partials/flex/body-beforecontent.html": WRITE
+INFO 2020/10/10 01:22:22 Translation func for language zh_cn not found, use default.
+WARN 2020/10/10 01:22:22 Page.URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url
+Total in 163 ms
+INFO 2020/10/10 01:22:28 Received System Events: ["/Users/oliver/Documents/git/Documentations/docs/themes/hugo-theme-docdock-master/layouts/partials/flex/body-beforecontent.html": CHMOD "/Users/oliver/Documents/git/Documentations/docs/themes/hugo-theme-docdock-master/layouts/partials/flex/body-beforecontent.html": WRITE]
+
+Change detected, rebuilding site.
+2020-10-10 01:22:28.577 -0700
+Template changed "/Users/oliver/Documents/git/Documentations/docs/themes/hugo-theme-docdock-master/layouts/partials/flex/body-beforecontent.html": WRITE
+INFO 2020/10/10 01:22:28 Translation func for language zh_cn not found, use default.
+WARN 2020/10/10 01:22:28 Page.URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url
+Total in 167 ms
